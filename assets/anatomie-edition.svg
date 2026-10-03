@@ -50,18 +50,18 @@
 <!-- precise leader lines: top -->
 <g fill="none" stroke="#b2834c" stroke-width="2" stroke-linejoin="round">
 <path d="M304 105H245L191 138"/><path d="M315 370H227L183 369"/><path d="M326 696H225L179 707"/>
-<path d="M325 320H245L194 278"/><path d="M351 437H411L458 411"/><path d="M379 487H421L470 506"/><path d="M360 395H423L472 343"/>
-<path d="M552 380H656L701 327"/><path d="M565 572H651L709 613"/>
+<path d="M325 320H245L194 278"/><path d="M351 437H621L653 407"/><path d="M379 487H621L653 506"/><path d="M360 395H613L654 255"/>
+<path d="M552 380H623L654 330"/><path d="M565 572H629L654 613"/>
 </g>
 <g fill="#bc8f5c" stroke="#fff" stroke-width="2"><circle cx="304" cy="105" r="5"/><circle cx="315" cy="370" r="5"/><circle cx="326" cy="696" r="5"/><circle cx="325" cy="320" r="5"/><circle cx="351" cy="437" r="5"/><circle cx="379" cy="487" r="5"/><circle cx="360" cy="395" r="5"/><circle cx="552" cy="380" r="5"/><circle cx="565" cy="572" r="5"/></g>
 <g font-family="Arial,Helvetica,sans-serif" fill="#17323f" font-weight="700">
 <text x="39" y="136" font-size="21">SPATULE</text><text x="39" y="363" font-size="21">PATIN</text><text x="39" y="706" font-size="21">TALON</text>
 <text x="39" y="273" font-size="17">BUTÉE</text><text x="39" y="292" font-size="12" font-weight="400" fill="#667a81">fixation avant</text>
-<text x="464" y="409" font-size="17">TALONNIÈRE</text><text x="464" y="428" font-size="12" font-weight="400" fill="#667a81">fixation arrière</text>
-<text x="477" y="500" font-size="17">STOP-SKI</text><text x="477" y="519" font-size="12" font-weight="400" fill="#667a81">frein de ski</text>
-<text x="477" y="338" font-size="17">PLAQUE</text><text x="477" y="357" font-size="12" font-weight="400" fill="#667a81">(optionnelle)</text>
-<text x="701" y="324" font-size="19">SEMELLE</text><text x="701" y="343" font-size="12" font-weight="400" fill="#667a81">surface de glisse</text>
-<text x="710" y="612" font-size="19">CARRES</text><text x="710" y="631" font-size="12" font-weight="400" fill="#667a81">bords métalliques</text>
+<text x="663" y="409" font-size="17">TALONNIÈRE</text><text x="663" y="428" font-size="12" font-weight="400" fill="#667a81">fixation arrière</text>
+<text x="663" y="501" font-size="17">STOP-SKI</text><text x="663" y="520" font-size="12" font-weight="400" fill="#667a81">frein de ski</text>
+<text x="663" y="257" font-size="17">PLAQUE</text><text x="663" y="276" font-size="12" font-weight="400" fill="#667a81">(optionnelle)</text>
+<text x="663" y="326" font-size="19">SEMELLE</text><text x="663" y="345" font-size="12" font-weight="400" fill="#667a81">surface de glisse</text>
+<text x="663" y="611" font-size="19">CARRES</text><text x="663" y="630" font-size="12" font-weight="400" fill="#667a81">bords métalliques</text>
 </g>
 <path d="M30 759H870" stroke="#d5dcda"/>
 <text x="30" y="787" font-family="Arial" font-size="15" fill="#64777c">Schéma original • Les composants et les formes varient selon le modèle.</text>
