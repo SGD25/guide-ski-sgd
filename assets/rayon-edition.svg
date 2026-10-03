@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 740" role="img" aria-labelledby="rt rd">
+<title id="rt">Ligne de cotes et rayon de courbe théorique</title><desc id="rd">À gauche un ski en vue de dessus avec ses trois largeurs et son profil latéral creusé. À droite un arc de cercle prolonge la ligne de cotes. Une double flèche montre un rayon du cercle jusqu'à la courbe du ski.</desc>
+<defs><linearGradient id="rp" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b606a"/><stop offset="1" stop-color="#112d3c"/></linearGradient><marker id="arr" markerWidth="7" markerHeight="7" refX="3.4" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#1c4454" stroke-width="1.5"/></marker></defs>
+<rect width="900" height="740" fill="#f9f8f5"/>
+<path d="M26 26H874" stroke="#d6dfdc"/><text x="32" y="57" fill="#ad8455" font-family="Arial" font-size="17" letter-spacing="3" font-weight="700">UNE LIGNE DE COTES, UN RAYON</text>
+<!-- ski -->
+<path d="M187 120Q143 121 140 160C132 206 151 250 157 323C162 380 164 425 157 475C148 536 143 584 147 635Q149 678 185 680Q224 679 226 639C229 582 222 527 215 475C207 419 210 382 214 325C220 250 239 210 234 159Q231 121 187 120Z" fill="url(#rp)" stroke="#987750" stroke-width="4"/>
+<path d="M157 322Q166 381 157 475" stroke="#f6cd8a" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M214 325Q208 381 215 475" stroke="#f6cd8a" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M187 139V661" stroke="#c7d4d5" opacity=".3" stroke-dasharray="7 8"/>
+<!-- edge tangent center -->
+<path d="M214 325Q207 402 215 475" stroke="#e5a14e" stroke-width="8" stroke-linecap="round" fill="none"/>
+<circle cx="207" cy="400" r="7" fill="#e5a14e" stroke="#fff" stroke-width="2"/>
+<!-- imaginary circle tangent at closest section (schematic) -->
+<circle cx="584" cy="400" r="377" fill="none" stroke="#7baba3" stroke-dasharray="12 10" stroke-width="3"/>
+<circle cx="584" cy="400" r="7" fill="#1e5364"/>
+<path d="M207 400H584" fill="none" stroke="#1e5364" stroke-width="3" marker-start="url(#arr)" marker-end="url(#arr)"/>
+<!-- top dimensions -->
+<path d="M107 123H69 M108 680H69 M84 126V677" stroke="#9cb0b0" stroke-width="1.8" fill="none"/>
+<path d="M84 130V670" fill="none" stroke="#245166" stroke-width="2.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#17323f">
+<text x="27" y="395" font-size="18" font-weight="700" transform="rotate(-90 27 395)">LONGUEUR DU SKI</text>
+<text x="36" y="540" font-size="14" transform="rotate(-90 36 540)" fill="#647780">exemple : 170 cm</text>
+<text x="386" y="381" font-weight="700" font-size="24">RAYON</text>
+<text x="384" y="429" font-size="15" fill="#436372">rayon théorique</text>
+<text x="324" y="452" font-size="13" fill="#436372">ex. 15 m (hors échelle)</text>
+</g>
+<!-- sidecut explanation pointer -->
+<path d="M227 284L283 248L316 248" stroke="#a87e48" stroke-width="2" fill="none"/>
+<circle cx="227" cy="284" r="5" fill="#a87e48"/><text x="318" y="244" font-family="Arial" font-weight="700" fill="#284755" font-size="19">LIGNE DE COTES</text><text x="318" y="268" fill="#607a83" font-family="Arial" font-size="14">la courbure latérale du ski</text>
+<!-- three width markers -->
+<path d="M146 171H229 M160 393H213 M147 629H225" stroke="#e6bb7b" stroke-width="3" opacity=".9"/>
+<g font-family="Arial" font-size="13" fill="#b27e43" font-weight="700"><text x="120" y="99">SPATULE</text><text x="145" y="718">TALON</text><text x="110" y="409" transform="rotate(-90 110 409)">PATIN</text></g>
+<rect x="370" y="527" width="478" height="149" rx="7" fill="#edf2ef" stroke="#d7e2df"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#183b4a">
+<text x="395" y="560" font-weight="700" font-size="20">Comment le lire ?</text>
+<text x="395" y="588" font-size="16">Rayon plus court : virages théoriques plus serrés.</text>
+<text x="395" y="616" font-size="16">Rayon plus long : courbes théoriques plus larges.</text>
+<text x="395" y="650" font-size="13" fill="#6b7d81">Le rayon annoncé ne fixe pas à lui seul la trajectoire réelle.</text>
+</g>
+</svg>
