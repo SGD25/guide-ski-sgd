@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 852" role="img" aria-labelledby="title des"><title id="title">Cinq profils de ski : cambre et rocker</title><desc id="des">Cinq schémas distincts en vue de profil, avec une ligne de neige, les zones de contact rouges et les zones de rocker bleues : traditionnel, rocker avant, double rocker, full rocker, cambre plat et rocker.</desc>
+<rect width="900" height="852" fill="#faf9f6"/><text x="32" y="30" fill="#a37a4c" font-family="Arial" font-size="17" font-weight="700" letter-spacing="3">COMPARER LES PROFILS</text><path d="M30 45H870" stroke="#d8e1dc"/>
+<g>
+<text x="33" y="72" fill="#183746" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">CAMBRE TRADITIONNEL</text>
+<path d="M143 146H824" stroke="#adbcc0" stroke-width="1.8" stroke-dasharray="7 7"/>
+<path d="M160 118Q183 146 232 145Q348 127 480 127Q610 127 726 145Q780 146 810 118" fill="none" stroke="#162f3c" stroke-width="12" stroke-linecap="round"/>
+<path d="M160 118Q183 146 232 145Q348 127 480 127Q610 127 726 145Q780 146 810 118" fill="none" stroke="#dfcaab" stroke-width="7" stroke-linecap="round"/>
+
+<path d="M229 152H264" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/><path d="M690 152H727" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/>
+<rect x="161" y="165" width="648" height="20" rx="10" fill="#e6d7c0" stroke="#71858b" stroke-width="1.5"/>
+<rect x="161" y="166" width="45.36000000000001" height="18" fill="#b7c6c6"/><rect x="206.36" y="166" width="557.28" height="18" fill="#e7d5b5"/><rect x="763.64" y="166" width="45.36000000000001" height="18" fill="#b7c6c6"/>
+<text x="161" y="207" fill="#61777e" font-family="Arial" font-size="15">Contact vers l'avant et l'arrière du ski</text>
+</g><path d="M31 230H869" stroke="#e4e8e5" stroke-width="1"/><g>
+<text x="33" y="215" fill="#183746" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">ROCKER AVANT</text>
+<path d="M143 289H824" stroke="#adbcc0" stroke-width="1.8" stroke-dasharray="7 7"/>
+<path d="M160 232Q205 285 347 288Q420 274 530 274Q655 276 745 288Q788 285 810 265" fill="none" stroke="#162f3c" stroke-width="12" stroke-linecap="round"/>
+<path d="M160 232Q205 285 347 288Q420 274 530 274Q655 276 745 288Q788 285 810 265" fill="none" stroke="#dfcaab" stroke-width="7" stroke-linecap="round"/>
+<path d="M160 232Q205 285 347 288" stroke="#67adce" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M353 295H386" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/><path d="M722 295H748" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/>
+<rect x="161" y="308" width="648" height="20" rx="10" fill="#e6d7c0" stroke="#71858b" stroke-width="1.5"/>
+<rect x="161" y="309" width="194.4" height="18" fill="#6faeca"/><rect x="355.4" y="309" width="414.72" height="18" fill="#e7d5b5"/><rect x="770.12" y="309" width="38.879999999999995" height="18" fill="#b7c6c6"/>
+<text x="161" y="350" fill="#61777e" font-family="Arial" font-size="15">Spatule libérée plus tôt, cambre sous le pied</text>
+</g><path d="M31 373H869" stroke="#e4e8e5" stroke-width="1"/><g>
+<text x="33" y="358" fill="#183746" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">DOUBLE ROCKER</text>
+<path d="M143 432H824" stroke="#adbcc0" stroke-width="1.8" stroke-dasharray="7 7"/>
+<path d="M160 380Q211 431 336 431Q400 415 485 415Q585 415 643 431Q770 431 810 380" fill="none" stroke="#162f3c" stroke-width="12" stroke-linecap="round"/>
+<path d="M160 380Q211 431 336 431Q400 415 485 415Q585 415 643 431Q770 431 810 380" fill="none" stroke="#dfcaab" stroke-width="7" stroke-linecap="round"/>
+<path d="M160 380Q211 431 336 431" stroke="#67adce" stroke-width="7" fill="none"/><path d="M643 431Q770 431 810 380" stroke="#67adce" stroke-width="7" fill="none"/>
+<path d="M334 438H362" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/><path d="M623 438H645" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/>
+<rect x="161" y="451" width="648" height="20" rx="10" fill="#e6d7c0" stroke="#71858b" stroke-width="1.5"/>
+<rect x="161" y="452" width="181.44000000000003" height="18" fill="#6faeca"/><rect x="342.44000000000005" y="452" width="278.64" height="18" fill="#e7d5b5"/><rect x="621.08" y="452" width="187.92" height="18" fill="#6faeca"/>
+<text x="161" y="493" fill="#61777e" font-family="Arial" font-size="15">Spatule et talon relevés, cambre modéré</text>
+</g><path d="M31 516H869" stroke="#e4e8e5" stroke-width="1"/><g>
+<text x="33" y="501" fill="#183746" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">FULL ROCKER</text>
+<path d="M143 575H824" stroke="#adbcc0" stroke-width="1.8" stroke-dasharray="7 7"/>
+<path d="M160 519Q265 566 486 574Q680 566 810 519" fill="none" stroke="#162f3c" stroke-width="12" stroke-linecap="round"/>
+<path d="M160 519Q265 566 486 574Q680 566 810 519" fill="none" stroke="#dfcaab" stroke-width="7" stroke-linecap="round"/>
+<path d="M160 519Q265 566 486 574Q680 566 810 519" stroke="#67adce" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M459 581H512" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/>
+<rect x="161" y="594" width="648" height="20" rx="10" fill="#e6d7c0" stroke="#71858b" stroke-width="1.5"/>
+<rect x="161" y="595" width="648" height="18" fill="#6faeca"/>
+<text x="161" y="636" fill="#61777e" font-family="Arial" font-size="15">Profil continuellement relevé de chaque côté</text>
+</g><path d="M31 659H869" stroke="#e4e8e5" stroke-width="1"/><g>
+<text x="33" y="644" fill="#183746" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">CAMBRE PLAT + ROCKER</text>
+<path d="M143 718H824" stroke="#adbcc0" stroke-width="1.8" stroke-dasharray="7 7"/>
+<path d="M160 667Q220 717 346 717H633Q750 717 810 667" fill="none" stroke="#162f3c" stroke-width="12" stroke-linecap="round"/>
+<path d="M160 667Q220 717 346 717H633Q750 717 810 667" fill="none" stroke="#dfcaab" stroke-width="7" stroke-linecap="round"/>
+<path d="M160 667Q220 717 346 717" stroke="#67adce" stroke-width="7" fill="none"/><path d="M633 717Q750 717 810 667" stroke="#67adce" stroke-width="7" fill="none"/>
+<path d="M352 724H625" stroke="#d75e47" stroke-width="6" stroke-linecap="round"/>
+<rect x="161" y="737" width="648" height="20" rx="10" fill="#e6d7c0" stroke="#71858b" stroke-width="1.5"/>
+<rect x="161" y="738" width="174.96" height="18" fill="#6faeca"/><rect x="335.96000000000004" y="738" width="298.08000000000004" height="18" fill="#d2d9d8"/><rect x="634.0400000000001" y="738" width="174.96" height="18" fill="#6faeca"/>
+<text x="161" y="779" fill="#61777e" font-family="Arial" font-size="15">Zone centrale sans cambre et extrémités relevées</text>
+</g>
+<path d="M33 827H867" stroke="#d9e0dd"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#506975" font-size="13"><path d="M34 844h33" stroke="#adbcc0" stroke-width="2" stroke-dasharray="5 5"/><text x="74" y="848">Neige</text><path d="M177 844h29" stroke="#d75e47" stroke-width="6"/><text x="213" y="848">Contact</text><path d="M330 844h29" stroke="#67adce" stroke-width="7"/><text x="366" y="848">Rocker</text><path d="M466 844h29" stroke="#dfcaab" stroke-width="7"/><text x="502" y="848">Cambre</text><path d="M625 844h29" stroke="#d2d9d8" stroke-width="7"/><text x="662" y="848">Zone plate</text></g>
+</svg>
