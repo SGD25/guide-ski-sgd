@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 960 340" role="img" aria-labelledby="titre description">
+<title id="titre">Ski alpin — vue de dessus</title>
+<desc id="description">Ski de piste contemporain sombre, long et étroit, avec spatule à gauche, talon à droite, lignes de cotes et fixation mécanique détaillée au centre.</desc>
+<defs>
+<linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#182b39"/><stop offset=".22" stop-color="#4b5660"/><stop offset=".45" stop-color="#162e3b"/><stop offset=".7" stop-color="#12222b"/><stop offset="1" stop-color="#49565c"/></linearGradient>
+<linearGradient id="metal" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#9da8aa"/><stop offset=".35" stop-color="#e8dfc9"/><stop offset=".5" stop-color="#5a6972"/><stop offset=".78" stop-color="#1a303e"/><stop offset="1" stop-color="#d0b18a"/></linearGradient>
+<linearGradient id="gold" x1="0" x2="1"><stop stop-color="#9b7143"/><stop offset=".55" stop-color="#e9cda4"/><stop offset="1" stop-color="#8e633b"/></linearGradient>
+<linearGradient id="carb" x1="0" x2="1"><stop stop-color="#0c161e"/><stop offset=".55" stop-color="#34444b"/><stop offset="1" stop-color="#0b151c"/></linearGradient>
+<filter id="shadow" x="-20%" y="-100%" width="150%" height="300%"><feGaussianBlur stdDeviation="10"/></filter>
+<filter id="bindShadow" x="-30%" y="-50%" width="160%" height="200%"><feDropShadow dx="1" dy="5" stdDeviation="4" flood-color="#020910" flood-opacity=".57"/></filter>
+<pattern id="carbon" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><rect width="9" height="9" fill="#1a2b35"/><path d="M0 0h4.5v4.5H0zM4.5 4.5H9V9H4.5z" fill="#40515c" opacity=".32"/></pattern>
+<path id="ski" d="M58 134 Q43 137 40 154 Q33 173 40 191 Q45 211 65 213 Q106 219 162 206 C278 192 357 189 465 189 C575 188 645 193 746 204 Q866 222 907 212 Q927 209 931 193 Q937 173 929 155 Q921 141 906 139 Q867 129 746 146 C645 158 575 165 465 164 C357 165 278 161 162 145 Q105 131 58 134 Z"/>
+<clipPath id="clip"><use href="#ski"/></clipPath>
+</defs>
+<!-- studio floor -->
+<ellipse cx="487" cy="204" rx="447" ry="30" fill="#1e3340" opacity=".12" filter="url(#shadow)"/>
+<use href="#ski" fill="url(#top)" stroke="#6f7777" stroke-width="6" />
+<g clip-path="url(#clip)">
+<rect x="36" y="115" width="900" height="110" fill="url(#top)"/>
+<!-- Mountain motif screen print -->
+<path d="M124 208 197 131 242 174 285 139 333 193 372 150 430 200 430 220H110Z" fill="#a4aeb1" opacity=".54"/>
+<path d="M166 181 197 131 224 160 207 155 194 151Z M260 161 284 140 314 174 286 166Z" fill="#e3e6e4" opacity=".74"/>
+<path d="M651 204 730 146 773 187 832 138 885 187 911 151 947 205Z" fill="#98a9aa" opacity=".4"/>
+<path d="M728 148 750 162 733 158 727 169 711 161Z M831 141 861 165 839 156 828 168 817 157Z" fill="#f6f3e9" opacity=".72"/>
+<!-- inset carbon zones -->
+<path d="M240 151 350 158 350 192 240 199Z" fill="url(#carbon)" opacity=".88"/>
+<path d="M610 166 721 153 765 205 610 194Z" fill="url(#carbon)" opacity=".86"/>
+<!-- polished racing stripes -->
+<path d="M49 141 Q180 149 263 168 T466 176 Q622 177 749 158 T918 146" fill="none" stroke="url(#gold)" stroke-width="2.8" opacity=".97"/>
+<path d="M49 205 Q180 204 263 191 T466 201 Q622 199 749 210 T918 207" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity=".91"/>
+<path d="M82 151 130 189 148 189 111 150" fill="none" stroke="#e4cba9" opacity=".67" stroke-width="1.7"/>
+<path d="M778 167 844 207 851 206 799 159" fill="none" stroke="#e8ceaa" stroke-width="2.2" opacity=".85"/>
+<path d="M365 154 402 198 M619 159 575 197" stroke="#b8cad2" opacity=".42" stroke-width="2"/>
+<!-- tactile top coat -->
+<path d="M77 157 157 159 M767 162 891 158" stroke="#ffffff" stroke-width="1.1" opacity=".38"/>
+<path d="M90 198 168 195 M781 194 883 196" stroke="#9babb2" stroke-width="1.1" opacity=".3"/>
+</g>
+<use href="#ski" fill="none" stroke="#d2bd9d" stroke-width="1.9" opacity=".88"/>
+<!-- binding plate -->
+<g filter="url(#bindShadow)">
+<rect x="374" y="166" width="236" height="38" rx="7" fill="#0d161c" stroke="#8e9997" stroke-width="2"/>
+<rect x="400" y="173" width="182" height="23" rx="3" fill="url(#carb)" stroke="#a3b3ba" stroke-width="1.5"/>
+<rect x="440" y="179" width="101" height="10" rx="2" fill="#202f38" stroke="#6f7f84" stroke-width="1"/>
+<!-- toe binding front / left -->
+<path d="M410 150 441 146 462 160 465 192 441 209 411 205 397 194 397 163Z" fill="url(#metal)" stroke="#101b22" stroke-width="2.8"/>
+<path d="M411 155 438 152 452 165 452 190 437 201 411 198 403 187 403 168Z" fill="#151f28"/>
+<path d="M409 160 435 159 441 174 436 193 411 193" fill="#263642" stroke="#a9b6b8" stroke-width="1.2"/>
+<path d="M403 163 385 160 380 167 389 175 403 176 M403 188 387 190 380 197 391 202 406 199" fill="#65777e" stroke="#d4cab5" stroke-width="1.4"/>
+<rect x="417" y="163" width="12" height="27" rx="3" fill="#091117" stroke="#677e87" stroke-width="1.2"/>
+<circle cx="423" cy="176" r="5.3" fill="#bba17e" stroke="#f1e2c4" stroke-width="1.4"/>
+<path d="M397 163 387 159 M397 196 387 200" fill="none" stroke="#0c1519" stroke-width="3" stroke-linecap="round"/>
+<!-- heel binding rear / right -->
+<path d="M546 158 559 145 594 148 609 162 613 198 596 211 559 208 546 195Z" fill="url(#metal)" stroke="#101b22" stroke-width="2.8"/>
+<path d="M558 157 592 156 603 168 603 192 592 201 558 198Z" fill="#141e28" stroke="#88999d" stroke-width="1.3"/>
+<path d="M562 161 588 161 590 184 564 186Z" fill="url(#carb)" stroke="#50626b" stroke-width="1.2"/>
+<rect x="572" y="160" width="13" height="32" rx="3" fill="#080e14" stroke="#667981"/>
+<path d="M601 162 622 159 629 166 614 175 M614 189 630 198 620 204 603 196" fill="#647780" stroke="#d9cebc" stroke-width="1.5"/>
+<path d="M566 145 576 136 585 145" fill="none" stroke="#9da9ac" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="578" cy="175" r="5.7" fill="#c3a27d" stroke="#f8e9c9" stroke-width="1"/>
+<path d="M566 149H589 M559 205H593" stroke="#efe8db" opacity=".55"/>
+<!-- mechanical marks -->
+<circle cx="396" cy="179" r="3" fill="#d6b586"/><circle cx="612" cy="179" r="3" fill="#d6b586"/>
+</g>
+</svg>
