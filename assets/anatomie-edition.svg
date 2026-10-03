@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 810" role="img" aria-labelledby="t d">
+<title id="t">Anatomie du ski alpin : spatule, patin, talon, fixation et semelle</title><desc id="d">Deux skis en vue de dessus : à gauche les éléments supérieurs avec la fixation avant, la talonnière, la plaque et le stop-ski ; à droite la semelle et les carres. Neuf légendes sont reliées précisément aux pièces.</desc>
+<defs>
+ <linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#304e5e"/><stop offset=".48" stop-color="#142c39"/><stop offset="1" stop-color="#091d28"/></linearGradient>
+ <linearGradient id="base" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2e3739"/><stop offset=".5" stop-color="#071319"/><stop offset="1" stop-color="#32464d"/></linearGradient>
+ <linearGradient id="met" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d2dadd"/><stop offset=".3" stop-color="#5c6a72"/><stop offset=".6" stop-color="#111f28"/><stop offset="1" stop-color="#b7c0bf"/></linearGradient>
+ <pattern id="texture" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 14L14 0" stroke="#c8c7ad" opacity=".11" stroke-width="1"/></pattern>
+ <filter id="sh"><feDropShadow dx="2" dy="5" stdDeviation="7" flood-color="#192d35" flood-opacity=".18"/></filter>
+ <path id="shape" d="M335 67C311 67 296 82 295 107C294 146 302 172 315 248C326 315 323 357 316 423C306 518 308 598 311 683C312 711 325 722 336 723C347 722 361 711 362 683C365 598 367 518 357 423C350 357 347 315 358 248C371 172 379 146 378 107C377 82 362 67 335 67Z"/>
+ <clipPath id="topclip"><use href="#shape"/></clipPath>
+</defs>
+<rect width="900" height="810" fill="#f8f8f5"/>
+<path d="M30 23H870" stroke="#d5dcda"/><text x="30" y="45" font-family="Arial" font-size="13" font-weight="700" fill="#ac8357" letter-spacing="3">01 — VUE SUPÉRIEURE</text><text x="492" y="45" font-family="Arial" font-size="13" font-weight="700" fill="#ac8357" letter-spacing="3">02 — SOUS LE SKI</text>
+<!-- top surface -->
+<use href="#shape" fill="url(#face)" stroke="#bca078" stroke-width="3" filter="url(#sh)"/>
+<g clip-path="url(#topclip)">
+<rect x="292" y="68" width="90" height="650" fill="url(#texture)"/>
+<path d="M296 174L344 98L369 192L320 287Z M303 545L346 492L365 587L318 650Z" fill="#718a92" opacity=".66"/>
+<path d="M300 212L345 139L371 203L333 272Z" fill="#9eacac" opacity=".52"/>
+<path d="M312 384L360 322" stroke="#d5b787" stroke-width="2"/>
+<path d="M317 628L351 574" stroke="#d5b787" stroke-width="2"/>
+<path d="M305 117Q335 130 372 117" fill="none" stroke="#d6b588" stroke-width="2" opacity=".9"/>
+<text x="334" y="205" transform="rotate(90 334 205)" font-size="10" font-family="Arial" letter-spacing="4" text-anchor="middle" fill="#ede0c5" opacity=".85">ALPINE / SKI LAB</text>
+</g>
+<!-- binding rails and plates -->
+<g filter="url(#sh)">
+<rect x="305" y="300" width="61" height="188" rx="11" fill="#a27b4f" stroke="#e0c196" stroke-width="2"/>
+<rect x="312" y="314" width="47" height="158" rx="8" fill="#0f1d27" stroke="#8b9799" stroke-width="2"/>
+<rect x="319" y="330" width="33" height="119" rx="3" fill="#2f424b" stroke="#80969d"/>
+<!-- toe piece toward tip -->
+<path d="M314 301L324 288H346L358 301V340L348 349H323L314 340Z" fill="url(#met)" stroke="#121e24" stroke-width="2"/>
+<path d="M323 303H348V335H323Z" fill="#142732" stroke="#aeb8b8" stroke-width="1.5"/>
+<path d="M312 314L301 321V340L314 335 M359 314L371 321V340L358 335" fill="#a4b5b6" stroke="#253744" stroke-width="2"/>
+<circle cx="335" cy="322" r="5" fill="#d7af77" stroke="#ead7b3" stroke-width="1.2"/>
+<!-- heel piece -->
+<path d="M318 428L326 413H346L355 428V469L345 479H325L315 469Z" fill="url(#met)" stroke="#121e24" stroke-width="2"/>
+<rect x="325" y="426" width="21" height="31" rx="4" fill="#132831" stroke="#8a999d"/>
+<path d="M321 462L315 480H355L348 462" fill="#536770" stroke="#aab5b3"/>
+<circle cx="335" cy="440" r="5" fill="#d7af77"/>
+<!-- brakes fold out to either side of heel -->
+<path d="M318 448L295 459V495M355 448L379 459V495" fill="none" stroke="#6e777a" stroke-width="7" stroke-linecap="round"/>
+<path d="M295 481V499 M379 481V499" fill="none" stroke="#111b1f" stroke-width="9" stroke-linecap="round"/>
+</g>
+<!-- reverse ski offset to right -->
+<g transform="translate(206 0)">
+<use href="#shape" fill="url(#base)" stroke="#aeb8b6" stroke-width="5" filter="url(#sh)"/>
+<use href="#shape" fill="none" stroke="#d8b484" stroke-width="1.5" stroke-dasharray="16 6" opacity=".76"/>
+<path d="M335 92V692" stroke="#71828a" stroke-width="2" opacity=".18"/>
+</g>
+<!-- precise leader lines: top -->
+<g fill="none" stroke="#b2834c" stroke-width="2" stroke-linejoin="round">
+<path d="M304 105H245L191 138"/><path d="M315 370H227L183 369"/><path d="M326 696H225L179 707"/>
+<path d="M325 320H245L194 278"/><path d="M351 437H411L458 411"/><path d="M379 487H421L470 506"/><path d="M360 395H423L472 343"/>
+<path d="M552 380H656L701 327"/><path d="M565 572H651L709 613"/>
+</g>
+<g fill="#bc8f5c" stroke="#fff" stroke-width="2"><circle cx="304" cy="105" r="5"/><circle cx="315" cy="370" r="5"/><circle cx="326" cy="696" r="5"/><circle cx="325" cy="320" r="5"/><circle cx="351" cy="437" r="5"/><circle cx="379" cy="487" r="5"/><circle cx="360" cy="395" r="5"/><circle cx="552" cy="380" r="5"/><circle cx="565" cy="572" r="5"/></g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#17323f" font-weight="700">
+<text x="39" y="136" font-size="21">SPATULE</text><text x="39" y="363" font-size="21">PATIN</text><text x="39" y="706" font-size="21">TALON</text>
+<text x="39" y="273" font-size="17">BUTÉE</text><text x="39" y="292" font-size="12" font-weight="400" fill="#667a81">fixation avant</text>
+<text x="464" y="409" font-size="17">TALONNIÈRE</text><text x="464" y="428" font-size="12" font-weight="400" fill="#667a81">fixation arrière</text>
+<text x="477" y="500" font-size="17">STOP-SKI</text><text x="477" y="519" font-size="12" font-weight="400" fill="#667a81">frein de ski</text>
+<text x="477" y="338" font-size="17">PLAQUE</text><text x="477" y="357" font-size="12" font-weight="400" fill="#667a81">(optionnelle)</text>
+<text x="701" y="324" font-size="19">SEMELLE</text><text x="701" y="343" font-size="12" font-weight="400" fill="#667a81">surface de glisse</text>
+<text x="710" y="612" font-size="19">CARRES</text><text x="710" y="631" font-size="12" font-weight="400" fill="#667a81">bords métalliques</text>
+</g>
+<path d="M30 759H870" stroke="#d5dcda"/>
+<text x="30" y="787" font-family="Arial" font-size="15" fill="#64777c">Schéma original • Les composants et les formes varient selon le modèle.</text>
+</svg>
