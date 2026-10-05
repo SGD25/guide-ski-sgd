@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t d">
+<title id="t">Trois exemples de rayons</title>
+<desc id="d">Trois arcs représentent les virages courts, polyvalents et les grandes courbes.</desc>
+<rect width="700" height="260" rx="14" fill="#fff"/>
+<g font-family="Arial,Helvetica,sans-serif">
+  <text x="24" y="27" font-size="16" font-weight="800" fill="#aa6f27" letter-spacing="1">TROIS EXEMPLES DE RAYONS</text>
+  <text x="24" y="49" font-size="12" fill="#647984">Du rayon court aux grandes courbes.</text>
+  <path d="M35 76 C29 79 27 88 28 103 C31 142 32 169 32 190 C32 210 30 226 27 239 C29 248 34 253 41 254 C48 252 52 247 54 239 C51 226 49 210 49 190 C49 169 50 142 53 103 C54 88 52 79 46 76 Z" fill="#fafafa" stroke="#34434a" stroke-width="2.5"/>
+  <text x="19" y="69" font-size="10" font-weight="700" fill="#34434a">SPATULE</text>
+  <text x="23" y="257" font-size="10" font-weight="700" fill="#34434a">TALON</text>
+
+  <g transform="translate(110,0)">
+    <text x="65" y="82" text-anchor="middle" font-size="20" font-weight="900" fill="#d41f1f">12–14 m</text>
+    <text x="65" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">virages courts</text>
+    <path d="M70 118 C160 142 160 220 70 244" fill="none" stroke="#e11c24" stroke-width="4"/>
+    <path d="M84 128 C145 149 145 213 84 234" fill="none" stroke="#ef8f93" stroke-width="2" stroke-dasharray="7 7"/>
+  </g>
+
+  <line x1="300" y1="71" x2="300" y2="247" stroke="#d7e0e3"/>
+
+  <g transform="translate(300,0)">
+    <text x="78" y="82" text-anchor="middle" font-size="20" font-weight="900" fill="#0e66c2">14–17 m</text>
+    <text x="78" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">polyvalent / all-mountain</text>
+    <path d="M68 118 C185 140 185 220 68 244" fill="none" stroke="#0e66c2" stroke-width="4"/>
+    <path d="M84 128 C167 148 167 214 84 234" fill="none" stroke="#79a9dd" stroke-width="2" stroke-dasharray="7 7"/>
+  </g>
+
+  <line x1="505" y1="71" x2="505" y2="247" stroke="#d7e0e3"/>
+
+  <g transform="translate(505,0)">
+    <text x="78" y="82" text-anchor="middle" font-size="20" font-weight="900" fill="#2d7e2a">17–20 m</text>
+    <text x="78" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">grandes courbes</text>
+    <path d="M62 118 C206 137 206 225 62 244" fill="none" stroke="#2d7e2a" stroke-width="4"/>
+    <path d="M82 128 C181 145 181 217 82 234" fill="none" stroke="#8eba88" stroke-width="2" stroke-dasharray="7 7"/>
+  </g>
+</g>
+</svg>
