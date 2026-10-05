@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="65 25 760 455" role="img" aria-labelledby="t d">
 <title id="t">Comparaison des rayons de ski</title>
 <desc id="d">Trois arcs illustrent les rayons 17 à 20 mètres, 14 à 17 mètres et 12 à 14 mètres, associés respectivement aux grandes courbes, à l'all-mountain et aux virages courts.</desc>
-<rect width="900" height="520" fill="#ffffff"/>
+<rect width="760" height="455" fill="#ffffff"/>
 <g font-family="Arial,Helvetica,sans-serif" fill="#14242b">
   <text x="86" y="70" font-size="28" font-weight="800">TOP</text>
   <text x="86" y="470" font-size="28" font-weight="800">TAIL</text>
