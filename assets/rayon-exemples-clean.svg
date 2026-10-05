@@ -1,37 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t d">
-<title id="t">Trois exemples de rayons</title>
-<desc id="d">Trois arcs représentent les virages courts, polyvalents et les grandes courbes.</desc>
+<title id="t">Trois exemples de rayons de courbure</title>
+<desc id="d">Trois courbures très différentes montrent visuellement un rayon court, moyen et long. La partie pleine représente la courbure du ski et les pointillés prolongent le cercle imaginaire.</desc>
 <rect width="700" height="260" rx="14" fill="#fff"/>
 <g font-family="Arial,Helvetica,sans-serif">
   <text x="24" y="27" font-size="16" font-weight="800" fill="#aa6f27" letter-spacing="1">TROIS EXEMPLES DE RAYONS</text>
-  <text x="24" y="49" font-size="12" fill="#647984">Du rayon court aux grandes courbes.</text>
-  <path d="M35 76 C29 79 27 88 28 103 C31 142 32 169 32 190 C32 210 30 226 27 239 C29 248 34 253 41 254 C48 252 52 247 54 239 C51 226 49 210 49 190 C49 169 50 142 53 103 C54 88 52 79 46 76 Z" fill="#fafafa" stroke="#34434a" stroke-width="2.5"/>
-  <text x="19" y="69" font-size="10" font-weight="700" fill="#34434a">SPATULE</text>
-  <text x="23" y="257" font-size="10" font-weight="700" fill="#34434a">TALON</text>
+  <text x="24" y="49" font-size="12" fill="#647984">Plus le rayon est court, plus la courbe est serrée.</text>
 
-  <g transform="translate(110,0)">
-    <text x="65" y="82" text-anchor="middle" font-size="20" font-weight="900" fill="#d41f1f">12–14 m</text>
-    <text x="65" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">virages courts</text>
-    <path d="M70 118 C160 142 160 220 70 244" fill="none" stroke="#e11c24" stroke-width="4"/>
-    <path d="M84 128 C145 149 145 213 84 234" fill="none" stroke="#ef8f93" stroke-width="2" stroke-dasharray="7 7"/>
+  <g transform="translate(18,60)">
+    <rect x="0" y="0" width="208" height="184" rx="11" fill="#fffaf9" stroke="#ead9d7"/>
+    <text x="104" y="30" text-anchor="middle" font-size="20" font-weight="900" fill="#d41f1f">12–14 m</text>
+    <text x="104" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">virages courts</text>
+
+    <!-- petit rayon : courbe très prononcée vers la gauche -->
+    <path d="M150 73 C108 87 86 112 82 140 C78 165 91 181 111 190"
+          fill="none" stroke="#e11c24" stroke-width="5" stroke-linecap="round"/>
+    <path d="M111 190 C72 200 47 180 41 148 C34 111 53 74 92 57"
+          fill="none" stroke="#e11c24" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" opacity=".65"/>
+    <path d="M92 57 C111 49 130 52 150 62"
+          fill="none" stroke="#e11c24" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" opacity=".65"/>
+    <circle cx="150" cy="73" r="4" fill="#e11c24"/>
+    <text x="104" y="171" text-anchor="middle" font-size="10" fill="#9a6663">arc imaginaire serré</text>
   </g>
 
-  <line x1="300" y1="71" x2="300" y2="247" stroke="#d7e0e3"/>
+  <g transform="translate(246,60)">
+    <rect x="0" y="0" width="208" height="184" rx="11" fill="#f8fbff" stroke="#d8e4f1"/>
+    <text x="104" y="30" text-anchor="middle" font-size="20" font-weight="900" fill="#0e66c2">14–17 m</text>
+    <text x="104" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">polyvalent / all-mountain</text>
 
-  <g transform="translate(300,0)">
-    <text x="78" y="82" text-anchor="middle" font-size="20" font-weight="900" fill="#0e66c2">14–17 m</text>
-    <text x="78" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">polyvalent / all-mountain</text>
-    <path d="M68 118 C185 140 185 220 68 244" fill="none" stroke="#0e66c2" stroke-width="4"/>
-    <path d="M84 128 C167 148 167 214 84 234" fill="none" stroke="#79a9dd" stroke-width="2" stroke-dasharray="7 7"/>
+    <!-- rayon moyen : courbe moins serrée -->
+    <path d="M158 72 C125 84 108 107 104 137 C100 162 109 180 124 191"
+          fill="none" stroke="#0e66c2" stroke-width="5" stroke-linecap="round"/>
+    <path d="M124 191 C88 205 58 192 48 162 C37 128 51 89 84 64"
+          fill="none" stroke="#0e66c2" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" opacity=".62"/>
+    <path d="M84 64 C108 47 134 50 158 62"
+          fill="none" stroke="#0e66c2" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" opacity=".62"/>
+    <circle cx="158" cy="72" r="4" fill="#0e66c2"/>
+    <text x="104" y="171" text-anchor="middle" font-size="10" fill="#5d7fa3">arc intermédiaire</text>
   </g>
 
-  <line x1="505" y1="71" x2="505" y2="247" stroke="#d7e0e3"/>
+  <g transform="translate(474,60)">
+    <rect x="0" y="0" width="208" height="184" rx="11" fill="#f9fcf7" stroke="#dbe8d7"/>
+    <text x="104" y="30" text-anchor="middle" font-size="20" font-weight="900" fill="#2d7e2a">17–20 m</text>
+    <text x="104" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">grandes courbes</text>
 
-  <g transform="translate(505,0)">
-    <text x="78" y="82" text-anchor="middle" font-size="20" font-weight="900" fill="#2d7e2a">17–20 m</text>
-    <text x="78" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#203a47">grandes courbes</text>
-    <path d="M62 118 C206 137 206 225 62 244" fill="none" stroke="#2d7e2a" stroke-width="4"/>
-    <path d="M82 128 C181 145 181 217 82 234" fill="none" stroke="#8eba88" stroke-width="2" stroke-dasharray="7 7"/>
+    <!-- grand rayon : courbe très ouverte -->
+    <path d="M168 72 C146 81 136 103 133 136 C131 162 135 181 144 194"
+          fill="none" stroke="#2d7e2a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M144 194 C111 212 79 204 61 181 C39 152 40 109 63 79"
+          fill="none" stroke="#2d7e2a" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" opacity=".62"/>
+    <path d="M63 79 C89 48 129 48 168 62"
+          fill="none" stroke="#2d7e2a" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round" opacity=".62"/>
+    <circle cx="168" cy="72" r="4" fill="#2d7e2a"/>
+    <text x="104" y="171" text-anchor="middle" font-size="10" fill="#688b63">arc très ouvert</text>
   </g>
 </g>
 </svg>
