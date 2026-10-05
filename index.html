@@ -160,13 +160,107 @@
   .real-ski-definitions{grid-template-columns:1fr}
   .real-marker .marker-name{font-size:9px}
 }
+
+/* PAGE 03 V06 — un seul ski + zones entières surlignées */
+.single-ski-anatomy-v2{margin-top:10px;display:flex;justify-content:center}
+.single-ski-figure-v2{
+  position:relative;
+  width:min(84%,360px);
+  height:470px;
+  margin:0;
+  overflow:hidden;
+  border:1px solid #dde5e2;
+  border-radius:4px;
+  background:linear-gradient(180deg,#fcfcfa 0%,#f1f4f1 100%);
+}
+.single-ski-image-v2{
+  position:absolute;
+  top:2%;
+  left:50%;
+  transform:translateX(-72%);
+  height:96%;
+  width:auto;
+  object-fit:contain;
+  display:block;
+  mix-blend-mode:multiply;
+}
+.ski-zone-v2{
+  position:absolute;
+  z-index:4;
+  left:27%;
+  width:22%;
+  border:2px solid rgba(181,139,89,.8);
+  background:rgba(181,139,89,.24);
+  border-radius:10px;
+  box-shadow:0 0 0 1px rgba(255,255,255,.45) inset;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding-right:6px;
+}
+.ski-zone-v2 span{
+  font-size:9px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.08em;
+  color:#173847;
+  background:rgba(255,255,255,.92);
+  border-radius:999px;
+  padding:5px 7px;
+  box-shadow:0 2px 6px rgba(18,47,60,.12);
+}
+.zone-tip-v2{
+  top:4.5%;
+  height:18%;
+}
+.zone-waist-v2{
+  top:43%;
+  height:13%;
+  background:rgba(55,142,170,.22);
+  border-color:rgba(55,142,170,.82);
+}
+.zone-tail-v2{
+  bottom:4.5%;
+  height:16%;
+}
+.single-ski-notes-v2{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-top:10px;
+}
+.single-ski-notes-v2 div{
+  padding:9px 10px;
+  background:#eef2ef;
+  border-top:2px solid #b58b59;
+}
+.single-ski-notes-v2 div:nth-child(2){border-top-color:#378eaa}
+.single-ski-notes-v2 b{
+  display:block;
+  color:#1e3d4b;
+  font-size:11px;
+  margin-bottom:3px;
+}
+.single-ski-notes-v2 span{
+  display:block;
+  color:#64767c;
+  font-size:9.5px;
+  line-height:1.35;
+}
+@media(max-width:1050px){
+  .single-ski-figure-v2{height:420px;width:min(88%,335px)}
+}
+@media(max-width:780px){
+  .single-ski-figure-v2{height:60vh;max-height:470px;width:min(90%,345px)}
+  .single-ski-notes-v2{grid-template-columns:1fr}
+}
 </style></head><body><header class="appbar"><a class="brand" href="./"><span class="brand-sign">SGD</span><span class="brand-name">SPORT GOOD DEAL<small>LE GUIDE DU SKI</small></span></a><div class="appbar-actions"><span class="label-version">CATALOGUE / V03.2</span><button id="toc-button" class="bar-button" type="button">☷ Sommaire</button><button id="print-button" class="bar-button" type="button">Imprimer</button></div></header><div class="page-edge-controls" aria-label="Feuilleter le magazine"><button id="previous" type="button" aria-label="Page précédente" title="Page précédente" class="edge-arrow edge-previous" style="position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:100">‹</button><button id="next" type="button" aria-label="Page suivante" title="Page suivante" class="edge-arrow edge-next" style="position:fixed;top:50%;right:12px;transform:translateY(-50%);z-index:100">›</button></div><main class="workstage"><div class="reader-meta"><span>MANUEL PÉDAGOGIQUE · ÉDITION DE TRAVAIL</span><span>FEUILLETER AVEC LES FLÈCHES →</span></div><div class="book-frame"><div id="book" class="book"><section id="left-page" class="sheet sheet-left"><div class="sheet-pad"><div class="img-cover"></div><div class="cover-contents"><div class="cover-top"><span>SPORT GOOD DEAL</span><span>ÉDITION 01 — V03</span></div><div class="cover-mast"><div class="cover-kicker">MANUEL VISUEL INTERACTIF</div><h1 class="cover-big">Le guide <em>du ski.</em></h1><p class="cover-baseline">Comprendre le matériel, découvrir les familles, conseiller avec justesse.</p></div><div class="cover-bottom"><span>TECHNIQUE / CULTURE SKI / CONSEIL</span><span>TOURNER LA PAGE →</span></div></div></div></section><section id="right-page" class="sheet sheet-right"><div class="sheet-pad"><div class="issue-line"><span>OUVERTURE</span><em>01 / LE SOMMAIRE</em></div><h2 class="contents-title">Au fil <i>des pages.</i></h2><p class="contents-desc">Un manuel à feuilleter, mais aussi à explorer. Chaque page reste indépendante et peut être modifiée sans refaire l'ensemble du catalogue.</p><ul class="contents-links"><li><button class="page-jump" data-jump="2"><span>01</span><div>Comprendre le ski<small>ANATOMIE · CAMBRES · CONSTRUCTION</small></div></button></li><li><button class="page-jump" data-jump="6"><span>02</span><div>Les familles<small>PISTE · ALL-MOUNTAIN · NORDIQUE · RANDONNÉE</small></div></button></li><li><button class="page-jump" data-jump="9"><span>03</span><div>Conseiller<small>IDENTIFIER LE BESOIN</small></div></button></li><li><button class="page-jump" data-jump="10"><span>04</span><div>Sécurité<small>FIXATIONS ET ISOSKI</small></div></button></li></ul><div class="contents-art"></div></div></section><div id="flip-sheet" class="flip-sheet"></div></div></div><nav class="controls" aria-label="Position dans le catalogue"><div class="controls-left"><span class="page-count" id="page-count">01–02 / 11</span></div><div class="controls-right"><span class="shortcut-note">Clavier : ← →</span></div></nav><div class="progress-track"><div id="progress"></div></div><footer class="reader-footer"><span>SPORT GOOD DEAL · MANUEL DU SKI</span><span>Prototype V03 · pages et schémas modifiables séparément · illustrations en cours d'amélioration</span></footer></main><div class="overlay" id="toc-overlay" role="dialog" aria-modal="true" aria-label="Sommaire du magazine"><div class="overlay-dialog"><div class="overlay-head"><div><span class="eyebrow">NAVIGUER DANS LE MAGAZINE</span><h2>Sommaire</h2></div><button id="toc-close" class="close-modal" type="button" aria-label="Fermer le sommaire">×</button></div><div id="toc-grid" class="toc-grid"></div></div></div><div id="print-pages" class="print-pages"></div>
 <script>
 /* Sources éditables : pages/01.js à pages/11.js */
 window.SGD_PAGES = window.SGD_PAGES || [];
 window.SGD_PAGES.push({"title":"Couverture","chapter":"Ouverture","html":"<div class=\"img-cover\"></div><div class=\"cover-contents\"><div class=\"cover-top\"><span>SPORT GOOD DEAL</span><span>ÉDITION 01 — V03</span></div><div class=\"cover-mast\"><div class=\"cover-kicker\">MANUEL VISUEL INTERACTIF</div><h1 class=\"cover-big\">Le guide <em>du ski.</em></h1><p class=\"cover-baseline\">Comprendre le matériel, découvrir les familles, conseiller avec justesse.</p></div><div class=\"cover-bottom\"><span>TECHNIQUE / CULTURE SKI / CONSEIL</span><span>TOURNER LA PAGE →</span></div></div>"});
 window.SGD_PAGES.push({"title":"Sommaire","chapter":"Navigation","html":"<div class=\"issue-line\"><span>OUVERTURE</span><em>01 / LE SOMMAIRE</em></div><h2 class=\"contents-title\">Au fil <i>des pages.</i></h2><p class=\"contents-desc\">Un manuel à feuilleter, mais aussi à explorer. Chaque page reste indépendante et peut être modifiée sans refaire l'ensemble du catalogue.</p><ul class=\"contents-links\"><li><button class=\"page-jump\" data-jump=\"2\"><span>01</span><div>Comprendre le ski<small>ANATOMIE · CAMBRES · CONSTRUCTION</small></div></button></li><li><button class=\"page-jump\" data-jump=\"6\"><span>02</span><div>Les familles<small>PISTE · ALL-MOUNTAIN · NORDIQUE · RANDONNÉE</small></div></button></li><li><button class=\"page-jump\" data-jump=\"9\"><span>03</span><div>Conseiller<small>IDENTIFIER LE BESOIN</small></div></button></li><li><button class=\"page-jump\" data-jump=\"10\"><span>04</span><div>Sécurité<small>FIXATIONS ET ISOSKI</small></div></button></li></ul><div class=\"contents-art\"></div>"});
-window.SGD_PAGES.push({"title":"Anatomie du ski","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>ANATOMIE · BASE VALIDATION</em></div>\n<span class=\"eyebrow\">COMMENÇONS PAR LES 3 ZONES</span>\n<h2 class=\"page-headline\">Spatule, patin, <i>talon.</i></h2>\n<p class=\"page-intro\">Un vrai ski Rossignol, non redessiné. On valide d'abord ces trois repères avant d'ajouter quoi que ce soit d'autre.</p>\n\n<div class=\"real-ski-anatomy\">\n  <div class=\"real-ski-photo\" aria-label=\"Vrai ski Rossignol vu de dessus\">\n    <img src=\"./assets/rossignol-photo-reelle.avif\" alt=\"Vrai ski Rossignol vu de dessus, utilisé comme référence pour localiser la spatule, le patin et le talon.\" decoding=\"async\" loading=\"eager\">\n    \n    <div class=\"real-marker real-marker-tip\">\n      <span class=\"marker-name\">SPATULE</span>\n      <span class=\"marker-line\"></span>\n      <span class=\"marker-dot\"></span>\n    </div>\n\n    <div class=\"real-marker real-marker-waist\">\n      <span class=\"marker-name\">PATIN</span>\n      <span class=\"marker-line\"></span>\n      <span class=\"marker-dot\"></span>\n    </div>\n\n    <div class=\"real-marker real-marker-tail\">\n      <span class=\"marker-name\">TALON</span>\n      <span class=\"marker-line\"></span>\n      <span class=\"marker-dot\"></span>\n    </div>\n  </div>\n</div>\n\n<div class=\"real-ski-definitions\">\n  <div><b>Spatule</b><span>Extrémité avant du ski.</span></div>\n  <div><b>Patin</b><span>Zone la plus étroite du ski, au niveau du pied.</span></div>\n  <div><b>Talon</b><span>Extrémité arrière du ski.</span></div>\n</div>"});
+window.SGD_PAGES.push({"title":"Anatomie du ski","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>ANATOMIE · BASE VALIDATION</em></div>\n<span class=\"eyebrow\">LES 3 ZONES FONDAMENTALES</span>\n<h2 class=\"page-headline\">Spatule, patin, <i>talon.</i></h2>\n<p class=\"page-intro\">Un seul vrai ski Rossignol, avec trois zones clairement identifiées. On valide cette base avant d'ajouter les autres éléments.</p>\n\n<div class=\"single-ski-anatomy-v2\">\n  <figure class=\"single-ski-figure-v2\">\n    <img src=\"./assets/rossignol-photo-reelle.avif\" alt=\"Vrai ski Rossignol vu de dessus\" class=\"single-ski-image-v2\" decoding=\"async\" loading=\"eager\">\n\n    <div class=\"ski-zone-v2 zone-tip-v2\">\n      <span>SPATULE</span>\n    </div>\n\n    <div class=\"ski-zone-v2 zone-waist-v2\">\n      <span>PATIN</span>\n    </div>\n\n    <div class=\"ski-zone-v2 zone-tail-v2\">\n      <span>TALON</span>\n    </div>\n  </figure>\n</div>\n\n<div class=\"single-ski-notes-v2\">\n  <div><b>Spatule</b><span>Ensemble de la zone avant du ski.</span></div>\n  <div><b>Patin</b><span>Zone centrale la plus étroite, matérialisée sur toute la largeur.</span></div>\n  <div><b>Talon</b><span>Ensemble de la zone arrière du ski.</span></div>\n</div>"});
 window.SGD_PAGES.push({"title":"Lignes de cotes et rayon","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>GÉOMÉTRIE</em></div><span class=\"eyebrow\">DÉCODER LES FORMES</span><h2 class=\"page-headline\">Lignes de cotes <i>& rayon.</i></h2><p class=\"page-intro\">Le ski est plus large à la spatule et au talon qu'au patin. Cette courbure latérale permet de définir un <strong>rayon de courbe théorique</strong>.</p><figure class=\"editorial-figure\"><img class=\"editorial-diagram\" loading=\"eager\" decoding=\"async\" src=\"./assets/rayon-edition.svg\" alt=\"Un ski à ligne de cotes marquée et un grand cercle imaginaire : distance du centre à la courbe, illustrant le rayon théorique.\"><figcaption>Illustration de principe : cercle et mesures hors échelle.</figcaption></figure><div class=\"editorial-insight\"><strong>À expliquer au client</strong><p>Un rayon court favorise généralement les virages serrés ; un rayon long, les courbes amples. Le virage réel dépend aussi de la prise de carre et de la déformation du ski.</p></div>"});
 window.SGD_PAGES.push({"title":"Cambres et rockers","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>PROFILS</em></div><span class=\"eyebrow\">LE SKI VU DE CÔTÉ</span><h2 class=\"page-headline\">Cambres <i>& rockers.</i></h2><p class=\"page-intro\">Cinq constructions de profil à comparer : zones relevées en bleu, contacts représentés en rouge, ligne de neige en pointillés.</p><figure class=\"editorial-figure\"><img class=\"editorial-diagram\" loading=\"eager\" decoding=\"async\" src=\"./assets/profils-edition.svg\" alt=\"Cinq profils de ski : cambre traditionnel, rocker avant, double rocker, full rocker et cambre plat avec rocker ; repères de contact et zones colorées.\"><figcaption>Comparaison pédagogique, profils schématiques à vide.</figcaption></figure><div class=\"editorial-insight\"><strong>À retenir</strong><p>Le rocker aide au pivot et à la portance selon le profil. Le cambre contribue à la prise de carre et au rebond. Aucun profil ne détermine seul le niveau du ski.</p></div>"});
 window.SGD_PAGES.push({"title":"Au cœur du ski","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>CONSTRUCTION</em></div><span class=\"eyebrow\">MATÉRIAUX ET ARCHITECTURE</span><h2 class=\"page-headline\">Ce qui se cache <i>à l'intérieur.</i></h2><p class=\"page-intro\">Les couches travaillent ensemble : renforts, noyau, carres et semelle. Chaque assemblage crée un compromis.</p><div class=\"figure-shell\"><svg class=\"material-svg\" viewBox=\"0 0 540 310\" role=\"img\" aria-label=\"Vue éclatée schématique montrant les couches du ski : revêtement, fibre, noyau, fibre, semelle et carres.\"><g transform=\"translate(30 10) skewY(-7)\"><path d=\"M12 22H470Q490 22 490 36V45H12Z\" fill=\"#233846\" stroke=\"#a7b7be\"/><path d=\"M12 77H490V92H12Z\" fill=\"#8caaaf\" stroke=\"#567582\"/><path d=\"M12 121H490V165H12Z\" fill=\"#bb9266\" stroke=\"#916c49\"/><path d=\"M12 191H490V207H12Z\" fill=\"#7e9da3\"/><path d=\"M12 236H490V251H12Z\" fill=\"#152b35\" stroke=\"#c2a77b\" stroke-width=\"2\"/></g><g font-family=\"Arial\" font-size=\"12\" font-weight=\"700\" fill=\"#1c3a48\"><text x=\"60\" y=\"24\">TOPSHEET</text><text x=\"60\" y=\"85\">FIBRES / RENFORTS</text><text x=\"60\" y=\"143\">NOYAU</text><text x=\"60\" y=\"210\">FIBRES INFÉRIEURES</text><text x=\"60\" y=\"267\" fill=\"#fff\">SEMELLE ET CARRES</text></g></svg></div><div class=\"material-legend\"><div><b>Bois</b>Flex progressif, très variable selon l'essence et l'usinage.</div><div><b>Mousse / composite</b>Solutions diverses, souvent choisies pour le poids et le coût.</div><div><b>Fibre de verre</b>Renfort extrêmement courant.</div><div><b>Carbone / titanal</b>Peuvent modifier précision, masse et amortissement selon leur intégration.</div></div><div class=\"material-callout\"><strong>À ne pas confondre</strong><p>Un noyau bois n'est pas synonyme de ski expert. Un ski de loisir peut lui aussi avoir un noyau bois.</p></div>"});
