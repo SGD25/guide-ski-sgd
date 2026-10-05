@@ -1,83 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-<title id="title">Comprendre le rayon d'un ski</title>
-<desc id="desc">Un ski vu de dessus avec sa ligne de cotes, un grand cercle imaginaire et une flèche représentant le rayon théorique.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-labelledby="t d">
+<title id="t">Rayon de courbure d'un ski</title>
+<desc id="d">Un grand ski vu de dessus à gauche, un cercle imaginaire à droite avec un petit ski posé sur le cercle, et une flèche montrant le rayon de courbure.</desc>
 <defs>
-  <linearGradient id="ski" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#244958"/>
-    <stop offset=".55" stop-color="#163846"/>
-    <stop offset="1" stop-color="#102c38"/>
-  </linearGradient>
-  <filter id="shadow" x="-30%" y="-20%" width="160%" height="160%">
-    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14303b" flood-opacity=".16"/>
-  </filter>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-    <path d="M0,0 L10,5 L0,10 z" fill="#173847"/>
+  <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+    <path d="M0 0L10 5L0 10Z" fill="#18394a"/>
+  </marker>
+  <marker id="a2" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto">
+    <path d="M10 0L0 5L10 10Z" fill="#18394a"/>
   </marker>
 </defs>
+<rect width="1100" height="720" fill="#fbfaf6"/>
 
-<rect width="1200" height="720" fill="#faf9f5"/>
-<text x="42" y="52" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#ad7c45">COMPRENDRE LE RAYON</text>
-<line x1="42" y1="70" x2="1158" y2="70" stroke="#d9dfdc"/>
-
-<!-- Grand cercle imaginaire -->
-<circle cx="852" cy="365" r="540" fill="none" stroke="#5fa49e" stroke-width="3" stroke-dasharray="12 11" opacity=".9"/>
-<circle cx="852" cy="365" r="7" fill="#173847"/>
-
-<!-- Ski -->
-<g filter="url(#shadow)">
-  <path d="M244 96
-           C220 101 207 122 206 153
-           C207 218 220 280 226 335
-           C229 362 229 388 225 420
-           C219 475 207 538 208 594
-           C209 625 222 645 244 650
-           C266 645 278 626 279 595
-           C279 540 267 476 261 420
-           C257 388 257 362 260 335
-           C266 280 279 218 280 153
-           C279 122 266 101 244 96 Z"
-        fill="url(#ski)" stroke="#0e2631" stroke-width="4"/>
-  <path d="M260 139
-           C259 219 248 283 244 338
-           C242 366 242 390 244 420
-           C248 473 258 535 260 602"
-        fill="none" stroke="#d79a50" stroke-width="5" stroke-linecap="round"/>
-  <path d="M244 111 L244 634" stroke="#78909a" stroke-width="1.5" stroke-dasharray="7 9" opacity=".65"/>
+<!-- GRAND SKI -->
+<g transform="translate(150 75)">
+  <path d="M72 0
+           C45 2 28 28 30 62
+           C32 110 48 170 52 225
+           C54 255 53 292 48 330
+           C41 385 28 450 30 505
+           C31 540 47 560 72 562
+           C97 560 113 540 114 505
+           C116 450 103 385 96 330
+           C91 292 90 255 92 225
+           C96 170 112 110 114 62
+           C116 28 99 2 72 0Z"
+        fill="#f7efd9" stroke="#202020" stroke-width="4"/>
+  <!-- sidecut highlighted -->
+  <path d="M110 42 C99 140 92 210 92 278 C92 346 101 430 110 518"
+        fill="none" stroke="#e74b35" stroke-width="5" stroke-linecap="round"/>
+  <line x1="72" y1="-10" x2="72" y2="574" stroke="#9aa7ad" stroke-width="1.5" stroke-dasharray="7 8"/>
 </g>
 
-<!-- Largeur / ligne de cotes -->
-<g font-family="Arial,sans-serif">
-  <line x1="292" y1="274" x2="260" y2="310" stroke="#ad7c45" stroke-width="2"/>
-  <circle cx="260" cy="310" r="5" fill="#ad7c45"/>
-  <rect x="294" y="238" width="222" height="63" rx="10" fill="#fff" stroke="#e0e5e2"/>
-  <text x="310" y="262" font-size="17" font-weight="800" fill="#173847">LIGNE DE COTES</text>
-  <text x="310" y="283" font-size="12" fill="#6c7d83">La courbure latérale du ski.</text>
+<!-- LONGUEUR -->
+<line x1="112" y1="80" x2="112" y2="635" stroke="#18394a" stroke-width="3" marker-start="url(#a2)" marker-end="url(#a)"/>
+<line x1="97" y1="80" x2="150" y2="80" stroke="#93a1a8" stroke-width="1.5" stroke-dasharray="6 6"/>
+<line x1="97" y1="635" x2="150" y2="635" stroke="#93a1a8" stroke-width="1.5" stroke-dasharray="6 6"/>
+<text x="54" y="350" transform="rotate(-90 54 350)" font-family="Arial,sans-serif" font-size="22" font-weight="800" fill="#18394a" text-anchor="middle">longueur du ski (ex : 170 cm)</text>
+
+<!-- COURBURE -->
+<circle cx="242" cy="350" r="7" fill="#e74b35"/>
+<line x1="242" y1="350" x2="315" y2="407" stroke="#e74b35" stroke-width="2"/>
+<rect x="300" y="392" width="132" height="46" rx="8" fill="#fff" stroke="#e7ded4"/>
+<text x="366" y="421" font-family="Arial,sans-serif" font-size="19" font-weight="800" fill="#e74b35" text-anchor="middle">courbure</text>
+
+<!-- CERCLE IMAGINAIRE -->
+<circle cx="765" cy="360" r="275" fill="none" stroke="#4f9554" stroke-width="3" stroke-dasharray="12 10"/>
+
+<!-- PETIT SKI SUR LE CERCLE -->
+<g transform="translate(487 328) rotate(2)">
+  <path d="M10 0 C5 1 2 7 2 14 L2 55 C2 62 5 68 10 69 C15 68 18 62 18 55 L18 14 C18 7 15 1 10 0Z"
+        fill="#f7efd9" stroke="#e74b35" stroke-width="2.2"/>
+  <path d="M17 7 C14 21 13 34 14 48 C15 55 16 60 17 63" fill="none" stroke="#1d64e6" stroke-width="2"/>
 </g>
 
-<!-- Rayon -->
-<line x1="852" y1="365" x2="260" y2="365" stroke="#173847" stroke-width="4" marker-end="url(#arrow)"/>
-<circle cx="260" cy="365" r="7" fill="#d97455"/>
-<rect x="515" y="324" width="223" height="75" rx="12" fill="#eef4f2" stroke="#d9e3df"/>
-<text x="536" y="350" font-family="Arial,sans-serif" font-size="20" font-weight="800" fill="#173847">RAYON THÉORIQUE</text>
-<text x="536" y="374" font-family="Arial,sans-serif" font-size="13" fill="#64757b">Distance entre le centre du cercle</text>
-<text x="536" y="391" font-family="Arial,sans-serif" font-size="13" fill="#64757b">imaginaire et la ligne de cotes.</text>
+<!-- RAYON -->
+<line x1="505" y1="360" x2="765" y2="360" stroke="#18394a" stroke-width="3.2" marker-start="url(#a2)" marker-end="url(#a)"/>
+<rect x="555" y="315" width="195" height="66" rx="10" fill="#eef2f4"/>
+<text x="652" y="342" font-family="Arial,sans-serif" font-size="19" font-weight="800" fill="#18394a" text-anchor="middle">rayon (de courbure)</text>
+<text x="652" y="366" font-family="Arial,sans-serif" font-size="16" fill="#18394a" text-anchor="middle">(ex : 15 m)</text>
 
-<!-- Cercle -->
-<line x1="1007" y1="596" x2="1080" y2="640" stroke="#5fa49e" stroke-width="2"/>
-<circle cx="1007" cy="596" r="5" fill="#5fa49e"/>
-<rect x="1040" y="626" width="136" height="42" rx="8" fill="#eff7f2"/>
-<text x="1053" y="652" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#3b756f">CERCLE IMAGINAIRE</text>
-
-<!-- Mini explication -->
-<g font-family="Arial,sans-serif">
-  <rect x="42" y="565" width="440" height="112" rx="12" fill="#f0f3f1"/>
-  <text x="62" y="592" font-size="16" font-weight="800" fill="#173847">Comment le lire ?</text>
-  <text x="62" y="620" font-size="13" fill="#596c73">
-    <tspan x="62" dy="0"><tspan font-weight="700">Rayon court :</tspan> virages plus serrés, ski plus vif.</tspan>
-    <tspan x="62" dy="24"><tspan font-weight="700">Rayon long :</tspan> courbes plus amples, davantage de stabilité.</tspan>
-  </text>
-</g>
-
-<!-- Caption -->
-<text x="42" y="701" font-family="Arial,sans-serif" font-size="11" fill="#8a999e">Schéma de principe : le cercle sert à visualiser la géométrie. Le rayon réel dépend de la longueur et de la ligne de cotes du ski.</text>
+<!-- CERCLE LABEL -->
+<line x1="876" y1="617" x2="924" y2="654" stroke="#4f9554" stroke-width="2"/>
+<circle cx="876" cy="617" r="5" fill="#4f9554"/>
+<rect x="910" y="638" width="172" height="44" rx="8" fill="#eef7ec"/>
+<text x="996" y="666" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#3f7d45" text-anchor="middle">(cercle imaginaire)</text>
 </svg>
