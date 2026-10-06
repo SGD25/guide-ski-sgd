@@ -1,20 +1,75 @@
-<!-- republication V07.18 : visuel validé, contenu graphique inchangé -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 585" role="img" aria-labelledby="title desc">
-<title id="title">Comparaison des rayons de courbure</title>
-<desc id="desc">Trois vrais cercles tangents au même point sur un ski Rossignol : R11, R15 et R20+.</desc>
-<rect width="700" height="585" fill="#fff"/>
-<g font-family="Arial,Helvetica,sans-serif">
-<image href="./rossignol-photo-reelle.avif" x="44" y="178" width="84" height="230" preserveAspectRatio="xMidYMid meet"/>
-<circle cx="100" cy="292.5" r="3.5" fill="#122a35"/>
-<line x1="100" y1="292.5" x2="645" y2="292.5" stroke="#122a35" stroke-width="2.4"/>
-<circle cx="205" cy="292.5" r="105" fill="none" stroke="#c5d600" stroke-width="3.2" stroke-dasharray="12 10" stroke-linecap="round"/>
-<circle cx="205" cy="292.5" r="105" fill="none" stroke="#122a35" stroke-width="5" pathLength="100" stroke-dasharray="28 72" stroke-dashoffset="-36" stroke-linecap="round"/>
-<circle cx="275" cy="292.5" r="175" fill="none" stroke="#122a35" stroke-width="3.2" stroke-dasharray="12 10" stroke-linecap="round"/>
-<circle cx="275" cy="292.5" r="175" fill="none" stroke="#122a35" stroke-width="5" pathLength="100" stroke-dasharray="28 72" stroke-dashoffset="-36" stroke-linecap="round"/>
-<circle cx="360" cy="292.5" r="260" fill="none" stroke="#122a35" stroke-width="3.2" stroke-dasharray="12 10" stroke-linecap="round"/>
-<circle cx="360" cy="292.5" r="260" fill="none" stroke="#122a35" stroke-width="5" pathLength="100" stroke-dasharray="28 72" stroke-dashoffset="-36" stroke-linecap="round"/>
-<circle cx="205" cy="292.5" r="8" fill="#c5d600"/><circle cx="275" cy="292.5" r="8" fill="#122a35"/><circle cx="360" cy="292.5" r="8" fill="#122a35"/>
-<g transform="translate(154 221)"><text x="0" y="0" font-size="36" font-weight="900" fill="#c5d600">R11</text><text x="0" y="27" font-size="17" font-weight="700" fill="#122a35">ski agile,</text><text x="0" y="49" font-size="17" font-weight="700" fill="#122a35">virage serré</text></g>
-<g transform="translate(292 205)"><text x="0" y="0" font-size="36" font-weight="900" fill="#122a35">R15</text><text x="0" y="27" font-size="16.5" font-weight="700" fill="#122a35">ski polyvalent,</text><text x="0" y="49" font-size="16.5" font-weight="700" fill="#122a35">multivirage</text><text x="0" y="69" font-size="12.5" font-weight="600" fill="#63737a">(à la fois court et long)</text></g>
-<g transform="translate(466 211)"><text x="0" y="0" font-size="36" font-weight="900" fill="#122a35">R20+</text><text x="0" y="27" font-size="16.5" font-weight="700" fill="#122a35">ski stable et rapide,</text><text x="0" y="49" font-size="16.5" font-weight="700" fill="#122a35">grande courbe</text></g>
-</g></svg>
+<!-- SPORT GOOD DEAL · V07.19 · schéma rayons validé -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Comparaison des rayons de courbure R11, R15 et R20+</title>
+  <desc id="desc">Un ski vertical sert de point commun à trois cercles de rayon croissant : vert pour R11, bleu pour R15 et rouge pour R20+.</desc>
+  <rect width="1536" height="1024" fill="#ffffff"/>
+
+  <defs>
+    <filter id="skiShadow" x="-50%" y="-20%" width="200%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#14242b" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <!-- Ski réel : même source que le reste du guide -->
+  <image href="./rossignol-photo-reelle.avif"
+         x="125" y="315" width="96" height="390"
+         preserveAspectRatio="xMidYMid meet"
+         filter="url(#skiShadow)"/>
+
+  <!-- Axe commun -->
+  <line x1="183" y1="516" x2="1202" y2="516" stroke="#102a43" stroke-width="1.8"/>
+
+  <!-- R11 -->
+  <circle cx="371" cy="516" r="188" fill="none"
+          stroke="#84c400" stroke-width="4.2"
+          stroke-dasharray="20 13" stroke-linecap="round"/>
+  <circle cx="371" cy="516" r="188" fill="none"
+          stroke="#84c400" stroke-width="5.6"
+          pathLength="100" stroke-dasharray="13 87" stroke-dashoffset="-42"
+          stroke-linecap="round"/>
+
+  <!-- R15 -->
+  <circle cx="503" cy="516" r="320" fill="none"
+          stroke="#1378e8" stroke-width="4.2"
+          stroke-dasharray="20 13" stroke-linecap="round"/>
+  <circle cx="503" cy="516" r="320" fill="none"
+          stroke="#1378e8" stroke-width="5.6"
+          pathLength="100" stroke-dasharray="13 87" stroke-dashoffset="-42"
+          stroke-linecap="round"/>
+
+  <!-- R20+ -->
+  <circle cx="668" cy="516" r="485" fill="none"
+          stroke="#ff1528" stroke-width="4.2"
+          stroke-dasharray="20 13" stroke-linecap="round"/>
+  <circle cx="668" cy="516" r="485" fill="none"
+          stroke="#ff1528" stroke-width="5.6"
+          pathLength="100" stroke-dasharray="13 87" stroke-dashoffset="-42"
+          stroke-linecap="round"/>
+
+  <!-- Repères sur l'axe -->
+  <circle cx="369" cy="516" r="13" fill="#84c400"/>
+  <circle cx="660" cy="516" r="13" fill="#1378e8"/>
+  <circle cx="986" cy="516" r="13" fill="#ff1528"/>
+
+  <!-- Légendes -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(300 376)">
+      <text x="0" y="0" font-size="58" font-weight="900" fill="#84c400">R11</text>
+      <text x="2" y="31" font-size="28" font-weight="800" fill="#102a43">ski agile,</text>
+      <text x="2" y="63" font-size="28" font-weight="800" fill="#84c400">virage serré</text>
+    </g>
+
+    <g transform="translate(592 376)">
+      <text x="0" y="0" font-size="58" font-weight="900" fill="#1378e8">R15</text>
+      <text x="2" y="31" font-size="27" font-weight="800" fill="#102a43">ski polyvalent,</text>
+      <text x="2" y="63" font-size="27" font-weight="800" fill="#1378e8">multivirage</text>
+      <text x="2" y="88" font-size="18" font-weight="500" fill="#102a43">(à la fois court et long)</text>
+    </g>
+
+    <g transform="translate(895 376)">
+      <text x="0" y="0" font-size="58" font-weight="900" fill="#ff1528">R20+</text>
+      <text x="2" y="31" font-size="27" font-weight="800" fill="#102a43">ski stable et rapide,</text>
+      <text x="2" y="63" font-size="27" font-weight="800" fill="#ff1528">grande courbe</text>
+    </g>
+  </g>
+</svg>
