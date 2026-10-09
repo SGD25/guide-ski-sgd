@@ -1,4 +1,4 @@
-<!-- SPORT GOOD DEAL · V07.19 · schéma rayons validé -->
+<!-- SPORT GOOD DEAL · V07.21 · schéma rayons sans image raster embarquée -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
   <title id="title">Comparaison des rayons de courbure R11, R15 et R20+</title>
   <desc id="desc">Un ski vertical sert de point commun à trois cercles de rayon croissant : vert pour R11, bleu pour R15 et rouge pour R20+.</desc>
@@ -9,13 +9,6 @@
       <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#14242b" flood-opacity=".18"/>
     </filter>
   </defs>
-
-  <!-- Ski réel : même source que le reste du guide -->
-  <image href="./rossignol-photo-reelle.avif"
-         x="125" y="315" width="96" height="390"
-         preserveAspectRatio="xMidYMid meet"
-         filter="url(#skiShadow)"/>
-
   <!-- Axe commun -->
   <line x1="183" y1="516" x2="1202" y2="516" stroke="#102a43" stroke-width="1.8"/>
 
