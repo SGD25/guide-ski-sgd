@@ -886,8 +886,121 @@
   .radius-summary-v6{font-size:9.8px!important}
 }
 
-</style><!-- deploy-v07-25-lisibilite-2026-10-09 -->
-</head><body><header class="appbar"><a class="brand" href="./"><span class="brand-sign">SGD</span><span class="brand-name">SPORT GOOD DEAL<small>LE GUIDE DU SKI</small></span></a><div class="appbar-actions"><span class="label-version">CATALOGUE / V07.25</span><button id="toc-button" class="bar-button" type="button">☷ Sommaire</button><button id="print-button" class="bar-button" type="button">Imprimer</button></div></header><div class="page-edge-controls" aria-label="Feuilleter le magazine"><button id="previous" type="button" aria-label="Page précédente" title="Page précédente" class="edge-arrow edge-previous" style="position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:100">‹</button><button id="next" type="button" aria-label="Page suivante" title="Page suivante" class="edge-arrow edge-next" style="position:fixed;top:50%;right:12px;transform:translateY(-50%);z-index:100">›</button></div><main class="workstage"><div class="reader-meta"><span>MANUEL PÉDAGOGIQUE · ÉDITION DE TRAVAIL</span><span>FEUILLETER AVEC LES FLÈCHES →</span></div><div class="book-frame"><div id="book" class="book"><section id="left-page" class="sheet sheet-left"><div class="sheet-pad"><div class="img-cover"></div><div class="cover-contents"><div class="cover-top"><span>SPORT GOOD DEAL</span><span>ÉDITION 01 — V03</span></div><div class="cover-mast"><div class="cover-kicker">MANUEL VISUEL INTERACTIF</div><h1 class="cover-big">Le guide <em>du ski.</em></h1><p class="cover-baseline">Comprendre le matériel, découvrir les familles, conseiller avec justesse.</p></div><div class="cover-bottom"><span>TECHNIQUE / CULTURE SKI / CONSEIL</span><span>TOURNER LA PAGE →</span></div></div></div></section><section id="right-page" class="sheet sheet-right"><div class="sheet-pad"><div class="issue-line"><span>OUVERTURE</span><em>01 / LE SOMMAIRE</em></div><h2 class="contents-title">Au fil <i>des pages.</i></h2><p class="contents-desc">Un manuel à feuilleter, mais aussi à explorer. Chaque page reste indépendante et peut être modifiée sans refaire l'ensemble du catalogue.</p><ul class="contents-links"><li><button class="page-jump" data-jump="2"><span>01</span><div>Comprendre le ski<small>ANATOMIE · CAMBRES · CONSTRUCTION</small></div></button></li><li><button class="page-jump" data-jump="6"><span>02</span><div>Les familles<small>PISTE · ALL-MOUNTAIN · NORDIQUE · RANDONNÉE</small></div></button></li><li><button class="page-jump" data-jump="9"><span>03</span><div>Conseiller<small>IDENTIFIER LE BESOIN</small></div></button></li><li><button class="page-jump" data-jump="10"><span>04</span><div>Sécurité<small>FIXATIONS ET ISOSKI</small></div></button></li></ul><div class="contents-art"></div></div></section><div id="flip-sheet" class="flip-sheet"></div></div></div><nav class="controls" aria-label="Position dans le catalogue"><div class="controls-left"><span class="page-count" id="page-count">01–02 / 11</span></div><div class="controls-right"><span class="shortcut-note">Clavier : ← →</span></div></nav><div class="progress-track"><div id="progress"></div></div><footer class="reader-footer"><span>SPORT GOOD DEAL · MANUEL DU SKI</span><span>Prototype V03 · pages et schémas modifiables séparément · illustrations en cours d'amélioration</span></footer></main><div class="overlay" id="toc-overlay" role="dialog" aria-modal="true" aria-label="Sommaire du magazine"><div class="overlay-dialog"><div class="overlay-head"><div><span class="eyebrow">NAVIGUER DANS LE MAGAZINE</span><h2>Sommaire</h2></div><button id="toc-close" class="close-modal" type="button" aria-label="Fermer le sommaire">×</button></div><div id="toc-grid" class="toc-grid"></div></div></div><div id="print-pages" class="print-pages"></div>
+
+/* V07.26 — page rayons plus pleine + encart À retenir + harmonisation pages 03/04 */
+
+/* Même départ vertical pour les deux pages */
+.sheet-pad:has(.anatomy-board-v3),
+.sheet-pad:has(.radius-page-v6){
+  padding-top:22px!important;
+  padding-bottom:23px!important;
+}
+.sheet-pad:has(.anatomy-board-v3) .issue-line,
+.sheet-pad:has(.radius-page-v6) .radius-issue-v6{
+  padding-bottom:6px!important;
+  margin-bottom:10px!important;
+}
+.sheet-pad:has(.anatomy-board-v3) > .eyebrow,
+.sheet-pad:has(.radius-page-v6) > .eyebrow{
+  display:block!important;
+  margin-bottom:4px!important;
+}
+.sheet-pad:has(.anatomy-board-v3) .page-headline,
+.sheet-pad:has(.radius-page-v6) .radius-title-v6{
+  margin:2px 0 9px!important;
+}
+.sheet-pad:has(.anatomy-board-v3) .page-intro,
+.sheet-pad:has(.radius-page-v6) .radius-intro-v6{
+  margin-bottom:9px!important;
+  line-height:1.42!important;
+}
+
+/* Graphique : on utilise davantage le cadre blanc */
+.radius-page-v6{
+  grid-template-rows:420px 132px 58px!important;
+  gap:9px!important;
+}
+.radius-master-v6{
+  position:relative!important;
+  overflow:hidden!important;
+  background:#fff!important;
+}
+.radius-master-v6 .radius-diagram-v721{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  transform:scale(1.12) translateX(1.5%)!important;
+  transform-origin:50% 50%!important;
+}
+.radius-master-v6 .radius-ski-v721{
+  left:5.7%!important;
+  top:25.7%!important;
+  width:9.1%!important;
+  height:48.6%!important;
+}
+
+/* Encarts techniques */
+.ski-info-v6{
+  grid-template-columns:1.24fr 1.06fr .88fr!important;
+  min-height:132px!important;
+  padding:11px 12px!important;
+  gap:10px!important;
+}
+
+/* À retenir : badge horizontal, plus lisible */
+.radius-summary-v6{
+  min-height:58px!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:11px!important;
+  padding:10px 12px!important;
+  border:1px solid #e3d8c6!important;
+  border-left:3px solid #b58b59!important;
+  border-radius:5px!important;
+  background:#f4efe6!important;
+  color:#536970!important;
+  font-size:10.6px!important;
+  line-height:1.38!important;
+}
+.radius-summary-v6 b{
+  flex:0 0 auto!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  white-space:nowrap!important;
+  padding:6px 9px!important;
+  border:1px solid #e0cfaf!important;
+  border-radius:999px!important;
+  background:#fff!important;
+  color:#a66d2c!important;
+  font-size:10.8px!important;
+  line-height:1!important;
+}
+
+/* Numéros de pages cohérents */
+.sheet-pad:has(.anatomy-board-v3) .page-number,
+.sheet-pad:has(.radius-page-v6) .page-number{
+  bottom:7px!important;
+  padding-top:5px!important;
+  font-size:8px!important;
+}
+
+@media(max-width:1050px){
+  .radius-page-v6{grid-template-rows:385px 126px 54px!important}
+  .radius-master-v6 .radius-diagram-v721{
+    transform:scale(1.09) translateX(1.2%)!important;
+  }
+  .radius-master-v6 .radius-ski-v721{
+    left:5.8%!important;
+    top:26.1%!important;
+    width:9%!important;
+    height:47.8%!important;
+  }
+  .radius-summary-v6{font-size:10px!important}
+}
+
+</style><!-- deploy-v07-26-harmonisation-2026-10-09 -->
+</head><body><header class="appbar"><a class="brand" href="./"><span class="brand-sign">SGD</span><span class="brand-name">SPORT GOOD DEAL<small>LE GUIDE DU SKI</small></span></a><div class="appbar-actions"><span class="label-version">CATALOGUE / V07.26</span><button id="toc-button" class="bar-button" type="button">☷ Sommaire</button><button id="print-button" class="bar-button" type="button">Imprimer</button></div></header><div class="page-edge-controls" aria-label="Feuilleter le magazine"><button id="previous" type="button" aria-label="Page précédente" title="Page précédente" class="edge-arrow edge-previous" style="position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:100">‹</button><button id="next" type="button" aria-label="Page suivante" title="Page suivante" class="edge-arrow edge-next" style="position:fixed;top:50%;right:12px;transform:translateY(-50%);z-index:100">›</button></div><main class="workstage"><div class="reader-meta"><span>MANUEL PÉDAGOGIQUE · ÉDITION DE TRAVAIL</span><span>FEUILLETER AVEC LES FLÈCHES →</span></div><div class="book-frame"><div id="book" class="book"><section id="left-page" class="sheet sheet-left"><div class="sheet-pad"><div class="img-cover"></div><div class="cover-contents"><div class="cover-top"><span>SPORT GOOD DEAL</span><span>ÉDITION 01 — V03</span></div><div class="cover-mast"><div class="cover-kicker">MANUEL VISUEL INTERACTIF</div><h1 class="cover-big">Le guide <em>du ski.</em></h1><p class="cover-baseline">Comprendre le matériel, découvrir les familles, conseiller avec justesse.</p></div><div class="cover-bottom"><span>TECHNIQUE / CULTURE SKI / CONSEIL</span><span>TOURNER LA PAGE →</span></div></div></div></section><section id="right-page" class="sheet sheet-right"><div class="sheet-pad"><div class="issue-line"><span>OUVERTURE</span><em>01 / LE SOMMAIRE</em></div><h2 class="contents-title">Au fil <i>des pages.</i></h2><p class="contents-desc">Un manuel à feuilleter, mais aussi à explorer. Chaque page reste indépendante et peut être modifiée sans refaire l'ensemble du catalogue.</p><ul class="contents-links"><li><button class="page-jump" data-jump="2"><span>01</span><div>Comprendre le ski<small>ANATOMIE · CAMBRES · CONSTRUCTION</small></div></button></li><li><button class="page-jump" data-jump="6"><span>02</span><div>Les familles<small>PISTE · ALL-MOUNTAIN · NORDIQUE · RANDONNÉE</small></div></button></li><li><button class="page-jump" data-jump="9"><span>03</span><div>Conseiller<small>IDENTIFIER LE BESOIN</small></div></button></li><li><button class="page-jump" data-jump="10"><span>04</span><div>Sécurité<small>FIXATIONS ET ISOSKI</small></div></button></li></ul><div class="contents-art"></div></div></section><div id="flip-sheet" class="flip-sheet"></div></div></div><nav class="controls" aria-label="Position dans le catalogue"><div class="controls-left"><span class="page-count" id="page-count">01–02 / 11</span></div><div class="controls-right"><span class="shortcut-note">Clavier : ← →</span></div></nav><div class="progress-track"><div id="progress"></div></div><footer class="reader-footer"><span>SPORT GOOD DEAL · MANUEL DU SKI</span><span>Prototype V03 · pages et schémas modifiables séparément · illustrations en cours d'amélioration</span></footer></main><div class="overlay" id="toc-overlay" role="dialog" aria-modal="true" aria-label="Sommaire du magazine"><div class="overlay-dialog"><div class="overlay-head"><div><span class="eyebrow">NAVIGUER DANS LE MAGAZINE</span><h2>Sommaire</h2></div><button id="toc-close" class="close-modal" type="button" aria-label="Fermer le sommaire">×</button></div><div id="toc-grid" class="toc-grid"></div></div></div><div id="print-pages" class="print-pages"></div>
 <script>
 /* Sources éditables : pages/01.js à pages/11.js */
 window.SGD_PAGES = window.SGD_PAGES || [];
