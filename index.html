@@ -1299,8 +1299,190 @@
 .repere-allmountain-v731{color:#e38715!important}
 .repere-freeride-v731{color:#d83939!important}
 
-</style><!-- deploy-v07-31-reperes-patin-2026-10-09 -->
-</head><body><header class="appbar"><a class="brand" href="./"><span class="brand-sign">SGD</span><span class="brand-name">SPORT GOOD DEAL<small>LE GUIDE DU SKI</small></span></a><div class="appbar-actions"><span class="label-version">CATALOGUE / V07.31</span><button id="toc-button" class="bar-button" type="button">☷ Sommaire</button><button id="print-button" class="bar-button" type="button">Imprimer</button></div></header><div class="page-edge-controls" aria-label="Feuilleter le magazine"><button id="previous" type="button" aria-label="Page précédente" title="Page précédente" class="edge-arrow edge-previous" style="position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:100">‹</button><button id="next" type="button" aria-label="Page suivante" title="Page suivante" class="edge-arrow edge-next" style="position:fixed;top:50%;right:12px;transform:translateY(-50%);z-index:100">›</button></div><main class="workstage"><div class="reader-meta"><span>MANUEL PÉDAGOGIQUE · ÉDITION DE TRAVAIL</span><span>FEUILLETER AVEC LES FLÈCHES →</span></div><div class="book-frame"><div id="book" class="book"><section id="left-page" class="sheet sheet-left"><div class="sheet-pad"><div class="img-cover"></div><div class="cover-contents"><div class="cover-top"><span>SPORT GOOD DEAL</span><span>ÉDITION 01 — V03</span></div><div class="cover-mast"><div class="cover-kicker">MANUEL VISUEL INTERACTIF</div><h1 class="cover-big">Le guide <em>du ski.</em></h1><p class="cover-baseline">Comprendre le matériel, découvrir les familles, conseiller avec justesse.</p></div><div class="cover-bottom"><span>TECHNIQUE / CULTURE SKI / CONSEIL</span><span>TOURNER LA PAGE →</span></div></div></div></section><section id="right-page" class="sheet sheet-right"><div class="sheet-pad"><div class="issue-line"><span>OUVERTURE</span><em>01 / LE SOMMAIRE</em></div><h2 class="contents-title">Au fil <i>des pages.</i></h2><p class="contents-desc">Un manuel à feuilleter, mais aussi à explorer. Chaque page reste indépendante et peut être modifiée sans refaire l'ensemble du catalogue.</p><ul class="contents-links"><li><button class="page-jump" data-jump="2"><span>01</span><div>Comprendre le ski<small>ANATOMIE · CAMBRES · CONSTRUCTION</small></div></button></li><li><button class="page-jump" data-jump="6"><span>02</span><div>Les familles<small>PISTE · ALL-MOUNTAIN · NORDIQUE · RANDONNÉE</small></div></button></li><li><button class="page-jump" data-jump="9"><span>03</span><div>Conseiller<small>IDENTIFIER LE BESOIN</small></div></button></li><li><button class="page-jump" data-jump="10"><span>04</span><div>Sécurité<small>FIXATIONS ET ISOSKI</small></div></button></li></ul><div class="contents-art"></div></div></section><div id="flip-sheet" class="flip-sheet"></div></div></div><nav class="controls" aria-label="Position dans le catalogue"><div class="controls-left"><span class="page-count" id="page-count">01–02 / 11</span></div><div class="controls-right"><span class="shortcut-note">Clavier : ← →</span></div></nav><div class="progress-track"><div id="progress"></div></div><footer class="reader-footer"><span>SPORT GOOD DEAL · MANUEL DU SKI</span><span>Prototype V03 · pages et schémas modifiables séparément · illustrations en cours d'amélioration</span></footer></main><div class="overlay" id="toc-overlay" role="dialog" aria-modal="true" aria-label="Sommaire du magazine"><div class="overlay-dialog"><div class="overlay-head"><div><span class="eyebrow">NAVIGUER DANS LE MAGAZINE</span><h2>Sommaire</h2></div><button id="toc-close" class="close-modal" type="button" aria-label="Fermer le sommaire">×</button></div><div id="toc-grid" class="toc-grid"></div></div></div><div id="print-pages" class="print-pages"></div>
+
+/* V07.32 — PAGE 05 : du cambre classique à l'inversé */
+.sheet-pad:has(.camber-page-v8){
+  padding:20px 28px 23px!important;
+}
+.sheet-pad:has(.camber-page-v8) .page-number{
+  bottom:7px!important;
+  left:28px!important;
+  right:28px!important;
+  padding-top:5px!important;
+  font-size:8px!important;
+}
+.camber-page-v8{
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+.camber-issue-v8{
+  padding-bottom:6px!important;
+  margin-bottom:9px!important;
+}
+.camber-eyebrow-v8{margin-bottom:3px!important}
+.camber-title-v8{
+  font-size:43px!important;
+  margin:1px 0 7px!important;
+  line-height:.96!important;
+}
+.camber-intro-v8{
+  font-size:11.2px!important;
+  line-height:1.38!important;
+  margin:0 0 8px!important;
+  max-width:none!important;
+}
+.camber-profiles-v8{
+  display:grid;
+  gap:5px;
+}
+.camber-row-v8{
+  display:grid;
+  grid-template-columns:36% 64%;
+  align-items:center;
+  min-height:69px;
+  padding:5px 8px;
+  background:#fbfaf6;
+  border:1px solid #eee8dc;
+  border-radius:7px;
+}
+.camber-copy-v8{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:7px;
+  align-items:start;
+}
+.camber-num-v8{
+  width:25px;
+  height:25px;
+  border:1px solid #d7a86f;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#173847;
+  background:#fbf0df;
+  font-size:11px;
+  font-weight:900;
+}
+.camber-copy-v8 h3{
+  margin:0 0 3px;
+  color:#142f4a;
+  font-size:12.3px;
+  line-height:1.05;
+  letter-spacing:-.015em;
+}
+.camber-copy-v8 p{
+  margin:0;
+  color:#5f6f77;
+  font-size:8.3px;
+  line-height:1.25;
+}
+.camber-visual-v8{
+  margin:0;
+  height:64px;
+}
+.camber-visual-v8 svg{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.camber-takeaway-v8{
+  margin-top:7px;
+  padding:8px 9px 7px;
+  border:1.5px solid #bc7f39;
+  border-radius:7px;
+  background:#fbf7ee;
+}
+.camber-takeaway-head-v8{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:9px;
+  align-items:center;
+}
+.camber-takeaway-head-v8>b{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+  padding:5px 10px;
+  border-radius:999px;
+  color:#fff;
+  background:#ad7332;
+  font-size:10.5px;
+}
+.camber-takeaway-head-v8 strong{
+  color:#17304d;
+  font-size:9.3px;
+  line-height:1.25;
+}
+.camber-scale-v8{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:7px;
+  align-items:center;
+  margin:6px 0 5px;
+  color:#23445a;
+  font-size:6.9px;
+  line-height:1.05;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+.camber-scale-v8 span:last-child{
+  text-align:right;
+  color:#a56c2d;
+}
+.camber-scale-v8 i{
+  height:2px;
+  background:linear-gradient(90deg,#315b6d,#c68d4c);
+  position:relative;
+}
+.camber-scale-v8 i:before,
+.camber-scale-v8 i:after{
+  content:"";
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+}
+.camber-scale-v8 i:before{left:-1px;border-right:7px solid #315b6d}
+.camber-scale-v8 i:after{right:-1px;border-left:7px solid #c68d4c}
+.camber-mini-v8{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:0;
+}
+.camber-mini-v8>div{
+  padding:0 6px;
+  border-left:1px solid #d8c8ae;
+}
+.camber-mini-v8>div:first-child{
+  border-left:0;
+  padding-left:0;
+}
+.camber-mini-v8>div:last-child{padding-right:0}
+.camber-mini-v8 b{
+  display:block;
+  margin-bottom:3px;
+  color:#17304d;
+  font-size:7.5px;
+  line-height:1.1;
+}
+.camber-mini-v8 p{
+  margin:0;
+  color:#586a72;
+  font-size:6.65px;
+  line-height:1.2;
+}
+@media (min-width:781px) and (max-width:1400px){
+  .sheet-pad:has(.camber-page-v8){padding:20px 28px 23px!important}
+  .camber-title-v8{font-size:43px!important}
+  .camber-intro-v8{font-size:11.2px!important}
+}
+
+</style><!-- deploy-v07-32-page05-cambres-2026-10-09 -->
+</head><body><header class="appbar"><a class="brand" href="./"><span class="brand-sign">SGD</span><span class="brand-name">SPORT GOOD DEAL<small>LE GUIDE DU SKI</small></span></a><div class="appbar-actions"><span class="label-version">CATALOGUE / V07.32</span><button id="toc-button" class="bar-button" type="button">☷ Sommaire</button><button id="print-button" class="bar-button" type="button">Imprimer</button></div></header><div class="page-edge-controls" aria-label="Feuilleter le magazine"><button id="previous" type="button" aria-label="Page précédente" title="Page précédente" class="edge-arrow edge-previous" style="position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:100">‹</button><button id="next" type="button" aria-label="Page suivante" title="Page suivante" class="edge-arrow edge-next" style="position:fixed;top:50%;right:12px;transform:translateY(-50%);z-index:100">›</button></div><main class="workstage"><div class="reader-meta"><span>MANUEL PÉDAGOGIQUE · ÉDITION DE TRAVAIL</span><span>FEUILLETER AVEC LES FLÈCHES →</span></div><div class="book-frame"><div id="book" class="book"><section id="left-page" class="sheet sheet-left"><div class="sheet-pad"><div class="img-cover"></div><div class="cover-contents"><div class="cover-top"><span>SPORT GOOD DEAL</span><span>ÉDITION 01 — V03</span></div><div class="cover-mast"><div class="cover-kicker">MANUEL VISUEL INTERACTIF</div><h1 class="cover-big">Le guide <em>du ski.</em></h1><p class="cover-baseline">Comprendre le matériel, découvrir les familles, conseiller avec justesse.</p></div><div class="cover-bottom"><span>TECHNIQUE / CULTURE SKI / CONSEIL</span><span>TOURNER LA PAGE →</span></div></div></div></section><section id="right-page" class="sheet sheet-right"><div class="sheet-pad"><div class="issue-line"><span>OUVERTURE</span><em>01 / LE SOMMAIRE</em></div><h2 class="contents-title">Au fil <i>des pages.</i></h2><p class="contents-desc">Un manuel à feuilleter, mais aussi à explorer. Chaque page reste indépendante et peut être modifiée sans refaire l'ensemble du catalogue.</p><ul class="contents-links"><li><button class="page-jump" data-jump="2"><span>01</span><div>Comprendre le ski<small>ANATOMIE · CAMBRES · CONSTRUCTION</small></div></button></li><li><button class="page-jump" data-jump="6"><span>02</span><div>Les familles<small>PISTE · ALL-MOUNTAIN · NORDIQUE · RANDONNÉE</small></div></button></li><li><button class="page-jump" data-jump="9"><span>03</span><div>Conseiller<small>IDENTIFIER LE BESOIN</small></div></button></li><li><button class="page-jump" data-jump="10"><span>04</span><div>Sécurité<small>FIXATIONS ET ISOSKI</small></div></button></li></ul><div class="contents-art"></div></div></section><div id="flip-sheet" class="flip-sheet"></div></div></div><nav class="controls" aria-label="Position dans le catalogue"><div class="controls-left"><span class="page-count" id="page-count">01–02 / 11</span></div><div class="controls-right"><span class="shortcut-note">Clavier : ← →</span></div></nav><div class="progress-track"><div id="progress"></div></div><footer class="reader-footer"><span>SPORT GOOD DEAL · MANUEL DU SKI</span><span>Prototype V03 · pages et schémas modifiables séparément · illustrations en cours d'amélioration</span></footer></main><div class="overlay" id="toc-overlay" role="dialog" aria-modal="true" aria-label="Sommaire du magazine"><div class="overlay-dialog"><div class="overlay-head"><div><span class="eyebrow">NAVIGUER DANS LE MAGAZINE</span><h2>Sommaire</h2></div><button id="toc-close" class="close-modal" type="button" aria-label="Fermer le sommaire">×</button></div><div id="toc-grid" class="toc-grid"></div></div></div><div id="print-pages" class="print-pages"></div>
 <script>
 /* Sources éditables : pages/01.js à pages/11.js */
 window.SGD_PAGES = window.SGD_PAGES || [];
@@ -1308,7 +1490,7 @@ window.SGD_PAGES.push({"title":"Couverture","chapter":"Ouverture","html":"<div c
 window.SGD_PAGES.push({"title":"Sommaire","chapter":"Navigation","html":"<div class=\"issue-line\"><span>OUVERTURE</span><em>01 / LE SOMMAIRE</em></div><h2 class=\"contents-title\">Au fil <i>des pages.</i></h2><p class=\"contents-desc\">Un manuel à feuilleter, mais aussi à explorer. Chaque page reste indépendante et peut être modifiée sans refaire l'ensemble du catalogue.</p><ul class=\"contents-links\"><li><button class=\"page-jump\" data-jump=\"2\"><span>01</span><div>Comprendre le ski<small>ANATOMIE · CAMBRES · CONSTRUCTION</small></div></button></li><li><button class=\"page-jump\" data-jump=\"6\"><span>02</span><div>Les familles<small>PISTE · ALL-MOUNTAIN · NORDIQUE · RANDONNÉE</small></div></button></li><li><button class=\"page-jump\" data-jump=\"9\"><span>03</span><div>Conseiller<small>IDENTIFIER LE BESOIN</small></div></button></li><li><button class=\"page-jump\" data-jump=\"10\"><span>04</span><div>Sécurité<small>FIXATIONS ET ISOSKI</small></div></button></li></ul><div class=\"contents-art\"></div>"});
 window.SGD_PAGES.push({"title":"Anatomie du ski","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>ANATOMIE · BASE VALIDATION</em></div>\n<span class=\"eyebrow\">LES 3 ZONES FONDAMENTALES</span>\n<h2 class=\"page-headline\">Spatule, patin, <i>talon.</i></h2>\n<p class=\"page-intro\">Trois zones qui influencent directement la conduite, l'agilité et la portance du ski.</p>\n\n<div class=\"anatomy-board-v3\">\n  <figure class=\"single-ski-figure-v2\">\n    <img src=\"./assets/rossignol-photo-reelle.avif\" alt=\"Vrai ski Rossignol vu de dessus\" class=\"single-ski-image-v2\" decoding=\"async\" loading=\"eager\">\n    <div class=\"ski-zone-v2 zone-tip-v2\"><span>SPATULE</span></div>\n    <div class=\"ski-zone-v2 zone-waist-v2\"><span>PATIN</span></div>\n    <div class=\"ski-zone-v2 zone-tail-v2\"><span>TALON</span></div>\n  </figure>\n\n  <div class=\"anatomy-callout-v3 callout-tip-v3\">\n    <b>Spatule</b>\n    <p><span class=\"callout-line\"><strong>Déjaugeage :</strong> sa forme relevée évite que le ski ne se plante et l'aide à glisser en surface.</span><span class=\"callout-line\"><strong>Obstacles :</strong> elle facilite le passage des bosses et irrégularités.</span><span class=\"callout-line\"><strong>Virages :</strong> sa largeur et sa souplesse facilitent l'entrée en courbe et guident le ski.</span></p>\n  </div>\n\n  <div class=\"anatomy-callout-v3 callout-waist-v3\">\n    <b>Patin</b>\n    <p><span class=\"callout-line first\">Largeur du ski sous le pied.</span><span class=\"callout-line\"><strong>Étroit :</strong> passage de carre à carre rapide et précis.</span><span class=\"callout-line\"><strong>Large :</strong> plus physique à basculer, mais davantage de portance en neige souple.</span><span class=\"callout-line repere-block-v731\"><strong>Repères :</strong><span class=\"repere-row-v731\"><b>65–80 mm :</b> <i class=\"repere-piste-v731\">piste</i></span><span class=\"repere-row-v731\"><b>80–95 mm :</b> <i class=\"repere-allmountain-v731\">all-mountain</i></span><span class=\"repere-row-v731\"><b>95–136 mm :</b> <i class=\"repere-freeride-v731\">freeride</i></span></span></p>\n  </div>\n\n  <div class=\"anatomy-callout-v3 callout-tail-v3\">\n    <b>Talon</b>\n    <p><span class=\"callout-line\"><strong>Sortie de virage :</strong> il guide la fin de courbe et apporte de la relance.</span><span class=\"callout-line\"><strong>Stabilité :</strong> il participe à l'équilibre, notamment à vitesse élevée.</span><span class=\"callout-line\"><strong>Piste :</strong> plutôt plat et droit pour l'accroche et la précision.</span><span class=\"callout-line\"><strong>Freeride / freestyle :</strong> plus relevé pour faciliter les pivots, la neige molle et le ski en switch.</span></p>\n  </div>\n</div>\n\n<p class=\"anatomy-takeaway\"><b>À retenir :</b><span>Largeur, rocker et rigidité travaillent ensemble ; une seule caractéristique ne suffit pas à définir le comportement d'un ski.</span></p>"});
 window.SGD_PAGES.push({"title":"Lignes de cotes et rayon","chapter":"01 · Comprendre","html":"<div class=\"issue-line radius-issue-v6\"><span>CHAPITRE 01 / COMPRENDRE</span><em>GÉOMÉTRIE</em></div>\n<span class=\"eyebrow radius-eyebrow-v6\">COMPRENDRE LE RAYON</span>\n<h2 class=\"page-headline radius-title-v6\">Rayon <i>de courbure.</i></h2>\n<p class=\"page-intro radius-intro-v6\">Le rayon indique la courbe théorique du ski. Plus il est court, plus le ski tourne serré ; plus il est long, plus il favorise les grandes courbes.</p>\n\n<div class=\"radius-page-v6\">\n  <figure class=\"radius-master-v6\">\n    <img class=\"radius-diagram-v721\" src=\"./assets/rayon-exemples-clean.svg?v=0721\" alt=\"Trois vrais cercles tangents au même point du ski pour comparer un petit, un moyen et un grand rayon.\" loading=\"eager\" decoding=\"async\">\n    <img class=\"radius-ski-v721\" src=\"./assets/rossignol-photo-reelle.avif?v=0721\" alt=\"\" aria-hidden=\"true\" loading=\"eager\" decoding=\"async\">\n  </figure>\n\n  <section class=\"ski-info-v6\">\n    <div class=\"ski-info-copy-v6\">\n      <strong>OÙ LIRE L’INFO SUR LE SKI ?</strong>\n      <p>Les cotes sont généralement données dans l’ordre <b>spatule – patin – talon</b>. Le rayon est indiqué séparément par <b>R</b> ou <b>Radius</b>.</p>\n    </div>\n\n    <div class=\"ski-info-dims-v6\">\n      <span class=\"info-label-v6\">COTES DU SKI</span>\n      <div class=\"ski-dims-v6\"><span>118</span><i>–</i><b>95</b><i>–</i><span>108</span><small>mm</small></div>\n      <p class=\"ski-dims-notes-v729\"><span><b>118 mm</b> = largeur spatule.</span><span><b>95 mm</b> = largeur patin.</span><span><b>108 mm</b> = largeur talon.</span></p>\n    </div>\n\n    <div class=\"ski-info-radius-v6\">\n      <span class=\"info-label-v6\">RAYON</span>\n      <div>R = 17 m</div>\n      <p><b>R</b> ou <b>Radius</b> : le rayon est indiqué séparément.<br>Souvent imprimé près du talon ou des fixations.</p>\n    </div>\n  </section>\n\n  <div class=\"radius-summary-v6\"><b>À retenir :</b><span>Le rayon donne une tendance géométrique.<br>Le comportement réel dépend aussi de la longueur, du flex, de la construction, de la prise de carre et de la neige.</span></div>\n</div>"});
-window.SGD_PAGES.push({"title":"Cambres et rockers","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>PROFILS</em></div><span class=\"eyebrow\">LE SKI VU DE CÔTÉ</span><h2 class=\"page-headline\">Cambres <i>& rockers.</i></h2><p class=\"page-intro\">Cinq constructions de profil à comparer : zones relevées en bleu, contacts représentés en rouge, ligne de neige en pointillés.</p><figure class=\"editorial-figure\"><img class=\"editorial-diagram\" loading=\"eager\" decoding=\"async\" src=\"./assets/profils-edition.svg\" alt=\"Cinq profils de ski : cambre traditionnel, rocker avant, double rocker, full rocker et cambre plat avec rocker ; repères de contact et zones colorées.\"><figcaption>Comparaison pédagogique, profils schématiques à vide.</figcaption></figure><div class=\"editorial-insight\"><strong>À retenir</strong><p>Le rocker aide au pivot et à la portance selon le profil. Le cambre contribue à la prise de carre et au rebond. Aucun profil ne détermine seul le niveau du ski.</p></div>"});
+window.SGD_PAGES.push({"title":"Cambres et rockers","chapter":"01 · Comprendre","html":"<div class=\"camber-page-v8\">\n  <div class=\"issue-line camber-issue-v8\"><span>CHAPITRE 01 / COMPRENDRE</span><em>CAMBRES / ROCKERS</em></div>\n  <span class=\"eyebrow camber-eyebrow-v8\">COMPRENDRE LE CAMBRE</span>\n  <h2 class=\"page-headline camber-title-v8\">Du classique <i>à l’inversé.</i></h2>\n  <p class=\"page-intro camber-intro-v8\">Le profil du ski influence l’accroche, la tolérance et la facilité de pivot. Plus on va vers l’inversé, plus le ski devient joueur ; plus on revient vers le classique, plus il gagne en puissance et en précision.</p>\n\n  <div class=\"camber-profiles-v8\">\n    <section class=\"camber-row-v8\">\n      <div class=\"camber-copy-v8\"><span class=\"camber-num-v8\">1</span><div><h3>Cambre classique<br>d’un ski alpin</h3><p>Le centre est plus élevé. Contact long, bonne accroche et forte relance.</p></div></div>\n      <figure class=\"camber-visual-v8\"><svg viewBox=\"0 0 420 88\" aria-hidden=\"true\"><rect x=\"8\" y=\"56\" width=\"404\" height=\"18\" rx=\"3\" fill=\"#eef2f1\"/><line x1=\"8\" y1=\"56\" x2=\"412\" y2=\"56\" stroke=\"#8c9ca2\" stroke-width=\"1.5\"/><path d=\"M15 34 Q55 57 96 55 Q205 14 323 54 Q364 57 405 48\" fill=\"none\" stroke=\"#122a35\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M96 55 Q205 14 323 54\" fill=\"none\" stroke=\"#55b8f3\" stroke-width=\"9\" stroke-linecap=\"round\"/><line x1=\"96\" y1=\"50\" x2=\"96\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"323\" y1=\"50\" x2=\"323\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"103\" y1=\"73\" x2=\"316\" y2=\"73\" stroke=\"#1689db\" stroke-width=\"2\"/><path d=\"M103 73l8-5v10zM316 73l-8-5v10z\" fill=\"#1689db\"/><text x=\"210\" y=\"85\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"800\" fill=\"#1689db\">zone de contact avec la neige</text></svg></figure>\n    </section>\n    <section class=\"camber-row-v8\">\n      <div class=\"camber-copy-v8\"><span class=\"camber-num-v8\">2</span><div><h3>Cambre avec rocker<br>en spatule</h3><p>Le rocker réduit le contact à l’avant et facilite l’entrée en virage.</p></div></div>\n      <figure class=\"camber-visual-v8\"><svg viewBox=\"0 0 420 88\" aria-hidden=\"true\"><rect x=\"8\" y=\"56\" width=\"404\" height=\"18\" rx=\"3\" fill=\"#eef2f1\"/><line x1=\"8\" y1=\"56\" x2=\"412\" y2=\"56\" stroke=\"#8c9ca2\" stroke-width=\"1.5\"/><path d=\"M15 18 Q48 55 120 55 Q210 20 300 48 Q350 56 405 50\" fill=\"none\" stroke=\"#122a35\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M18 20 Q50 53 120 55\" fill=\"none\" stroke=\"#f48dbb\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M120 55 Q210 20 300 48 Q350 56 390 52\" fill=\"none\" stroke=\"#55b8f3\" stroke-width=\"9\" stroke-linecap=\"round\"/><rect x=\"52\" y=\"4\" width=\"70\" height=\"18\" rx=\"7\" fill=\"#ffd1e4\"/><text x=\"87\" y=\"17\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"900\" fill=\"#173847\">zone rocker</text><line x1=\"120\" y1=\"50\" x2=\"120\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"350\" y1=\"50\" x2=\"350\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"127\" y1=\"73\" x2=\"343\" y2=\"73\" stroke=\"#1689db\" stroke-width=\"2\"/><path d=\"M127 73l8-5v10zM343 73l-8-5v10z\" fill=\"#1689db\"/><text x=\"235\" y=\"85\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"800\" fill=\"#1689db\">zone de contact avec la neige</text></svg></figure>\n    </section>\n    <section class=\"camber-row-v8\">\n      <div class=\"camber-copy-v8\"><span class=\"camber-num-v8\">3</span><div><h3>Cambre avec double rocker</h3><p>Rocker spatule + talon : encore plus de pivot et de jouabilité.</p></div></div>\n      <figure class=\"camber-visual-v8\"><svg viewBox=\"0 0 420 88\" aria-hidden=\"true\"><rect x=\"8\" y=\"56\" width=\"404\" height=\"18\" rx=\"3\" fill=\"#eef2f1\"/><line x1=\"8\" y1=\"56\" x2=\"412\" y2=\"56\" stroke=\"#8c9ca2\" stroke-width=\"1.5\"/><path d=\"M15 20 Q50 55 112 55 Q210 22 308 55 Q370 55 405 20\" fill=\"none\" stroke=\"#122a35\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M18 22 Q52 53 112 55\" fill=\"none\" stroke=\"#f48dbb\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M112 55 Q210 22 308 55\" fill=\"none\" stroke=\"#55b8f3\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M308 55 Q368 53 402 22\" fill=\"none\" stroke=\"#f48dbb\" stroke-width=\"9\" stroke-linecap=\"round\"/><rect x=\"42\" y=\"4\" width=\"68\" height=\"18\" rx=\"7\" fill=\"#ffd1e4\"/><text x=\"76\" y=\"17\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"900\" fill=\"#173847\">zone rocker</text><rect x=\"310\" y=\"4\" width=\"68\" height=\"18\" rx=\"7\" fill=\"#ffd1e4\"/><text x=\"344\" y=\"17\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"900\" fill=\"#173847\">zone rocker</text><line x1=\"112\" y1=\"50\" x2=\"112\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"308\" y1=\"50\" x2=\"308\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"119\" y1=\"73\" x2=\"301\" y2=\"73\" stroke=\"#1689db\" stroke-width=\"2\"/><path d=\"M119 73l8-5v10zM301 73l-8-5v10z\" fill=\"#1689db\"/><text x=\"210\" y=\"85\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"800\" fill=\"#1689db\">zone de contact avec la neige</text></svg></figure>\n    </section>\n    <section class=\"camber-row-v8\">\n      <div class=\"camber-copy-v8\"><span class=\"camber-num-v8\">4</span><div><h3>Cambre plat</h3><p>Profil très tolérant et facile, avec un contact plus direct et régulier.</p></div></div>\n      <figure class=\"camber-visual-v8\"><svg viewBox=\"0 0 420 88\" aria-hidden=\"true\"><rect x=\"8\" y=\"56\" width=\"404\" height=\"18\" rx=\"3\" fill=\"#eef2f1\"/><line x1=\"8\" y1=\"56\" x2=\"412\" y2=\"56\" stroke=\"#8c9ca2\" stroke-width=\"1.5\"/><path d=\"M15 35 Q45 55 90 55 L335 55 Q378 55 405 37\" fill=\"none\" stroke=\"#122a35\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M90 55 L335 55\" fill=\"none\" stroke=\"#55b8f3\" stroke-width=\"9\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"50\" x2=\"90\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"335\" y1=\"50\" x2=\"335\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"97\" y1=\"73\" x2=\"328\" y2=\"73\" stroke=\"#1689db\" stroke-width=\"2\"/><path d=\"M97 73l8-5v10zM328 73l-8-5v10z\" fill=\"#1689db\"/><text x=\"212\" y=\"85\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"800\" fill=\"#1689db\">zone de contact avec la neige</text></svg></figure>\n    </section>\n    <section class=\"camber-row-v8\">\n      <div class=\"camber-copy-v8\"><span class=\"camber-num-v8\">5</span><div><h3>Cambre inversé</h3><p>Le centre touche la neige, les extrémités sont nettement relevées.</p></div></div>\n      <figure class=\"camber-visual-v8\"><svg viewBox=\"0 0 420 88\" aria-hidden=\"true\"><rect x=\"8\" y=\"56\" width=\"404\" height=\"18\" rx=\"3\" fill=\"#eef2f1\"/><line x1=\"8\" y1=\"56\" x2=\"412\" y2=\"56\" stroke=\"#8c9ca2\" stroke-width=\"1.5\"/><path d=\"M15 12 Q72 55 126 57 Q210 62 294 57 Q350 55 405 12\" fill=\"none\" stroke=\"#122a35\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M126 57 Q210 62 294 57\" fill=\"none\" stroke=\"#55b8f3\" stroke-width=\"9\" stroke-linecap=\"round\"/><line x1=\"126\" y1=\"50\" x2=\"126\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"294\" y1=\"50\" x2=\"294\" y2=\"82\" stroke=\"#52656d\" stroke-dasharray=\"4 3\"/><line x1=\"133\" y1=\"73\" x2=\"287\" y2=\"73\" stroke=\"#1689db\" stroke-width=\"2\"/><path d=\"M133 73l8-5v10zM287 73l-8-5v10z\" fill=\"#1689db\"/><text x=\"210\" y=\"85\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"800\" fill=\"#1689db\">zone de contact avec la neige</text></svg></figure>\n    </section>\n  </div>\n\n  <aside class=\"camber-takeaway-v8\">\n    <div class=\"camber-takeaway-head-v8\"><b>À retenir</b><strong>Du classique à l’inversé, on perd progressivement de l’accroche et de la puissance sur neige dure, mais on gagne en tolérance, en pivot et en jouabilité.</strong></div>\n    <div class=\"camber-scale-v8\"><span>PLUS D’ACCROCHE<br>ET DE PUISSANCE</span><i></i><span>PLUS DE TOLÉRANCE<br>ET DE JOUABILITÉ</span></div>\n    <div class=\"camber-mini-v8\">\n      <div><b>1 · Classique</b><p>Beaucoup de dynamisme, de pop, de puissance et d’accroche. Plus exigeant, moins facile pour un débutant.</p></div>\n      <div><b>2 · Rocker spatule</b><p>Garde de la nervosité, mais facilite le pivot et l’enchaînement des virages. Plus joueur.</p></div>\n      <div><b>3 · Double rocker</b><p>Même logique, mais encore plus joueur et maniable.</p></div>\n      <div><b>4 · Plat</b><p>Plus facile, tolérant et permissif, mais moins d’accroche quand on veut envoyer fort.</p></div>\n      <div><b>5 · Inversé</b><p>Ultra joueur et très facile à tourner, mais moins stable sur neige dure à haute vitesse.</p></div>\n    </div>\n  </aside>\n</div>"});
 window.SGD_PAGES.push({"title":"Au cœur du ski","chapter":"01 · Comprendre","html":"<div class=\"issue-line\"><span>CHAPITRE 01 / COMPRENDRE</span><em>CONSTRUCTION</em></div><span class=\"eyebrow\">MATÉRIAUX ET ARCHITECTURE</span><h2 class=\"page-headline\">Ce qui se cache <i>à l'intérieur.</i></h2><p class=\"page-intro\">Les couches travaillent ensemble : renforts, noyau, carres et semelle. Chaque assemblage crée un compromis.</p><div class=\"figure-shell\"><svg class=\"material-svg\" viewBox=\"0 0 540 310\" role=\"img\" aria-label=\"Vue éclatée schématique montrant les couches du ski : revêtement, fibre, noyau, fibre, semelle et carres.\"><g transform=\"translate(30 10) skewY(-7)\"><path d=\"M12 22H470Q490 22 490 36V45H12Z\" fill=\"#233846\" stroke=\"#a7b7be\"/><path d=\"M12 77H490V92H12Z\" fill=\"#8caaaf\" stroke=\"#567582\"/><path d=\"M12 121H490V165H12Z\" fill=\"#bb9266\" stroke=\"#916c49\"/><path d=\"M12 191H490V207H12Z\" fill=\"#7e9da3\"/><path d=\"M12 236H490V251H12Z\" fill=\"#152b35\" stroke=\"#c2a77b\" stroke-width=\"2\"/></g><g font-family=\"Arial\" font-size=\"12\" font-weight=\"700\" fill=\"#1c3a48\"><text x=\"60\" y=\"24\">TOPSHEET</text><text x=\"60\" y=\"85\">FIBRES / RENFORTS</text><text x=\"60\" y=\"143\">NOYAU</text><text x=\"60\" y=\"210\">FIBRES INFÉRIEURES</text><text x=\"60\" y=\"267\" fill=\"#fff\">SEMELLE ET CARRES</text></g></svg></div><div class=\"material-legend\"><div><b>Bois</b>Flex progressif, très variable selon l'essence et l'usinage.</div><div><b>Mousse / composite</b>Solutions diverses, souvent choisies pour le poids et le coût.</div><div><b>Fibre de verre</b>Renfort extrêmement courant.</div><div><b>Carbone / titanal</b>Peuvent modifier précision, masse et amortissement selon leur intégration.</div></div><div class=\"material-callout\"><strong>À ne pas confondre</strong><p>Un noyau bois n'est pas synonyme de ski expert. Un ski de loisir peut lui aussi avoir un noyau bois.</p></div>"});
 window.SGD_PAGES.push({"title":"Piste loisir","chapter":"02 · Familles","html":"<div class=\"issue-line\"><span>CHAPITRE 02 / LES FAMILLES</span><em>ALPIN · 01</em></div><span class=\"eyebrow\">LE SKI ACCESSIBLE</span><h2 class=\"page-headline\">Piste <i>loisir.</i></h2><div class=\"image-panel ski-photo\"><span class=\"image-caption\">LA PRATIQUE SUR PISTE</span></div><p class=\"page-intro\" style=\"margin-top:21px\">L'objectif : un ski qui aide à apprendre, évoluer sans fatigue excessive et profiter de la piste à allure modérée.</p><div class=\"feature-list\"><div><b>Terrain</b><span>Piste damée principalement</span></div><div><b>Comportement</b><span>Entrée en virage accessible, pivot facilité, flex souvent modéré</span></div><div><b>Skieur</b><span>Découverte, loisir, progression</span></div><div><b>Attention</b><span>Les modèles ne sont pas identiques : longueur, rayon et rigidité restent importants</span></div></div><div class=\"bottom-note\">Un ski « facile » n'est pas nécessairement un ski bas de gamme. Il répond à un besoin différent.</div>"});
 window.SGD_PAGES.push({"title":"Piste performance","chapter":"02 · Familles","html":"<div class=\"issue-line\"><span>CHAPITRE 02 / LES FAMILLES</span><em>ALPIN · 02</em></div><span class=\"eyebrow\">LE SKI PRÉCIS</span><h2 class=\"page-headline\">Piste <i>performance.</i></h2><div class=\"image-panel performance-photo\"><span class=\"image-caption\">COURBE / TENUE / RELANCE</span></div><p class=\"page-intro\" style=\"margin-top:21px\">Cette famille cherche une conduite de courbe précise sur neige damée, avec davantage de soutien lorsqu'on appuie.</p><div class=\"feature-list\"><div><b>Terrain</b><span>Piste, notamment neige ferme</span></div><div><b>Comportement</b><span>Bonne résistance à la torsion, accroche et relance selon le modèle</span></div><div><b>Skieur</b><span>Pratique engagée, bonne maîtrise des appuis</span></div><div><b>Variantes</b><span>Rayon court type slalom ou rayon plus long pour grandes courbes</span></div></div><div class=\"bottom-note\">Un ski sportif n'est pas automatiquement préférable : un produit trop exigeant peut fatiguer et freiner la progression.</div>"});
