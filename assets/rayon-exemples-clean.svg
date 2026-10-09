@@ -1,4 +1,4 @@
-<!-- SPORT GOOD DEAL · V07.21 · schéma rayons sans image raster embarquée -->
+<!-- SPORT GOOD DEAL · V07.25 · schéma rayons lisibilité renforcée -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
   <title id="title">Comparaison des rayons de courbure R11, R15 et R20+</title>
   <desc id="desc">Un ski vertical sert de point commun à trois cercles de rayon croissant : vert pour R11, bleu pour R15 et rouge pour R20+.</desc>
@@ -47,22 +47,22 @@
   <!-- Légendes -->
   <g font-family="Arial, Helvetica, sans-serif">
     <g transform="translate(300 376)">
-      <text x="0" y="0" font-size="58" font-weight="900" fill="#84c400">R11</text>
-      <text x="2" y="31" font-size="28" font-weight="800" fill="#102a43">ski agile,</text>
-      <text x="2" y="63" font-size="28" font-weight="800" fill="#84c400">virage serré</text>
+      <text x="0" y="0" font-size="66" font-weight="900" fill="#84c400">R11</text>
+      <text x="2" y="31" font-size="31" font-weight="800" fill="#102a43">ski agile,</text>
+      <text x="2" y="63" font-size="31" font-weight="800" fill="#84c400">virage serré</text>
     </g>
 
     <g transform="translate(592 376)">
-      <text x="0" y="0" font-size="58" font-weight="900" fill="#1378e8">R15</text>
-      <text x="2" y="31" font-size="27" font-weight="800" fill="#102a43">ski polyvalent,</text>
-      <text x="2" y="63" font-size="27" font-weight="800" fill="#1378e8">multivirage</text>
-      <text x="2" y="88" font-size="18" font-weight="500" fill="#102a43">(à la fois court et long)</text>
+      <text x="0" y="0" font-size="66" font-weight="900" fill="#1378e8">R15</text>
+      <text x="2" y="31" font-size="30" font-weight="800" fill="#102a43">ski polyvalent,</text>
+      <text x="2" y="63" font-size="30" font-weight="800" fill="#1378e8">multivirage</text>
+      <text x="2" y="88" font-size="21" font-weight="500" fill="#102a43">(à la fois court et long)</text>
     </g>
 
     <g transform="translate(895 376)">
-      <text x="0" y="0" font-size="58" font-weight="900" fill="#ff1528">R20+</text>
-      <text x="2" y="31" font-size="27" font-weight="800" fill="#102a43">ski stable et rapide,</text>
-      <text x="2" y="63" font-size="27" font-weight="800" fill="#ff1528">grande courbe</text>
+      <text x="0" y="0" font-size="66" font-weight="900" fill="#ff1528">R20+</text>
+      <text x="2" y="31" font-size="30" font-weight="800" fill="#102a43">ski stable et rapide,</text>
+      <text x="2" y="63" font-size="30" font-weight="800" fill="#ff1528">grande courbe</text>
     </g>
   </g>
 </svg>
