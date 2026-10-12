@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1000" role="img" aria-labelledby="titre description">
+<title id="titre">Rayon de courbure : petit, moyen et grand rayon</title>
+<desc id="description">Page quatre du guide du ski SPORT GOOD DEAL. Cercles de rayon R11, R15 et R20+, comparatif des traces de virages en neige et repères pour lire les cotes du ski.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2=".25" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#f9faf8"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2=".95" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f1f6f5"/></linearGradient>
+ <linearGradient id="ski" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#334a4b"/><stop offset=".47" stop-color="#142932"/><stop offset="1" stop-color="#739061"/></linearGradient>
+ <clipPath id="clip"><rect x="36" y="217" width="688" height="422" rx="10"/></clipPath>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#214251" flood-opacity=".14"/></filter>
+ <marker id="axi" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#6b8590" stroke-width="1.7"/></marker>
+</defs>
+<style>
+ text{font-family:Arial,Helvetica,sans-serif;fill:#183642} .cap{font-size:12px;font-weight:800;letter-spacing:2px}.body{font-size:16px;fill:#516974}.heading{font-weight:900;fill:#163540}.small{font-size:14px;fill:#536d75}.tiny{font-size:11px;fill:#71858a}.label{font-size:15px;font-weight:900;letter-spacing:1.1px}.card{fill:#fff;stroke:#dce5e2;stroke-width:1.4}.gold{fill:#ac7e47}.muted{fill:#566f79}.softline{stroke:#dfe6e4;stroke-width:1.5}
+</style>
+<rect width="760" height="1000" fill="url(#paper)"/>
+<!-- Page header -->
+<text x="35" y="39" class="cap" font-size="11" fill="#586e76">CHAPITRE 01 / COMPRENDRE</text>
+<text x="723" y="39" text-anchor="end" class="cap gold" fill="#a97e4d">GÉOMÉTRIE</text>
+<line x1="35" y1="55" x2="725" y2="55" stroke="#d5dedd" stroke-width="1.5"/>
+<text x="35" y="87" class="cap gold">COMPRENDRE LE RAYON</text>
+<text x="34" y="144" font-family="Georgia,serif" font-size="56" font-weight="700" fill="#122e3e">Rayon</text>
+<text x="201" y="144" font-family="Georgia,serif" font-size="53" font-style="italic" fill="#b38855">de courbure.</text>
+<text x="35" y="174" class="body">Le rayon indique la courbe théorique du ski. Plus il est court, plus le ski</text>
+<text x="35" y="197" class="body">tourne serré ; plus il est long, plus il favorise les grandes courbes.</text>
+<!-- Hero panel -->
+<rect x="35" y="216" width="690" height="425" rx="11" fill="url(#panel)" stroke="#dbe5e4" stroke-width="1.5"/>
+<g clip-path="url(#clip)">
+ <!-- Winter scene, very subtle to keep radii legible -->
+ <path d="M35 596 L96 564 L130 578 L211 528 L287 573 L334 554 L391 578 L459 540 L516 562 L586 529 L650 566 L725 547 L725 641 L35 641Z" fill="#eef3f3" opacity=".55"/>
+ <path d="M35 615 L97 588 L148 606 L225 567 L283 599 L333 581 L394 610 L476 580 L540 608 L607 585 L725 608 L725 641 L35 641Z" fill="#e4eded" opacity=".44"/>
+ <g stroke="#d4dfdf" stroke-width="2" opacity=".35">
+  <path d="M545 624v-48m-16 24 16-17 16 17m-28-8 12-12 12 12M615 624v-57m-18 24 18-21 18 21m-31-7 13-15 13 15M675 626v-44m-15 22 15-17 15 17"/>
+ </g>
+ <!-- Three true circles with their common tangent point on the left -->
+ <g fill="none" stroke-linecap="round" stroke-width="3.5" stroke-dasharray="9 9">
+  <circle cx="225" cy="442" r="105" stroke="#79b933"/>
+  <circle cx="280" cy="442" r="160" stroke="#2381cb"/>
+  <circle cx="340" cy="442" r="220" stroke="#dd5361"/>
+ </g>
+ <!-- Direction arrowheads: upper rising part, pointing RIGHT / UP -->
+ <g>
+  <path d="M168 371 L187 357 L181 380 Z" fill="#79b933" transform="rotate(-3 178 369)"/>
+  <path d="M184 320 L208 304 L202 329 Z" fill="#2381cb"/>
+  <path d="M202 261 L229 243 L222 273 Z" fill="#dd5361"/>
+ </g>
+ <!-- Main axis -->
+ <line x1="121" y1="442" x2="696" y2="442" stroke="#49626b" stroke-width="1.6" marker-end="url(#axi)" opacity=".75"/>
+ <circle cx="225" cy="442" r="7.5" fill="#79b933"/><circle cx="280" cy="442" r="7.5" fill="#2381cb"/><circle cx="340" cy="442" r="7.5" fill="#dd5361"/>
+ <!-- Ski, seen from above -->
+ <g filter="url(#shadow)">
+  <path d="M85 346 Q88 327 99 319 Q109 326 112 346 L117 536 Q117 561 101 574 Q86 563 86 539Z" fill="url(#ski)" stroke="#16313b" stroke-width="2"/>
+  <path d="M88 383 L113 393 L114 411 L88 400Z" fill="#99a952" opacity=".85"/>
+  <path d="M88 463 L116 474 L116 490 L88 480Z" fill="#9db35e" opacity=".7"/>
+  <path d="M91 522 L113 517 L112 532 L92 544Z" fill="#bfc8bb" opacity=".6"/>
+  <rect x="91" y="410" width="20" height="45" rx="6" fill="#d1d7d0" stroke="#314e56" stroke-width="2"/>
+  <rect x="92" y="417" width="18" height="11" rx="3" fill="#243c46"/>
+  <rect x="92" y="438" width="18" height="12" rx="3" fill="#243c46"/>
+  <path d="M98 323 L99 568" stroke="#e4e5df" stroke-opacity=".7" stroke-width="1"/>
+ </g>
+ <circle cx="121" cy="442" r="8" fill="#fff" stroke="#405963" stroke-width="2.4"/><circle cx="121" cy="442" r="2.3" fill="#405963"/>
+ <!-- Labels -->
+ <g>
+  <rect x="160" y="362" width="123" height="59" rx="6" fill="#fffefa" fill-opacity=".93"/>
+  <text x="166" y="384" font-size="27" font-weight="900" fill="#6eac26">R11</text>
+  <text x="166" y="402" font-size="12" font-weight="700" fill="#314e57">ski agile,</text>
+  <text x="166" y="417" font-size="12" font-weight="800" fill="#6eac26">virage serré</text>
+ </g>
+ <g>
+  <rect x="330" y="341" width="144" height="81" rx="6" fill="#fffefa" fill-opacity=".95"/>
+  <text x="337" y="367" font-size="27" font-weight="900" fill="#237dcb">R15</text>
+  <text x="337" y="385" font-size="12.5" font-weight="700" fill="#314e57">ski polyvalent,</text>
+  <text x="337" y="401" font-size="12.5" font-weight="800" fill="#237dcb">multivirage</text>
+  <text x="337" y="414" font-size="10.7" fill="#586d78">(à la fois court et long)</text>
+ </g>
+ <g>
+  <rect x="526" y="343" width="187" height="65" rx="6" fill="#fffefa" fill-opacity=".95"/>
+  <text x="535" y="370" font-size="27" font-weight="900" fill="#d54e5c">R20+</text>
+  <text x="535" y="389" font-size="12.5" font-weight="700" fill="#314e57">ski stable et rapide,</text>
+  <text x="535" y="404" font-size="12.5" font-weight="800" fill="#d54e5c">grande courbe</text>
+ </g>
+ <!-- Ski tracks in the snow (two directional comparisons) -->
+ <g transform="translate(536 479)">
+  <rect x="0" y="0" width="177" height="142" rx="8" fill="#fff" fill-opacity=".69" stroke="#dbe5e4"/>
+  <text x="11" y="20" font-size="11" font-weight="800" fill="#658e2b">R11 · VIRAGES COURTS</text>
+  <text x="11" y="86" font-size="11" font-weight="800" fill="#cb4d5c">R20+ · GRANDES COURBES</text>
+  <!-- tight wiggles advancing left to right: multiple short quick turns -->
+  <path d="M12 44 C24 22 40 22 49 44 S74 65 84 44 S109 23 119 44 S147 65 161 41" fill="none" stroke="#83b639" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M12 49 C24 27 40 27 49 49 S74 70 84 49 S109 28 119 49 S147 70 161 46" fill="none" stroke="#c6d9b2" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- long-radius traces: gently bending, predominantly straight, wider sweeps -->
+  <path d="M12 114 C57 103 88 104 111 122 S148 131 161 112" fill="none" stroke="#d85864" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M12 119 C57 108 88 109 111 127 S148 136 161 117" fill="none" stroke="#f1bfc0" stroke-width="1.4" stroke-linecap="round"/>
+ </g>
+</g>
+<!-- Three reference cards -->
+<g>
+ <rect x="35" y="652" width="219" height="166" rx="10" class="card"/>
+ <rect x="266" y="652" width="219" height="166" rx="10" class="card"/>
+ <rect x="497" y="652" width="228" height="166" rx="10" class="card"/>
+ <circle cx="57" cy="677" r="12" fill="#f3e7d5"/><path d="M54 672h7v9h-7z M54 675h7" fill="none" stroke="#b17a3d" stroke-width="1.7"/>
+ <text x="74" y="680" class="label gold" font-size="13">OÙ LIRE L’INFO SUR LE SKI ?</text>
+ <text x="49" y="710" class="small" font-size="13">Les cotes sont généralement</text>
+ <text x="49" y="730" class="small" font-size="13">données dans l’ordre</text>
+ <text x="49" y="750" font-size="14" font-weight="800" fill="#1b3d4a">spatule – patin – talon.</text>
+ <text x="49" y="775" class="small">Le rayon est indiqué</text>
+ <text x="49" y="795" class="small">séparément par <tspan font-weight="900">R</tspan> ou <tspan font-weight="900">Radius</tspan>.</text>
+ <text x="282" y="681" class="label muted">COTES DU SKI</text>
+ <text x="279" y="720" font-size="26" font-weight="800" fill="#173846">118</text>
+ <text x="326" y="720" font-size="25" fill="#173846">–</text>
+ <circle cx="370" cy="709" r="23" fill="#f5fbff" stroke="#1485bd" stroke-width="3"/>
+ <text x="370" y="719" font-size="27" text-anchor="middle" font-weight="900" fill="#0a78ad">95</text>
+ <text x="400" y="720" font-size="25" fill="#173846">–</text>
+ <text x="425" y="720" font-size="26" font-weight="800" fill="#173846">108</text>
+ <text x="460" y="735" font-size="10" fill="#73848a">mm</text>
+ <text x="282" y="756" class="small" font-size="13"><tspan font-weight="800">118 mm</tspan> = largeur spatule.</text>
+ <text x="282" y="778" class="small" font-size="13"><tspan font-weight="800">95 mm</tspan> = largeur patin.</text>
+ <text x="282" y="799" class="small" font-size="13"><tspan font-weight="800">108 mm</tspan> = largeur talon.</text>
+ <text x="513" y="681" class="label muted">RAYON</text>
+ <rect x="514" y="693" width="132" height="38" rx="19" fill="#fff" stroke="#d19a56" stroke-width="2.4"/>
+ <text x="580" y="718" text-anchor="middle" font-size="24" font-weight="900" fill="#183942">R = 17 m</text>
+ <text x="513" y="753" class="small" font-size="13"><tspan font-weight="900">R ou Radius</tspan> : le rayon est</text>
+ <text x="513" y="772" class="small" font-size="13">indiqué séparément.</text>
+ <text x="513" y="791" class="small" font-size="13">Souvent imprimé près du</text>
+ <text x="513" y="807" class="small" font-size="13">talon ou des fixations.</text>
+</g>
+<!-- Bottom takeaway -->
+<rect x="35" y="830" width="690" height="119" rx="10" fill="#f4eee4" stroke="#e4d5bf" stroke-width="1.4"/>
+<circle cx="65" cy="864" r="17" fill="#b78645"/>
+<path d="M60 857c1-5 10-5 11 0 1 4-3 7-3 10h-5c0-3-4-6-3-10z M63 870h6m-5 4h4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+<text x="91" y="870" font-family="Georgia,serif" font-size="25" font-weight="700" fill="#ac7e47">À retenir :</text>
+<line x1="247" y1="845" x2="247" y2="935" stroke="#d8c1a7" stroke-width="1.5"/>
+<g font-size="14.5" fill="#405962" font-family="Arial,Helvetica,sans-serif">
+ <text x="265" y="855" font-weight="800">Le rayon donne une tendance naturelle du ski à tourner.</text>
+ <circle cx="269" cy="876" r="3" fill="#b78645"/>
+ <text x="280" y="880"><tspan font-weight="800">Rayon court :</tspan> virages serrés, mise en courbe facile, ski vif.</text>
+ <circle cx="269" cy="902" r="3" fill="#b78645"/>
+ <text x="280" y="906"><tspan font-weight="800">Rayon long :</tspan> grandes courbes, ski plus posé et stable.</text>
+ <circle cx="269" cy="928" r="3" fill="#b78645"/>
+ <text x="280" y="932" font-size="13.5">La longueur, le flex, la technique et la neige comptent aussi.</text>
+</g>
+<line x1="35" y1="973" x2="725" y2="973" stroke="#dbe3e1"/>
+<text x="35" y="989" font-size="10.5" font-weight="800" letter-spacing="1.25" fill="#6d7f87">SPORT GOOD DEAL / GUIDE DU SKI</text>
+<text x="725" y="989" text-anchor="end" font-size="10.5" font-weight="800" letter-spacing="1.25" fill="#6d7f87">04 / 11</text>
+</svg>
