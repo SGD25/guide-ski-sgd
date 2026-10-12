@@ -39,7 +39,7 @@
  </g>
  <!-- Direction arrowheads: upper rising part, pointing RIGHT / UP -->
  <g>
-  <path d="M168 371 L187 357 L181 380 Z" fill="#79b933" transform="rotate(-3 178 369)"/>
+  <path d="M158 353 L184 334 L176 358 Z" fill="#79b933"/>
   <path d="M184 320 L208 304 L202 329 Z" fill="#2381cb"/>
   <path d="M202 261 L229 243 L222 273 Z" fill="#dd5361"/>
  </g>
@@ -97,7 +97,7 @@
  <rect x="266" y="652" width="219" height="166" rx="10" class="card"/>
  <rect x="497" y="652" width="228" height="166" rx="10" class="card"/>
  <circle cx="57" cy="677" r="12" fill="#f3e7d5"/><path d="M54 672h7v9h-7z M54 675h7" fill="none" stroke="#b17a3d" stroke-width="1.7"/>
- <text x="74" y="680" class="label gold" font-size="13">OÙ LIRE L’INFO SUR LE SKI ?</text>
+ <text x="75" y="674" font-size="11.5" font-weight="900" letter-spacing=".5" fill="#ac7e47">OÙ LIRE L’INFO</text><text x="75" y="689" font-size="11.5" font-weight="900" letter-spacing=".5" fill="#ac7e47">SUR LE SKI ?</text>
  <text x="49" y="710" class="small" font-size="13">Les cotes sont généralement</text>
  <text x="49" y="730" class="small" font-size="13">données dans l’ordre</text>
  <text x="49" y="750" font-size="14" font-weight="800" fill="#1b3d4a">spatule – patin – talon.</text>
