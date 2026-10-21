@@ -1,15 +1,16 @@
 """Render the approved guide as complete HD page images.
 
-Pillow typesets exact content; product photographs are only placed proportionally.
+Pillow typesets exact content. Product photographs preserve their proportions,
+except the width comparison on page 4, deliberately emphasized at the user’s request.
 The old published pages remain in assets/ and Git history.
 """
 from pathlib import Path
 import json, math
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageChops
 
 ROOT = Path(__file__).resolve().parents[2]
 MEDIA = Path(__file__).parent / 'media'
-OUT = ROOT / 'assets/guide-v752'
+OUT = ROOT / 'assets/guide-v753'
 OUT.mkdir(exist_ok=True)
 CHECK = Path(__file__).parent / '.cache'
 CHECK.mkdir(exist_ok=True)
@@ -34,6 +35,15 @@ def ft(size,kind='sans'):
 class Page:
     def __init__(self,n):
         self.n=n;self.accent=TEAL;self.soft=PALE;self.im=Image.new('RGB',(W,H),P['fond']);self.d=ImageDraw.Draw(self.im);self.links=[]
+        corners={3:((1430,445,2380,1080),.75),4:((1710,100,2390,420),.36),5:((1650,110,2390,420),.40),6:((1970,100,2390,415),.32),7:((1350,2810,2380,2970),.32),8:((1050,2640,2380,2940),.65),9:((1650,105,2390,420),.34)}
+        if n in corners:self.mountains(*corners[n])
+    def mountains(self,box,opacity=.5):
+        path=MEDIA/'montagnes-aquarelle-v753.png'
+        if not path.exists():return
+        im=Image.open(path).convert('RGBA')
+        im=ImageOps.contain(im,(round(box[2]-box[0]),round(box[3]-box[1])),Image.Resampling.LANCZOS)
+        im.putalpha(im.getchannel('A').point(lambda a:round(a*opacity)))
+        self.im.paste(im,(round((box[0]+box[2]-im.width)/2),round((box[1]+box[3]-im.height)/2)),im)
     def set_accent(self,i):
         self.accent=ACCENTS[i%len(ACCENTS)];self.soft=SOFTS[i%len(SOFTS)]
     def rect(self,box,fill=WHITE,outline=LINE,r=22,width=3):
@@ -63,7 +73,22 @@ class Page:
         path=MEDIA/name if Path(name).suffix else MEDIA/(name+'.jpg')
         im=Image.open(path).convert('RGBA')
         im=ImageOps.contain(im,(round(box[2]-box[0]),round(box[3]-box[1])),Image.Resampling.LANCZOS)
-        self.im.paste(im,(round((box[0]+box[2]-im.width)/2),round((box[1]+box[3]-im.height)/2)),im)
+        xy=(round((box[0]+box[2]-im.width)/2),round((box[1]+box[3]-im.height)/2))
+        self.im.paste(im,xy,im)
+        return (xy[0],xy[1],im.width,im.height)
+    def photo_cover(self,name,box,center=(.5,.5)):
+        im=Image.open(MEDIA/name).convert('RGB')
+        im=ImageOps.fit(im,(round(box[2]-box[0]),round(box[3]-box[1])),Image.Resampling.LANCZOS,centering=center)
+        self.im.paste(im,(round(box[0]),round(box[1])))
+    def ski_width_example(self,name,cx,y,w,h):
+        # Page 4 only: the user explicitly requested a modest visual emphasis
+        # of width differences. These are teaching comparisons, not scale plans.
+        im=Image.open(MEDIA/name).convert('RGB')
+        mask=ImageChops.difference(im,Image.new('RGB',im.size,'white')).convert('L').point(lambda a:255 if a>18 else 0)
+        bbox=mask.getbbox()
+        if bbox:im=im.crop(bbox)
+        im=im.resize((w,h),Image.Resampling.LANCZOS)
+        self.im.paste(im,(round(cx-w/2),y))
     def header(self,title,subtitle,chapter='01  /  COMPRENDRE'):
         self.accent=TEAL;self.soft=PALE
         label='OUVERTURE  /  LE SOMMAIRE' if self.n==2 else 'CHAPITRE '+chapter
@@ -145,45 +170,77 @@ def person(p,x,y,h,color):
     p.line((x,y+116,x,y+h*.55),'#D6E8EB',3)
 
 def cover():
-    p=Page(1);p.im.paste(INK,(0,0,W,H));p.d=ImageDraw.Draw(p.im)
-    p.text(110,105,'SPORT GOOD DEAL',46,'bold',WHITE)
-    p.text(110,218,'FORMATION VENDEURS & LOUEURS',32,'bold','#ACD6DC')
-    p.line((110,312,2290,312),'#628D9B',3)
-    p.text(108,460,'Le guide',252,'serif',WHITE)
-    p.text(108,750,'du ski.',290,'italic','#A3D4D9')
-    p.text(115,1150,'Comprendre le matériel.\nTrouver les mots pour bien conseiller.',54,width=2090,fill=WHITE,leading=73)
-    p.photo('montagne',(110,1430,2290,2710))
-    for x,n,title,desc in [(110,'01','Comprendre','Les bases du matériel'),(870,'02','Reconnaître','Les familles de skis'),(1630,'03','Conseiller','Des arguments concrets')]:
-        p.text(x,2840,n,34,'bold','#A3D4D9');p.text(x,2910,title,59,'serif',WHITE)
-        p.text(x,3000,desc,34,fill='#D9EAEE')
-    p.line((110,3200,2290,3200),'#628D9B',3)
-    p.text(110,3250,'LE MANUEL POUR PRENDRE CONFIANCE EN MAGASIN',30,'bold',WHITE)
-    p.text(2290,3250,'01',30,'bold',WHITE,center=True)
+    p=Page(1);p.photo_cover('couverture-v753.png',(0,0,W,H))
+    veil=Image.new('RGBA',(W,H),(255,255,255,0));vd=ImageDraw.Draw(veil)
+    for y in range(1670):
+        alpha=245 if y<520 else round(245*max(0,1-(y-520)/1150))
+        vd.line((0,y,W,y),fill=(250,252,253,alpha))
+    for y in range(2700,H):
+        vd.line((0,y,W,y),fill=(250,252,253,round(220*(y-2700)/(H-2700))))
+    p.im=Image.alpha_composite(p.im.convert('RGBA'),veil).convert('RGB');p.d=ImageDraw.Draw(p.im)
+    p.text(100,95,'SPORT GOOD DEAL',48,'bold',INK)
+    p.text(100,190,'LE GUIDE DE FORMATION SKI',35,'bold',TEAL)
+    p.line((100,282,2300,282),LINE,3)
+    p.text(96,405,'Le guide',248,'serif',INK)
+    p.text(96,710,'du ski.',294,'italic',CORAL)
+    p.text(105,1095,'Comprendre le matériel.\nTrouver les mots pour bien conseiller.',56,'sans',INK,width=2100,leading=78)
+    for x,n,title,body in [(70,'01','Le matériel','Les formes, les dimensions\net la construction.'),(840,'02','Les familles','Les terrains, les programmes\net les sensations.'),(1610,'03','Les bons mots','Des exemples concrets\npour parler au client.')]:
+        p.rect((x,2785,x+720,3140),WHITE,LINE,24)
+        p.text(x+32,2813,n,34,'bold',TEAL)
+        p.text(x+32,2878,title,59,'serif',INK)
+        p.text(x+32,2970,body,37,width=650,leading=49)
+    p.line((70,3240,2330,3240),INK,2)
+    p.text(76,3280,'COMPRENDRE  /  RECONNAÎTRE  /  CONSEILLER',31,'bold',INK)
+    p.text(2325,3280,'01',31,'bold',INK,center=True)
     return p
 
 TOPICS=[('Anatomie du ski',3),('Largeur et longueur',4),('Lignes de cotes et rayon',5),('Cambres et rockers',6),('Au cœur du ski',7),('Les familles de skis',8),('Les skis de piste',9),('Exemples de skis de piste',10),('Les skis all-mountain',11),('Exemples all-mountain',12)]
+
+
 def contents():
-    p=Page(2);p.header('Au fil des pages.','Un parcours simple : comprendre le matériel, puis reconnaître les familles.','00  /  LE SOMMAIRE')
-    for x,chapter,title,sub,topics in [(70,'01','Comprendre le ski','LES BASES POUR EXPLIQUER',TOPICS[:5]),(1230,'02','Les familles','LES REPÈRES POUR CONSEILLER',TOPICS[5:])]:
-        p.rect((x,495,x+1100,2480));p.number(x+38,540,chapter)
-        p.text(x+38,670,title,74,'serif',INK)
-        p.text(x+40,780,sub,29,'bold',TEAL)
-        y=940
-        for label,n in topics:
-            p.line((x+40,y-35,x+1060,y-35))
-            p.text(x+40,y,label,45,'serif',INK,width=800)
-            p.rect((x+895,y-10,x+1045,y+70),PALE,None,12)
-            p.text(x+970,y+7,f'{n:02}  →',34,'bold',TEAL,center=True)
-            p.link((x+25,y-35,x+1075,y+130),n,label);y+=270
-    p.rect((70,2570,2330,2865),DARK,None)
-    p.text(120,2610,'Un guide à utiliser pendant la vente.',63,'serif',WHITE)
-    p.text(120,2713,'Les pages de repères expliquent le matériel. Les exemples donnent des mots et des arguments pour parler au client.',38,fill=WHITE,width=2130)
-    p.text(76,3040,'Cliquez sur un sujet pour accéder directement à sa page.',35,fill=TEAL)
+    p=Page(2)
+    p.text(76,48,'LE SOMMAIRE  /  VOTRE PARCOURS',35,'bold',TEAL)
+    p.line((900,66,2070,66));p.rect((2110,36,2324,102),P['fond'],TEAL,28,2)
+    p.text(2217,53,'PAGE 02',31,'bold',INK,center=True)
+    p.text(76,135,'Comprendre le ski,',139,'serif',INK)
+    p.text(76,305,'pour mieux conseiller.',146,'italic',CORAL)
+    p.text(80,500,'Les bases du matériel, les familles et les bons arguments en magasin.',42,width=2240)
+    p.photo_cover('couverture-v753.png',(70,600,2330,1110),(.5,.67))
+    groups=[(70,1,'Comprendre le ski','LE VOCABULAIRE ET LES REPÈRES',TOPICS[:5]),(1230,2,'Reconnaître les familles','DU TERRAIN AU DISCOURS CLIENT',TOPICS[5:])]
+    captions=['Les trois zones à repérer sur le ski.','Relier les dimensions aux sensations.','Comprendre les virages courts et longs.','Lire le cambre et les zones de rocker.','Expliquer le noyau et les renforts.','Se repérer dans les grandes pratiques.','Facilité, polyvalence ou performance.','Des modèles et des mots pour conseiller.','Trouver le bon compromis de terrains.','Comparer trois programmes concrets.']
+    for gi,(x,n,title,kicker,topics) in enumerate(groups):
+        p.set_accent(n-1);p.rect((x,1170,x+1100,2745),WHITE,p.accent,26,3)
+        p.rect((x+2,1172,x+1098,1478),PALE,None,24)
+        p.number(x+34,1210,n);p.text(x+135,1230,kicker,30,'bold',TEAL)
+        p.text(x+34,1342,title,65,'serif',INK,width=1030)
+        y=1545
+        for j,(label,num) in enumerate(topics):
+            if j:p.line((x+32,y-34,x+1068,y-34))
+            p.text(x+34,y,label,45,'bold',INK,width=835)
+            p.text(x+34,y+76,captions[gi*5+j],37,width=830,leading=47,bottom=y+185)
+            p.rect((x+918,y-4,x+1063,y+91),PALE,None,28)
+            p.text(x+990,y+23,f'{num:02} →',36,'bold',TEAL,center=True)
+            p.link((x+20,y-25,x+1080,y+185),num,label)
+            y+=235
+    p.accent=TEAL;p.soft=PALE;p.rect((70,2805,2330,3160),DARK,None,28)
+    p.text(115,2845,'De la technique au bon discours client.',70,'serif',WHITE,width=2160)
+    p.text(115,2960,'Repérez une caractéristique, reliez-la à une sensation, puis expliquez son intérêt pour le client.',42,'sans',WHITE,width=2130)
+    p.text(115,3083,'Cliquez sur un sujet pour accéder directement à sa page.',35,'bold',WHITE)
     p.footer();return p
+
 
 def anatomy():
     p=Page(3);p.header('Spatule, patin, talon.','Trois zones pour comprendre la conduite, l’agilité et la portance du ski.')
-    p.photo('ski-anatomie',(1090,470,1330,2850))
+    sx,sy,sw,sh=p.photo('ski-nu-anatomie-v753.png',(1070,470,1350,2850))
+    zones=[(.035,.205,'SPATULE',BLUE),(.41,.62,'PATIN',TEAL),(.85,.985,'TALON',CORAL)]
+    layer=Image.new('RGBA',(W,H),(0,0,0,0));ld=ImageDraw.Draw(layer)
+    for lo,hi,label,c in zones:
+        rgb=tuple(int(c[k:k+2],16) for k in [1,3,5]);y1=sy+sh*lo;y2=sy+sh*hi
+        ld.rounded_rectangle((sx-12,y1,sx+sw+12,y2),radius=28,fill=rgb+(77,),outline=rgb+(240,),width=5)
+    p.im=Image.alpha_composite(p.im.convert('RGBA'),layer).convert('RGB');p.d=ImageDraw.Draw(p.im)
+    for lo,hi,label,c in zones:
+        yy=round(sy+sh*hi)-69;p.rect((1065,yy,1355,yy+68),WHITE,c,28,3)
+        p.text(1210,yy+17,label,31,'bold',c,center=True)
     blocks=[(70,485,950,1260,'1','Spatule',[('Déjaugeage','Sa forme relevée aide le ski à rester en surface en neige souple.'),('Obstacles','Elle facilite le passage des bosses et des irrégularités.'),('Virages','Sa largeur et sa souplesse participent à l’entrée en courbe.')]),(1430,1130,2330,2300,'2','Patin',[('Sous le pied','C’est la largeur du ski au niveau de la chaussure.'),('Étroit','Le passage d’une carre à l’autre est plus rapide et précis.'),('Large','Il apporte de la portance en neige souple, mais demande plus d’effort pour basculer.')]),(70,1890,950,2865,'3','Talon',[('Sortie de virage','Il guide la fin de courbe et participe à la relance.'),('Stabilité','Il contribue à l’équilibre, notamment quand la vitesse augmente.'),('Selon la pratique','Plutôt plat pour la précision sur piste ; plus relevé pour faciliter le pivot et le ski en marche arrière.')])]
     for x,y,x2,y2,n,title,items in blocks:
         p.set_accent(int(n)-1);p.rect((x,y,x2,y2));p.number(x+32,y+28,n);p.text(x+130,y+28,title,66,'serif',INK)
@@ -192,13 +249,14 @@ def anatomy():
             yy=p.text(x+38,yy,label,40,'bold',TEAL)+13
             yy=p.text(x+38,yy,body,40,width=x2-x-76)+30
         assert yy<y2-15,(p.n,title,yy,y2)
-    for x,y,x2 in [(950,680,1155),(1265,1670,1430),(950,2590,1160)]:
-        p.line((x,y,x2,y),TEAL,5);p.d.ellipse((x2-12,y-12,x2+12,y+12),fill=TEAL,outline=WHITE,width=3)
+    for x1,y,x2,dot,c in [(950,680,sx-12,sx-12,BLUE),(sx+sw+12,1670,1430,sx+sw+12,TEAL),(950,2590,sx-12,sx-12,CORAL)]:
+        p.line((x1,y,x2,y),c,5);p.d.ellipse((dot-12,y-12,dot+12,y+12),fill=c,outline=WHITE,width=3)
+    p.accent=TEAL
     p.text(1468,2335,'REPÈRES AU PATIN',31,'bold',TEAL)
     p.text(1468,2405,'65–80 mm : piste\n80–95 mm : all-mountain\n95–136 mm : freeride',37,width=810,leading=58)
     p.text(1468,2620,'Des repères indicatifs : les familles se chevauchent.',32,width=780)
     p.remember('Une caractéristique ne raconte pas tout.','Largeur, profil, rigidité et longueur travaillent ensemble.\nOn choisit un ensemble adapté au terrain et au skieur.')
-    p.footer('Photo produit : Rossignol. Les repères de largeur sont indicatifs.');return p
+    p.footer('Photo produit : Elan, ski nu sans rail. Les repères de largeur sont indicatifs.');return p
 
 def dimensions():
     p=Page(4);p.header('Largeur et longueur.','Deux dimensions qui se combinent : vivacité, facilité, stabilité et portance.')
@@ -207,24 +265,24 @@ def dimensions():
     for i,(x,name,mm,img,items) in enumerate(cols):
         p.set_accent(i);p.rect((x,560,x+724,1410));p.rect((x+2,562,x+722,725),PALE,None,20)
         p.text(x+32,585,name,61,'serif',INK);p.text(x+32,665,mm,45,'bold',TEAL)
-        p.photo(img,(x+30,770,x+193,1350));arrow(p,x+42,1090,x+188,1090,p.accent,both=True)
+        p.ski_width_example(img,x+115,770,[62,78,94][i],580);arrow(p,x+18,1090,x+209,1090,p.accent,both=True)
         p.bullets(x+225,800,items,466,40,24)
     p.accent=TEAL;p.soft=PALE;p.rect((70,1450,2330,1575),PALE,None,28)
     p.text(110,1480,'Plus large ne veut pas dire meilleur : le bon patin dépend du terrain, du niveau et des sensations.',39,width=2150)
     p.text(76,1645,'02  La longueur par rapport au skieur',65,'serif',INK)
-    for i,(x,name,delta,sh,img,desc) in enumerate([(70,'Piste facile','−20 à −10 cm',594,'ski-fin-v752.png','Accessible et rassurant'),(838,'Polyvalent','−10 à −5 cm',622,'ski-intermediaire-v752.png','Maniabilité et tenue'),(1606,'Freeride','0 à +15 cm',678,'ski-large-v752.png','Portance et stabilité')]):
+    for i,(x,name,delta,sh,img,desc) in enumerate([(70,'Piste facile','−20 à −10 cm',580,'ski-fin-v752.png','Accessible et rassurant'),(838,'Polyvalent','−10 à −5 cm',622,'ski-intermediaire-v752.png','Maniabilité et tenue'),(1606,'Freeride','0 à +15 cm',678,'ski-large-v752.png','Portance et stabilité')]):
         p.set_accent(i);p.rect((x,1760,x+724,2830));p.rect((x+2,1762,x+722,1945),PALE,None,20)
         p.text(x+362,1790,name,59,'serif',INK,center=True)
         p.text(x+362,1880,delta,49,'bold',TEAL,center=True)
         base=2660;top=base-650
+        p.photo(img,(x+398,base-sh,x+482,base))
         p.photo('skieur-illustration-v752.png',(x+65,top,x+500,base))
-        p.photo(img,(x+510,base-sh,x+595,base))
         p.line((x+160,top+8,x+668,top+8),LINE,3)
-        p.line((x+585,base-sh,x+672,base-sh),p.accent,3)
+        p.line((x+478,base-sh,x+672,base-sh),p.accent,3)
         arrow(p,x+650,top+8,x+650,base-sh,p.accent,4,True)
         p.text(x+362,2730,desc,38,'bold',TEAL,width=660,center=True)
     p.remember('La largeur et la longueur se choisissent ensemble.','Court et fin : plus vif et accessible. Long et large : plus de stabilité et de portance. Ces repères s’ajustent au modèle, au niveau et au gabarit.')
-    p.footer('Repères indicatifs. Visuels de skis : modèles repris du guide ; personnages d’illustration.');return p
+    p.footer('Repères indicatifs. En haut, les écarts de largeur sont légèrement accentués pour faciliter la comparaison.');return p
 
 def radius():
     p=Page(5);p.header('Rayon de courbure.','Rayon court : virages serrés. Rayon long : grandes courbes.')
@@ -274,12 +332,11 @@ def profiles():
                 p.d.polygon(seg+[(xx,zz+18) for xx,zz in reversed(seg)],fill=ROCKER)
 
         p.d.line(pts,fill=INK,width=5);p.d.line([(x,yy+18) for x,yy in pts],fill=INK,width=4)
-        xa=x0+(x1-x0)*cl;xb=x0+(x1-x0)*cr
-        if cl!=cr:
-            for xx in [xa,xb]:p.line((xx,base+15,xx,base+103),TEAL,3)
-            arrow(p,xa,base+68,xb,base+68,TEAL,4,True)
-            p.text((xa+xb)/2,base+105,'zone de contact',28,'bold',TEAL,center=True)
-        else:p.text((x0+x1)/2,base+78,'contact plus centré • pivot facilité',31,'bold',TEAL,center=True)
+        contact_left,contact_right=(.42,.58) if cl==cr else (cl,cr)
+        xa=x0+(x1-x0)*contact_left;xb=x0+(x1-x0)*contact_right
+        for xx in [xa,xb]:p.line((xx,base+15,xx,base+103),TEAL,3)
+        arrow(p,xa,base+68,xb,base+68,TEAL,4,True)
+        p.text((xa+xb)/2,base+105,'zone de contact avec la neige',27,'bold',TEAL,center=True)
         if i in [1,2]:
             p.rect((x0+5,y+22,x0+335,y+83),'#FBE9EF',None,25)
             p.text(x0+25,y+35,'ROCKER AVANT',30,'bold',CORAL)
@@ -299,23 +356,36 @@ def profiles():
 def construction():
     p=Page(7);p.header('Ce qui se cache à l’intérieur.','Renforts, noyau, carres et semelle : chaque assemblage crée un compromis.')
     for x,n,h,desc,img in [(70,1,'Une construction simple','Un exemple léger et tolérant, avec un noyau injecté en mousse.','construction-mousse'),(1230,2,'Une structure renforcée','Un exemple plus structuré : bois, fibres et renfort métallique.','construction-bois')]:
-        p.rect((x,432,x+1100,2000));p.number(x+28,465,n)
-        p.text(x+30,575,h,53,'serif',INK,width=1040)
-        p.text(x+30,675,desc,40,width=1030)
-        p.photo(img,(x+20,860,x+1080,1950))
-    mats=[(70,2070,'Bois','Flex progressif, variable selon l’essence et l’usinage.'),(1230,2070,'Mousse / composite','Des solutions diverses, souvent choisies pour le poids et le coût.'),(70,2325,'Fibre de verre','Un renfort très courant dans les constructions de skis.'),(1230,2325,'Carbone / titanal','Modifient précision, masse et amortissement selon leur intégration.')]
-    for x,y,h,body in mats:
-        p.rect((x,y,x+1100,y+220),PALE,None);p.text(x+30,y+25,h,49,'serif',INK)
-        p.text(x+30,y+99,body,38,width=1030,bottom=y+207)
+        p.set_accent(n-1);p.rect((x,432,x+1100,2630),WHITE,p.accent,28,5)
+        p.rect((x+3,435,x+1097,786),PALE,None,25)
+        p.number(x+30,466,n);p.text(x+130,478,h,54,'serif',INK,width=940)
+        p.text(x+35,610,desc,40,width=1030)
+        p.photo(img,(x+22,820,x+1078,1830))
+        p.line((x+35,1870,x+1065,1870),p.accent,3)
+        if n==1:
+            p.text(x+35,1920,'LE NOYAU DE CET EXEMPLE',30,'bold',TEAL)
+            p.text(x+35,2005,'Mousse / composite',55,'serif',INK)
+            p.text(x+35,2105,'Des solutions diverses, souvent choisies pour le poids, le coût et la facilité de prise en main.',41,width=1030,bottom=2290)
+            p.mountains((x+70,2300,x+1040,2580),.75)
+        else:
+            p.text(x+35,1920,'LES MATÉRIAUX DE CET EXEMPLE',30,'bold',TEAL)
+            items=[('Bois','Un flex progressif, variable selon l’essence et l’usinage.'),('Fibre de verre','Un renfort très courant dans les constructions de skis.'),('Carbone / titanal','Leur intégration modifie la précision, la masse et l’amortissement.')]
+            yy=2000
+            for title,body in items:
+                p.text(x+35,yy,title,47,'serif',INK)
+                p.text(x+35,yy+71,body,38,width=1025,leading=46,bottom=yy+175)
+                yy+=195
     for i,(h,b) in enumerate([('Souple / tolérant','Rassurant, facile à déformer.'),('Équilibré','Confort, tenue et facilité.'),('Tonique / précis','Plus de répondant sous l’appui.'),('Rigide / exigeant','Stable et précis, plus physique.')]):
-        x=70+i*580;p.rect((x,2630,x+520,2875));p.text(x+24,2660,h,39,'serif',INK,width=475)
-        p.text(x+24,2760,b,31,width=475,bottom=2865)
-    p.remember('Adapter la construction au skieur.','Un ski trop rigide peut fatiguer et freiner la progression.\nLe noyau seul ne suffit pas : un ski en bois peut aussi être accessible et tolérant.')
-    p.footer('Illustrations de construction reprises du guide validé. Deux exemples, sans règle absolue liée au seul noyau.');return p
+        x=70+i*580;p.set_accent(i);p.rect((x,2700,x+520,2890),PALE,None,20)
+        p.text(x+24,2725,h,38,'serif',INK,width=475)
+        p.text(x+24,2800,b,31,width=475,bottom=2887)
+    p.remember('Adapter la construction au skieur.','Un ski trop rigide peut fatiguer et freiner la progression. Le noyau seul ne suffit pas : un ski en bois peut aussi être accessible et tolérant.')
+    p.footer('Deux exemples de construction. Les matériaux se combinent différemment selon le modèle.');return p
+
 
 def families():
     p=Page(8);p.header('Les familles de skis.','Chaque famille répond à un terrain, à un niveau et à une envie de glisse.','02  /  LES FAMILLES')
-    for x,n,h,desc,img,page in [(70,1,'Les skis de piste','Précis, rassurants et efficaces sur piste damée.','piste-station-v752.png',9),(1230,2,'Les skis all-mountain','Polyvalents : de la priorité piste au mélange piste / neige souple.','allmountain-7030',11)]:
+    for x,n,h,desc,img,page in [(70,1,'Les skis de piste','Précis, rassurants et efficaces sur piste damée.','piste-station-v752.png',9),(1230,2,'Les skis all-mountain','Polyvalents : de la priorité piste au mélange piste / neige souple.','allmountain-bord-piste-v753.png',11)]:
         p.rect((x,432,x+1100,1550));p.number(x+32,470,n)
         p.text(x+32,585,h,66,'serif',INK)
         p.photo(img,(x+25,710,x+1075,1150))
@@ -338,8 +408,8 @@ def families():
 
 PISTE=[
  ('Piste facile','Accessible et tolérant, pour progresser en confiance.','debutante-piste-v752.png',[('Patin','Environ 70–75 mm'),('Longueur','Environ −20 à −15 cm'),('Rayon','Court, environ 10 à 12 m'),('Public','Débutant, skieur qui appréhende')],['Déclenchement facile','Virages courts à moyens','Rassurant et peu physique']),
- ('Piste polyvalent','Le compromis pour skier toute la journée sur piste.','piste-polyvalent',[('Patin','Environ 75–85 mm'),('Longueur','Environ −10 cm'),('Rayon','Autour de 15 m'),('Construction','Plus tonique qu’un piste facile'),('Public','Skieur loisir à l’aise, cherchant polyvalence et stabilité')],['Bon équilibre facilité / tenue','Un peu de bord de piste','Plus complet, un peu plus exigeant']),
- ('Piste performance','Plus nerveux et accrocheur, pour un skieur sportif.','piste-performance',[('Patin','Généralement 70–80 mm'),('Longueur','Environ −10 à −5 cm'),('Rayon','Variable selon la pratique'),('Public','Bon skieur recherchant la précision')],['Plus de répondant','Plus d’accroche et de précision','Bonne tenue sur neige ferme'])]
+ ('Piste polyvalent','Le compromis pour skier toute la journée sur piste.','allmountain-bord-piste-v753.png',[('Patin','Environ 75–85 mm'),('Longueur','Environ −10 cm'),('Rayon','Autour de 15 m'),('Construction','Plus tonique qu’un piste facile'),('Public','Skieur loisir à l’aise, cherchant polyvalence et stabilité')],['Bon équilibre facilité / tenue','Un peu de bord de piste','Plus complet, un peu plus exigeant']),
+ ('Piste performance','Plus nerveux et accrocheur, pour un skieur sportif.','piste-performance-v753.png',[('Patin','Généralement 70–80 mm'),('Longueur','Environ −10 à −5 cm'),('Rayon','Variable selon la pratique'),('Public','Bon skieur recherchant la précision')],['Plus de répondant','Plus d’accroche et de précision','Bonne tenue sur neige ferme'])]
 def piste():
     p=Page(9);p.header('Les skis de piste.','Quatre approches : de la facilité d’apprentissage à la précision sportive.','02  /  LES FAMILLES')
     for i,(h,sub,img,rows,pros) in enumerate(PISTE):
@@ -445,11 +515,9 @@ def allmountain():
 
 if __name__=='__main__':
     records=[]
-    for build in [cover,contents,anatomy,dimensions,radius,profiles,construction,families,piste,products,allmountain]:
+    for build in [cover,contents,anatomy,dimensions,radius,profiles,construction,families,piste]:
         p=build();records.append(p.save());print('Page',p.n,'OK',flush=True)
-    import runpy
-    runpy.run_path(str(ROOT/'sources/page12/render.py'))
-    records.append({'page':12,'path':'assets/guide-v752/page-12.jpg','links':[]})
+    for n in [10,11,12]:records.append({'page':n,'path':f'assets/guide-v752/page-{n:02}.jpg','links':[]})
     (CHECK/'manifest.json').write_text(json.dumps(records,ensure_ascii=False,indent=2))
     # Fast visual overview; full-resolution pages remain available separately.
     sheet=Image.new('RGB',(2000,1740),'#DCE7EB');d=ImageDraw.Draw(sheet)

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "couverture-v753.png",
+    "tool": "ImageGen intégré",
+    "prompt": "Use case: photorealistic-natural. Asset type: premium portrait cover photograph for a French alpine ski training catalogue, A4 portrait proportion. Beautiful high-definition editorial photography in a welcoming French Alps ski resort: a broad perfectly groomed piste winding from the foreground into a sunny alpine valley, two small recreational skiers in stylish blue and terracotta jackets seen naturally on the piste in the middle distance, a discreet chairlift, snow-laden fir trees at the sides, magnificent layered alpine peaks in the distance. Rich tactile corduroy snow foreground, elegant soft winter light, crisp detail, luminous natural blue and white palette, restrained warmth of early sun, atmospheric depth. The upper 30 percent should be mostly pale blue-white open sky and mist, suitable for a very large dark catalogue title added later. Keep the ski scene mainly in the middle and lower two thirds. The bottom 12 percent is a quiet pale snowy foreground suitable for a small content strip added later. This must feel like a beautiful professional book cover photograph, not a cropped blurry mountain cartoon. No text, lettering, logos, borders, frame, watermark or giant foreground equipment. Portrait composition.",
+    "transparent_background": false
+  },
+  {
+    "file": "montagnes-aquarelle-v753.png",
+    "tool": "ImageGen intégré",
+    "prompt": "Use case: illustration-story. Asset type: a refined transparent watercolor vignette for the margins and small corners of a premium ski catalogue. One continuous wide alpine mountain ridge with a few delicate snow-dusted pine trees near the lower edges, soft icy blue, slate blue, pale grey, mostly white snow, gently faded edges blending into transparency. Elegant detailed hand-painted editorial watercolor, airy, poetic, very light and understated; no flat vector icon or zigzag, no heavy dark mass. Wide horizontal composition about 3:1 with varied mountain heights and a low snowfield. A genuinely transparent background around the whole vignette, especially sky and outer edges. No writing, people, skis, logos, border or watermark. It should be beautiful when used small and faint behind a page margin, never obscure technical text.",
+    "transparent_background": true
+  },
+  {
+    "file": "allmountain-bord-piste-v753.png",
+    "tool": "ImageGen intégré",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide horizontal editorial photograph for ALL-MOUNTAIN and PISTE POLYVALENT in a French beginner ski equipment guide. A recreational adult skier in a muted teal technical jacket, helmet and goggles, complete skis and poles visible, skiing calmly in a controlled parallel turn right at the edge of a groomed blue resort piste. The distinction must be very clear: most of the image shows the recognizable wide groomed piste with corduroy tracks and piste-side markers; the skier is just outside its edge on a narrow 2-to-4-metre strip of slightly softer lightly tracked snow, with only a little soft snow kicked up. A visible chairlift and a few distant piste skiers establish an ordinary resort environment. Natural modest tree-lined slope, no dramatic mountain panorama or extreme terrain. This is near-piste versatility, NOT backcountry freeride, NOT deep powder, NOT powder blasting or a cliff, NOT a race. Polished realistic sports editorial photo, natural winter daylight, convincing equipment geometry and full-body framing. Landscape composition about 2.2:1, subject in the middle third. No text, logos or watermark.",
+    "transparent_background": false
+  },
+  {
+    "file": "piste-performance-v753.png",
+    "tool": "ImageGen intégré",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide horizontal editorial photograph illustrating PISTE PERFORMANCE for a French ski training guide. An advanced adult skier in a restrained terracotta-red technical jacket and dark trousers, helmet and goggles, executing a strong dynamic carved turn ON a clearly groomed resort piste. Convincing athletic technique: body angulated toward the snow, skis parallel and visibly tipped on their edges, outside ski loaded, two tight clean curved tracks with only a thin spray from firm packed snow. Entire skier, both complete skis and poles inside the frame. Background shows a broad groomed piste, recognizable resort chairlift pylons, a few distant skiers and piste-edge markers, ordinary wooded ski area. No off-piste, no deep powder, no giant powder spray, no jump, no extreme backcountry, no mountain panorama occupying the scene. Professional realistic sports editorial photograph, crisp snow texture, natural winter daylight, controlled strong sporting energy. Landscape composition about 2.2:1. No text, logos, watermark or race gates.",
+    "transparent_background": false
+  }
+]
