@@ -2,10 +2,13 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 from pathlib import Path
 import json
 import urllib.request
+import sys
 
 PROJECT = Path(__file__).resolve().parents[2]
 ROOT = PROJECT / 'sources/page12/.cache'
 ROOT.mkdir(parents=True, exist_ok=True)
+sys.path.insert(0,str(PROJECT/'sources/guide'))
+from render import Page, ACCENTS, SOFTS
 PALETTE = json.loads((PROJECT / 'design/charte-candidate-sgd.json').read_text())['palette']
 PHOTO_URLS = {
     'experience82.jpg': 'https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwfa94b770/images/large/RAMFS03_EXPERIENCE_82_BASALT_KONECT__RGB72DPI_01.jpg?sw=1600',
@@ -33,7 +36,7 @@ FONTS = Path('/usr/share/fonts/opentype/urw-base35')
 
 def font(size, kind='sans'):
     f = {'sans':'NimbusSans-Regular.otf','bold':'NimbusSans-Bold.otf',
-         'serif':'NimbusRoman-Bold.otf','italic':'NimbusRoman-BoldItalic.otf'}[kind]
+         'serif':'P052-Bold.otf','italic':'P052-BoldItalic.otf'}[kind]
     return ImageFont.truetype(str(FONTS/f), size)
 
 def wrap(s, f, width):
@@ -61,13 +64,9 @@ def text(x,y,s,size=35,kind='sans',color=BODY,width=None,leading=None,center=Fal
 def line(x,y,x2,color=LINE,w=2):d.line((x,y,x2,y),fill=color,width=w)
 
 # A finished raster page, built from original manufacturer photos and typeset text.
-text(76,48,'CHAPITRE 02  /  LES FAMILLES',32,'bold',BROWN)
-line(700,66,2070)
-d.rounded_rectangle((2110,36,2324,102),radius=12,outline=GOLD,width=2)
-text(2217,53,'PAGE 12',31,'bold',NAVY,center=True)
-text(76,130,'Exemples de skis all-mountain',113,'serif',NAVY)
-text(78,267,'1 modèle par catégorie pour apprendre à conseiller avec des mots simples.',43,'sans',BROWN)
-text(78,333,'Même question de départ : « Vous skiez surtout sur piste, ou aussi en neige non damée ? »',34,'sans',BODY)
+theme=Page(12);theme.im=im;theme.d=d
+theme.header('Exemples de skis all-mountain','Un modèle par catégorie pour apprendre à conseiller avec des mots simples.','02  /  LES FAMILLES')
+text(78,388,'Même question de départ : « Vous skiez surtout sur piste, ou aussi en neige non damée ? »',29,'sans',BODY)
 
 cards=[
  dict(n='1',ratio='80/20',heading='Priorité piste',brand='ROSSIGNOL',name='Experience 82 Basalt',
@@ -102,7 +101,8 @@ card_top, card_bottom = 432, 2900
 xs=[70,838,1606]
 cw=724
 log=[]
-for c,x in zip(cards,xs):
+for i,(c,x) in enumerate(zip(cards,xs)):
+    BROWN=ACCENTS[i];GOLD=ACCENTS[i];CREAM=SOFTS[i]
     d.rounded_rectangle((x,card_top,x+cw,card_bottom),radius=23,fill=WHITE,outline=LINE,width=3)
     d.rounded_rectangle((x+1,card_top+1,x+cw-1,card_top+209),radius=22,fill=CREAM)
     d.rectangle((x+2,card_top+120,x+cw-2,card_top+208),fill=CREAM)
@@ -134,9 +134,9 @@ for c,x in zip(cards,xs):
         d.rounded_rectangle((tx-10,y-8,tx+tw+10,y+hh-8),radius=10,fill=CREAM)
         y=text(tx+2,y+2,label,size,'bold',BROWN,width=tw-24,leading=34)+24
     heading('Positionnement')
-    y=text(tx,y,c['client'],32,'sans',BODY,width=tw,leading=39)+30
+    y=text(tx,y,c['client'],35,'sans',BODY,width=tw,leading=42)+30
     heading('Ce que le fabricant met en avant',28)
-    y=text(tx,y,c['maker'],32,'sans',BODY,width=tw,leading=39)
+    y=text(tx,y,c['maker'],35,'sans',BODY,width=tw,leading=42)
     log[-1]['upper_text_end']=y
     assert y < card_top+1285, (c['name'],'upper',y)
 
@@ -174,16 +174,9 @@ for c,x in zip(cards,xs):
     assert end<card_bottom-30,(c['name'],end)
     log[-1]['content_end']=y
 
-# Consistent, prominent reminder panel.
-ay=2945
-d.rounded_rectangle((70,ay,2330,ay+250),radius=25,fill=CREAM)
-d.rounded_rectangle((70,ay,514,ay+250),radius=25,fill=PANEL)
-d.rectangle((480,ay,514,ay+250),fill=PANEL)
-text(292,ay+91,'À retenir',65,'serif',WHITE,center=True)
-text(555,ay+23,'L’all-mountain : une seule paire pour varier les terrains.',42,'serif',NAVY)
-text(555,ay+85,'Sur piste : privilégier l’accroche et des virages faciles à enchaîner.',32,'sans',BODY)
-text(555,ay+134,'En neige souple : chercher à moins s’enfoncer et à pivoter facilement.',32,'sans',BODY)
-text(555,ay+187,'Adapter ensuite le modèle et la longueur au niveau et au poids du client.',32,'bold',NAVY)
+# The same compact lightbulb badge as the rest of the guide.
+theme.remember('L’all-mountain : une paire pour varier les terrains.','Sur piste, privilégier l’accroche et des virages faciles à enchaîner. En neige souple, chercher à moins s’enfoncer et à pivoter facilement. Adapter ensuite le modèle et la longueur au niveau et au poids du client.')
+GOLD=PALETTE['reperes'];BROWN=PALETTE['accent'];CREAM=PALETTE['encarts_clairs']
 
 text(76,3221,'Ratios : repères pédagogiques du guide. * Cotes et rayon pour la longueur précisée sous le ski ; la largeur peut varier selon la taille.',26,'sans',BODY)
 text(76,3267,'Visuels et données techniques : Rossignol et Elan. Positionnement et vocabulaire : repères de conseil. Photos non retouchées.',26,'sans',BODY)
@@ -191,7 +184,8 @@ line(70,3330,2330,GOLD,3)
 text(76,3351,'SPORT GOOD DEAL  /  GUIDE DU SKI',27,'bold',NAVY)
 text(2325,3350,'12',29,'bold',NAVY,center=True)
 
-out=PROJECT/'assets/page12-charte-libre-v749.jpg'
+out=PROJECT/'assets/guide-v752/page-12.jpg'
+out.parent.mkdir(exist_ok=True)
 im.save(out,quality=97,subsampling=0,optimize=True,dpi=(240,240))
 with Image.open(out) as check:
     check.verify()

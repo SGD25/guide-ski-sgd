@@ -29,12 +29,15 @@
   el('toc-button').addEventListener('click',()=>{toc.classList.add('open');el('toc-button').setAttribute('aria-expanded','true');el('toc-close').focus();});
   el('toc-close').addEventListener('click',closeToc);toc.addEventListener('click',e=>{if(e.target===toc)closeToc();});
   document.addEventListener('click',e=>{const b=e.target.closest('.page-jump');if(!b)return;const n=Number(b.dataset.jump);if(!Number.isInteger(n)||n<0||n>=pages.length)return;if(toc.classList.contains('open'))closeToc();renderAt(n);});
-  reading.addEventListener('click',()=>{const on=document.body.classList.toggle('reading-mode');reading.setAttribute('aria-pressed',String(on));reading.textContent=on?'Vue double':'Agrandir';renderAt(current);});
+  function setReading(on){document.body.classList.toggle('reading-mode',on);reading.setAttribute('aria-pressed',String(on));reading.textContent=on?'Vue double':'Agrandir';try{localStorage.setItem('sgd-reading-mode',on?'1':'0');}catch{}}
+  reading.addEventListener('click',()=>{setReading(!document.body.classList.contains('reading-mode'));renderAt(current);});
+  document.addEventListener('click',e=>{if(!e.target.matches('.sheet-left .sgd-poster>img,.sheet-right .sgd-poster>img')||single())return;const n=Number(e.target.parentElement.dataset.page)-1;if(!Number.isInteger(n)||n<0||n>=pages.length)return;setReading(true);renderAt(n);});
   el('print-button').addEventListener('click',()=>window.print());
   addEventListener('keydown',e=>{if(e.key==='Escape'&&toc.classList.contains('open')){closeToc();return;}if(toc.classList.contains('open'))return;if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();go(1);}if(e.key==='ArrowLeft'){e.preventDefault();go(-1);}});
   addEventListener('resize',()=>renderAt(current));addEventListener('hashchange',()=>{const m=location.hash.match(/^#page=(\d+)$/);if(m)renderAt(Number(m[1])-1);});
   if(!pages.length){left.textContent='Le guide n’est pas disponible.';return;}
   pages.forEach((p,i)=>{const b=document.createElement('button');b.type='button';b.className='toc-choice page-jump';b.dataset.jump=i;const n=document.createElement('span');n.className='toc-n';n.textContent=String(i+1).padStart(2,'0');const info=document.createElement('span'),title=document.createElement('b'),chapter=document.createElement('small');title.textContent=p.title;chapter.textContent=p.chapter;info.append(title,chapter);b.append(n,info);grid.append(b);});
   el('print-pages').innerHTML=pages.map(p=>'<div class="print-page"><div class="sheet">'+markup(p)+'</div></div>').join('');
+  try{if(localStorage.getItem('sgd-reading-mode')==='1')setReading(true);}catch{}
   const h=location.hash.match(/^#page=(\d+)$/);renderAt(h?Number(h[1])-1:0);
 })();

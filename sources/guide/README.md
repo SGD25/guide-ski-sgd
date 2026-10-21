@@ -1,9 +1,11 @@
-# Pages harmonisées du guide
+# Guide — sources modifiables
 
-`python sources/guide/render.py` reconstruit les pages 1 à 11 en images complètes de 2400 × 3394 pixels. La page 12 conserve son image validée et sa source `sources/page12/render.py`.
+`python sources/guide/render.py` génère les 12 pages complètes en 2400 × 3394 pixels. Les contenus de la page 12 restent dans `sources/page12/render.py`, appelé automatiquement.
 
-La palette et les deux familles typographiques sont communes : `design/charte-candidate-sgd.json`, Nimbus Roman pour les titres et Nimbus Sans pour les textes. Les photos et illustrations de `media/` sont reprises des pages publiées ; elles sont placées à leurs proportions d’origine. Les schémas simples sont tracés directement et les textes restent modifiables dans le script.
+`python sources/guide/build_site.py` relie les images au lecteur. `node tests/guide-smoke.cjs` vérifie l’ordre réel des scripts, les 12 pages, les images, les styles et les cibles des sommaires avant publication.
 
-Les sorties sont dans `assets/guide-v750/`. Les anciens visuels sont conservés. Les liens de sommaire se superposent aux images complètes dans le lecteur ; le texte des liens est accessible au clavier et aux lecteurs d’écran.
+Les images sont versionnées dans `assets/guide-v752/`. Les anciens visuels restent conservés. La palette est définie dans `design/charte-candidate-sgd.json` : bleu ardoise et turquoise, accents bleu glacier, corail et prune. Titres P052 Bold/Bold Italic et textes Nimbus Sans. Les deux familles de polices proviennent de `fonts-urw-base35`.
 
-Après génération des images, `python sources/guide/build_site.py` reconstruit `pages/NN.js` et `index.html`. Le lecteur utilise `reader.js` et `styles.css`. Le bouton Agrandir passe de la double page à une page unique ; sur mobile, la page unique est automatique.
+Les vrais visuels de produits sont placés sans déformation. Le personnage de la page 4 et les scènes de station des pages 8 et 9 sont des illustrations créées pour le guide ; voir `media/illustrations-v752.md` pour leurs consignes. Les mesures, les profils et les zones de rocker sont tracés séparément.
+
+Le bouton Agrandir ou un clic sur une page passe à la lecture d’une seule page. Ce choix est conservé localement. Sur mobile, la page unique est automatique.

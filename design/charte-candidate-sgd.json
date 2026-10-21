@@ -12,9 +12,16 @@
     "lignes_tableau": "#F3F8F9"
   },
   "typographie": {
-    "titres": "Nimbus Roman Bold",
+    "titres": "P052 Bold / Bold Italic (Palatino)",
     "corps": "Nimbus Sans",
     "poids": "Regular / Bold"
   },
-  "reference": "Guide harmonisé : bleu ardoise, turquoise et blanc ; page 12 conservée à l’identique."
+  "reference": "Bleu ardoise, turquoise et accents corail, bleu glacier et prune ; titres Palatino et textes agrandis.",
+  "accents_categories": {
+    "piste": "#337BA2",
+    "polyvalent": "#206F77",
+    "mixte": "#BA624F",
+    "specialiste": "#75638F",
+    "rocker": "#E79AB1"
+  }
 }
