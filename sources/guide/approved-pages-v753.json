@@ -1,0 +1,184 @@
+[
+  {
+    "page": 1,
+    "path": "assets/guide-v753/page-01.jpg",
+    "links": []
+  },
+  {
+    "page": 2,
+    "path": "assets/guide-v753/page-02.jpg",
+    "links": [
+      {
+        "box": [
+          90,
+          1520,
+          1150,
+          1730
+        ],
+        "page": 3,
+        "label": "Anatomie du ski"
+      },
+      {
+        "box": [
+          90,
+          1755,
+          1150,
+          1965
+        ],
+        "page": 4,
+        "label": "Largeur et longueur"
+      },
+      {
+        "box": [
+          90,
+          1990,
+          1150,
+          2200
+        ],
+        "page": 5,
+        "label": "Lignes de cotes et rayon"
+      },
+      {
+        "box": [
+          90,
+          2225,
+          1150,
+          2435
+        ],
+        "page": 6,
+        "label": "Cambres et rockers"
+      },
+      {
+        "box": [
+          90,
+          2460,
+          1150,
+          2670
+        ],
+        "page": 7,
+        "label": "Au cœur du ski"
+      },
+      {
+        "box": [
+          1250,
+          1520,
+          2310,
+          1730
+        ],
+        "page": 8,
+        "label": "Les familles de skis"
+      },
+      {
+        "box": [
+          1250,
+          1755,
+          2310,
+          1965
+        ],
+        "page": 9,
+        "label": "Les skis de piste"
+      },
+      {
+        "box": [
+          1250,
+          1990,
+          2310,
+          2200
+        ],
+        "page": 10,
+        "label": "Exemples de skis de piste"
+      },
+      {
+        "box": [
+          1250,
+          2225,
+          2310,
+          2435
+        ],
+        "page": 11,
+        "label": "Les skis all-mountain"
+      },
+      {
+        "box": [
+          1250,
+          2460,
+          2310,
+          2670
+        ],
+        "page": 12,
+        "label": "Exemples all-mountain"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "path": "assets/guide-v753/page-03.jpg",
+    "links": []
+  },
+  {
+    "page": 4,
+    "path": "assets/guide-v753/page-04.jpg",
+    "links": []
+  },
+  {
+    "page": 5,
+    "path": "assets/guide-v753/page-05.jpg",
+    "links": []
+  },
+  {
+    "page": 6,
+    "path": "assets/guide-v753/page-06.jpg",
+    "links": []
+  },
+  {
+    "page": 7,
+    "path": "assets/guide-v753/page-07.jpg",
+    "links": []
+  },
+  {
+    "page": 8,
+    "path": "assets/guide-v753/page-08.jpg",
+    "links": [
+      {
+        "box": [
+          70,
+          432,
+          1170,
+          1550
+        ],
+        "page": 9,
+        "label": "Les skis de piste"
+      },
+      {
+        "box": [
+          1230,
+          432,
+          2330,
+          1550
+        ],
+        "page": 11,
+        "label": "Les skis all-mountain"
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "path": "assets/guide-v753/page-09.jpg",
+    "links": []
+  },
+  {
+    "page": 10,
+    "path": "assets/guide-v752/page-10.jpg",
+    "links": []
+  },
+  {
+    "page": 11,
+    "path": "assets/guide-v752/page-11.jpg",
+    "links": []
+  },
+  {
+    "page": 12,
+    "path": "assets/guide-v752/page-12.jpg",
+    "links": []
+  }
+]

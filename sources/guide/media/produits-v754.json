@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-21",
+  "usage": "Page 4 : gros plans au patin. Photographies fabricants, recadrées et mises à une échelle commune de 2,55 px/mm dans le poster HD ; aucune compression ou extension différentielle des skis. Les photos en pied sont détourées sur leur fond et inclinées en conservant leurs proportions.",
+  "logo": "Vrai logo fourni dans les fichiers du projet : sgd-logo-reference.jpg ; recadrage de marges uniquement.",
+  "produits": [
+    {
+      "modele": "HEAD Easy Joy",
+      "patin_mm": 70,
+      "page_fabricant": "https://www.head.com/fr_FR/product/easy-joy-315656-set",
+      "photo_originale": "https://cdn-mdb.head.com/CDN3/D/315656.SET/1/1820x2428/easy-joy.webp",
+      "fichier": "head-easy-joy-official-v754.webp",
+      "macro": "patin-head-70-v754.png"
+    },
+    {
+      "modele": "Elan Ripstick 88",
+      "patin_mm": 88,
+      "photo_originale": "https://elansports.com/cdn/shop/files/ripstick_88_2d_addkyp24.png?v=1769778255&width=1600",
+      "macro": "patin-elan-88-v754.png"
+    },
+    {
+      "modele": "Rossignol Sender Soul 102",
+      "patin_mm": 102,
+      "photo_originale": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwf0091cd0/images/large/RANMR01000_72DPI_02_v00.jpg?sw=1600",
+      "macro": "patin-rossignol-102-v754.png"
+    }
+  ]
+}
