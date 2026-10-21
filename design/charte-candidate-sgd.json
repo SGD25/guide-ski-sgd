@@ -1,0 +1,20 @@
+{
+  "statut": "proposition à valider",
+  "palette": {
+    "fond": "#FCFCFA",
+    "titres": "#25292E",
+    "texte": "#3E444B",
+    "accent": "#A23F49",
+    "reperes": "#AC4A54",
+    "filets": "#DFD9DA",
+    "encarts_clairs": "#F4F0F1",
+    "encarts_forts": "#2C3035",
+    "lignes_tableau": "#FAF7F8"
+  },
+  "typographie": {
+    "titres": "Nimbus Roman Bold",
+    "corps": "Nimbus Sans",
+    "poids": "Regular / Bold"
+  },
+  "reference": "Page 12 — variante couleur uniquement"
+}
