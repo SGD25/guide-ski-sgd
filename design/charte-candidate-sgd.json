@@ -1,20 +1,20 @@
 {
   "statut": "proposition à valider",
   "palette": {
-    "fond": "#FCFCFA",
-    "titres": "#25292E",
-    "texte": "#3E444B",
-    "accent": "#A23F49",
-    "reperes": "#AC4A54",
-    "filets": "#DFD9DA",
-    "encarts_clairs": "#F4F0F1",
-    "encarts_forts": "#2C3035",
-    "lignes_tableau": "#FAF7F8"
+    "fond": "#FAFCFD",
+    "titres": "#193B4B",
+    "texte": "#374F5B",
+    "accent": "#206F77",
+    "reperes": "#2B7D84",
+    "filets": "#D2E1E5",
+    "encarts_clairs": "#EDF5F6",
+    "encarts_forts": "#214F5E",
+    "lignes_tableau": "#F3F8F9"
   },
   "typographie": {
     "titres": "Nimbus Roman Bold",
     "corps": "Nimbus Sans",
     "poids": "Regular / Bold"
   },
-  "reference": "Page 12 — variante couleur uniquement"
+  "reference": "Page 12 — direction libre : ardoise, turquoise et blanc"
 }

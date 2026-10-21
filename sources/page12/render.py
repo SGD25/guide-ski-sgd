@@ -191,7 +191,7 @@ line(70,3330,2330,GOLD,3)
 text(76,3351,'SPORT GOOD DEAL  /  GUIDE DU SKI',27,'bold',NAVY)
 text(2325,3350,'12',29,'bold',NAVY,center=True)
 
-out=PROJECT/'assets/page12-charte-sgd-v748.jpg'
+out=PROJECT/'assets/page12-charte-libre-v749.jpg'
 im.save(out,quality=97,subsampling=0,optimize=True,dpi=(240,240))
 with Image.open(out) as check:
     check.verify()
