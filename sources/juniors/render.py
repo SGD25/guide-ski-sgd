@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / 'sources/guide'))
 import render as common
 from render import Page, INK, BODY, TEAL, CORAL, BLUE, WHITE, LINE, DARK, ft
 
-common.OUT = ROOT / 'assets/guide-v757'
+common.OUT = ROOT / 'assets/guide-v758'
 common.OUT.mkdir(exist_ok=True)
 MANIFEST = ROOT / 'sources/freeride-freestyle/manifest.json'
 PRODUCTS = json.loads((HERE / 'products.json').read_text())
@@ -32,7 +32,8 @@ def advice_page():
     p.header('Les skis juniors.', 'Comprendre son niveau, adapter la longueur, choisir une fixation adaptée à son gabarit.', '02  /  LES FAMILLES')
     section(p, 440, 1, 'Comprendre les niveaux ESF', BLUE)
     p.text(79, 531, 'La question à poser : « Quel est le dernier niveau obtenu, et sur quelles pistes est-il à l’aise ? »', 37, width=2240)
-    # Reading order: left to right, then next row. These are summaries of acquired
+    # Reading order: top to bottom within each blue, green, then orange column.
+    # These are summaries of acquired
     # skills, never an automatic medal-to-ski-length correspondence.
     levels = [
         ('Piou-Piou', 'Découvrir la neige, le matériel et les premières glissades.'),
@@ -46,10 +47,10 @@ def advice_page():
         ('Étoile d’or', 'Aisance sur terrains et neiges variés ; mini-géant chronométré.')
     ]
     for i, (title, body) in enumerate(levels):
-        col, row = i % 3, i // 3
+        col, row = i // 3, i % 3
         x, y = 70 + col * 768, 614 + row * 177
-        color = [BLUE, TEAL, CORAL][row]
-        soft = ['#ECF3F9', '#EDF5F6', '#FCF0E9'][row]
+        color = [BLUE, TEAL, CORAL][col]
+        soft = ['#ECF3F9', '#EDF5F6', '#FCF0E9'][col]
         p.rect((x, y, x + 724, y + 155), WHITE, LINE, 18)
         p.rect((x + 2, y + 2, x + 722, y + 60), soft, None, 16)
         p.text(x + 24, y + 13, title, 38, 'bold', color)

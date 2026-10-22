@@ -21,3 +21,5 @@ Sources consultées le 22 octobre 2026 :
 Les cinq repères de longueur — pitchounes 60–70 cm, débutants taille −25 à −20 cm, débrouillards −15 cm, confirmés −10 cm, experts selon le programme — sont les repères pédagogiques SGD demandés par l’auteur. Ils sont présentés comme indicatifs, distincts des tableaux fabricants, à adapter au poids, à l’aisance, au modèle et au flex. Ce ne sont pas des correspondances automatiques entre médailles ESF et tailles de skis. Le Hero Kid existe en 70, 80 et 92 cm ; sa version 70 cm illustre le premier groupe sans lui inventer une taille 60 cm.
 
 Le Hero Pro Multi-Event sert d’exemple d’initiation aux portes, pas de ski de course pur. Le Hero Athlete GS Pro illustre seulement le programme géant des experts ; un programme slalom ou freeride appelle un autre choix. La page « Sécurité » reste à créer : son renvoi est textuel et sans numéro inventé.
+
+V07.58 : réorganisation de la grille ESF en trois colonnes de haut en bas : Piou-Piou / Ourson / Flocon en bleu ; 1ère / 2e / 3e étoile en vert ; bronze / argent / or en orange. Seule l’image de la page 15 change.
