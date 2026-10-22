@@ -131,7 +131,7 @@ def examples_page():
 
 if __name__=='__main__':
     records=json.loads((HERE/'manifest.json').read_text())
-    assert len(records)==14
+    assert len(records)>=14
     for build in [family_page,examples_page]:
         p=build();records[p.n-1]=p.save();print('Page',p.n,'OK',flush=True)
     (ROOT/'sources/guide/.cache/manifest.json').write_text(json.dumps(records,ensure_ascii=False,indent=2))

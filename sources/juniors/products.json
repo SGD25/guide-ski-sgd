@@ -1,0 +1,62 @@
+[
+  {
+    "key": "hero-kid",
+    "family": "Pitchounes",
+    "name": "Hero Kid Pre-Drilled",
+    "reference": "RAPWE03",
+    "url": "https://www.rossignol.com/rs-en/juniors-hero-kid-pre-drilled-skis-RAPWE03000.html",
+    "position": "Premières glissades des tout-petits. La version 70 cm illustre le repère pitchounes ; vérifier le gabarit réel.",
+    "maker": "Rossignol met en avant un déclenchement prévisible, le contrôle des carres et un flex progressif adapté à chaque longueur.",
+    "vocab": "Flex junior = ski qui se déforme plus facilement sous un petit gabarit.",
+    "specs": [["Longueurs", "70 / 80 / 92 cm"], ["À 70 cm", "104–72–96 mm · rayon 3 m"], ["Structure", "Noyau Microcell · construction cap"]],
+    "speech": "Pour ses premiers pas, on cherche un ski facile à déplacer et à tourner, à sa taille d’aujourd’hui."
+  },
+  {
+    "key": "experience-jr",
+    "family": "Débutants",
+    "name": "Experience Pro Kid-X",
+    "reference": "RAKJC02",
+    "url": "https://www.rossignol.com/fr-fr/skis-all-mountain-enfants-experience-pro--kid-x--RAKJC02000104.html",
+    "position": "Apprentissage et progression loisir. Pour un enfant plus grand qui a besoin de facilité pour tourner et contrôler sa vitesse.",
+    "maker": "Un flex junior et un profil rocker pour faciliter le pivot, la conduite du ski et le freinage sur les variations du terrain.",
+    "vocab": "Rocker = extrémités relevées plus tôt, pour faciliter le pivot du ski.",
+    "specs": [["Longueurs", "104 à 140 cm · six tailles"], ["Profil", "Rocker adapté aux jeunes skieurs"], ["Système", "Kid-X · fixation à vérifier selon le pack"]],
+    "speech": "Ce modèle aide à tourner et à freiner sans forcer : il doit d’abord lui permettre de prendre confiance."
+  },
+  {
+    "key": "hero-jr",
+    "family": "Débrouillards",
+    "name": "Hero Junior 100–140 Kid-X",
+    "reference": "RAPJY02",
+    "url": "https://www.rossignol.com/fr-fr/skis-junior-hero-100-140-kid-x-RAPJY02000140.html",
+    "position": "Un ski de piste de progression, du débutant à l’intermédiaire. Le look Hero ne signifie pas automatiquement ski de compétition.",
+    "maker": "Légèreté, entrée en virage accessible, contrôle des carres et flex progressif selon la longueur pour consolider les bases.",
+    "vocab": "Accroche = tenue de la carre sur neige dure ; cap = construction enveloppante.",
+    "specs": [["Longueurs", "100 / 110 / 120 / 130 / 140 cm"], ["À 120 cm", "108–67–94 mm · rayon 9 m"], ["Structure", "Microcell · cap · fibre de verre"]],
+    "speech": "Il peut progresser sur piste avec un ski léger et accessible ; le décor course n’en fait pas un ski exigeant."
+  },
+  {
+    "key": "hero-multi",
+    "family": "Confirmés",
+    "name": "Hero Pro Multi-Event Kid-X",
+    "reference": "RAPBB03",
+    "url": "https://www.rossignol.com/fr-fr/skis-junior-hero-pro-multi-event-kid-x-RAPBB03000.html",
+    "position": "Pour l’enfant qui maîtrise ses virages et veut découvrir les portes. Une introduction à la course, à adapter à son gabarit.",
+    "maker": "Noyau peuplier, construction cap et flex proportionné à la longueur pour développer le rebond et accompagner les progrès.",
+    "vocab": "Rebond = énergie rendue en sortie de virage ; multi-event = initiation à la course.",
+    "specs": [["Longueurs", "110 / 120 / 130 cm"], ["À 120 cm", "111–67–94 mm · rayon 8 m"], ["Structure", "Noyau peuplier · construction cap"]],
+    "speech": "S’il veut commencer les portes, ce modèle ajoute du rebond tout en gardant un flex adapté aux jeunes skieurs."
+  },
+  {
+    "key": "hero-gs",
+    "family": "Experts · exemple géant",
+    "name": "Hero Athlete GS Pro R21 Pro",
+    "reference": "RAPDR01",
+    "url": "https://www.rossignol.com/us-en/juniors-hero-athlete-gs-pro-126-171-r21-pro-skis-RAPDR01000.html",
+    "position": "Vrai ski de course junior pour le géant. Pour un programme précis : un expert en slalom ou en freeride aura un autre besoin.",
+    "maker": "Flex étudié par longueur, noyau peuplier, renfort Titanal et construction à chants pour la précision et l’appui en courbe.",
+    "vocab": "GS = slalom géant ; chants = transmission des appuis ; Titanal = renfort métallique.",
+    "specs": [["Longueurs", "126 à 171 cm · sept tailles"], ["À 150 cm", "104–65–85 mm · rayon 16 m"], ["Structure", "Peuplier · fibre · Titanal · cambre intégral"]],
+    "speech": "Pour le géant, on adapte ce ski de course à son gabarit, avec les recommandations de son entraîneur."
+  }
+]

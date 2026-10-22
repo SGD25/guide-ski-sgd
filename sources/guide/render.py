@@ -80,7 +80,7 @@ class Page:
         self.line((760,66,2070,66))
         self.rect((2110,36,2324,102),P['fond'],P['reperes'],28,2)
         self.text(2217,53,f'PAGE {self.n:02}',31,'bold',INK,center=True)
-        heads={2:('Au fil ','des pages.'),3:('Spatule, patin, ','talon.'),4:('Largeur et ','longueur.'),5:('Rayon de ','courbure.'),6:('Du classique ','à l’inversé.'),7:('Ce qui se cache ','à l’intérieur.'),8:('Les familles ','de skis.'),9:('Les skis ','de piste.'),10:('Exemples de skis ','de piste.'),11:('Les skis ','all-mountain.'),12:('Exemples de skis ','all-mountain.'),13:('Freeride & ','freestyle.'),14:('Exemples ','freeride & freestyle.')}
+        heads={2:('Au fil ','des pages.'),3:('Spatule, patin, ','talon.'),4:('Largeur et ','longueur.'),5:('Rayon de ','courbure.'),6:('Du classique ','à l’inversé.'),7:('Ce qui se cache ','à l’intérieur.'),8:('Les familles ','de skis.'),9:('Les skis ','de piste.'),10:('Exemples de skis ','de piste.'),11:('Les skis ','all-mountain.'),12:('Exemples de skis ','all-mountain.'),13:('Freeride & ','freestyle.'),14:('Exemples ','freeride & freestyle.'),15:('Les skis ','juniors.'),16:('Exemples de skis ','juniors.')}
         a,b=heads.get(self.n,(title,''));size=156
         while self.d.textlength(a,font=ft(size,'serif'))+self.d.textlength(b,font=ft(size,'italic'))>2245:size-=1
         self.text(76,128,a,size,'serif',INK)

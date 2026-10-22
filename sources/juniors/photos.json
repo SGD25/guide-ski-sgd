@@ -1,0 +1,27 @@
+[
+  {
+    "key": "hero-kid",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw2d5e3d6f/images/large/RAPWE03000_72DPI_02_v00.jpg?sw=1800",
+    "path": "sources/juniors/media/hero-kid.jpg"
+  },
+  {
+    "key": "experience-jr",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw73a8d7ee/images/large/RAKJC02_EXPERIENCE_PRO_KID-X_rgb72dpi_01.jpg?sw=1800",
+    "path": "sources/juniors/media/experience-jr.jpg"
+  },
+  {
+    "key": "hero-jr",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwffa426d1/images/large/RAPJY02000_72DPI_02_v01.jpg?sw=1800",
+    "path": "sources/juniors/media/hero-jr.jpg"
+  },
+  {
+    "key": "hero-multi",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwd7d6b217/images/large/RAPBB03000_72DPI_02_v00.jpg?sw=1800",
+    "path": "sources/juniors/media/hero-multi.jpg"
+  },
+  {
+    "key": "hero-gs",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwd27a1cff/images/large/RAPDR01000_72DPI_02_v00.jpg?sw=1800",
+    "path": "sources/juniors/media/hero-gs.jpg"
+  }
+]
