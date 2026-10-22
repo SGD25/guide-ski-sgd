@@ -23,3 +23,5 @@ Les cinq repères de longueur — pitchounes 60–70 cm, débutants taille −25
 Le Hero Pro Multi-Event sert d’exemple d’initiation aux portes, pas de ski de course pur. Le Hero Athlete GS Pro illustre seulement le programme géant des experts ; un programme slalom ou freeride appelle un autre choix. La page « Sécurité » reste à créer : son renvoi est textuel et sans numéro inventé.
 
 V07.58 : réorganisation de la grille ESF en trois colonnes de haut en bas : Piou-Piou / Ourson / Flocon en bleu ; 1ère / 2e / 3e étoile en vert ; bronze / argent / or en orange. Seule l’image de la page 15 change.
+
+V07.59 : chaque série ESF est réunie dans un seul grand cadre de sa couleur, avec des séparateurs internes. Le reste de la page 15 et les quinze autres pages sont conservés.

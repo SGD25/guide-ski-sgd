@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / 'sources/guide'))
 import render as common
 from render import Page, INK, BODY, TEAL, CORAL, BLUE, WHITE, LINE, DARK, ft
 
-common.OUT = ROOT / 'assets/guide-v758'
+common.OUT = ROOT / 'assets/guide-v759'
 common.OUT.mkdir(exist_ok=True)
 MANIFEST = ROOT / 'sources/freeride-freestyle/manifest.json'
 PRODUCTS = json.loads((HERE / 'products.json').read_text())
@@ -46,13 +46,15 @@ def advice_page():
         ('Étoile d’argent', 'Trajectoires plus précises, appuis affinés et premiers chronos.'),
         ('Étoile d’or', 'Aisance sur terrains et neiges variés ; mini-géant chronométré.')
     ]
+    for col, (color, soft) in enumerate(zip([BLUE, TEAL, CORAL], ['#ECF3F9', '#EDF5F6', '#FCF0E9'])):
+        x = 70 + col * 768
+        p.rect((x, 604, x + 724, 1140), soft, color, 24, 5)
     for i, (title, body) in enumerate(levels):
         col, row = i // 3, i % 3
         x, y = 70 + col * 768, 614 + row * 177
         color = [BLUE, TEAL, CORAL][col]
-        soft = ['#ECF3F9', '#EDF5F6', '#FCF0E9'][col]
-        p.rect((x, y, x + 724, y + 155), WHITE, LINE, 18)
-        p.rect((x + 2, y + 2, x + 722, y + 60), soft, None, 16)
+        if row:
+            p.line((x + 24, y - 10, x + 700, y - 10), color, 2)
         p.text(x + 24, y + 13, title, 38, 'bold', color)
         p.text(x + 24, y + 76, body, 32, width=676, leading=37, bottom=y + 153)
     p.rect((70, 1162, 2330, 1305), DARK, None, 20)
