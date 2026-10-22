@@ -27,3 +27,5 @@ V07.61 : `python sources/nordic/render.py` construit les pages 19–20. Le lecte
 V07.62 : page 19 actualisée seule, `python sources/nordic/render.py --page 19` : repères corporels des bâtons et photos de chaussures Rossignol. Les dix-neuf autres images restent identiques.
 
 V07.63 : `python sources/snowboard/render.py` ajoute les pages 21–22, puis `python sources/guide/build_site.py` relie les vingt-deux pages. Les vingt images approuvées restent identiques ; le générateur nordique conserve les pages suivantes.
+
+V07.64 : `python sources/boots/render.py` ajoute les pages 23–24, puis `python sources/guide/build_site.py` relie les vingt-quatre pages. Les vingt-deux images précédentes restent inchangées. Voir `sources/boots/README.md` pour les sources et les limites des repères de flex / chaussant.

@@ -2,7 +2,7 @@
 
 Guide de formation feuilletable : https://sgd25.github.io/guide-ski-sgd/
 
-V07.63 : les 22 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
+V07.64 : les 24 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
 
 Les sources de mise en page sont dans `sources/guide/` et `sources/page12/`. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
 
@@ -19,3 +19,5 @@ V07.61 : double page ski de fond 19–20. Classique écailles / peaux, courte me
 V07.62 : page 19, repères visuels pour les bâtons (aisselle en classique, menton–nez en skating), calculs conservés et deux vraies photos de chaussures Rossignol X-9 Classic / X-9 Skate.
 
 V07.63 : double page snowboard 21–22. Programmes, cambres, poids / pointure / taille, fixations à sangles / entrée arrière / Step On (hors offre SGD), préparation en location. Quatre exemples Nitro avec vraies photos : Prime Chroma, Team, Squash et T1. Sources dans `sources/snowboard/`.
+
+V07.64 : double page chaussures 23–24 : alpin à gauche (flex, Mondopoint, volume, conséquences d’une mauvaise taille, essayage), randonnée à droite (marche / ski, allègement, maintien, semelles et compatibilités). Vraies photos Rossignol et SCARPA. Sources dans `sources/boots/`.
