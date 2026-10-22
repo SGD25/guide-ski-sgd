@@ -168,12 +168,11 @@ def choice_page():
 
 if __name__ == '__main__':
     records = json.loads(MANIFEST.read_text())
-    assert len(records) in (16, 18)
-    approved = records[:16]
-    records = approved.copy()
+    assert len(records) >= 18
+    approved = records.copy()
     for build in [intro_page, choice_page]:
         p = build()
-        records.append(p.save())
+        records[p.n-1] = p.save()
         print('Page', p.n, 'OK', flush=True)
-    assert records[:16] == approved
+    assert records[:16] == approved[:16] and records[18:] == approved[18:]
     MANIFEST.write_text(json.dumps(records, ensure_ascii=False, indent=2))

@@ -1,0 +1,62 @@
+[
+  {
+    "key": "crown",
+    "family": "classique",
+    "brand": "Fischer",
+    "name": "Fibre Crown EF",
+    "ref": "NV43024",
+    "photo": "fischer-crown.png",
+    "badge": "ÉCAILLES",
+    "url": "https://www.fischersports.com/fibre-crown-ef-mtd/NV43024",
+    "position": "Classique loisir et découverte. Pour qui recherche une accroche simple et une poussée accessible, même avec une technique encore imparfaite.",
+    "maker": "Fischer associe les écailles Vario Crown au flex Efficient Forward pour faciliter une poussée tolérante. Le set comprend la fixation Nordic Tour Step-In TURNAMIC.",
+    "vocab": "Vario Crown = écailles anti-recul. Efficient Forward = flex qui facilite la poussée.",
+    "specs": [["Accroche", "Vario Crown / écailles"], ["Longueurs", "179 / 184 / 189 / 194 / 199 / 204 cm"], ["Cotes", "51–46–49 mm"], ["Noyau / plaque", "Air Channel Basalite / IFP"]],
+    "speech": "Les écailles donnent l’accroche sans choisir de fart de retenue : on privilégie la simplicité."
+  },
+  {
+    "key": "rskin",
+    "family": "classique",
+    "brand": "Rossignol",
+    "name": "Delta Sport R-Skin",
+    "ref": "RHOCW02",
+    "photo": "rskin.jpg",
+    "badge": "PEAUX",
+    "url": "https://www.rossignol.com/fr-fr/delta-sport-r-skin-RHOCW02000189.html",
+    "position": "Classique loisir sportif et progression. Pour retrouver une accroche régulière sans sélectionner un fart de retenue à chaque sortie.",
+    "maker": "Rossignol met en avant la peau R-Skin remplaçable et le noyau nid d’abeille / peuplier : flex accessible, légèreté et réponse à la poussée.",
+    "vocab": "R-Skin = peau remplaçable. Honeycomb = structure en nid d’abeille qui allège le noyau.",
+    "specs": [["Accroche", "Peau R-Skin remplaçable"], ["Longueurs", "184 / 189 / 196 / 201 / 206 cm"], ["Construction", "Nid d’abeille + peuplier / Activ Cap"], ["Montage", "Plaque IFP / fixation classique adaptée"]],
+    "speech": "La peau reste sous le pied pendant la sortie : elle aide à accrocher, puis à retrouver la glisse."
+  },
+  {
+    "key": "aeroguide",
+    "family": "skating",
+    "brand": "Fischer",
+    "name": "Aeroguide Skate 65",
+    "ref": "NP27425",
+    "photo": "fischer-aeroguide.png",
+    "badge": "SKATING",
+    "url": "https://www.fischersports.com/fr_fr/aeroguide-skate-65-set/NP27425",
+    "position": "Débuter et progresser en skating avec un ski compact et guidé. Pour apprendre le transfert d’appui et gagner en confiance.",
+    "maker": "Fischer souligne les longueurs réduites, les lignes de cotes marquées et les deux rainures continues pour faciliter la prise d’appui et stabiliser la glisse.",
+    "vocab": "Deux rainures = ski mieux guidé. Longueurs compactes = skis plus faciles à déplacer.",
+    "specs": [["Longueurs", "165 / 175 / 185 cm"], ["Cotes", "45–40–45 mm"], ["Noyau / semelle", "Air Core Basalite / World Cup Pro"], ["Set", "Control Skate Step-In TURNAMIC / IFP"]],
+    "speech": "Ce modèle plus court aide à placer les skis et à prendre confiance dans les appuis de skating."
+  },
+  {
+    "key": "delta-skate",
+    "family": "skating",
+    "brand": "Rossignol",
+    "name": "Delta Sport Skating",
+    "ref": "RHOCQ03",
+    "photo": "delta-skate.jpg",
+    "badge": "SKATING",
+    "url": "https://www.rossignol.com/fr-fr/delta-sport-skating-RHOCQ03000180.html",
+    "position": "Skating loisir sportif et entraînement. Un modèle pour développer sa glisse avec un comportement accessible et dynamique.",
+    "maker": "Rossignol associe un noyau nid d’abeille / peuplier, l’Activ Cap et une double rainure de guidage pour la maniabilité, la stabilité et la réponse du ski.",
+    "vocab": "Activ Cap = équilibre souplesse / rigidité. Honeycomb = construction légère en nid d’abeille.",
+    "specs": [["Longueurs", "163 / 173 / 180 / 186 / 192 cm"], ["Cotes", "44–43–43 mm"], ["Construction", "Nid d’abeille + peuplier / Activ Cap"], ["Montage", "Plaque IFP / fixation skating adaptée"]],
+    "speech": "Pour des sorties sportives, on cherche une glisse régulière et un ski facile à guider."
+  }
+]

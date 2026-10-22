@@ -1,0 +1,32 @@
+[
+  {
+    "key": "classic-scene",
+    "url": "https://www.fischersports.com/media/2880x1700/51/d9/92/1720614450/stage_banner_active_2880x1700_no-text.jpg",
+    "file": "classique-fischer.jpg"
+  },
+  {
+    "key": "skate-scene",
+    "url": "https://www.fischersports.com/media/2880x1700/0f/1d/f8/1720612301/stage_banner_aeroguide_action_2880x1700.jpg",
+    "file": "skating-fischer.jpg"
+  },
+  {
+    "key": "crown",
+    "url": "https://www.fischersports.com/media/3072x4096/4a/15/e5/1789998106/nv43024_fibre_crown_ef_03.png",
+    "file": "fischer-crown.png"
+  },
+  {
+    "key": "rskin",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw86b4ee14/images/large/RHOCW02000_72DPI_01_v00.jpg?sw=1800",
+    "file": "rskin.jpg"
+  },
+  {
+    "key": "delta-skate",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw5d69b9bb/images/large/RHOCQ03000_72DPI_01_v00.jpg?sw=1800",
+    "file": "delta-skate.jpg"
+  },
+  {
+    "key": "aeroguide",
+    "url": "https://www.fischersports.com/media/3072x4096/3c/51/7d/1789997925/np27425_aeroguide_skate_65_03.png",
+    "file": "fischer-aeroguide.png"
+  }
+]
