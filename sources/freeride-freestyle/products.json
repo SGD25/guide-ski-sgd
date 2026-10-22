@@ -104,38 +104,38 @@
   },
   {
     "family": "freestyle",
-    "brand": "FACTION",
-    "name": "Prodigy 1",
-    "key": "faction",
-    "photo": "faction.jpg",
-    "ref": "171 cm",
-    "waist": "88 mm",
-    "tag": "Park & piste",
-    "position": "Pour le skieur intermédiaire à expert qui veut travailler ses figures au park, avec de la précision sur la neige dure et sur piste.",
-    "maker": "Le noyau peuplier / frêne soutient les réceptions. Le renfort carbone / caoutchouc sous le pied amortit les chocs ; les carres XL renforcent la durabilité.",
-    "vocab": "Précis · Du rebond · Soutien · Twin-tip",
+    "brand": "ROSSIGNOL",
+    "name": "Sprayer Pro",
+    "key": "sprayer",
+    "photo": "rossignol-sprayer-pro.jpg",
+    "ref": "168 cm",
+    "waist": "80 mm",
+    "tag": "Découverte freestyle",
+    "position": "Pour un jeune skieur en progression, qui veut découvrir les figures, le switch et un ski joueur sur piste.",
+    "maker": "Le noyau peuplier et la construction cap favorisent légèreté et agilité. Le cambre traditionnel apporte accroche et rebond pour progresser.",
+    "vocab": "Accessible · Agile · Joueur · Rebond",
     "specs": [
       [
-        "Forme",
-        "Twin-tip directionnel"
+        "Profil",
+        "Cambre traditionnel, twin-tip"
       ],
       [
         "Noyau",
-        "Peuplier / frêne"
+        "Peuplier + fibre de verre"
       ],
       [
-        "Flex",
-        "7/10 : plutôt tonique"
+        "Construction",
+        "Cap : légère et tolérante"
       ],
       [
-        "Rayon*",
-        "16 m / 171 cm"
+        "Public",
+        "Jeunes skieurs en progression"
       ]
     ],
-    "speech": "Un freestyle précis, avec du soutien pour les réceptions et les passages sur piste.",
-    "source": "https://factionskis.com/products/prodigy-1-ski",
-    "reference": "Prodigy 1 2027",
-    "season": "2026/27"
+    "speech": "Un twin-tip joueur et maniable pour découvrir les figures et progresser sur piste.",
+    "source": "https://rossignol.au/products/raosp02-sprayer-pro-skis-xpress",
+    "reference": "RAOSP02",
+    "waist_source": "https://www.rossignol.com/ca-fr/skis-freestyle-enfant-sprayer-RAOSP02000.html"
   },
   {
     "family": "freestyle",

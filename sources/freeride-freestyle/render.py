@@ -12,7 +12,7 @@ HERE=Path(__file__).parent
 sys.path.insert(0,str(ROOT/'sources/guide'))
 import render as common
 from render import Page,INK,BODY,TEAL,CORAL,BLUE,WHITE,PALE,LINE,DARK,ft
-common.OUT=ROOT/'assets/guide-v755';common.OUT.mkdir(exist_ok=True)
+common.OUT=ROOT/'assets/guide-v756';common.OUT.mkdir(exist_ok=True)
 MEDIA=HERE/'media'
 PURPLE='#75638F'
 PRODUCTS=json.loads((HERE/'products.json').read_text())
@@ -24,8 +24,8 @@ def scene(p,name,box):
 
 def family_page():
     p=Page(13);p.header('Freeride & freestyle.','Deux familles, deux intentions : flotter en neige profonde ou jouer avec les figures.','02  /  LES FAMILLES')
-    cards=[dict(x=70,n=3,color=TEAL,soft='#EDF5F6',title='Les skis freeride',sub='Priorité à la neige non damée et à la poudreuse.',photo='freeride-scene.jpg',waist='> 105 mm',waistnote='Repère poudreuse',length='Longueur : souvent autour de la taille à +10 / +15 cm ; à ajuster au modèle et au gabarit.',behavior='Le ski s’enfonce moins et pivote plus facilement en neige profonde. Sur piste dure, il est moins vif d’une carre à l’autre et souvent plus physique.',client='Un skieur déjà à l’aise, qui sort réellement des pistes et cherche davantage de portance.',points=['La largeur aide à rester en surface : elle ne remplace pas la technique du skieur.','Le rocker relève l’avant plus tôt et facilite la mise en surface ; le talon relevé aide au pivot.','Le flex et la longueur règlent le soutien : plus joueur pour pivoter, plus ferme pour engager.'],question='Vous cherchez surtout la poudreuse, ou un ski pour sortir des pistes dans des neiges variées ?',speech='Ce ski porte davantage en neige profonde et pivote facilement. En échange, il est moins vif sur piste dure.'),
-    dict(x=1230,n=4,color=PURPLE,soft='#F2EFF7',title='Les skis freestyle',sub='Priorité au park, aux sauts et à la créativité.',photo='freestyle-scene.jpg',waist='≈ 85–100 mm',waistnote='Repère park / jeu',length='Longueur : souvent proche de la taille (±5 cm), selon le niveau, le gabarit et les figures.',behavior='Le ski facilite le jeu avec le terrain, le ski en arrière et les réceptions. Le caractère dépend surtout du flex, du profil et du montage.',client='Un skieur qui veut apprendre ou pratiquer des figures ; demander s’il préfère les rails ou les sauts.',points=['Twin-tip : spatule et talon relevés pour skier aussi en arrière, appelé switch.','Souple pour les butters (appuis sur les spatules) ; plus de soutien pour les sauts et les réceptions.','Plat : pivot facile. Cambre + double rocker : accroche et rebond (pop). Le cambre plat n’est pas obligatoire.'],question='Vous faites surtout des rails et des butters, ou des sauts avec des réceptions appuyées ?',speech='Le twin-tip facilite le ski en arrière. On choisit ensuite la souplesse et le profil selon les figures et les sauts.')]
+    cards=[dict(x=70,n=3,color=TEAL,soft='#EDF5F6',title='Les skis freeride',sub='Priorité à la neige non damée et à la poudreuse.',photo='freeride-deep-v756.jpg',waist='> 105 mm',waistnote='Repère poudreuse',length='Longueur : souvent autour de la taille à +10 / +15 cm ; à ajuster au modèle et au gabarit.',behavior='Le ski s’enfonce moins et pivote plus facilement en neige profonde. Sur piste dure, il est moins vif d’une carre à l’autre et souvent plus physique.',client='Un skieur déjà à l’aise, qui sort réellement des pistes et cherche davantage de portance.',points=['La largeur aide à rester en surface : elle ne remplace pas la technique du skieur.','Le rocker relève l’avant plus tôt et facilite la mise en surface ; le talon relevé aide au pivot.','Le flex et la longueur règlent le soutien : plus joueur pour pivoter, plus ferme pour engager.'],question='Vous cherchez surtout la poudreuse, ou un ski pour sortir des pistes dans des neiges variées ?',speech='Ce ski porte davantage en neige profonde et pivote facilement. En échange, il est moins vif sur piste dure.'),
+    dict(x=1230,n=4,color=PURPLE,soft='#F2EFF7',title='Les skis freestyle',sub='Priorité au park, aux sauts et à la créativité.',photo='freestyle-scene.jpg',waist='≈ 80–100 mm',waistnote='Repère park / jeu',length='Longueur : de −10 cm à la taille du skieur, selon le programme.',behavior='Twin-tip pour skier en arrière (switch). Plat : pivot facile ; cambre + double rocker : accroche et rebond (pop).',client='Pour les amateurs de figures. Un flex souple aide au jib ; plus de soutien convient aux gros sauts.',points=['Twin-tip : spatule et talon relevés pour skier aussi en arrière, appelé switch.','Souple pour les butters (appuis sur les spatules) ; plus de soutien pour les sauts et les réceptions.','Plat : pivot facile. Cambre + double rocker : accroche et rebond (pop). Le cambre plat n’est pas obligatoire.'],question='Vous faites surtout du jib, du freestyle polyvalent, ou du big air / half-pipe ?',speech='On adapte la longueur à vos figures : plus court pour pivoter, plus long pour garder de la stabilité à vitesse élevée et à la réception.')]
     for c in cards:
         x=c['x'];p.accent=c['color'];p.soft=c['soft']
         p.rect((x,432,x+1100,2900),WHITE,c['color'],28,3)
@@ -39,20 +39,41 @@ def family_page():
         p.text(x+550,1244,'LARGEUR AU PATIN',27,'bold',c['color'])
         p.text(x+550,1290,c['waistnote'],34,'bold',INK)
         p.text(x+34,1380,c['length'],32,width=1032,leading=39,bottom=1470)
-        y=1490
+        y=1440 if c['n']==4 else 1490
         for label,body in [('Comportement',c['behavior']),('Pour quel client ?',c['client'])]:
             y=p.label(x+34,y,label,1032,32)
             y=p.text(x+34,y,body,39,width=1032,leading=47)+26
-        y=p.label(x+34,y,'Les points à expliquer',1032,32)
-        y=p.bullets(x+34,y,c['points'],1032,37,14)
-        assert y<2430,('family content',c['title'],y)
-        p.rect((x+25,2440,x+1075,2620),c['soft'],None,18)
-        p.text(x+48,2460,'LA QUESTION À POSER',28,'bold',c['color'])
-        p.text(x+48,2510,c['question'],35,width=1000,leading=42,bottom=2610)
-        p.rect((x+25,2650,x+1075,2875),DARK,None,18)
-        p.text(x+48,2670,'À DIRE AU CLIENT',29,'bold',WHITE)
-        p.text(x+48,2722,'« '+c['speech']+' »',36,'bold',WHITE,width=1000,leading=43,bottom=2863)
-    p.remember('Freeride : de la portance. Freestyle : un programme de figures.','Un ski large n’est pas forcément un freeride ; un twin-tip n’est pas forcément souple. Pour le freestyle, le cambre plat est une option : on choisit surtout selon les rails, les sauts et le niveau.')
+        if c['n']==3:
+            y=p.label(x+34,y,'Les points à expliquer',1032,32)
+            y=p.bullets(x+34,y,c['points'],1032,37,14)
+        else:
+            y=p.label(x+34,y,'Longueur : trois usages, trois repères',1032,32)
+            lengths=[('−10 cm','Park / rails / jib','Plus court et léger aux pieds : moins d’inertie, donc pivot et rotations plus faciles.'),('−5 cm','Freestyle polyvalent','Maniabilité pour les figures, avec assez de longueur pour rester stable sur piste et en neige un peu plus profonde.'),('À la taille','Big air / half-pipe','Plus d’appui à haute vitesse et sur les gros sauts : réceptions stables et meilleur équilibre avant / arrière.')]
+            for delta,title,body in lengths:
+                # Measure the row before drawing its integrated background.
+                words=body.split();lines=1;line=''
+                for word in words:
+                    trial=(line+' '+word).strip()
+                    if p.d.textlength(trial,font=ft(32))>790 and line:lines+=1;line=word
+                    else:line=trial
+                height=51+lines*37+18
+                p.rect((x+25,y-6,x+1075,y+height-16),c['soft'],None,16)
+                p.text(x+45,y+18,delta,46,'serif',c['color'],width=220)
+                p.text(x+275,y+4,title,36,'bold',INK,width=790)
+                end=p.text(x+275,y+51,body,32,width=790,leading=37,bottom=y+height-12)
+                y=end+18
+        question_y=2470 if c['n']==4 else 2440
+        assert y<question_y-12,('family content',c['title'],y)
+        question_end=2635 if c['n']==4 else 2620
+        p.rect((x+25,question_y,x+1075,question_end),c['soft'],None,18)
+        p.text(x+48,question_y+20,'LA QUESTION À POSER',28,'bold',c['color'])
+        p.text(x+48,question_y+70,c['question'],35,width=1000,leading=42,bottom=question_end-8)
+        speech_y=2660 if c['n']==4 else 2650
+        speech_end=2885 if c['n']==4 else 2875
+        p.rect((x+25,speech_y,x+1075,speech_end),DARK,None,18)
+        p.text(x+48,speech_y+20,'À DIRE AU CLIENT',29,'bold',WHITE)
+        p.text(x+48,speech_y+72,'« '+c['speech']+' »',36,'bold',WHITE,width=1000,leading=43,bottom=speech_end-12)
+    p.remember('Freeride : portance. Freestyle : longueur adaptée au programme.','En freestyle : jib ≈ −10 cm ; polyvalent ≈ −5 cm ; big air / half-pipe ≈ taille du skieur. Ajuster au gabarit, au niveau, au flex et au modèle. Le cambre plat reste une option.')
     p.footer('Repères indicatifs : les familles se chevauchent. Hors-piste : autonomie, connaissance du terrain et équipement adaptés.');return p
 
 def packshot(p,c,box):
@@ -109,10 +130,9 @@ def examples_page():
     p.footer('Photos et données : fabricants cités. * Cotes et rayon à la longueur indiquée. Positionnement et vocabulaire : repères de conseil.');return p
 
 if __name__=='__main__':
-    records=json.loads((HERE/'approved-pages-v754.json').read_text())
-    # Link the existing chapter opener to the new family page, without renumbering.
-    p=common.families();records[7]=p.save()
+    records=json.loads((HERE/'manifest.json').read_text())
+    assert len(records)==14
     for build in [family_page,examples_page]:
-        p=build();records.append(p.save());print('Page',p.n,'OK',flush=True)
+        p=build();records[p.n-1]=p.save();print('Page',p.n,'OK',flush=True)
     (ROOT/'sources/guide/.cache/manifest.json').write_text(json.dumps(records,ensure_ascii=False,indent=2))
     (HERE/'manifest.json').write_text(json.dumps(records,ensure_ascii=False,indent=2))
