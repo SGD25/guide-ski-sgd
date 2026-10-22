@@ -10,7 +10,7 @@ for(const src of scripts){
   if(src.startsWith('./pages/'))vm.runInContext(fs.readFileSync(local(src),'utf8'),context,{filename:src});
 }
 const pages=context.window.SGD_PAGES;
-assert.equal(pages.length,20,'The guide must expose all 20 pages');
+assert.equal(pages.length,22,'The guide must expose all 22 pages');
 for(const [i,page] of pages.entries()){
   const images=[...page.html.matchAll(/<img src="([^"]+)"/g)];
   assert.equal(images.length,1,`Page ${i+1} must be one complete image`);
@@ -18,4 +18,4 @@ for(const [i,page] of pages.entries()){
   for(const m of page.html.matchAll(/data-jump="(\d+)"/g))assert(Number(m[1])<pages.length);
 }
 for(const m of html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g))assert(fs.existsSync(local(m[1])));
-console.log('OK: script order, 20 complete pages, images, styles and navigation targets.');
+console.log('OK: script order, 22 complete pages, images, styles and navigation targets.');

@@ -1,0 +1,34 @@
+[
+  {
+    "key": "prime", "name": "Prime Chroma", "year": "2027", "family": "Débuter & progresser", "photo": "prime.jpg", "source": "https://www.nitrosnowboards.com/products/prime-chroma-snowboard",
+    "position": "Une planche pour apprendre à enchaîner les virages et progresser sur toute la station. Flex intermédiaire : accessible, sans être une planche molle.",
+    "maker": "Nitro met en avant le Cam-Out pour une conduite plus tolérante, un noyau bois Powercore et une semelle extrudée facile à vivre.",
+    "vocab": "Tolérance = réactions plus faciles à gérer. Flex = souplesse de la planche. Directionnel = sens de glisse privilégié.",
+    "specs": [["Profil / flex", "Cam-Out / 5 sur 10 chez Nitro"], ["Longueurs", "149, 152, 155, 158 ; 156W, 160W, 164W"], ["Ex. en 149 cm", "50–70 kg / patin 239 mm"], ["Shape / recul", "Directionnel / setback 15 mm"]],
+    "speech": "Vous voulez prendre confiance et garder une planche pour progresser ? Vérifions d’abord votre poids et vos boots."
+  },
+  {
+    "key": "team", "name": "Team", "year": "2026", "family": "All-mountain tonique", "photo": "team.jpg", "source": "https://www.nitrosnowboards.com/products/team-snowboard",
+    "position": "Pour un snowboarder déjà à l’aise qui veut une seule planche pour la piste, les bords de piste et quelques passages au park.",
+    "maker": "Cambre Trüe pour l’accroche et le pop, noyau Powerlite léger, profil Reflex pour la torsion et semelle frittée EcoSpeed HD.",
+    "vocab": "Pop = rebond pour décoller. Directional twin = comportement proche d’un twin, avec un montage légèrement reculé.",
+    "specs": [["Profil / flex", "Trüe Camber / 7 sur 10 chez Nitro"], ["Longueurs", "152, 155, 157, 159, 162 cm"], ["Ex. en 152 cm", "50–70 kg / patin 246 mm"], ["Shape / recul", "Directional twin / setback 15 mm"]],
+    "speech": "Vous cherchez une planche polyvalente et réactive ? Elle demande déjà des appuis maîtrisés pour bien l’exploiter."
+  },
+  {
+    "key": "squash", "name": "Squash", "year": "2026", "family": "Freeride & carving", "photo": "squash.jpg", "source": "https://www.nitrosnowboards.com/products/squash-snowboard",
+    "position": "Pour un rider intermédiaire à expert qui aime la poudreuse et les courbes sur piste. Une planche directionnelle, peu destinée au park.",
+    "maker": "Nose large et talon plus étroit en queue d’hirondelle pour la portance ; cambre Trüe pour tenir la carre et rayon progressif pour les courbes.",
+    "vocab": "Taper = talon plus étroit que le nose. Swallowtail = queue d’hirondelle. Setback = fixations reculées vers le talon.",
+    "specs": [["Profil / flex", "Trüe Camber / 7 sur 10 chez Nitro"], ["Longueurs", "156MW, 159MW, 163W"], ["Ex. en 156 cm", "60–80 kg / patin 253 mm"], ["Shape / recul", "Tapered swallowtail / setback 25 mm"]],
+    "speech": "Vous privilégiez la fraîche et les grandes courbes ? Son shape aide à flotter, tout en gardant du répondant sur piste."
+  },
+  {
+    "key": "t1", "name": "T1", "year": "2026", "family": "Freestyle & park", "photo": "t1.jpg", "source": "https://www.nitrosnowboards.com/products/t1-snowboard",
+    "position": "Une vraie planche de park pour un pratiquant qui progresse en figures. Son flex tonique apporte du soutien : freestyle ne veut pas dire très souple.",
+    "maker": "Shape twin, Cam-Out, profil Whiplash pour les ollies, carres Railkiller renforcées et chants Ureshred pour l’usage park et rails.",
+    "vocab": "Twin = nose et tail symétriques. Switch = glisser avec l’autre pied devant. Ollie = saut déclenché par le rebond du tail.",
+    "specs": [["Profil / flex", "Cam-Out / 7 sur 10 chez Nitro"], ["Longueurs", "149, 152, 155, 158 cm"], ["Ex. en 149 cm", "50–70 kg / patin 245 mm"], ["Shape / recul", "Twin / montage centré, setback 0 mm"]],
+    "speech": "Vous faites du park et roulez en switch ? Le twin aide dans les deux sens ; on garde du soutien pour les réceptions."
+  }
+]

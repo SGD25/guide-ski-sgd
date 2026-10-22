@@ -25,3 +25,5 @@ V07.60 : `python sources/rando/render.py` construit les pages 17–18. Le lecteu
 V07.61 : `python sources/nordic/render.py` construit les pages 19–20. Le lecteur expose vingt pages. Le générateur randonnée conserve désormais les pages suivantes. Sources et choix pédagogiques : `sources/nordic/README.md`.
 
 V07.62 : page 19 actualisée seule, `python sources/nordic/render.py --page 19` : repères corporels des bâtons et photos de chaussures Rossignol. Les dix-neuf autres images restent identiques.
+
+V07.63 : `python sources/snowboard/render.py` ajoute les pages 21–22, puis `python sources/guide/build_site.py` relie les vingt-deux pages. Les vingt images approuvées restent identiques ; le générateur nordique conserve les pages suivantes.
