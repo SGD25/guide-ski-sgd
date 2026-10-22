@@ -1,0 +1,47 @@
+[
+  {
+    "key": "escaper88",
+    "brand": "Rossignol",
+    "name": "Escaper 88 Nano",
+    "reference": "RANQV01",
+    "photo": "escaper88.jpg",
+    "waist": "88 mm",
+    "tag": "Rando / montée",
+    "url": "https://www.rossignol.com/us-en/rossignol-escaper-88-nano-skis-RANQV01000.html",
+    "position": "Une option pour les longues sorties et le dénivelé, avec un patin modéré et une construction pensée pour la randonnée.",
+    "maker": "Rossignol met en avant la légèreté et la maniabilité. Noyau paulownia, fibre fine et renfort métallique localisé pour limiter la masse.",
+    "vocab": "Paulownia = bois léger. Renfort localisé = de la matière placée là où elle est utile, sans alourdir tout le ski.",
+    "specs": [["Longueurs", "156 / 166 / 176 / 182 cm"], ["À 176 cm", "120–88–110 mm · rayon 18 m"], ["Structure", "Paulownia · Nano Fiberglass · Nano Titanal"]],
+    "speech": "Si vous voulez surtout enchaîner du dénivelé, ce patin modéré évite d’emporter une largeur inutile à chaque pas."
+  },
+  {
+    "key": "escaper97",
+    "brand": "Rossignol",
+    "name": "Escaper 97 Nano",
+    "reference": "RANTA01",
+    "photo": "escaper97.jpg",
+    "waist": "97 mm",
+    "tag": "Rando / neige souple",
+    "url": "https://www.rossignol.com/fi-en/mens-touring-skis-escaper-97-nano-open-RANTA01000.html",
+    "position": "Un compromis pour qui veut davantage de portance en neige souple, tout en conservant une construction légère de randonnée.",
+    "maker": "Paulownia, chants droits et double rocker : Rossignol recherche l’équilibre entre facilité à la montée, pivot et précision à la descente.",
+    "vocab": "Portance = moins s’enfoncer. Double rocker = extrémités relevées plus tôt, pour faciliter le pivot et la mise en surface.",
+    "specs": [["Longueurs", "161 / 169 / 177 / 185 cm"], ["À 177 cm", "126–97–116 mm · rayon 19 m"], ["Structure", "Paulownia · fibre · Nano Titanal"]],
+    "speech": "On gagne en portance pour la neige souple, tout en restant sur un vrai ski de randonnée à construction légère."
+  },
+  {
+    "key": "elan104",
+    "brand": "Elan",
+    "name": "Ripstick Tour 104",
+    "reference": "ADGKWB24",
+    "photo": "elan104.png",
+    "waist": "104 mm",
+    "tag": "Freerando / descente",
+    "url": "https://elansports.com/products/ripstick-tour-104",
+    "position": "Pour le skieur qui monte chercher la poudreuse et privilégie la descente. Plus de largeur et un programme clairement freerando.",
+    "maker": "Elan souligne la portance et le passage en courbe. Le Carbon Bridge vise à stabiliser la spatule et à absorber les vibrations.",
+    "vocab": "Carbon Bridge = renfort carbone dédié à la stabilité. Amphibio = profil distinct côté intérieur / extérieur du ski.",
+    "specs": [["Longueurs", "166 / 173 / 180 / 187 cm"], ["À 180 cm", "129–104–122 mm · rayon 23 m"], ["Structure", "Noyau bois · carbone · chants 360°"]],
+    "speech": "Vous acceptez davantage de ski à emmener en montée pour gagner en portance et profiter de la descente en neige profonde."
+  }
+]

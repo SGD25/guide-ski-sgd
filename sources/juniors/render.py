@@ -152,12 +152,11 @@ def examples_page():
 
 if __name__ == '__main__':
     records = json.loads(MANIFEST.read_text())
-    assert len(records) in (14, 16)
-    approved = records[:14]
-    records = approved.copy()
+    assert len(records) >= 16
+    approved = records.copy()
     for build in [advice_page, examples_page]:
         page = build()
-        records.append(page.save())
+        records[page.n-1] = page.save()
         print('Page', page.n, 'OK', flush=True)
-    assert records[:14] == approved
+    assert records[:14] == approved[:14] and records[16:] == approved[16:]
     MANIFEST.write_text(json.dumps(records, ensure_ascii=False, indent=2))

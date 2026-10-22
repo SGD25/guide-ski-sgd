@@ -19,3 +19,5 @@ V07.55 : les nouvelles pages 13–14 sont générées par `python sources/freeri
 V07.56 : pages 13–14 actualisées seules ; longueurs freestyle par programme, scène freeride plus profonde, vrai visuel Rossignol Sprayer Pro à la place du Faction. Le nombre de pages reste 14.
 
 V07.57 : les pages 15–16 sont générées par `python sources/juniors/render.py`, puis reliées par `python sources/guide/build_site.py`. Le lecteur expose 16 pages ; le générateur freeride/freestyle conserve les pages suivantes. Voir `sources/juniors/README.md` pour les sources ESF, Rossignol et LOOK, et la distinction entre repères SGD et prescriptions fabricants.
+
+V07.60 : `python sources/rando/render.py` construit les pages 17–18. Le lecteur et le contrôle d’intégration exposent 18 pages. Le générateur juniors conserve désormais les pages suivantes. La page 8 reçoit l’accès à la randonnée ; les autres images approuvées restent inchangées. Voir `sources/rando/README.md` pour les sources et repères pédagogiques.

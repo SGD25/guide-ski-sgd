@@ -137,7 +137,7 @@
   },
   {
     "page": 8,
-    "path": "assets/guide-v755/page-08.jpg",
+    "path": "assets/guide-v760/page-08.jpg",
     "links": [
       {
         "box": [
@@ -178,6 +178,16 @@
         ],
         "page": 13,
         "label": "Freestyle"
+      },
+      {
+        "box": [
+          1606,
+          2240,
+          2330,
+          2870
+        ],
+        "page": 17,
+        "label": "Randonnée"
       }
     ]
   },
@@ -219,6 +229,16 @@
   {
     "page": 16,
     "path": "assets/guide-v757/page-16.jpg",
+    "links": []
+  },
+  {
+    "page": 17,
+    "path": "assets/guide-v760/page-17.jpg",
+    "links": []
+  },
+  {
+    "page": 18,
+    "path": "assets/guide-v760/page-18.jpg",
     "links": []
   }
 ]
