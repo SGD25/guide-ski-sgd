@@ -80,7 +80,7 @@ class Page:
         self.line((760,66,2070,66))
         self.rect((2110,36,2324,102),P['fond'],P['reperes'],28,2)
         self.text(2217,53,f'PAGE {self.n:02}',31,'bold',INK,center=True)
-        heads={2:('Au fil ','des pages.'),3:('Spatule, patin, ','talon.'),4:('Largeur et ','longueur.'),5:('Rayon de ','courbure.'),6:('Du classique ','à l’inversé.'),7:('Ce qui se cache ','à l’intérieur.'),8:('Les familles ','de skis.'),9:('Les skis ','de piste.'),10:('Exemples de skis ','de piste.'),11:('Les skis ','all-mountain.'),12:('Exemples de skis ','all-mountain.')}
+        heads={2:('Au fil ','des pages.'),3:('Spatule, patin, ','talon.'),4:('Largeur et ','longueur.'),5:('Rayon de ','courbure.'),6:('Du classique ','à l’inversé.'),7:('Ce qui se cache ','à l’intérieur.'),8:('Les familles ','de skis.'),9:('Les skis ','de piste.'),10:('Exemples de skis ','de piste.'),11:('Les skis ','all-mountain.'),12:('Exemples de skis ','all-mountain.'),13:('Freeride & ','freestyle.'),14:('Exemples ','freeride & freestyle.')}
         a,b=heads.get(self.n,(title,''));size=156
         while self.d.textlength(a,font=ft(size,'serif'))+self.d.textlength(b,font=ft(size,'italic'))>2245:size-=1
         self.text(76,128,a,size,'serif',INK)
@@ -431,7 +431,10 @@ def families():
         p.text(x+35,2390,h,65,'serif',INK)
         p.text(x+35,2500,body,42,width=654)
         p.text(x+35,2690,tag,29,'bold',TEAL,width=654)
-        p.text(x+35,2790,'À venir',32,'bold',BODY)
+        if n in [3,4]:
+            p.text(x+35,2790,'Découvrir / page 13 →',32,'bold',p.accent)
+            p.link((x,2240,x+724,2870),13,h)
+        else:p.text(x+35,2790,'À venir',32,'bold',BODY)
     p.remember('Commencer par le terrain et la pratique réelle.','La famille donne une direction. Le niveau, le gabarit et les sensations recherchées permettent ensuite d’affiner le choix du modèle.')
     p.footer('Les exemples de modèles complètent les familles : skis de piste page 10, all-mountain page 12.');return p
 

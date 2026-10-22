@@ -1,0 +1,209 @@
+[
+  {
+    "family": "freeride",
+    "brand": "ELAN",
+    "name": "Ripstick 108",
+    "key": "elan",
+    "photo": "elan.png",
+    "ref": "182 cm",
+    "waist": "108 mm",
+    "tag": "Léger & agile",
+    "position": "Pour le skieur confirmé qui cherche de la portance, un ski agile et moins de poids à déplacer en neige profonde.",
+    "maker": "Carbon Deck et noyau Tubelite pour soutenir les appuis sans alourdir. Les fibres de lin amortissent les vibrations ; Amphibio associe accroche et pivot.",
+    "vocab": "Portance · Agilité · Légèreté · Amorti",
+    "specs": [
+      [
+        "Profil",
+        "Amphibio"
+      ],
+      [
+        "Noyau",
+        "Bois + carbone + lin"
+      ],
+      [
+        "Cotes*",
+        "143–108–124 mm"
+      ],
+      [
+        "Rayon*",
+        "19,8 m / 182 cm"
+      ]
+    ],
+    "speech": "De la portance et de l’agilité pour varier les virages en neige profonde.",
+    "source": "https://elansports.com/fr/products/ripstick-108",
+    "reference": "ADAMMX26"
+  },
+  {
+    "family": "freeride",
+    "brand": "ATOMIC",
+    "name": "Bent 110",
+    "key": "atomic",
+    "photo": "atomic.png",
+    "ref": "180 cm",
+    "waist": "110 mm",
+    "tag": "Joueur en poudreuse",
+    "position": "Pour le skieur déjà à l’aise qui aime pivoter, jouer avec le relief et garder une approche créative de la poudreuse.",
+    "maker": "HRZN Tech en spatule et talon améliore la portance. Le noyau Light Woodcore limite la masse ; le Powder Rocker facilite la conduite en neige souple.",
+    "vocab": "Joueur · Pivot facile · Portance · Réactif",
+    "specs": [
+      [
+        "Profil",
+        "Rocker / cambre / rocker"
+      ],
+      [
+        "Noyau",
+        "Light Woodcore : peuplier"
+      ],
+      [
+        "Cotes*",
+        "133–110–124 mm"
+      ],
+      [
+        "Rayon*",
+        "18 m / 180 cm"
+      ]
+    ],
+    "speech": "Un ski joueur, qui pivote facilement et porte bien dans la poudreuse.",
+    "source": "https://www.atomic.com/fr-fr/products/bent-110-aa7365-202600",
+    "reference": "AA0030958"
+  },
+  {
+    "family": "freeride",
+    "brand": "ROSSIGNOL",
+    "name": "Sender 110",
+    "key": "rossignol",
+    "photo": "rossignol.jpg",
+    "ref": "184 cm",
+    "waist": "110 mm",
+    "tag": "Soutien & stabilité",
+    "position": "Pour le skieur confirmé à expert qui recherche du soutien dans les grandes courbes et quand la neige devient plus irrégulière.",
+    "maker": "Le Titanal soutient les appuis et le système VAS absorbe les chocs. Twin Rocker et Air Tip conservent de la maniabilité malgré le gabarit du ski.",
+    "vocab": "Soutien · Amorti · Stable · Puissant",
+    "specs": [
+      [
+        "Profil",
+        "Twin Rocker"
+      ],
+      [
+        "Noyau",
+        "Peuplier + Titanal"
+      ],
+      [
+        "Cotes*",
+        "140–110–133 mm"
+      ],
+      [
+        "Rayon*",
+        "20 m / 184 cm"
+      ]
+    ],
+    "speech": "Du soutien et de l’amorti pour un skieur qui aime engager en hors-piste.",
+    "source": "https://www.rossignol.com/fr-fr/skis-alpins-sender-110-RAPMB01000184.html",
+    "reference": "RAPMB01",
+    "season": "2026/27"
+  },
+  {
+    "family": "freestyle",
+    "brand": "FACTION",
+    "name": "Prodigy 1",
+    "key": "faction",
+    "photo": "faction.jpg",
+    "ref": "171 cm",
+    "waist": "88 mm",
+    "tag": "Park & piste",
+    "position": "Pour le skieur intermédiaire à expert qui veut travailler ses figures au park, avec de la précision sur la neige dure et sur piste.",
+    "maker": "Le noyau peuplier / frêne soutient les réceptions. Le renfort carbone / caoutchouc sous le pied amortit les chocs ; les carres XL renforcent la durabilité.",
+    "vocab": "Précis · Du rebond · Soutien · Twin-tip",
+    "specs": [
+      [
+        "Forme",
+        "Twin-tip directionnel"
+      ],
+      [
+        "Noyau",
+        "Peuplier / frêne"
+      ],
+      [
+        "Flex",
+        "7/10 : plutôt tonique"
+      ],
+      [
+        "Rayon*",
+        "16 m / 171 cm"
+      ]
+    ],
+    "speech": "Un freestyle précis, avec du soutien pour les réceptions et les passages sur piste.",
+    "source": "https://factionskis.com/products/prodigy-1-ski",
+    "reference": "Prodigy 1 2027",
+    "season": "2026/27"
+  },
+  {
+    "family": "freestyle",
+    "brand": "ARMADA",
+    "name": "ARV 88",
+    "key": "armada",
+    "photo": "armada.png",
+    "ref": "176 cm",
+    "waist": "88 mm",
+    "tag": "Park tonique",
+    "position": "Pour un pratiquant de park qui recherche du rebond, de la précision et un ski tonique pour les sauts et les enchaînements.",
+    "maker": "Le noyau peuplier apporte du pop. Les carres renforcées et les chants W3DGEWALL visent la durabilité ; le rocker avant / arrière facilite la conduite.",
+    "vocab": "Tonique · Pop · Précis · Accroche",
+    "specs": [
+      [
+        "Profil",
+        "AR Freestyle Rocker"
+      ],
+      [
+        "Noyau",
+        "Peuplier, insert frêne"
+      ],
+      [
+        "Cotes*",
+        "120–88–114 mm"
+      ],
+      [
+        "Rayon*",
+        "16,5 m / 176 cm"
+      ]
+    ],
+    "speech": "Du rebond et de la précision pour un skieur qui veut un park plus sportif.",
+    "source": "https://www.armadasnow.com/en-us/products/arv-88-ra0655-202600",
+    "reference": "RA0000764"
+  },
+  {
+    "family": "freestyle",
+    "brand": "LINE",
+    "name": "Blend",
+    "key": "line",
+    "photo": "line.jpg",
+    "ref": "175 cm",
+    "waist": "98 mm",
+    "tag": "Souple & créatif",
+    "position": "Pour le skieur déjà à l’aise qui privilégie les rails, les butters et le jeu avec les spatules, plutôt que la rigidité à vitesse élevée.",
+    "maker": "Le flex souple et symétrique favorise les appuis en spatule et talon. Les chants renforcés et Thin Tip visent une meilleure résistance aux impacts.",
+    "vocab": "Souple · Butters · Créatif · Switch",
+    "specs": [
+      [
+        "Profil",
+        "Rocker / cambre / rocker"
+      ],
+      [
+        "Flex",
+        "Souple, symétrique"
+      ],
+      [
+        "Cotes*",
+        "129–98–120 mm"
+      ],
+      [
+        "Rayon*",
+        "18,5 m / 175 cm"
+      ]
+    ],
+    "speech": "Une base souple et joueuse pour les figures et les appuis sur les spatules.",
+    "source": "https://lineskis.com/en-us/p/blend-skis-ln261774",
+    "reference": "LN261774",
+    "season": "2026/27"
+  }
+]
