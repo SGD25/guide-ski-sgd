@@ -23,3 +23,5 @@ V07.57 : les pages 15–16 sont générées par `python sources/juniors/render.p
 V07.60 : `python sources/rando/render.py` construit les pages 17–18. Le lecteur et le contrôle d’intégration exposent 18 pages. Le générateur juniors conserve désormais les pages suivantes. La page 8 reçoit l’accès à la randonnée ; les autres images approuvées restent inchangées. Voir `sources/rando/README.md` pour les sources et repères pédagogiques.
 
 V07.61 : `python sources/nordic/render.py` construit les pages 19–20. Le lecteur expose vingt pages. Le générateur randonnée conserve désormais les pages suivantes. Sources et choix pédagogiques : `sources/nordic/README.md`.
+
+V07.62 : page 19 actualisée seule, `python sources/nordic/render.py --page 19` : repères corporels des bâtons et photos de chaussures Rossignol. Les dix-neuf autres images restent identiques.

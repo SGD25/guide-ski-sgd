@@ -13,7 +13,7 @@ sys.path.insert(0, str(ROOT / 'sources/guide'))
 import render as common
 from render import Page, INK, BODY, TEAL, CORAL, BLUE, WHITE, LINE, DARK
 
-common.OUT = ROOT / 'assets/guide-v761'
+common.OUT = ROOT / 'assets/guide-v762'
 common.OUT.mkdir(exist_ok=True)
 MANIFEST = ROOT / 'sources/freeride-freestyle/manifest.json'
 PRODUCTS = json.loads((HERE / 'products.json').read_text())
@@ -62,7 +62,7 @@ def intro_page():
     p.text(96, 1730, 'REPÈRES ADULTES', 28, 'bold', WHITE)
     p.text(490, 1726, 'CLASSIQUE', 37, 'bold', WHITE)
     p.text(1430, 1726, 'SKATING', 37, 'bold', WHITE)
-    for y, end in [(1795, 1950), (1965, 2100), (2115, 2335)]:
+    for y, end in [(1795, 1950), (1965, 2140), (2155, 2405)]:
         p.rect((70, y, 2330, end), WHITE, LINE, 16, 2)
         p.line((450, y+15, 450, end-15), LINE, 3)
         p.line((1385, y+15, 1385, end-15), LINE, 3)
@@ -73,29 +73,36 @@ def intro_page():
     p.text(1430, 1880, 'Les modèles compacts font exception.', 33, width=850)
     p.text(98, 1993, 'Bâtons', 43, 'serif', INK)
     p.text(490, 1980, 'Taille en cm × 0,83', 40, 'bold', BLUE, width=855)
-    p.text(490, 2041, 'Ex. : 1,70 m → environ 140 cm.', 33, width=855)
+    p.text(490, 2034, 'Ex. : 1,70 m → environ 140 cm.', 33, width=855)
+    p.text(490, 2084, 'Repère habituel : à l’aisselle.', 33, 'bold', BLUE, width=855)
     p.text(1430, 1980, 'Taille en cm × 0,90', 40, 'bold', TEAL, width=850)
-    p.text(1430, 2041, 'Ex. : 1,70 m → environ 150–155 cm.', 33, width=855)
-    p.text(98, 2163, 'Chaussures', 39, 'serif', INK)
-    p.text(490, 2137, 'Souples pour dérouler le pied', 35, 'bold', BLUE, width=855)
-    p.text(490, 2195, 'Semelle souple à l’avant, tige plutôt basse. Bon maintien du pied, sans comprimer les orteils.', 35, width=850, leading=42, bottom=2327)
-    p.text(1430, 2137, 'Rigides pour les appuis latéraux', 35, 'bold', TEAL, width=850)
-    p.text(1430, 2195, 'Semelle plus rigide, collier haut et maintien de cheville pour transmettre les appuis du patineur.', 35, width=850, leading=42, bottom=2327)
+    p.text(1430, 2034, 'Ex. : 1,70 m → environ 150–155 cm.', 33, width=855)
+    p.text(1430, 2084, 'Repère : entre le menton et le nez.', 33, 'bold', TEAL, width=855)
+    p.text(98, 2185, 'Chaussures', 39, 'serif', INK)
+    p.text(98, 2250, 'Pied maintenu,', 29, width=320)
+    p.text(98, 2290, 'orteils à l’aise.', 29, width=320)
+    for x, key, name in [(490, 'classic', 'Rossignol X-9 Classic'), (1430, 'skate', 'Rossignol X-9 Skate')]:
+        product_photo(p, {'photo': 'rossignol-x9-'+key+'.jpg', 'key': key}, (x, 2175, x+300, 2350))
+        p.text(x+150, 2360, name, 26, 'bold', INK, center=True)
+    p.text(815, 2180, 'Avant-pied souple', 35, 'bold', BLUE, width=530)
+    p.text(815, 2240, 'Pour dérouler le pied et pousser. Tige plutôt basse.', 34, width=530, leading=41, bottom=2390)
+    p.text(1755, 2180, 'Semelle plus rigide', 35, 'bold', TEAL, width=530)
+    p.text(1755, 2240, 'Collier haut : maintien de cheville pour les appuis latéraux.', 34, width=530, leading=41, bottom=2390)
 
-    p.rect((70, 2370, 2330, 2640), '#FCF0E9', None, 22)
-    p.text(98, 2390, 'Le poids et le niveau règlent le choix du cambre.', 45, 'serif', INK, width=2200)
-    p.text(98, 2465, 'En classique : trop souple, l’anti-recul frotte ; trop rigide, il est difficile à mettre en contact pour pousser.', 34, width=1070, leading=40, bottom=2588)
-    p.text(1258, 2465, 'Débutant : flex facile à charger et longueur maniable, dans sa plage de poids. Confirmé : ajuster au geste, à la technique et au rythme.', 34, width=1035, leading=40, bottom=2588)
-    p.text(98, 2597, 'Le barème poids / rigidité du fabricant prime sur le calcul de longueur. Deux skieurs de même taille peuvent avoir des besoins différents.', 30, width=2200, leading=35, bottom=2635)
+    p.rect((70, 2430, 2330, 2675), '#FCF0E9', None, 22)
+    p.text(98, 2450, 'Le poids et le niveau règlent le choix du cambre.', 43, 'serif', INK, width=2200)
+    p.text(98, 2515, 'En classique : trop souple, l’anti-recul frotte ; trop rigide, il est difficile à mettre en contact pour pousser.', 33, width=1070, leading=38, bottom=2635)
+    p.text(1258, 2515, 'Débutant : flex facile à charger et longueur maniable, dans sa plage de poids. Confirmé : ajuster au geste, à la technique et au rythme.', 33, width=1035, leading=38, bottom=2635)
+    p.text(98, 2640, 'Le barème poids / rigidité du fabricant prime sur le calcul de longueur. Deux skieurs de même taille peuvent avoir des besoins différents.', 28, width=2200, leading=32, bottom=2673)
 
-    p.rect((70, 2670, 2330, 2915), '#EDF5F6', None, 22)
-    p.text(98, 2686, 'Normes : juste ce qu’il faut reconnaître.', 43, 'serif', INK)
-    p.text(98, 2750, 'NNN (piste), Prolink, Turnamic : interfaces de chaussures compatibles. Choisir une fixation adaptée au classique ou au skating.', 31, width=1070, leading=36, bottom=2832)
-    p.text(1258, 2750, 'SNS : ancien système Salomon, avec les noms Profil et Pilot. Non compatible avec nos fixations NNN.', 31, width=1035, leading=36, bottom=2832)
-    p.rect((90, 2845, 2310, 2900), DARK, None, 13)
-    p.text(112, 2857, 'À dire au client : « Chez nous, uniquement du NNN. Vérifions la compatibilité de vos chaussures. »', 30, 'bold', WHITE, width=2170, leading=35, bottom=2895)
+    p.rect((70, 2700, 2330, 2915), '#EDF5F6', None, 22)
+    p.text(98, 2715, 'Normes : juste ce qu’il faut reconnaître.', 41, 'serif', INK)
+    p.text(98, 2772, 'NNN (piste), Prolink, Turnamic : interfaces de chaussures compatibles. Choisir une fixation adaptée au classique ou au skating.', 30, width=1070, leading=35, bottom=2843)
+    p.text(1258, 2772, 'SNS : ancien système Salomon, avec les noms Profil et Pilot. Non compatible avec nos fixations NNN.', 30, width=1035, leading=35, bottom=2843)
+    p.rect((90, 2850, 2310, 2905), DARK, None, 13)
+    p.text(112, 2862, 'À dire au client : « Chez nous, uniquement du NNN. Vérifions la compatibilité de vos chaussures. »', 30, 'bold', WHITE, width=2170, leading=35, bottom=2900)
     p.remember('Classique ou skating d’abord ; poids, niveau et compatibilité ensuite.', 'Le calcul en centimètres donne un départ. Le poids détermine la plage de longueur / rigidité ; les chaussures et les bâtons doivent correspondre à la pratique.')
-    p.footer('Repères de loisir, à adapter au modèle, au niveau et au barème de poids. Écailles / peaux : pas de fart de retenue, mais glisse à entretenir. Sources : Fischer, Rossignol, Salomon. Photos : Fischer.')
+    p.footer('Repères de loisir, à adapter au modèle, au niveau et au barème de poids. Écailles / peaux : pas de fart de retenue, mais glisse à entretenir. Sources : Fischer, Rossignol, Salomon. Photos : Fischer / Rossignol.')
     return p
 
 
@@ -158,11 +165,17 @@ def examples_page():
 
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--page', type=int, choices=[19, 20])
+    args = parser.parse_args()
     records = json.loads(MANIFEST.read_text())
     assert len(records) >= 18
     approved = records[:18]
     following = records[20:]
     for build in [intro_page, examples_page]:
+        if args.page and args.page != (19 if build == intro_page else 20):
+            continue
         p = build()
         record = p.save()
         if len(records) >= p.n:

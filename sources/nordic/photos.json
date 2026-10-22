@@ -28,5 +28,15 @@
     "key": "aeroguide",
     "url": "https://www.fischersports.com/media/3072x4096/3c/51/7d/1789997925/np27425_aeroguide_skate_65_03.png",
     "file": "fischer-aeroguide.png"
+  },
+  {
+    "key": "classic-boot",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw89aa2dd9/images/large/RIO1040000_72DPI_01_v00.jpg?sw=1200&sh=1200",
+    "file": "rossignol-x9-classic.jpg"
+  },
+  {
+    "key": "skate-boot",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw34449df8/images/large/RIO1030000_72DPI_01_v00.jpg?sw=1200&sh=1200",
+    "file": "rossignol-x9-skate.jpg"
   }
 ]
