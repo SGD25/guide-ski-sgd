@@ -47,7 +47,7 @@
   },
   {
     "page": 2,
-    "path": "assets/guide-v779/page-02.png",
+    "path": "assets/guide-v780/page-02.png",
     "links": [
       {
         "box": [
@@ -334,7 +334,7 @@
           1235,
           1933,
           2310,
-          2020
+          2018
         ],
         "page": 31,
         "label": "Fixations : comprendre le réglage"
@@ -342,9 +342,9 @@
       {
         "box": [
           1235,
-          2021,
+          2019,
           2310,
-          2108
+          2104
         ],
         "page": 32,
         "label": "Fixations : contrôler avant de louer"
@@ -352,9 +352,9 @@
       {
         "box": [
           1235,
-          2109,
+          2105,
           2310,
-          2196
+          2190
         ],
         "page": 33,
         "label": "Fixations : le déclenchement latéral"
@@ -362,9 +362,9 @@
       {
         "box": [
           1235,
-          2197,
+          2191,
           2310,
-          2284
+          2276
         ],
         "page": 34,
         "label": "Fixations : le déclenchement frontal"
@@ -372,9 +372,9 @@
       {
         "box": [
           1235,
-          2285,
+          2277,
           2310,
-          2372
+          2362
         ],
         "page": 35,
         "label": "LOOK NX12 : anatomie et graduations"
@@ -382,9 +382,9 @@
       {
         "box": [
           1235,
-          2373,
+          2363,
           2310,
-          2460
+          2448
         ],
         "page": 36,
         "label": "NX12 : régler et contrôler"
@@ -392,9 +392,9 @@
       {
         "box": [
           1235,
-          2461,
+          2449,
           2310,
-          2548
+          2534
         ],
         "page": 37,
         "label": "PLUM Guide 12 : les pièces"
@@ -402,9 +402,9 @@
       {
         "box": [
           1235,
-          2549,
+          2535,
           2310,
-          2636
+          2620
         ],
         "page": 38,
         "label": "PLUM Guide 12 : montée et descente"
@@ -412,9 +412,9 @@
       {
         "box": [
           1235,
-          2637,
+          2621,
           2310,
-          2724
+          2706
         ],
         "page": 39,
         "label": "Avalanche : s’équiper et contrôler"
@@ -422,12 +422,52 @@
       {
         "box": [
           1235,
-          2725,
+          2707,
           2310,
-          2812
+          2792
         ],
         "page": 40,
         "label": "Avalanche : rechercher et secourir"
+      },
+      {
+        "box": [
+          1235,
+          2793,
+          2310,
+          2878
+        ],
+        "page": 41,
+        "label": "Location : accueillir et équiper"
+      },
+      {
+        "box": [
+          1235,
+          2879,
+          2310,
+          2964
+        ],
+        "page": 42,
+        "label": "Location : départ et retour"
+      },
+      {
+        "box": [
+          1235,
+          2965,
+          2310,
+          3050
+        ],
+        "page": 43,
+        "label": "Au comptoir : les bonnes questions"
+      },
+      {
+        "box": [
+          1235,
+          3051,
+          2310,
+          3136
+        ],
+        "page": 44,
+        "label": "Un doute : vérifier et transmettre"
       }
     ]
   },
@@ -737,5 +777,25 @@
       "<a class=\"poster-link\" style=\"left:3%;top:76.5%;width:94%;height:2.7%\" href=\"https://www.arva-equipment.com/img/cms/Notices/ARVA_REACTOR_NOTICE_%20LIVRET__compressed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Lire la notice ARVA REACTOR : installation, contrôle, déclenchement et entretien\" title=\"Notice REACTOR\"></a>",
       "<a class=\"poster-link\" style=\"left:3%;top:96.1%;width:94%;height:2.1%\" href=\"https://www.ortovox.com/fr/safety-academy-lab-snow/04-sauvetage-en-cas-davalanche\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Approfondir le sauvetage avalanche avec les ressources et vidéos ORTOVOX Safety Academy\" title=\"Formation et vidéos : sauvetage avalanche\"></a>"
     ]
+  },
+  {
+    "page": 41,
+    "path": "assets/guide-v780/page-41.png",
+    "links": []
+  },
+  {
+    "page": 42,
+    "path": "assets/guide-v780/page-42.png",
+    "links": []
+  },
+  {
+    "page": 43,
+    "path": "assets/guide-v780/page-43.png",
+    "links": []
+  },
+  {
+    "page": 44,
+    "path": "assets/guide-v780/page-44.png",
+    "links": []
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "version": "V07.79",
-  "cache": "20261024-79",
+  "version": "V07.80",
+  "cache": "20261024-80",
   "pages": [
     {
       "page": 1,
@@ -12,7 +12,7 @@
       "page": 2,
       "title": "Sommaire complet",
       "chapter": "Ouverture",
-      "description": "Sommaire des 40 pages. Pages 31–32 conservées, compléments fixations LOOK NX12 et PLUM en 33–38, avalanche en 39–40."
+      "description": "Sommaire cliquable des 44 pages : matériel, réglages, sécurité, parcours de location et situations clients."
     },
     {
       "page": 3,
@@ -241,6 +241,30 @@
       "title": "Avalanche : rechercher et secourir",
       "chapter": "03 · Sécuriser",
       "description": "Sauvetage avalanche : protéger, organiser et alerter le 112 ; recherche du signal, recherche approximative puis fine, sondage perpendiculaire à la pente tous les 25 cm, pelletage en rampe depuis l’aval et premiers secours. Gestion des victimes multiples. Sac airbag ARVA REACTOR : limites, contrôle, portage et déclenchement manuel."
+    },
+    {
+      "page": 41,
+      "title": "Location : accueillir et équiper",
+      "chapter": "03 · Sécuriser",
+      "description": "Comprendre le programme, recueillir les données, faire essayer les chaussures et choisir un ensemble cohérent."
+    },
+    {
+      "page": 42,
+      "title": "Location : départ et retour",
+      "chapter": "03 · Sécuriser",
+      "description": "Préparer le départ, montrer les manipulations, recueillir le retour client et orienter le matériel."
+    },
+    {
+      "page": 43,
+      "title": "Au comptoir : les bonnes questions",
+      "chapter": "03 · Sécuriser",
+      "description": "Quatre situations clients, les questions utiles, les bons réflexes et les erreurs à éviter."
+    },
+    {
+      "page": 44,
+      "title": "Un doute : vérifier et transmettre",
+      "chapter": "03 · Sécuriser",
+      "description": "Reconnaître un problème, mettre le matériel de côté et transmettre les faits au référent ou à l’atelier."
     }
   ]
 }
