@@ -2,7 +2,7 @@
 
 Guide de formation feuilletable : https://sgd25.github.io/guide-ski-sgd/
 
-V07.75 : les 34 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
+V07.76 : les 40 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
 
 Le point d’entrée actuel est `sources/eyewear-v775/apply.py` ; les sources des versions précédentes restent conservées ; le catalogue de navigation est `sources/guide/catalog.json`. Les sources historiques restent disponibles. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
 
@@ -39,3 +39,5 @@ V07.73 : page 26 complétée et validée dans le chat : colonne d’eau / Schmer
 V07.74 : deux pages de randonnée pédestre approuvées dans le chat, copiées à l’identique en pages 27–28. Sécuriser décalé aux pages 29–32. Sommaire, renvoi de couverture, liens et numéros de renvoi mis à jour. Séparation claire des chaussures de ski de randonnée et de randonnée pédestre dans le sommaire. Contrôle des pixels hors zones de numérotation et vérification des 32 images avant publication.
 
 V07.75 : masques et lunettes validés intégrés à l’identique en pages 29–30. Sécuriser décalé en pages 31–34 ; sommaire et renvois actualisés. Exemples AZR, Smith et Cairn.
+
+V07.76 : pages 31–32 historiques conservées. Six nouvelles pages fixations LOOK NX12 / PLUM ajoutées en 33–38 ; avalanche décalée en 39–40. Pagination, sommaire et renvois actualisés.

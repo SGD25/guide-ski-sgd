@@ -47,14 +47,14 @@
   },
   {
     "page": 2,
-    "path": "assets/guide-v775/page-02.png",
+    "path": "assets/guide-v776/page-02.png",
     "links": [
       {
         "box": [
           90,
-          643,
-          1150,
-          768
+          563,
+          1165,
+          690
         ],
         "page": 3,
         "label": "Anatomie & lignes de cotes"
@@ -62,9 +62,9 @@
       {
         "box": [
           90,
-          768,
-          1150,
-          893
+          691,
+          1165,
+          818
         ],
         "page": 4,
         "label": "Largeur & longueur"
@@ -72,9 +72,9 @@
       {
         "box": [
           90,
-          893,
-          1150,
-          1018
+          819,
+          1165,
+          946
         ],
         "page": 5,
         "label": "Rayon de courbure"
@@ -82,9 +82,9 @@
       {
         "box": [
           90,
-          1018,
-          1150,
-          1143
+          947,
+          1165,
+          1074
         ],
         "page": 6,
         "label": "Cambres & rockers"
@@ -92,9 +92,9 @@
       {
         "box": [
           90,
-          1143,
-          1150,
-          1268
+          1075,
+          1165,
+          1202
         ],
         "page": 7,
         "label": "Construction & noyaux"
@@ -102,9 +102,9 @@
       {
         "box": [
           90,
-          1543,
-          1150,
-          1684
+          1413,
+          1165,
+          1538
         ],
         "page": 8,
         "label": "Les familles de skis"
@@ -112,9 +112,9 @@
       {
         "box": [
           90,
-          1684,
-          1150,
-          1825
+          1539,
+          1165,
+          1664
         ],
         "page": 9,
         "label": "Skis de piste"
@@ -122,9 +122,9 @@
       {
         "box": [
           90,
-          1825,
-          1150,
-          1966
+          1665,
+          1165,
+          1790
         ],
         "page": 10,
         "label": "Exemples piste"
@@ -132,9 +132,9 @@
       {
         "box": [
           90,
-          1966,
-          1150,
-          2107
+          1791,
+          1165,
+          1916
         ],
         "page": 11,
         "label": "Skis all-mountain"
@@ -142,9 +142,9 @@
       {
         "box": [
           90,
-          2107,
-          1150,
-          2248
+          1917,
+          1165,
+          2042
         ],
         "page": 12,
         "label": "Exemples all-mountain"
@@ -152,9 +152,9 @@
       {
         "box": [
           90,
-          2248,
-          1150,
-          2389
+          2043,
+          1165,
+          2168
         ],
         "page": 13,
         "label": "Freeride & freestyle"
@@ -162,9 +162,9 @@
       {
         "box": [
           90,
-          2389,
-          1150,
-          2530
+          2169,
+          1165,
+          2294
         ],
         "page": 14,
         "label": "Exemples freeride & freestyle"
@@ -172,9 +172,9 @@
       {
         "box": [
           90,
-          2530,
-          1150,
-          2671
+          2295,
+          1165,
+          2420
         ],
         "page": 15,
         "label": "Skis juniors"
@@ -182,192 +182,252 @@
       {
         "box": [
           90,
-          2671,
-          1150,
-          2812
+          2421,
+          1165,
+          2546
         ],
         "page": 16,
         "label": "Exemples juniors"
       },
       {
         "box": [
-          1250,
-          643,
-          2310,
-          743
+          90,
+          2547,
+          1165,
+          2672
         ],
         "page": 17,
         "label": "Skis de randonnée"
       },
       {
         "box": [
-          1250,
-          743,
-          2310,
-          843
+          90,
+          2673,
+          1165,
+          2798
         ],
         "page": 18,
-        "label": "Exemples rando"
+        "label": "Exemples de skis de randonnée"
       },
       {
         "box": [
-          1250,
-          843,
+          1235,
+          563,
           2310,
-          943
+          656
         ],
         "page": 19,
         "label": "Chaussures alpines"
       },
       {
         "box": [
-          1250,
-          943,
+          1235,
+          657,
           2310,
-          1043
+          750
         ],
         "page": 20,
-        "label": "Chaussures de ski de rando"
+        "label": "Chaussures de ski de randonnée"
       },
       {
         "box": [
-          1250,
-          1043,
+          1235,
+          751,
           2310,
-          1143
+          844
         ],
         "page": 21,
         "label": "Choisir son snowboard"
       },
       {
         "box": [
-          1250,
-          1143,
+          1235,
+          845,
           2310,
-          1243
+          938
         ],
         "page": 22,
-        "label": "Exemples Nitro"
+        "label": "Quatre exemples Nitro"
       },
       {
         "box": [
-          1250,
-          1243,
+          1235,
+          939,
           2310,
-          1343
+          1032
         ],
         "page": 23,
-        "label": "Ski de fond : classique & skating"
+        "label": "Ski de fond : les pratiques"
       },
       {
         "box": [
-          1250,
-          1343,
+          1235,
+          1033,
           2310,
-          1443
+          1126
         ],
         "page": 24,
-        "label": "Exemples de ski de fond"
+        "label": "Exemples classique & skating"
       },
       {
         "box": [
-          1250,
-          1443,
+          1235,
+          1127,
           2310,
-          1543
+          1220
         ],
         "page": 25,
-        "label": "Textile : le système 3 couches"
+        "label": "Textile : les trois couches"
       },
       {
         "box": [
-          1250,
-          1543,
+          1235,
+          1221,
           2310,
-          1643
+          1314
         ],
         "page": 26,
-        "label": "Textile : membranes & respirabilité"
+        "label": "Textile : membranes & indices"
       },
       {
         "box": [
-          1250,
-          1643,
+          1235,
+          1315,
           2310,
-          1743
+          1408
         ],
         "page": 27,
         "label": "Chaussures de randonnée pédestre"
       },
       {
         "box": [
-          1250,
-          1743,
+          1235,
+          1409,
           2310,
-          1843
+          1502
         ],
         "page": 28,
         "label": "Randonnée : choisir et essayer"
       },
       {
         "box": [
-          1250,
-          1843,
+          1235,
+          1503,
           2310,
-          1943
+          1596
         ],
         "page": 29,
-        "label": "Masques & lunettes : choisir"
+        "label": "Masques & lunettes : météo"
       },
       {
         "box": [
-          1250,
-          1943,
+          1235,
+          1597,
           2310,
-          2043
+          1690
         ],
         "page": 30,
         "label": "Masques & lunettes : technologies"
       },
       {
         "box": [
-          1250,
-          2308,
+          1235,
+          1933,
           2310,
-          2438
+          2020
         ],
         "page": 31,
         "label": "Fixations : comprendre le réglage"
       },
       {
         "box": [
-          1250,
-          2438,
+          1235,
+          2021,
           2310,
-          2568
+          2108
         ],
         "page": 32,
         "label": "Fixations : contrôler avant de louer"
       },
       {
         "box": [
-          1250,
-          2568,
+          1235,
+          2109,
           2310,
-          2698
+          2196
         ],
         "page": 33,
-        "label": "Avalanche : s’équiper & contrôler"
+        "label": "LOOK NX12 : anatomie et graduations"
       },
       {
         "box": [
-          1250,
-          2698,
+          1235,
+          2197,
           2310,
-          2828
+          2284
         ],
         "page": 34,
-        "label": "Avalanche : rechercher & secourir"
+        "label": "Fixations alpines : les déclenchements"
+      },
+      {
+        "box": [
+          1235,
+          2285,
+          2310,
+          2372
+        ],
+        "page": 35,
+        "label": "Konect : rails, BSL et poussée"
+      },
+      {
+        "box": [
+          1235,
+          2373,
+          2310,
+          2460
+        ],
+        "page": 36,
+        "label": "NX12 : régler et contrôler"
+      },
+      {
+        "box": [
+          1235,
+          2461,
+          2310,
+          2548
+        ],
+        "page": 37,
+        "label": "PLUM Guide 12 : les pièces"
+      },
+      {
+        "box": [
+          1235,
+          2549,
+          2310,
+          2636
+        ],
+        "page": 38,
+        "label": "PLUM Guide 12 : montée et descente"
+      },
+      {
+        "box": [
+          1235,
+          2637,
+          2310,
+          2724
+        ],
+        "page": 39,
+        "label": "Avalanche : s’équiper et contrôler"
+      },
+      {
+        "box": [
+          1235,
+          2725,
+          2310,
+          2812
+        ],
+        "page": 40,
+        "label": "Avalanche : rechercher et secourir"
       }
     ]
   },
@@ -505,7 +565,7 @@
   },
   {
     "page": 17,
-    "path": "assets/guide-v775/page-17.png",
+    "path": "assets/guide-v776/page-17.png",
     "links": [
       {
         "box": [
@@ -514,7 +574,7 @@
           2000,
           3318
         ],
-        "page": 33,
+        "page": 39,
         "label": "Sécurité avalanche"
       }
     ]
@@ -558,7 +618,7 @@
   },
   {
     "page": 21,
-    "path": "assets/guide-v775/page-21.png",
+    "path": "assets/guide-v776/page-21.png",
     "links": [
       {
         "box": [
@@ -567,7 +627,7 @@
           2000,
           3318
         ],
-        "page": 33,
+        "page": 39,
         "label": "Sécurité avalanche"
       }
     ]
@@ -633,15 +693,45 @@
   },
   {
     "page": 33,
-    "path": "assets/guide-v775/page-33.png",
+    "path": "assets/guide-v776/page-33.png",
+    "links": []
+  },
+  {
+    "page": 34,
+    "path": "assets/guide-v776/page-34.png",
+    "links": []
+  },
+  {
+    "page": 35,
+    "path": "assets/guide-v776/page-35.png",
+    "links": []
+  },
+  {
+    "page": 36,
+    "path": "assets/guide-v776/page-36.png",
+    "links": []
+  },
+  {
+    "page": 37,
+    "path": "assets/guide-v776/page-37.png",
+    "links": []
+  },
+  {
+    "page": 38,
+    "path": "assets/guide-v776/page-38.png",
+    "links": []
+  },
+  {
+    "page": 39,
+    "path": "assets/guide-v776/page-39.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:95%;width:94%;height:2.4%\" href=\"https://www.arva-equipment.com/fr/content/20-user-manuals-downloads\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Consulter les notices ARVA : portage, piles, contrôle de groupe, entretien et distances de sécurité\" title=\"Notices ARVA : portage et contrôles\"></a>"
     ]
   },
   {
-    "page": 34,
-    "path": "assets/guide-v775/page-34.png",
+    "page": 40,
+    "path": "assets/guide-v776/page-40.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:76.5%;width:94%;height:2.7%\" href=\"https://www.arva-equipment.com/img/cms/Notices/ARVA_REACTOR_NOTICE_%20LIVRET__compressed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Lire la notice ARVA REACTOR : installation, contrôle, déclenchement et entretien\" title=\"Notice REACTOR\"></a>",

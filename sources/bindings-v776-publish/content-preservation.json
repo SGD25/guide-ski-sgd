@@ -1,0 +1,168 @@
+[
+  {
+    "source": "assets/guide-v775/page-33.png",
+    "page": 39,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "source": "assets/guide-v775/page-34.png",
+    "page": 40,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "source": "sources/bindings-v776-revision/pages/page-31.png",
+    "page": 33,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "source": "sources/bindings-v776-revision/pages/page-32.png",
+    "page": 34,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "source": "sources/bindings-v776-revision/pages/page-33.png",
+    "page": 35,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "source": "sources/bindings-v776-revision/pages/page-34.png",
+    "page": 36,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "source": "sources/bindings-v776-revision/pages/page-35.png",
+    "page": 37,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "source": "sources/bindings-v776-revision/pages/page-36.png",
+    "page": 38,
+    "only_changed_regions": [
+      [
+        2110,
+        36,
+        2324,
+        102
+      ],
+      [
+        2270,
+        3340,
+        2375,
+        3393
+      ]
+    ]
+  },
+  {
+    "page": 17,
+    "only_changed_regions": [
+      [
+        70,
+        3230,
+        2000,
+        3318
+      ]
+    ]
+  },
+  {
+    "page": 21,
+    "only_changed_regions": [
+      [
+        70,
+        3230,
+        2000,
+        3318
+      ]
+    ]
+  }
+]

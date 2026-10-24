@@ -1,0 +1,1 @@
+window.SGD_PAGES.push({"title":"NX12 : régler et contrôler","chapter":"03 · Sécuriser","html":"<figure class=\"sgd-poster\" data-page=\"36\"><img src=\"./assets/guide-v776/page-36.png?v=20261024-76\" alt=\"NX12 : régler et contrôler. Page illustrée de formation vendeurs et loueurs.\" width=\"2400\" height=\"3394\" loading=\"eager\" decoding=\"async\"></figure>"});

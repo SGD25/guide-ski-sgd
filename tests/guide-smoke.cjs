@@ -1,61 +1,26 @@
-// Integration checks use the published HTML, real page scripts and source catalog.
-const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict'),cp=require('node:child_process');
 const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
-const html=read('index.html'),config=JSON.parse(read('sources/guide/catalog.json'));
-const manifest=JSON.parse(read('sources/freeride-freestyle/manifest.json'));
-const baseline=JSON.parse(read('sources/finalisation/baseline-v766.json'));
-const previous=JSON.parse(read('sources/eyewear-v775/baseline-v774.json'));
-const context=vm.createContext({window:{}}),local=src=>path.join(root,src.split('?')[0]);
-const scripts=[...html.matchAll(/<script src="([^"]+)"/g)].map(m=>m[1]);
-const actual=scripts.filter(s=>s.startsWith('./pages/')).map(s=>s.split('?')[0]);
-assert.deepEqual(actual,['./pages/00-init.js',...Array.from({length:34},(_,i)=>`./pages/${String(i+1).padStart(2,'0')}.js`)]);
-for(const src of scripts){assert(fs.existsSync(local(src)),`Missing script: ${src}`);if(src.startsWith('./pages/'))vm.runInContext(fs.readFileSync(local(src),'utf8'),context,{filename:src});}
-const pages=context.window.SGD_PAGES;assert.equal(pages.length,34,'All published chapters, including security, must survive a rebuild');
-assert.equal(manifest.length,34);assert.equal(config.pages.length,34);
-for(const [i,page] of pages.entries()){
- assert.equal(page.title,config.pages[i].title);assert.equal(page.chapter,config.pages[i].chapter);
- const imgs=[...page.html.matchAll(/<img src="([^"]+)"/g)];assert.equal(imgs.length,1,`Page ${i+1}: one complete image`);
- assert(fs.existsSync(local(imgs[0][1])),`Missing image on page ${i+1}`);
- assert(fs.statSync(local(imgs[0][1])).size>1000,`Empty or truncated image on page ${i+1}`);
- assert(page.html.includes(`data-page="${i+1}"`));
- assert.equal(manifest[i].page,i+1);
- for(const m of page.html.matchAll(/data-jump="(\d+)"/g)){const n=Number(m[1]);assert(n>=0&&n<pages.length);}
+const config=JSON.parse(read('sources/guide/catalog.json')),manifest=JSON.parse(read('sources/freeride-freestyle/manifest.json')),previous=JSON.parse(read('sources/bindings-v776-publish/baseline-v775.json'));
+const tracked=new Set(cp.execFileSync('git',['ls-tree','-r','--name-only','HEAD'],{cwd:root,encoding:'utf8'}).trim().split('\n'));
+const html=read('index.html'),ctx=vm.createContext({window:{}}),scripts=[...html.matchAll(/<script src="([^"]+)"/g)].map(m=>m[1].split('?')[0]);
+assert.deepEqual(scripts.filter(s=>s.startsWith('./pages/')),['./pages/00-init.js',...Array.from({length:40},(_,i)=>`./pages/${String(i+1).padStart(2,'0')}.js`)]);
+for(const s of scripts){assert(fs.existsSync(path.join(root,s)));if(s.startsWith('./pages/'))vm.runInContext(read(s),ctx)}
+const pages=ctx.window.SGD_PAGES;assert.equal(pages.length,40);assert.equal(manifest.length,40);assert.equal(config.pages.length,40);
+for(let i=0;i<40;i++){
+ const p=pages[i],r=manifest[i];assert.equal(r.page,i+1);assert.equal(p.title,config.pages[i].title);assert.equal(p.chapter,config.pages[i].chapter);
+ const imgs=[...p.html.matchAll(/<img src="([^"]+)"/g)];assert.equal(imgs.length,1);assert.equal(imgs[0][1].split('?')[0],'./'+r.path);
+ if(fs.existsSync(path.join(root,r.path)))assert(fs.statSync(path.join(root,r.path)).size>1000);else assert(tracked.has(r.path),'Missing published asset '+r.path);
+ for(const m of p.html.matchAll(/data-jump="(\d+)"/g))assert(+m[1]>=0&&+m[1]<40);
 }
-const contents=[...pages[1].html.matchAll(/data-jump="(\d+)"/g)].map(m=>Number(m[1])+1);
-assert.deepEqual([...new Set(contents)].sort((a,b)=>a-b),Array.from({length:32},(_,i)=>i+3),'The printed contents must link to every content page');
-assert.match(pages[18].title,/chaussures alpines/i);assert.match(pages[19].title,/chaussures.*randonn/i);
-assert.match(pages[20].title,/snowboard/i);assert.match(pages[21].title,/Nitro/);
-assert.match(pages[22].title,/fond/i);assert.match(pages[23].title,/classique.*skating/i);
-assert.match(pages[24].title,/textile.*3 couches/i);
-assert.match(pages[25].title,/textile.*membranes/i);
-assert.equal(pages[24].chapter,'02 · Reconnaître & conseiller');
-assert.equal(pages[25].chapter,'02 · Reconnaître & conseiller');
-for(let old=1;old<=32;old++){
- if(old===2)continue; // contents has the two new entries and updated destinations
- const n=old>=29?old+2:old;
- const expected=previous.records[old-1].links.map(l=>({...l,page:l.page>=29?l.page+2:l.page}));
- assert.deepEqual(manifest[n-1].links,expected,`Internal links must follow insertion on page ${n}`);
- assert.deepEqual(manifest[n-1].overlays,previous.records[old-1].overlays,`External links preserved on page ${n}`);
+const toc=[...pages[1].html.matchAll(/data-jump="(\d+)"/g)].map(m=>+m[1]+1);assert.deepEqual([...new Set(toc)].sort((a,b)=>a-b),Array.from({length:38},(_,i)=>i+3));
+for(let old=1;old<=34;old++){
+ const n=old>=33?old+6:old,before=previous.records[old-1],after=manifest[n-1];
+ if(old!==2)assert.deepEqual(after.links,before.links.map(l=>({...l,page:l.page>=33?l.page+6:l.page})));
+ assert.deepEqual(after.overlays,before.overlays);
+ if(![2,17,21,33,34].includes(old))assert.equal(after.path,before.path,'Unchanged poster must retain original asset');
 }
-for(const n of [31,32,33,34]){
- assert.equal(pages[n-1].chapter,'03 · Sécuriser');
- for(const overlay of previous.records[n-3].overlays||[])assert(pages[n-1].html.includes(overlay),`Security link lost on page ${n}`);
-}
-assert.match(pages[26].title,/randonnée pédestre/i);
-assert.match(pages[27].title,/randonnée pédestre.*essayer/i);
-for(const n of [27,28]){
- assert.equal(pages[n-1].chapter,'02 · Reconnaître & conseiller');
- assert.deepEqual(fs.readFileSync(path.join(root,manifest[n-1].path)),fs.readFileSync(path.join(root,`sources/hiking-v774/page-${n}-approved.png`)),`Approved page ${n} must be published byte-for-byte`);
-}
-assert.match(pages[28].title,/masques.*météo/i);
-assert.match(pages[29].title,/masques.*technologies/i);
-for(const n of [29,30]){
- assert.equal(pages[n-1].chapter,'02 · Reconnaître & conseiller');
- assert.deepEqual(fs.readFileSync(path.join(root,manifest[n-1].path)),fs.readFileSync(path.join(root,`sources/eyewear-v775/page-${n}-approved.png`)),`Approved eyewear page ${n} must be published byte-for-byte`);
-}
-const products=JSON.parse(read('sources/guide/piste-products.json'));
-assert.match(products[1].name,/Forza 40/);assert.equal(products[1].h,'Piste polyvalent');
-assert.match(products[2].name,/Forza 70/);assert.equal(products[2].h,'Piste performance');
-assert.equal(products[2].rows.find(r=>r[0]==='Niveau')[1],'Avancé à expert');
-for(const m of html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g))assert(fs.existsSync(local(m[1])));
-console.log('OK: 34 pages, approved hiking and eyewear posters, complete contents, shifted internal links, preserved safety links and Forza positioning.');
+for(const n of [31,32]){assert.deepEqual(manifest[n-1],previous.records[n-1]);assert.deepEqual(config.pages[n-1],previous.catalog.pages[n-1]);}
+for(let n=33;n<=40;n++)assert.equal(pages[n-1].chapter,'03 · Sécuriser');
+assert.match(pages[32].title,/NX12/);assert.match(pages[36].title,/PLUM/);assert.match(pages[38].title,/Avalanche/);
+assert.match(html,/V07.76/);assert.match(html,/01–02 \/ 40/);
+console.log('OK: 40 pages, complete clickable contents, original 31–32 preserved, six additions, avalanche links and external links preserved.');

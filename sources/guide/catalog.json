@@ -1,6 +1,6 @@
 {
-  "version": "V07.75",
-  "cache": "20261024-75",
+  "version": "V07.76",
+  "cache": "20261024-76",
   "pages": [
     {
       "page": 1,
@@ -12,7 +12,7 @@
       "page": 2,
       "title": "Sommaire complet",
       "chapter": "Ouverture",
-      "description": "Sommaire cliquable des 34 pages : matériel 3–7, familles 8–18, chaussures de ski 19–20, snowboard 21–22, fond 23–24, textile 25–26, randonnée pédestre 27–28, masques et lunettes 29–30, fixations 31–32 et avalanche 33–34."
+      "description": "Sommaire des 40 pages. Pages 31–32 conservées, compléments fixations LOOK NX12 et PLUM en 33–38, avalanche en 39–40."
     },
     {
       "page": 3,
@@ -196,12 +196,48 @@
     },
     {
       "page": 33,
+      "title": "LOOK NX12 : anatomie et graduations",
+      "chapter": "03 · Sécuriser",
+      "description": "LOOK NX12 : anatomie et graduations. Page illustrée de formation vendeurs et loueurs."
+    },
+    {
+      "page": 34,
+      "title": "Fixations alpines : les déclenchements",
+      "chapter": "03 · Sécuriser",
+      "description": "Fixations alpines : les déclenchements. Page illustrée de formation vendeurs et loueurs."
+    },
+    {
+      "page": 35,
+      "title": "Konect : rails, BSL et poussée",
+      "chapter": "03 · Sécuriser",
+      "description": "Konect : rails, BSL et poussée. Page illustrée de formation vendeurs et loueurs."
+    },
+    {
+      "page": 36,
+      "title": "NX12 : régler et contrôler",
+      "chapter": "03 · Sécuriser",
+      "description": "NX12 : régler et contrôler. Page illustrée de formation vendeurs et loueurs."
+    },
+    {
+      "page": 37,
+      "title": "PLUM Guide 12 : les pièces",
+      "chapter": "03 · Sécuriser",
+      "description": "PLUM Guide 12 : les pièces. Page illustrée de formation vendeurs et loueurs."
+    },
+    {
+      "page": 38,
+      "title": "PLUM Guide 12 : montée et descente",
+      "chapter": "03 · Sécuriser",
+      "description": "PLUM Guide 12 : montée et descente. Page illustrée de formation vendeurs et loueurs."
+    },
+    {
+      "page": 39,
       "title": "Avalanche : s’équiper et contrôler",
       "chapter": "03 · Sécuriser",
       "description": "DVA ou ARVA : fréquence 457 kHz et limites, trio DVA sonde pelle pour chacun, portage selon la notice, inspection et autotest, contrôle croisé recherche et émission de chaque membre, éloignement des interférences et démonstration au comptoir."
     },
     {
-      "page": 34,
+      "page": 40,
       "title": "Avalanche : rechercher et secourir",
       "chapter": "03 · Sécuriser",
       "description": "Sauvetage avalanche : protéger, organiser et alerter le 112 ; recherche du signal, recherche approximative puis fine, sondage perpendiculaire à la pente tous les 25 cm, pelletage en rampe depuis l’aval et premiers secours. Gestion des victimes multiples. Sac airbag ARVA REACTOR : limites, contrôle, portage et déclenchement manuel."
