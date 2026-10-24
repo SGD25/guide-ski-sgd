@@ -47,7 +47,7 @@
   },
   {
     "page": 2,
-    "path": "assets/guide-v778/page-02.png",
+    "path": "assets/guide-v779/page-02.png",
     "links": [
       {
         "box": [
@@ -357,7 +357,7 @@
           2196
         ],
         "page": 33,
-        "label": "LOOK NX12 : anatomie et graduations"
+        "label": "Fixations : le déclenchement latéral"
       },
       {
         "box": [
@@ -367,7 +367,7 @@
           2284
         ],
         "page": 34,
-        "label": "Fixations : le déclenchement latéral"
+        "label": "Fixations : le déclenchement frontal"
       },
       {
         "box": [
@@ -377,7 +377,7 @@
           2372
         ],
         "page": 35,
-        "label": "Fixations : le déclenchement frontal"
+        "label": "LOOK NX12 : anatomie et graduations"
       },
       {
         "box": [
@@ -693,17 +693,17 @@
   },
   {
     "page": 33,
-    "path": "assets/guide-v776/page-33.png",
+    "path": "assets/guide-v779/page-33.png",
     "links": []
   },
   {
     "page": 34,
-    "path": "assets/guide-v778/page-34.png",
+    "path": "assets/guide-v779/page-34.png",
     "links": []
   },
   {
     "page": 35,
-    "path": "assets/guide-v778/page-35.png",
+    "path": "assets/guide-v779/page-35.png",
     "links": []
   },
   {

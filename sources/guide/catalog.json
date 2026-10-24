@@ -1,6 +1,6 @@
 {
-  "version": "V07.78",
-  "cache": "20261024-78",
+  "version": "V07.79",
+  "cache": "20261024-79",
   "pages": [
     {
       "page": 1,
@@ -196,21 +196,21 @@
     },
     {
       "page": 33,
-      "title": "LOOK NX12 : anatomie et graduations",
-      "chapter": "03 · Sécuriser",
-      "description": "LOOK NX12 : anatomie et graduations. Page illustrée de formation vendeurs et loueurs."
-    },
-    {
-      "page": 34,
       "title": "Fixations : le déclenchement latéral",
       "chapter": "03 · Sécuriser",
       "description": "Déclenchement latéral : torsion et libération de l’avant de la chaussure par la butée."
     },
     {
-      "page": 35,
+      "page": 34,
       "title": "Fixations : le déclenchement frontal",
       "chapter": "03 · Sécuriser",
       "description": "Déclenchement frontal : basculement vers l’avant et libération du talon vers le haut par la talonnière."
+    },
+    {
+      "page": 35,
+      "title": "LOOK NX12 : anatomie et graduations",
+      "chapter": "03 · Sécuriser",
+      "description": "LOOK NX12 : anatomie et graduations. Page illustrée de formation vendeurs et loueurs."
     },
     {
       "page": 36,
