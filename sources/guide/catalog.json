@@ -1,6 +1,6 @@
 {
-  "version": "V07.77",
-  "cache": "20261024-77",
+  "version": "V07.78",
+  "cache": "20261024-78",
   "pages": [
     {
       "page": 1,
@@ -202,15 +202,15 @@
     },
     {
       "page": 34,
-      "title": "Fixations alpines : les déclenchements",
+      "title": "Fixations : le déclenchement latéral",
       "chapter": "03 · Sécuriser",
-      "description": "Fixations alpines : les déclenchements. Page illustrée de formation vendeurs et loueurs."
+      "description": "Déclenchement latéral : torsion et libération de l’avant de la chaussure par la butée."
     },
     {
       "page": 35,
-      "title": "Konect : rails, BSL et poussée",
+      "title": "Fixations : le déclenchement frontal",
       "chapter": "03 · Sécuriser",
-      "description": "Konect : rails, BSL et poussée. Page illustrée de formation vendeurs et loueurs."
+      "description": "Déclenchement frontal : basculement vers l’avant et libération du talon vers le haut par la talonnière."
     },
     {
       "page": 36,
