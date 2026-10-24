@@ -17,4 +17,4 @@
 .brand-logo{display:block;width:96px;height:57px;object-fit:contain;mix-blend-mode:multiply}.appbar-actions .bar-button{display:inline-flex;align-items:center;gap:7px}.bar-button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}.chapter-band{display:flex;gap:2px;max-width:1500px;margin:0 auto 0}.chapter-band>span{flex:1;padding:13px 18px;color:#fff;font-size:11px;font-weight:bold;letter-spacing:.13em}.chapter-one{background:#337ba2}.chapter-two{background:#ba624f}.chapter-opening{background:#214f5e}.reading-mode .chapter-band{max-width:1100px}.reading-mode .shortcut-note{font-size:0}.reading-mode .shortcut-note:after{content:'Cliquez sur la page avec la loupe − pour revenir à la vue double';font-size:11px}@media(max-width:780px){.brand-logo{width:65px;height:40px}.brand-name{font-size:9px}.chapter-band>span{font-size:9px;padding:10px 12px}.appbar-actions #reading-button{display:none}}
 
 /* The safety chapter remains distinct in the reader ribbon. */
-.chapter-three{background:#75638f}
+.chapter-three{background:#297a78}.chapter-four{background:#75638f}.chapter-five{background:#297a78}

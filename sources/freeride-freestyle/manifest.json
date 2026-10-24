@@ -47,14 +47,14 @@
   },
   {
     "page": 2,
-    "path": "assets/guide-v780/page-02.png",
+    "path": "assets/guide-v781/page-02.png",
     "links": [
       {
         "box": [
           90,
-          563,
+          603,
           1165,
-          690
+          696
         ],
         "page": 3,
         "label": "Anatomie & lignes de cotes"
@@ -62,9 +62,9 @@
       {
         "box": [
           90,
-          691,
+          697,
           1165,
-          818
+          790
         ],
         "page": 4,
         "label": "Largeur & longueur"
@@ -72,9 +72,9 @@
       {
         "box": [
           90,
-          819,
+          791,
           1165,
-          946
+          884
         ],
         "page": 5,
         "label": "Rayon de courbure"
@@ -82,9 +82,9 @@
       {
         "box": [
           90,
-          947,
+          885,
           1165,
-          1074
+          978
         ],
         "page": 6,
         "label": "Cambres & rockers"
@@ -92,9 +92,9 @@
       {
         "box": [
           90,
-          1075,
+          979,
           1165,
-          1202
+          1072
         ],
         "page": 7,
         "label": "Construction & noyaux"
@@ -102,9 +102,9 @@
       {
         "box": [
           90,
-          1413,
+          1313,
           1165,
-          1538
+          1420
         ],
         "page": 8,
         "label": "Les familles de skis"
@@ -112,9 +112,9 @@
       {
         "box": [
           90,
-          1539,
+          1421,
           1165,
-          1664
+          1528
         ],
         "page": 9,
         "label": "Skis de piste"
@@ -122,9 +122,9 @@
       {
         "box": [
           90,
-          1665,
+          1529,
           1165,
-          1790
+          1636
         ],
         "page": 10,
         "label": "Exemples piste"
@@ -132,9 +132,9 @@
       {
         "box": [
           90,
-          1791,
+          1637,
           1165,
-          1916
+          1744
         ],
         "page": 11,
         "label": "Skis all-mountain"
@@ -142,9 +142,9 @@
       {
         "box": [
           90,
-          1917,
+          1745,
           1165,
-          2042
+          1852
         ],
         "page": 12,
         "label": "Exemples all-mountain"
@@ -152,9 +152,9 @@
       {
         "box": [
           90,
-          2043,
+          1853,
           1165,
-          2168
+          1960
         ],
         "page": 13,
         "label": "Freeride & freestyle"
@@ -162,9 +162,9 @@
       {
         "box": [
           90,
-          2169,
+          1961,
           1165,
-          2294
+          2068
         ],
         "page": 14,
         "label": "Exemples freeride & freestyle"
@@ -172,9 +172,9 @@
       {
         "box": [
           90,
-          2295,
+          2069,
           1165,
-          2420
+          2176
         ],
         "page": 15,
         "label": "Skis juniors"
@@ -182,9 +182,9 @@
       {
         "box": [
           90,
-          2421,
+          2177,
           1165,
-          2546
+          2284
         ],
         "page": 16,
         "label": "Exemples juniors"
@@ -192,9 +192,9 @@
       {
         "box": [
           90,
-          2547,
+          2285,
           1165,
-          2672
+          2392
         ],
         "page": 17,
         "label": "Skis de randonnée"
@@ -202,69 +202,69 @@
       {
         "box": [
           90,
-          2673,
+          2393,
           1165,
-          2798
+          2500
         ],
         "page": 18,
         "label": "Exemples de skis de randonnée"
       },
       {
         "box": [
-          1235,
-          563,
-          2310,
-          656
+          90,
+          2501,
+          1165,
+          2608
         ],
         "page": 19,
         "label": "Chaussures alpines"
       },
       {
         "box": [
-          1235,
-          657,
-          2310,
-          750
+          90,
+          2609,
+          1165,
+          2716
         ],
         "page": 20,
         "label": "Chaussures de ski de randonnée"
       },
       {
         "box": [
-          1235,
-          751,
-          2310,
-          844
+          90,
+          2717,
+          1165,
+          2824
         ],
         "page": 21,
         "label": "Choisir son snowboard"
       },
       {
         "box": [
-          1235,
-          845,
-          2310,
-          938
+          90,
+          2825,
+          1165,
+          2932
         ],
         "page": 22,
         "label": "Quatre exemples Nitro"
       },
       {
         "box": [
-          1235,
-          939,
-          2310,
-          1032
+          90,
+          2933,
+          1165,
+          3040
         ],
         "page": 23,
         "label": "Ski de fond : les pratiques"
       },
       {
         "box": [
-          1235,
-          1033,
-          2310,
-          1126
+          90,
+          3041,
+          1165,
+          3148
         ],
         "page": 24,
         "label": "Exemples classique & skating"
@@ -272,9 +272,9 @@
       {
         "box": [
           1235,
-          1127,
+          603,
           2310,
-          1220
+          696
         ],
         "page": 25,
         "label": "Textile : les trois couches"
@@ -282,9 +282,9 @@
       {
         "box": [
           1235,
-          1221,
+          697,
           2310,
-          1314
+          790
         ],
         "page": 26,
         "label": "Textile : membranes & indices"
@@ -292,9 +292,9 @@
       {
         "box": [
           1235,
-          1315,
+          791,
           2310,
-          1408
+          884
         ],
         "page": 27,
         "label": "Chaussures de randonnée pédestre"
@@ -302,9 +302,9 @@
       {
         "box": [
           1235,
-          1409,
+          885,
           2310,
-          1502
+          978
         ],
         "page": 28,
         "label": "Randonnée : choisir et essayer"
@@ -312,9 +312,9 @@
       {
         "box": [
           1235,
-          1503,
+          979,
           2310,
-          1596
+          1072
         ],
         "page": 29,
         "label": "Masques & lunettes : météo"
@@ -322,9 +322,9 @@
       {
         "box": [
           1235,
-          1597,
+          1073,
           2310,
-          1690
+          1166
         ],
         "page": 30,
         "label": "Masques & lunettes : technologies"
@@ -332,9 +332,9 @@
       {
         "box": [
           1235,
-          1933,
+          1423,
           2310,
-          2018
+          1518
         ],
         "page": 31,
         "label": "Fixations : comprendre le réglage"
@@ -342,9 +342,9 @@
       {
         "box": [
           1235,
-          2019,
+          1519,
           2310,
-          2104
+          1614
         ],
         "page": 32,
         "label": "Fixations : contrôler avant de louer"
@@ -352,9 +352,9 @@
       {
         "box": [
           1235,
-          2105,
+          1615,
           2310,
-          2190
+          1710
         ],
         "page": 33,
         "label": "Fixations : le déclenchement latéral"
@@ -362,9 +362,9 @@
       {
         "box": [
           1235,
-          2191,
+          1711,
           2310,
-          2276
+          1806
         ],
         "page": 34,
         "label": "Fixations : le déclenchement frontal"
@@ -372,9 +372,9 @@
       {
         "box": [
           1235,
-          2277,
+          1807,
           2310,
-          2362
+          1902
         ],
         "page": 35,
         "label": "LOOK NX12 : anatomie et graduations"
@@ -382,9 +382,9 @@
       {
         "box": [
           1235,
-          2363,
+          1903,
           2310,
-          2448
+          1998
         ],
         "page": 36,
         "label": "NX12 : régler et contrôler"
@@ -392,9 +392,9 @@
       {
         "box": [
           1235,
-          2449,
+          1999,
           2310,
-          2534
+          2094
         ],
         "page": 37,
         "label": "PLUM Guide 12 : les pièces"
@@ -402,9 +402,9 @@
       {
         "box": [
           1235,
-          2535,
+          2095,
           2310,
-          2620
+          2190
         ],
         "page": 38,
         "label": "PLUM Guide 12 : montée et descente"
@@ -412,9 +412,9 @@
       {
         "box": [
           1235,
-          2621,
+          2191,
           2310,
-          2706
+          2286
         ],
         "page": 39,
         "label": "Avalanche : s’équiper et contrôler"
@@ -422,9 +422,9 @@
       {
         "box": [
           1235,
-          2707,
+          2287,
           2310,
-          2792
+          2382
         ],
         "page": 40,
         "label": "Avalanche : rechercher et secourir"
@@ -432,9 +432,9 @@
       {
         "box": [
           1235,
-          2793,
+          2653,
           2310,
-          2878
+          2780
         ],
         "page": 41,
         "label": "Location : accueillir et équiper"
@@ -442,9 +442,9 @@
       {
         "box": [
           1235,
-          2879,
+          2781,
           2310,
-          2964
+          2908
         ],
         "page": 42,
         "label": "Location : départ et retour"
@@ -452,9 +452,9 @@
       {
         "box": [
           1235,
-          2965,
+          2909,
           2310,
-          3050
+          3036
         ],
         "page": 43,
         "label": "Au comptoir : les bonnes questions"
@@ -462,9 +462,9 @@
       {
         "box": [
           1235,
-          3051,
+          3037,
           2310,
-          3136
+          3164
         ],
         "page": 44,
         "label": "Un doute : vérifier et transmettre"
@@ -473,7 +473,7 @@
   },
   {
     "page": 3,
-    "path": "assets/guide-v772/page-03.jpg",
+    "path": "assets/guide-v781/page-03.png",
     "links": []
   },
   {
@@ -498,7 +498,7 @@
   },
   {
     "page": 8,
-    "path": "assets/guide-v772/page-08.jpg",
+    "path": "assets/guide-v781/page-08.png",
     "links": [
       {
         "box": [
@@ -554,37 +554,37 @@
   },
   {
     "page": 9,
-    "path": "assets/guide-v772/page-09.jpg",
+    "path": "assets/guide-v781/page-09.png",
     "links": []
   },
   {
     "page": 10,
-    "path": "assets/guide-v772/page-10.jpg",
+    "path": "assets/guide-v781/page-10.png",
     "links": []
   },
   {
     "page": 11,
-    "path": "assets/guide-v772/page-11.jpg",
+    "path": "assets/guide-v781/page-11.png",
     "links": []
   },
   {
     "page": 12,
-    "path": "assets/guide-v772/page-12.jpg",
+    "path": "assets/guide-v781/page-12.png",
     "links": []
   },
   {
     "page": 13,
-    "path": "assets/guide-v772/page-13.jpg",
+    "path": "assets/guide-v781/page-13.png",
     "links": []
   },
   {
     "page": 14,
-    "path": "assets/guide-v772/page-14.jpg",
+    "path": "assets/guide-v781/page-14.png",
     "links": []
   },
   {
     "page": 15,
-    "path": "assets/guide-v775/page-15.png",
+    "path": "assets/guide-v781/page-15.png",
     "links": [
       {
         "box": [
@@ -600,12 +600,12 @@
   },
   {
     "page": 16,
-    "path": "assets/guide-v772/page-16.jpg",
+    "path": "assets/guide-v781/page-16.png",
     "links": []
   },
   {
     "page": 17,
-    "path": "assets/guide-v776/page-17.png",
+    "path": "assets/guide-v781/page-17.png",
     "links": [
       {
         "box": [
@@ -621,12 +621,12 @@
   },
   {
     "page": 18,
-    "path": "assets/guide-v772/page-18.jpg",
+    "path": "assets/guide-v781/page-18.png",
     "links": []
   },
   {
     "page": 19,
-    "path": "assets/guide-v775/page-19.png",
+    "path": "assets/guide-v781/page-19.png",
     "links": [
       {
         "box": [
@@ -642,7 +642,7 @@
   },
   {
     "page": 20,
-    "path": "assets/guide-v775/page-20.png",
+    "path": "assets/guide-v781/page-20.png",
     "links": [
       {
         "box": [
@@ -658,7 +658,7 @@
   },
   {
     "page": 21,
-    "path": "assets/guide-v776/page-21.png",
+    "path": "assets/guide-v781/page-21.png",
     "links": [
       {
         "box": [
@@ -674,52 +674,52 @@
   },
   {
     "page": 22,
-    "path": "assets/guide-v772/page-22.jpg",
+    "path": "assets/guide-v781/page-22.png",
     "links": []
   },
   {
     "page": 23,
-    "path": "assets/guide-v772/page-23.jpg",
+    "path": "assets/guide-v781/page-23.png",
     "links": []
   },
   {
     "page": 24,
-    "path": "assets/guide-v772/page-24.jpg",
+    "path": "assets/guide-v781/page-24.png",
     "links": []
   },
   {
     "page": 25,
-    "path": "assets/guide-v772/page-25.jpg",
+    "path": "assets/guide-v781/page-25.png",
     "links": []
   },
   {
     "page": 26,
-    "path": "assets/guide-v773/page-26.png",
+    "path": "assets/guide-v781/page-26.png",
     "links": []
   },
   {
     "page": 27,
-    "path": "assets/guide-v774/page-27.png",
+    "path": "assets/guide-v781/page-27.png",
     "links": []
   },
   {
     "page": 28,
-    "path": "assets/guide-v774/page-28.png",
+    "path": "assets/guide-v781/page-28.png",
     "links": []
   },
   {
     "page": 29,
-    "path": "assets/guide-v775/page-29.png",
+    "path": "assets/guide-v781/page-29.png",
     "links": []
   },
   {
     "page": 30,
-    "path": "assets/guide-v775/page-30.png",
+    "path": "assets/guide-v781/page-30.png",
     "links": []
   },
   {
     "page": 31,
-    "path": "assets/guide-v775/page-31.png",
+    "path": "assets/guide-v781/page-31.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:70.4%;width:94%;height:6.6%\" href=\"https://isoski.lumiplan.pro/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Ouvrir ISOSKI pour vérifier les compatibilités et calculer le réglage initial des fixations\"></a>"
@@ -727,43 +727,43 @@
   },
   {
     "page": 32,
-    "path": "assets/guide-v775/page-32.png",
+    "path": "assets/guide-v781/page-32.png",
     "links": [],
     "overlays": []
   },
   {
     "page": 33,
-    "path": "assets/guide-v779/page-33.png",
+    "path": "assets/guide-v781/page-33.png",
     "links": []
   },
   {
     "page": 34,
-    "path": "assets/guide-v779/page-34.png",
+    "path": "assets/guide-v781/page-34.png",
     "links": []
   },
   {
     "page": 35,
-    "path": "assets/guide-v779/page-35.png",
+    "path": "assets/guide-v781/page-35.png",
     "links": []
   },
   {
     "page": 36,
-    "path": "assets/guide-v776/page-36.png",
+    "path": "assets/guide-v781/page-36.png",
     "links": []
   },
   {
     "page": 37,
-    "path": "assets/guide-v776/page-37.png",
+    "path": "assets/guide-v781/page-37.png",
     "links": []
   },
   {
     "page": 38,
-    "path": "assets/guide-v776/page-38.png",
+    "path": "assets/guide-v781/page-38.png",
     "links": []
   },
   {
     "page": 39,
-    "path": "assets/guide-v776/page-39.png",
+    "path": "assets/guide-v781/page-39.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:95%;width:94%;height:2.4%\" href=\"https://www.arva-equipment.com/fr/content/20-user-manuals-downloads\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Consulter les notices ARVA : portage, piles, contrôle de groupe, entretien et distances de sécurité\" title=\"Notices ARVA : portage et contrôles\"></a>"
@@ -771,7 +771,7 @@
   },
   {
     "page": 40,
-    "path": "assets/guide-v776/page-40.png",
+    "path": "assets/guide-v781/page-40.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:76.5%;width:94%;height:2.7%\" href=\"https://www.arva-equipment.com/img/cms/Notices/ARVA_REACTOR_NOTICE_%20LIVRET__compressed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Lire la notice ARVA REACTOR : installation, contrôle, déclenchement et entretien\" title=\"Notice REACTOR\"></a>",
@@ -780,22 +780,22 @@
   },
   {
     "page": 41,
-    "path": "assets/guide-v780/page-41.png",
+    "path": "assets/guide-v781/page-41.png",
     "links": []
   },
   {
     "page": 42,
-    "path": "assets/guide-v780/page-42.png",
+    "path": "assets/guide-v781/page-42.png",
     "links": []
   },
   {
     "page": 43,
-    "path": "assets/guide-v780/page-43.png",
+    "path": "assets/guide-v781/page-43.png",
     "links": []
   },
   {
     "page": 44,
-    "path": "assets/guide-v780/page-44.png",
+    "path": "assets/guide-v781/page-44.png",
     "links": []
   }
 ]

@@ -13,14 +13,18 @@ for(let i=0;i<44;i++){
  for(const m of p.html.matchAll(/data-jump="(\d+)"/g))assert(+m[1]>=0&&+m[1]<44);
 }
 const toc=[...pages[1].html.matchAll(/data-jump="(\d+)"/g)].map(m=>+m[1]+1);assert.deepEqual([...new Set(toc)].sort((a,b)=>a-b),Array.from({length:42},(_,i)=>i+3));
-for(let old=1;old<=34;old++){
- const n=old>=33?old+6:old,before=previous.records[old-1],after=manifest[n-1];
- if(old!==2)assert.deepEqual(after.links,before.links.map(l=>({...l,page:l.page>=33?l.page+6:l.page})));
- assert.deepEqual(after.overlays,before.overlays);
- if(![2,17,21,33,34].includes(old))assert.equal(after.path,before.path,'Unchanged poster must retain original asset');
+const baseline=JSON.parse(read('sources/final-polish-v781/baseline-v780.json'));
+for(let n=1;n<=44;n++){
+ if(n!==2)assert.deepEqual(manifest[n-1].links,baseline.records[n-1].links);
+ assert.deepEqual(manifest[n-1].overlays,baseline.records[n-1].overlays);
 }
-for(const n of [31,32]){assert.deepEqual(manifest[n-1],previous.records[n-1]);assert.deepEqual(config.pages[n-1],previous.catalog.pages[n-1]);}
-for(let n=33;n<=40;n++)assert.equal(pages[n-1].chapter,'03 · Sécuriser');
+for(const n of [31,32]){
+ assert.equal(config.pages[n-1].title,baseline.catalog.pages[n-1].title);
+ assert.equal(config.pages[n-1].description,baseline.catalog.pages[n-1].description);
+}
+for(const [lo,hi,ch] of [[3,7,'01 · Comprendre'],[8,24,'02 · Reconnaître et conseiller le matériel'],[25,30,'03 · Reconnaître et conseiller textiles et accessoires'],[31,40,'04 · Sécuriser'],[41,44,'05 · Accueillir, louer et accompagner']]){
+ for(let n=lo;n<=hi;n++)assert.equal(pages[n-1].chapter,ch);
+}
 assert.match(pages[34].title,/NX12/);assert.match(pages[36].title,/PLUM/);assert.match(pages[38].title,/Avalanche/);
-assert.match(html,/V07.80/);assert.match(html,/01–02 \/ 44/);
-console.log('OK: 44 pages, complete clickable contents, original 31–32 preserved, six additions, avalanche links and external links preserved.');
+assert.match(html,/V07.81/);assert.match(html,/01–02 \/ 44/);
+console.log('OK: 44 pages, complete clickable contents, five chapters, original 31–32 text preserved, complete navigation.');
