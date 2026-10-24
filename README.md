@@ -2,9 +2,9 @@
 
 Guide de formation feuilletable : https://sgd25.github.io/guide-ski-sgd/
 
-V07.71 : les 28 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
+V07.72 : les 30 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
 
-Le point d’entrée actuel est `sources/finalisation-v771/render.py` ; le catalogue de navigation est `sources/guide/catalog.json`. Les sources historiques restent disponibles. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
+Le point d’entrée actuel est `sources/textile-v772/render.py` ; le catalogue de navigation est `sources/guide/catalog.json`. Les sources historiques restent disponibles. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
 
 Le lecteur permet le feuilletage, l’accès direct depuis les sommaires, la lecture agrandie et l’impression. Un second clic sur la page agrandie, avec la loupe moins, revient à la vue double. Les chapitres ont leurs repères de couleur et la page 8 ouvre les familles avec une grande scène de glisse. Le vrai logo SGD figure dans le lecteur et les pieds de page actualisés. Les pages 13 et 14 présentent le freeride, le freestyle et six modèles réels. La randonnée est présentée pages 17–18 ; le chapitre « Choisir » reste à créer.
 
@@ -31,3 +31,5 @@ V07.69 : encarts À retenir entièrement intégrés dans un bandeau unique avec 
 V07.70 : application de la proposition n° 1 « L’onglet », sélectionnée dans le chat : véritable bouton corail de la maquette, ampoule blanche et cadre clair avec filet bleu ardoise. Sources : `sources/finalisation-v770/`.
 
 V07.71 : onglet bleu « À dire au client » choisi dans le chat, appliqué aux 42 encarts / phrases ; fond orange très diffus des 26 « À retenir » repris du 50/50. Sources et maquette : `sources/finalisation-v771/`.
+
+V07.72 : double page textile validée dans le chat, intégrée pages 25–26 à la fin du chapitre « Reconnaître & conseiller ». Sécuriser décalé aux pages 27–30 ; sommaire, couverture et renvois actualisés. En-têtes et pieds de page des pages intérieures harmonisés, contenu illustré et textes validés préservés. Original de la double page et contrôle des zones modifiées : `sources/textile-v772/`.

@@ -1,0 +1,737 @@
+{
+  "records": [
+    {
+      "page": 1,
+      "path": "assets/guide-v767/page-01.jpg",
+      "links": [
+        {
+          "box": [
+            70,
+            2785,
+            605,
+            3150
+          ],
+          "page": 3,
+          "label": "Comprendre"
+        },
+        {
+          "box": [
+            645,
+            2785,
+            1180,
+            3150
+          ],
+          "page": 8,
+          "label": "Reconnaître"
+        },
+        {
+          "box": [
+            1220,
+            2785,
+            1755,
+            3150
+          ],
+          "page": 9,
+          "label": "Conseiller"
+        },
+        {
+          "box": [
+            1795,
+            2785,
+            2330,
+            3150
+          ],
+          "page": 25,
+          "label": "Sécuriser"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "path": "assets/guide-v767/page-02.jpg",
+      "links": [
+        {
+          "box": [
+            90,
+            643,
+            1150,
+            768
+          ],
+          "page": 3,
+          "label": "Anatomie & lignes de cotes"
+        },
+        {
+          "box": [
+            90,
+            768,
+            1150,
+            893
+          ],
+          "page": 4,
+          "label": "Largeur & longueur"
+        },
+        {
+          "box": [
+            90,
+            893,
+            1150,
+            1018
+          ],
+          "page": 5,
+          "label": "Rayon de courbure"
+        },
+        {
+          "box": [
+            90,
+            1018,
+            1150,
+            1143
+          ],
+          "page": 6,
+          "label": "Cambres & rockers"
+        },
+        {
+          "box": [
+            90,
+            1143,
+            1150,
+            1268
+          ],
+          "page": 7,
+          "label": "Construction & noyaux"
+        },
+        {
+          "box": [
+            90,
+            1543,
+            1150,
+            1684
+          ],
+          "page": 8,
+          "label": "Les familles de skis"
+        },
+        {
+          "box": [
+            90,
+            1684,
+            1150,
+            1825
+          ],
+          "page": 9,
+          "label": "Skis de piste"
+        },
+        {
+          "box": [
+            90,
+            1825,
+            1150,
+            1966
+          ],
+          "page": 10,
+          "label": "Exemples piste"
+        },
+        {
+          "box": [
+            90,
+            1966,
+            1150,
+            2107
+          ],
+          "page": 11,
+          "label": "Skis all-mountain"
+        },
+        {
+          "box": [
+            90,
+            2107,
+            1150,
+            2248
+          ],
+          "page": 12,
+          "label": "Exemples all-mountain"
+        },
+        {
+          "box": [
+            90,
+            2248,
+            1150,
+            2389
+          ],
+          "page": 13,
+          "label": "Freeride & freestyle"
+        },
+        {
+          "box": [
+            90,
+            2389,
+            1150,
+            2530
+          ],
+          "page": 14,
+          "label": "Exemples freeride & freestyle"
+        },
+        {
+          "box": [
+            90,
+            2530,
+            1150,
+            2671
+          ],
+          "page": 15,
+          "label": "Skis juniors"
+        },
+        {
+          "box": [
+            90,
+            2671,
+            1150,
+            2812
+          ],
+          "page": 16,
+          "label": "Exemples juniors"
+        },
+        {
+          "box": [
+            1250,
+            643,
+            2310,
+            778
+          ],
+          "page": 17,
+          "label": "Skis de randonnée"
+        },
+        {
+          "box": [
+            1250,
+            778,
+            2310,
+            913
+          ],
+          "page": 18,
+          "label": "Exemples rando"
+        },
+        {
+          "box": [
+            1250,
+            913,
+            2310,
+            1048
+          ],
+          "page": 19,
+          "label": "Chaussures alpines"
+        },
+        {
+          "box": [
+            1250,
+            1048,
+            2310,
+            1183
+          ],
+          "page": 20,
+          "label": "Chaussures de randonnée"
+        },
+        {
+          "box": [
+            1250,
+            1183,
+            2310,
+            1318
+          ],
+          "page": 21,
+          "label": "Choisir son snowboard"
+        },
+        {
+          "box": [
+            1250,
+            1318,
+            2310,
+            1453
+          ],
+          "page": 22,
+          "label": "Exemples Nitro"
+        },
+        {
+          "box": [
+            1250,
+            1453,
+            2310,
+            1588
+          ],
+          "page": 23,
+          "label": "Ski de fond : classique & skating"
+        },
+        {
+          "box": [
+            1250,
+            1588,
+            2310,
+            1723
+          ],
+          "page": 24,
+          "label": "Exemples de ski de fond"
+        },
+        {
+          "box": [
+            1250,
+            1968,
+            2310,
+            2183
+          ],
+          "page": 25,
+          "label": "Fixations : comprendre le réglage"
+        },
+        {
+          "box": [
+            1250,
+            2183,
+            2310,
+            2398
+          ],
+          "page": 26,
+          "label": "Fixations : contrôler avant de louer"
+        },
+        {
+          "box": [
+            1250,
+            2398,
+            2310,
+            2613
+          ],
+          "page": 27,
+          "label": "Avalanche : s’équiper & contrôler"
+        },
+        {
+          "box": [
+            1250,
+            2613,
+            2310,
+            2828
+          ],
+          "page": 28,
+          "label": "Avalanche : rechercher & secourir"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "path": "assets/guide-v771/page-03.jpg",
+      "links": []
+    },
+    {
+      "page": 4,
+      "path": "assets/guide-v771/page-04.jpg",
+      "links": []
+    },
+    {
+      "page": 5,
+      "path": "assets/guide-v771/page-05.jpg",
+      "links": []
+    },
+    {
+      "page": 6,
+      "path": "assets/guide-v771/page-06.jpg",
+      "links": []
+    },
+    {
+      "page": 7,
+      "path": "assets/guide-v771/page-07.jpg",
+      "links": []
+    },
+    {
+      "page": 8,
+      "path": "assets/guide-v771/page-08.jpg",
+      "links": [
+        {
+          "box": [
+            70,
+            1500,
+            1170,
+            2045
+          ],
+          "page": 9,
+          "label": "Les skis de piste"
+        },
+        {
+          "box": [
+            1230,
+            1500,
+            2330,
+            2045
+          ],
+          "page": 11,
+          "label": "Les skis all-mountain"
+        },
+        {
+          "box": [
+            70,
+            2240,
+            794,
+            2870
+          ],
+          "page": 13,
+          "label": "Freeride"
+        },
+        {
+          "box": [
+            838,
+            2240,
+            1562,
+            2870
+          ],
+          "page": 13,
+          "label": "Freestyle"
+        },
+        {
+          "box": [
+            1606,
+            2240,
+            2330,
+            2870
+          ],
+          "page": 17,
+          "label": "Randonnée"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "path": "assets/guide-v771/page-09.jpg",
+      "links": []
+    },
+    {
+      "page": 10,
+      "path": "assets/guide-v771/page-10.jpg",
+      "links": []
+    },
+    {
+      "page": 11,
+      "path": "assets/guide-v771/page-11.jpg",
+      "links": []
+    },
+    {
+      "page": 12,
+      "path": "assets/guide-v771/page-12.jpg",
+      "links": []
+    },
+    {
+      "page": 13,
+      "path": "assets/guide-v771/page-13.jpg",
+      "links": []
+    },
+    {
+      "page": 14,
+      "path": "assets/guide-v771/page-14.jpg",
+      "links": []
+    },
+    {
+      "page": 15,
+      "path": "assets/guide-v771/page-15.jpg",
+      "links": [
+        {
+          "box": [
+            540,
+            2760,
+            2310,
+            2895
+          ],
+          "page": 25,
+          "label": "Sécurité et réglage des fixations"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "path": "assets/guide-v771/page-16.jpg",
+      "links": []
+    },
+    {
+      "page": 17,
+      "path": "assets/guide-v771/page-17.jpg",
+      "links": [
+        {
+          "box": [
+            70,
+            3230,
+            2000,
+            3318
+          ],
+          "page": 27,
+          "label": "Sécurité avalanche"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "path": "assets/guide-v771/page-18.jpg",
+      "links": []
+    },
+    {
+      "page": 19,
+      "path": "assets/guide-v771/page-19.jpg",
+      "links": [
+        {
+          "box": [
+            70,
+            3230,
+            2000,
+            3318
+          ],
+          "page": 25,
+          "label": "Sécurité et réglage des fixations"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "path": "assets/guide-v771/page-20.jpg",
+      "links": [
+        {
+          "box": [
+            70,
+            3230,
+            2000,
+            3318
+          ],
+          "page": 25,
+          "label": "Sécurité et réglage des fixations"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "path": "assets/guide-v771/page-21.jpg",
+      "links": [
+        {
+          "box": [
+            70,
+            3230,
+            2000,
+            3318
+          ],
+          "page": 27,
+          "label": "Sécurité avalanche"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "path": "assets/guide-v771/page-22.jpg",
+      "links": []
+    },
+    {
+      "page": 23,
+      "path": "assets/guide-v771/page-23.jpg",
+      "links": []
+    },
+    {
+      "page": 24,
+      "path": "assets/guide-v771/page-24.jpg",
+      "links": []
+    },
+    {
+      "page": 25,
+      "path": "assets/guide-v771/page-25.png",
+      "links": [],
+      "overlays": [
+        "<a class=\"poster-link\" style=\"left:3%;top:70.4%;width:94%;height:6.6%\" href=\"https://isoski.lumiplan.pro/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Ouvrir ISOSKI pour vérifier les compatibilités et calculer le réglage initial des fixations\"></a>"
+      ]
+    },
+    {
+      "page": 26,
+      "path": "assets/guide-v771/page-26.png",
+      "links": [],
+      "overlays": []
+    },
+    {
+      "page": 27,
+      "path": "assets/guide-v771/page-27.png",
+      "links": [],
+      "overlays": [
+        "<a class=\"poster-link\" style=\"left:3%;top:95%;width:94%;height:2.4%\" href=\"https://www.arva-equipment.com/fr/content/20-user-manuals-downloads\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Consulter les notices ARVA : portage, piles, contrôle de groupe, entretien et distances de sécurité\" title=\"Notices ARVA : portage et contrôles\"></a>"
+      ]
+    },
+    {
+      "page": 28,
+      "path": "assets/guide-v771/page-28.png",
+      "links": [],
+      "overlays": [
+        "<a class=\"poster-link\" style=\"left:3%;top:76.5%;width:94%;height:2.7%\" href=\"https://www.arva-equipment.com/img/cms/Notices/ARVA_REACTOR_NOTICE_%20LIVRET__compressed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Lire la notice ARVA REACTOR : installation, contrôle, déclenchement et entretien\" title=\"Notice REACTOR\"></a>",
+        "<a class=\"poster-link\" style=\"left:3%;top:96.1%;width:94%;height:2.1%\" href=\"https://www.ortovox.com/fr/safety-academy-lab-snow/04-sauvetage-en-cas-davalanche\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Approfondir le sauvetage avalanche avec les ressources et vidéos ORTOVOX Safety Academy\" title=\"Formation et vidéos : sauvetage avalanche\"></a>"
+      ]
+    }
+  ],
+  "catalog": {
+    "version": "V07.71",
+    "cache": "20261024-71",
+    "pages": [
+      {
+        "page": 1,
+        "title": "Couverture",
+        "chapter": "Ouverture",
+        "description": "Comprendre, reconnaître, conseiller et sécuriser : le guide de formation des vendeurs et loueurs SGD."
+      },
+      {
+        "page": 2,
+        "title": "Sommaire complet",
+        "chapter": "Ouverture",
+        "description": "Sommaire cliquable des 28 pages : matériel 3–7, familles et modèles 8–18, chaussures alpines et randonnée 19–20, snowboard 21–22, fond 23–24, fixations 25–26 et avalanche 27–28."
+      },
+      {
+        "page": 3,
+        "title": "Anatomie et lignes de cotes",
+        "chapter": "01 · Comprendre",
+        "description": "Spatule, patin, talon et lecture des lignes de cotes : exemple 118–95–108 mm."
+      },
+      {
+        "page": 4,
+        "title": "Largeur et longueur du ski",
+        "chapter": "01 · Comprendre",
+        "description": "Gros plans de vrais skis au patin à une même échelle : 70, 88 et 102 mm. Largeur et longueur par rapport au skieur."
+      },
+      {
+        "page": 5,
+        "title": "Rayon de courbure",
+        "chapter": "01 · Comprendre",
+        "description": "Rayon court R11, moyen R15, long R20+ ; tendances de virages et rôle de la vitesse, de la prise de carre et de la pression."
+      },
+      {
+        "page": 6,
+        "title": "Cambres et rockers",
+        "chapter": "01 · Comprendre",
+        "description": "Cinq profils : cambre classique, rocker en spatule, double rocker, plat et inversé."
+      },
+      {
+        "page": 7,
+        "title": "Au cœur du ski",
+        "chapter": "01 · Comprendre",
+        "description": "Construction du ski : noyau mousse ou bois, fibres, titanal, semelle et carres."
+      },
+      {
+        "page": 8,
+        "title": "Les familles de skis",
+        "chapter": "02 · Les familles",
+        "description": "Piste page 9, all-mountain page 11, freeride et freestyle page 13 ; leurs exemples page 14. Randonnée pages 17 et 18."
+      },
+      {
+        "page": 9,
+        "title": "Les skis de piste",
+        "chapter": "02 · Les familles",
+        "description": "Piste facile, piste polyvalent, piste performance et spécialités piste : comportement, public, points à expliquer, question et discours client."
+      },
+      {
+        "page": 10,
+        "title": "Exemples de skis de piste",
+        "chapter": "02 · Les familles",
+        "description": "Head Easy Joy : piste facile. Rossignol Forza 40 CA Xpress : piste polyvalent. Rossignol Forza 70 TI Konect : piste performance, avancé à expert. Rossignol Hero ST : spécialiste."
+      },
+      {
+        "page": 11,
+        "title": "Les skis all-mountain",
+        "chapter": "02 · Les familles",
+        "description": "All-mountain 80/20, 70/30 et 50/50 : patins 80–85, 85–95 et 95–105 mm, comportement et questions client."
+      },
+      {
+        "page": 12,
+        "title": "Exemples de skis all-mountain",
+        "chapter": "02 · Les familles",
+        "description": "Rossignol Experience 82 Basalt, Elan Ripstick 88 et Rossignol Sender Soul 102 : vrais visuels, arguments, vocabulaire et fiches techniques."
+      },
+      {
+        "page": 13,
+        "title": "Freeride et freestyle",
+        "chapter": "02 · Les familles",
+        "description": "Freeride : au-delà de 105 mm pour la poudreuse. Freestyle : environ 80 à 100 mm, twin-tip, flex et profil selon rails ou sauts. Longueur : jib −10 cm, polyvalent −5 cm, big air et half-pipe à la taille. Comportement, questions, discours client."
+      },
+      {
+        "page": 14,
+        "title": "Exemples freeride et freestyle",
+        "chapter": "02 · Les familles",
+        "description": "Trois exemples freeride : Elan Ripstick 108, Atomic Bent 110, Rossignol Sender 110. Trois freestyle : Rossignol Sprayer Pro, Armada ARV 88 et LINE Blend. Photos fabricants, positionnement, arguments, vocabulaire et fiches techniques."
+      },
+      {
+        "page": 15,
+        "title": "Les skis juniors",
+        "chapter": "02 · Les familles",
+        "description": "Repères ESF : Piou-Piou, Ourson, Flocon, étoiles, Flèche et Chamois. Juniors : pitchounes 60–70 cm, débutants taille moins 25 à moins 20 cm, débrouillards moins 15 cm, confirmés moins 10 cm, experts selon le programme. Repères indicatifs, poids et compatibilité des fixations, renvoi à la sécurité des fixations pages 25–26."
+      },
+      {
+        "page": 16,
+        "title": "Exemples de skis juniors",
+        "chapter": "02 · Les familles",
+        "description": "Cinq exemples Rossignol : Hero Kid Pre-Drilled, Experience Pro Kid-X, Hero Junior 100–140, Hero Pro Multi-Event et Hero Athlete GS Pro. Photos fabricants, positionnement, arguments, vocabulaire, données techniques et discours aux parents."
+      },
+      {
+        "page": 17,
+        "title": "Les skis de randonnée",
+        "chapter": "02 · Les familles",
+        "description": "Le ski de randonnée : peaux, talon libre et fixations à inserts, chaussures en mode marche et descente. Légèreté et amorti. Synthétique, mohair, mix 70/30 SGD. Parcours de conseil location ou vente, occasion ou neuf, montée ou descente ; budgets du pack complet."
+      },
+      {
+        "page": 18,
+        "title": "Rando : choisir et comparer",
+        "chapter": "02 · Les familles",
+        "description": "Deux orientations : montée et dénivelé, ou freerando et descente. Trois vrais skis : Rossignol Escaper 88 Nano, Escaper 97 Nano et Elan Ripstick Tour 104. Photos fabricants, patin, positionnement, arguments, vocabulaire, fiches techniques et discours client."
+      },
+      {
+        "page": 19,
+        "title": "Les chaussures alpines",
+        "chapter": "02 · Les familles",
+        "description": "Chaussures de ski alpin : coque, collier, chausson, fermetures et semelle. Flex, Mondopoint et volume. Conséquences des chaussures trop petites ou trop grandes, essayage en quatre temps, GripWalk, BSL et contrôles en location. Photo réelle Rossignol."
+      },
+      {
+        "page": 20,
+        "title": "Les chaussures de randonnée",
+        "chapter": "02 · Les familles",
+        "description": "Chaussures de randonnée : modes marche et ski, allègement et soutien en descente, essayage dans les deux modes, semelles alpines, GripWalk et touring, inserts tech et compatibilités. Contrôles avant départ. Photos réelles SCARPA."
+      },
+      {
+        "page": 21,
+        "title": "Choisir son snowboard",
+        "chapter": "02 · Les familles",
+        "description": "Snowboard débutant, all-mountain, freeride et freestyle. Profils classique, plat, inversé et hybride. Choix par poids, hauteur, pratique et pointure. Fixations à sangles, entrée arrière et Step On, non proposé chez SGD. Regular et goofy, boots, contrôles en location."
+      },
+      {
+        "page": 22,
+        "title": "Quatre planches Nitro",
+        "chapter": "02 · Les familles",
+        "description": "Quatre vrais snowboards Nitro : Prime Chroma 2027, Team 2026, Squash 2026 et T1 2026. Positionnement, arguments fabricants, vocabulaire utile, données de longueur et poids, et phrases de conseil client."
+      },
+      {
+        "page": 23,
+        "title": "Les skis de fond",
+        "chapter": "02 · Les familles",
+        "description": "Ski de fond classique : écailles, peaux et fart de retenue ; skating : pas du patineur. Repères adultes de longueur, bâtons, chaussures, poids et rigidité. Normes NNN, Prolink et Turnamic ; rappel SNS Profil et Pilot, offre NNN chez SGD."
+      },
+      {
+        "page": 24,
+        "title": "Exemples classique et skating",
+        "chapter": "02 · Les familles",
+        "description": "Deux encarts : classique avec Fischer Fibre Crown EF et Rossignol Delta Sport R-Skin ; skating avec Fischer Aeroguide Skate 65 et Rossignol Delta Sport Skating. Vraies photos, positionnement, arguments fabricants, vocabulaire, fiches et discours client."
+      },
+      {
+        "page": 25,
+        "title": "Fixations : comprendre le réglage",
+        "chapter": "03 · Sécuriser",
+        "description": "Sécurité des fixations alpines : maintien et déclenchement, données client, longueur de semelle BSL, application ISOSKI et normes ISO."
+      },
+      {
+        "page": 26,
+        "title": "Fixations : contrôler avant de louer",
+        "chapter": "03 · Sécuriser",
+        "description": "Les six étapes avant location : compatibilité, inspection, adaptation à la chaussure, réglage initial ISOSKI, contrôle instrumenté et traçabilité. En cas de doute, pas de départ."
+      },
+      {
+        "page": 27,
+        "title": "Avalanche : s’équiper et contrôler",
+        "chapter": "03 · Sécuriser",
+        "description": "DVA ou ARVA : fréquence 457 kHz et limites, trio DVA sonde pelle pour chacun, portage selon la notice, inspection et autotest, contrôle croisé recherche et émission de chaque membre, éloignement des interférences et démonstration au comptoir."
+      },
+      {
+        "page": 28,
+        "title": "Avalanche : rechercher et secourir",
+        "chapter": "03 · Sécuriser",
+        "description": "Sauvetage avalanche : protéger, organiser et alerter le 112 ; recherche du signal, recherche approximative puis fine, sondage perpendiculaire à la pente tous les 25 cm, pelletage en rampe depuis l’aval et premiers secours. Gestion des victimes multiples. Sac airbag ARVA REACTOR : limites, contrôle, portage et déclenchement manuel."
+      }
+    ]
+  }
+}
