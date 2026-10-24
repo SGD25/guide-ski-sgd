@@ -1,4 +1,4 @@
-# Chaussures de ski — pages 23 et 24
+# Chaussures de ski — pages 19 et 20
 
 V07.64, 22 octobre 2026. Alpin à gauche, randonnée à droite, sous forme de deux images complètes HD 2400 × 3394. Charte approuvée, vrai logo SGD et encarts À retenir. Les vingt-deux images précédentes sont préservées. Les photos produits restent fidèles aux fabricants, sans génération ni déformation. Les exemples ne sont pas des annonces de stock magasin.
 
@@ -40,3 +40,5 @@ Consultées le 22 octobre 2026 :
 ## Images
 
 `photos.json` garde les URL exactes et les pages d’origine des trois photos : Rossignol Hi-Speed, SCARPA Maestrale en trois-quarts et paire de vues avant / arrière. Les fichiers fabricants sont conservés tels que téléchargés. Au placement, seules les marges vides sont recadrées et les images réduites proportionnellement ; l’alpha d’origine est conservé. Les photos ne sont pas à une échelle physique commune. Aucune illustration de produit n’est inventée.
+
+V07.67 : double page déplacée en 19–20. Les renvois sécurité pointent maintenant vers les pages 25–26 existantes et sont cliquables. Le générateur remplace seulement ces deux pages et préserve le reste du manifeste.

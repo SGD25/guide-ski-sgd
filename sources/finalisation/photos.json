@@ -1,0 +1,30 @@
+{
+  "forza40": {
+    "file": "rossignol-forza-40-v767.jpg",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwb23ef32c/images/large/RAPPX05000_72DPI_02_v00.jpg?sw=1800",
+    "source": "https://www.rossignol.com/fr-fr/skis-piste-homme-forza-40%C2%B0-ca-xpress-RAPPX05000.html",
+    "crop_empty_margins": [
+      739,
+      98,
+      1061,
+      1703
+    ]
+  },
+  "head_waist": {
+    "source": "sources/guide/media/patin-head-70-v754.png",
+    "alpha": "sources/finalisation/media/patin-head-alpha-v767.png",
+    "reference": "sources/finalisation/references/head-detourage-v767.png",
+    "usage": "Only the imagegen alpha is used; every visible RGB product pixel comes from the original manufacturer crop. All three ski waists are displayed at 3 px/mm, without stretching."
+  },
+  "forza70": {
+    "file": "rossignol-forza-70-v767.jpg",
+    "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw79e952a8/images/large/RAOPR02000_72DPI_02_v01.jpg?sw=1800",
+    "source": "https://www.rossignol.com/fr-fr/rossignol-ski-homme-forza-70-ti-konect-RAOPR02000.html",
+    "crop_empty_margins": [
+      732,
+      99,
+      1068,
+      1702
+    ]
+  }
+}

@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).parent
 sys.path.insert(0,str(ROOT/'sources/guide'))
 import render as common
 from render import Page,INK,BODY,TEAL,CORAL,BLUE,WHITE,LINE,DARK
-common.OUT=ROOT/'assets/guide-v764';common.OUT.mkdir(exist_ok=True)
+common.OUT=ROOT/'assets/guide-v767';common.OUT.mkdir(exist_ok=True)
 MANIFEST=ROOT/'sources/freeride-freestyle/manifest.json'
 
 def photo(p,name,box):
@@ -27,7 +27,7 @@ def step(p,x,y,n,title,body,width=1040,bottom=None):
     return p.text(x+69,y+47,body,32,width=width-69,leading=37,bottom=bottom)
 
 def alpine():
-    p=Page(23);p.header('Les chaussures alpines.','« Quel est votre niveau, et vos chaussures actuelles vous font-elles mal ? »','02  /  LES FAMILLES')
+    p=Page(19);p.header('Les chaussures alpines.','« Quel est votre niveau, et vos chaussures actuelles vous font-elles mal ? »','02  /  LES FAMILLES')
     p.accent,p.soft=BLUE,'#ECF3F9'
     p.rect((70,440,2330,960),WHITE,BLUE,24,3)
     photo(p,'rossignol-hi-speed.jpg',(100,463,720,850))
@@ -74,16 +74,17 @@ def alpine():
     p.text(113,2582,'À dire au client : « Je cherche à bien vous maintenir, sans vous écraser le pied. »',31,'bold',WHITE,width=2170,leading=36,bottom=2620)
     p.accent=BLUE
     p.rect((70,2670,2330,2915),'#ECF3F9',None,22)
-    lower=[('Semelle et fixation','Alpin : ISO 5355. GripWalk : ISO 23223, avec fixation compatible. GripWalk facilite la marche ; ce n’est pas une fonction randonnée.'),('BSL : le chiffre en mm','Longueur extérieure gravée sur la coque, différente du Mondopoint. Même pointure ≠ même BSL : faire vérifier le réglage des fixations.'),('En vente et en location','Contrôler coque, fermetures, chausson et usure des semelles. Sécher sans chaleur forte. Réglages / contrôles : cf. future page Sécurité.')]
+    lower=[('Semelle et fixation','Alpin : ISO 5355. GripWalk : ISO 23223, avec fixation compatible. GripWalk facilite la marche ; ce n’est pas une fonction randonnée.'),('BSL : le chiffre en mm','Longueur extérieure gravée sur la coque, différente du Mondopoint. Même pointure ≠ même BSL : faire vérifier le réglage des fixations.'),('En vente et en location','Contrôler coque, fermetures, chausson et usure des semelles. Sécher sans chaleur forte. Réglages / contrôles : voir pages 25–26.')]
     for i,(title,body) in enumerate(lower):
         x=100+i*750;p.text(x,2690,title,35,'bold',INK,width=690)
         p.text(x,2745,body,30,width=690,leading=35,bottom=2907)
     p.remember('Ajustée, jamais douloureuse ; maintenue, jamais flottante.','La bonne chaussure bloque le talon sans écraser les orteils. Vérifier longueur, largeur et volume ; choisir ensuite un flex que le skieur peut réellement utiliser.')
     p.footer('Flex et largeurs : repères, pas prescriptions universelles. Le last varie avec la pointure et le modèle ; LV / MV / HV ne sont pas des niveaux. Sources : Rossignol, Salomon, Atomic, Tyrolia. Photo : Rossignol.')
+    p.link((70,3230,2000,3318),25,"Sécurité et réglage des fixations")
     return p
 
 def touring():
-    p=Page(24);p.header('Les chaussures de rando.','« Quelle est votre priorité : monter léger ou privilégier la descente ? »','02  /  LES FAMILLES')
+    p=Page(20);p.header('Les chaussures de rando.','« Quelle est votre priorité : monter léger ou privilégier la descente ? »','02  /  LES FAMILLES')
     p.accent=TEAL
     p.rect((70,440,2330,1060),WHITE,TEAL,24,3)
     photo(p,'maestrale-0.png',(100,475,630,965))
@@ -130,16 +131,9 @@ def touring():
     p.rect((90,2830,2310,2898),DARK,None,14)
     p.text(113,2844,'À dire au client : « On valide le confort en marchant, le maintien en ski et la compatibilité de tout le pack. »',30,'bold',WHITE,width=2170,leading=35,bottom=2895)
     p.remember('Deux modes, un seul impératif : le bon maintien.','La légèreté aide à monter, le collier verrouillé aide à skier. Le bon choix doit convenir au pied et au programme, avec une compatibilité chaussure / fixation vérifiée.')
-    p.footer('Semelles et inserts : vérifier les notices des modèles exacts, y compris les exceptions et systèmes propriétaires. Réglages et contrôle de sécurité : cf. future page Sécurité. Sources : SCARPA, Dynafit, Rossignol, Tyrolia. Photos : SCARPA.')
+    p.footer('Semelles et inserts : vérifier les notices des modèles exacts, y compris les exceptions et systèmes propriétaires. Réglages et contrôle de sécurité : voir pages 25–26. Sources : SCARPA, Dynafit, Rossignol, Tyrolia. Photos : SCARPA.')
+    p.link((70,3230,2000,3318),25,"Sécurité et réglage des fixations")
     return p
 
 if __name__=='__main__':
-    records=json.loads(MANIFEST.read_text());assert len(records)>=22
-    approved=records[:22];following=records[24:]
-    for build in [alpine,touring]:
-        p=build();record=p.save()
-        if len(records)>=p.n:records[p.n-1]=record
-        else:records.append(record)
-        print('Page',p.n,'OK',flush=True)
-    assert records[:22]==approved and records[24:]==following
-    MANIFEST.write_text(json.dumps(records,ensure_ascii=False,indent=2))
+    common.write_manifest_pages([alpine(),touring()],MANIFEST)

@@ -60,9 +60,10 @@ class Page:
             assert xx>=0 and xx+self.d.textlength(row,font=f)<=W,(self.n,'horizontal overflow',row)
             self.d.text((round(xx),y),row,font=f,fill=fill,anchor='lt');y+=lh
         return end
-    def photo(self,name,box):
+    def photo(self,name,box,crop=None):
         path=MEDIA/name if Path(name).suffix else MEDIA/(name+'.jpg')
         im=Image.open(path).convert('RGBA')
+        if crop:im=im.crop(crop)
         im=ImageOps.contain(im,(round(box[2]-box[0]),round(box[3]-box[1])),Image.Resampling.LANCZOS)
         xy=(round((box[0]+box[2]-im.width)/2),round((box[1]+box[3]-im.height)/2))
         self.im.paste(im,xy,im)
@@ -81,7 +82,7 @@ class Page:
         self.rect((2110,36,2324,102),P['fond'],P['reperes'],28,2)
         self.text(2217,53,f'PAGE {self.n:02}',31,'bold',INK,center=True)
         heads={2:('Au fil ','des pages.'),3:('Spatule, patin, ','talon.'),4:('Largeur et ','longueur.'),5:('Rayon de ','courbure.'),6:('Du classique ','à l’inversé.'),7:('Ce qui se cache ','à l’intérieur.'),8:('Les familles ','de skis.'),9:('Les skis ','de piste.'),10:('Exemples de skis ','de piste.'),11:('Les skis ','all-mountain.'),12:('Exemples de skis ','all-mountain.'),13:('Freeride & ','freestyle.'),14:('Exemples ','freeride & freestyle.'),15:('Les skis ','juniors.'),16:('Exemples de skis ','juniors.'),17:('Les skis de ','randonnée.'),18:('Choisir ses ','skis de rando.'),19:('Les skis ','de fond.'),20:('Exemples ','classique & skating.')}
-        heads.update({21:('Choisir son ','snowboard.'),22:('Quatre planches ','Nitro.'),23:('Les chaussures ','alpines.'),24:('Les chaussures ','de rando.')})
+        heads.update({21:('Choisir son ','snowboard.'),22:('Quatre planches ','Nitro.'),23:('Les skis ','de fond.'),24:('Exemples ','classique & skating.'),19:('Les chaussures ','alpines.'),20:('Les chaussures ','de rando.')})
         a,b=heads.get(self.n,(title,''));size=156
         while self.d.textlength(a,font=ft(size,'serif'))+self.d.textlength(b,font=ft(size,'italic'))>2245:size-=1
         self.text(76,128,a,size,'serif',INK)
@@ -125,6 +126,21 @@ class Page:
         with Image.open(dest) as im:im.verify()
         preview=self.im.copy();preview.thumbnail((1000,1415));preview.save(CHECK/f'page-{self.n:02}.jpg',quality=93)
         return {'page':self.n,'path':str(dest.relative_to(ROOT)),'links':self.links}
+
+def write_manifest_pages(pages, manifest=None):
+    """Replace only the rendered page slots and preserve every other guide record."""
+    manifest=manifest or ROOT/'sources/freeride-freestyle/manifest.json'
+    records=json.loads(manifest.read_text())
+    original=json.loads(json.dumps(records));changed=set()
+    for p in pages:
+        assert p.n>=1 and p.n<=len(records)+1
+        record=p.save();changed.add(p.n-1)
+        if p.n<=len(records):records[p.n-1]=record
+        else:records.append(record)
+        print('Page',p.n,'OK',flush=True)
+    assert all(records[i]==r for i,r in enumerate(original) if i not in changed)
+    manifest.write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
+
 
 def arrow(p,x1,y1,x2,y2,color=TEAL,width=5,both=False):
     p.line((x1,y1,x2,y2),color,width)
@@ -475,11 +491,8 @@ def piste():
     p.remember('Choisir la sensation qui convient au client.','Facilité, accroche, réactivité ou performance : partir du niveau réel du client,\nde son rythme et du type de virages qu’il aime enchaîner.')
     p.footer('Repères de longueur par rapport à la taille du skieur. À ajuster au modèle, au niveau et au gabarit.');return p
 
-PRODUCTS=[
- {'h':'Ski facile','name':'HEAD\nEasy Joy','img':'head-easy-joy','position':'Skieuse débutante, en phase d’apprentissage. Un ski qui met en confiance et facilite la progression.','maker':'Un ski indulgent, facile à contrôler, stable à faible vitesse et qui pardonne les petites erreurs.','words':['Facile','Rassurant','Tolérant','Maniable','Léger','Tourne facilement'],'rows':[('Programme','Piste'),('Niveau','Débutant'),('Patin','70 mm'),('Rayon','13,3 m en 163 cm'),('Profil','Entrée de virage facile')],'speech':'Un ski rassurant, facile à faire tourner, pour progresser sans se faire peur.'},
- {'h':'Ski intermédiaire','name':'ROSSIGNOL\nForza 70° TI Konect','img':'rossignol-forza-70','position':'Skieur intermédiaire qui veut gagner en précision et en contrôle, et profiter de belles sensations sur piste.','maker':'Un ski puissant et précis, pensé pour les virages coupés, avec du contrôle et de la stabilité à bonne vitesse.','words':['Précis','Accrocheur','Stable','Dynamique','Virage coupé','Bonne relance'],'rows':[('Programme','Piste'),('Niveau','Intermédiaire à confirmé'),('Patin','77 mm'),('Rayon','13 à 15 m selon taille'),('Profil','Bonne tenue de courbe')],'speech':'Un ski précis et stable pour enchaîner les virages avec confiance et prendre plaisir à carver.'},
- {'h':'Ski performance','name':'ROSSIGNOL\nHero Elite MT TI C.A.M.','img':'rossignol-hero-mt','position':'Skieur intermédiaire à expert recherchant de la précision, de la performance et du soutien à vitesse élevée sur piste.','maker':'Un ski performant, stable et puissant, avec une excellente tenue de courbe et de la précision quand le rythme augmente.','words':['Précis','Soutenant','Stable','Rapide','Bonne relance','Tenue de courbe'],'rows':[('Programme','Piste performance'),('Niveau','Intermédiaire à expert'),('Patin','73 mm'),('Rayon','12 à 16 m selon taille'),('Construction','Chants droits / ski sportif')],'speech':'Un ski plus sportif, posé sur la carre, qui apporte du soutien et de la relance quand on accélère.'},
- {'h':'Ski spécialiste','name':'ROSSIGNOL\nHero ST','img':'rossignol-hero-st','position':'Skieur technique, à l’aise sur les virages courts, qui recherche un ski très réactif et précis.','maker':'Un ski réactif pour des virages courts et dynamiques, avec une forte accroche et beaucoup de précision.','words':['Nerveux','Réactif','Précis','Virages courts','Forte accroche','Exigeant'],'rows':[('Programme','Spécialité piste'),('Niveau','Expert'),('Patin','68 mm'),('Rayon','11 à 14 m selon taille'),('Style','Virages courts / slalom')],'speech':'Un ski nerveux et précis, taillé pour enchaîner les virages courts avec beaucoup de répondant.'}]
+PRODUCTS=json.loads((Path(__file__).parent/'piste-products.json').read_text())
+
 def products():
     p=Page(10);p.header('Exemples de skis de piste.','Un modèle par catégorie pour apprendre à construire son discours produit.','02  /  LES FAMILLES')
     for i,c in enumerate(PRODUCTS):
@@ -488,7 +501,7 @@ def products():
         p.rect((x,y,x+cw,end));p.rect((x+2,y+2,x+cw-2,y+125),PALE,None,20)
         p.number(x+25,y+24,i+1);p.text(x+121,y+29,c['h'],58,'serif',INK)
         p.text(x+158,y+166,c['name'],30,'bold',TEAL,width=275,center=True,leading=38)
-        p.photo(c['img'],(x+25,y+310,x+294,y+995))
+        p.photo(c['img'],(x+25,y+310,x+294,y+995),c.get('photo_crop'))
         tx=x+330;tw=735;yy=y+170
         for label,body in [('Positionnement',c['position']),('Ce que le fabricant met en avant',c['maker'])]:
             yy=p.label(tx,yy,label,tw,28)

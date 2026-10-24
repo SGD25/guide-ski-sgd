@@ -93,9 +93,10 @@ def advice_page():
     p.text(1258, 2573, 'Le réglage tient aussi compte de la taille, de l’âge, du niveau et de la longueur de semelle en mm. Vérifier la norme de semelle (alpine / GripWalk, enfant / adulte) et sa compatibilité avec la fixation.', 34, width=1035, leading=40, bottom=2734)
     p.rect((70, 2764, 2330, 2902), DARK, None, 18)
     p.text(96, 2783, 'RÉGLAGE DE SÉCURITÉ', 29, 'bold', WHITE)
-    p.text(560, 2782, 'Réglage et contrôle indispensables en atelier, à réévaluer quand l’enfant grandit ou change de chaussures. Cf. page « Sécurité » — à venir.', 35, 'sans', WHITE, width=1725, leading=42, bottom=2892)
+    p.text(560, 2782, 'Réglage et contrôle indispensables en atelier, à réévaluer quand l’enfant grandit ou change de chaussures. Voir les pages 25–26 pour la sécurité des fixations.', 35, 'sans', WHITE, width=1725, leading=42, bottom=2892)
     p.remember('Le bon ski, c’est celui que l’enfant maîtrise aujourd’hui.', 'Niveau acquis + taille + poids + pratique réelle. La médaille oriente la discussion ; elle ne choisit ni la longueur ni la fixation à elle seule. Pour un petit, la facilité et la confiance passent avant la marge de croissance.')
     p.footer('Synthèse pédagogique : ESF. Longueurs : repères SGD à adapter, distincts des tableaux fabricants. Fixations : recommandations Rossignol / LOOK.')
+    p.link((540,2760,2310,2895),25,"Sécurité et réglage des fixations")
     return p
 
 

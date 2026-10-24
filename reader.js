@@ -16,7 +16,7 @@
     el('page-count').textContent=(single()?String(current+1).padStart(2,'0'):String(current+1).padStart(2,'0')+'–'+String(last).padStart(2,'0'))+' / '+String(pages.length).padStart(2,'0');
     const visible=pages.slice(current,current+step());
     const chapters=[...new Set(visible.map(p=>p.chapter))];
-    el('chapter-band').replaceChildren(...chapters.map(c=>{const s=document.createElement('span');s.className=c.startsWith('01')?'chapter-one':c.startsWith('02')?'chapter-two':'chapter-opening';s.textContent=c==='Ouverture'?'LE GUIDE DU SKI · OUVERTURE':'CHAPITRE '+c.toUpperCase();return s;}));
+    el('chapter-band').replaceChildren(...chapters.map(c=>{const s=document.createElement('span');s.className=c.startsWith('01')?'chapter-one':c.startsWith('02')?'chapter-two':c.startsWith('03')?'chapter-three':'chapter-opening';s.textContent=c==='Ouverture'?'LE GUIDE DU SKI · OUVERTURE':'CHAPITRE '+c.toUpperCase();return s;}));
     prev.disabled=current===0;next.disabled=current+step()>=pages.length;el('progress').style.width=last/pages.length*100+'%';
     document.title=pages[current].title+' — SPORT GOOD DEAL';history.replaceState(null,'','#page='+(current+1));
   }

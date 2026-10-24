@@ -13,7 +13,7 @@ sys.path.insert(0, str(ROOT / 'sources/guide'))
 import render as common
 from render import Page, INK, BODY, TEAL, CORAL, BLUE, WHITE, LINE, DARK
 
-common.OUT = ROOT / 'assets/guide-v762'
+common.OUT = ROOT / 'assets/guide-v767'
 common.OUT.mkdir(exist_ok=True)
 MANIFEST = ROOT / 'sources/freeride-freestyle/manifest.json'
 PRODUCTS = json.loads((HERE / 'products.json').read_text())
@@ -26,7 +26,7 @@ def photo(p, name, box, center=(.5, .5)):
 
 
 def intro_page():
-    p = Page(19)
+    p = Page(23)
     p.header('Les skis de fond.', 'La première question : « Vous skiez dans les rails ou en pas de patineur ? »', '02  /  LES FAMILLES')
     p.accent, p.soft = BLUE, '#ECF3F9'
     p.rect((70, 440, 2330, 1200), WHITE, BLUE, 24, 3)
@@ -123,7 +123,7 @@ def product_photo(p, c, box):
 
 
 def examples_page():
-    p = Page(20)
+    p = Page(24)
     p.header('Exemples classique & skating.', 'Quatre vrais modèles Fischer et Rossignol pour apprendre à reconnaître le bon programme.', '02  /  LES FAMILLES')
     for family, y0, title, subtitle, color, soft in [
         ('classique', 440, '01 / Classique', 'Écailles ou peaux : deux solutions sans fart de retenue.', BLUE, '#ECF3F9'),
@@ -166,22 +166,8 @@ def examples_page():
 
 if __name__ == '__main__':
     import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--page', type=int, choices=[19, 20])
-    args = parser.parse_args()
-    records = json.loads(MANIFEST.read_text())
-    assert len(records) >= 18
-    approved = records[:18]
-    following = records[20:]
-    for build in [intro_page, examples_page]:
-        if args.page and args.page != (19 if build == intro_page else 20):
-            continue
-        p = build()
-        record = p.save()
-        if len(records) >= p.n:
-            records[p.n-1] = record
-        else:
-            records.append(record)
-        print('Page', p.n, 'OK', flush=True)
-    assert records[:18] == approved and records[20:] == following
-    MANIFEST.write_text(json.dumps(records, ensure_ascii=False, indent=2))
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--page',type=int,choices=[23,24])
+    args=parser.parse_args()
+    builds=[(23,intro_page),(24,examples_page)]
+    common.write_manifest_pages([build() for n,build in builds if not args.page or args.page==n],MANIFEST)

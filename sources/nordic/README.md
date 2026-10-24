@@ -1,10 +1,10 @@
-# Ski de fond — pages 19 et 20
+# Ski de fond — pages 23 et 24
 
 V07.62, 22 octobre 2026. Deux images complètes en 2400 × 3394 pixels, dans la charte approuvée du guide. Les dix-huit pages précédentes sont conservées.
 
 ## Reconstruire
 
-`python sources/nordic/render.py --page 19` actualise uniquement la page 19 ; sans option, le générateur actualise les pages 19–20 et leur manifeste commun `sources/freeride-freestyle/manifest.json`. Puis `python sources/guide/build_site.py` relie les vingt pages. `node tests/guide-smoke.cjs` vérifie l’ordre des scripts, l’unique image de chaque page, les ressources et la navigation. Les générateurs randonnée et juniors conservent les pages suivantes.
+`python sources/nordic/render.py --page 23` actualise uniquement la page 23 ; sans option, le générateur actualise les pages 19–20 et leur manifeste commun `sources/freeride-freestyle/manifest.json`. Puis `python sources/guide/build_site.py` relie les vingt pages. `node tests/guide-smoke.cjs` vérifie l’ordre des scripts, l’unique image de chaque page, les ressources et la navigation. Les générateurs randonnée et juniors conservent les pages suivantes.
 
 ## Contenu et limites des repères
 
@@ -36,3 +36,5 @@ Consultées le 22 octobre 2026 :
 `photos.json` conserve les URL exactes des huit images originales Fischer / Rossignol. Les photos de produits sont les vrais modèles, sans génération ni recoloration. Seules les marges vides sont recadrées et les images redimensionnées en conservant leurs proportions. Les images ne constituent pas une comparaison à échelle de longueur commune. Les photographies de pratique sont recadrées pour leur emplacement de page.
 
 V07.62 : deux photographies officielles Rossignol ajoutées au tableau de la page 19 : [X-9 Classic RIO1040000](https://www.rossignol.com/fr-fr/chaussures-nordiques-rossignol-x-9-classic-RIO1040000.html) (avant-pied souple pour le déroulé du classique) et [X-9 Skate RIO1030000](https://www.rossignol.com/fr-fr/chaussures-nordiques-rossignol-x-9-skate-RIO1030000.html) (semelle plus rigide et collier de maintien). Il s’agit d’illustrer la différence de pratique, sans annoncer leur disponibilité en magasin. Proportions conservées, aucune génération ou recoloration. La page 20 et les dix-huit précédentes conservent leurs images approuvées.
+
+V07.67 : double page déplacée en 23–24. Le générateur conserve toutes les autres pages du manifeste ; le catalogue global expose 28 pages. Les images sont renumérotées sans modifier le contenu pédagogique.

@@ -1,5 +1,10 @@
 # Guide — sources modifiables
 
+Version actuelle V07.67, 28 pages. Reconstruction : `python sources/finalisation/render.py`, puis `python sources/guide/build_site.py` et `node tests/guide-smoke.cjs`. Le catalogue partagé `catalog.json` décrit toutes les pages, y compris les quatre pages de sécurité. Voir `sources/finalisation/README.md` pour le périmètre et les sources.
+
+## Historique des générateurs
+
+
 `python sources/guide/render.py` conserve les pages 1 et 2 approuvées, génère les pages 3 à 9 et actualise uniquement le pied de page et le repère de chapitre des pages 10 à 12 en 2400 × 3394 pixels. La source de la page 12 reste dans `sources/page12/render.py` ; elle est utilisée seulement si cette page doit être modifiée.
 
 `python sources/guide/build_site.py` relie les images au lecteur. `node tests/guide-smoke.cjs` vérifie l’ordre réel des scripts, les 12 pages, les images, les styles et les cibles des sommaires avant publication.

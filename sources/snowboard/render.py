@@ -106,7 +106,8 @@ def intro_page():
     p.text(1250,2687,'Boots : talon maintenu, orteils sans douleur en flexion. Contrôler semelle, carres, inserts / vis, sangles et cliquets ; montrer le chaussage et le déchaussage.',32,width=1040,leading=38,bottom=2807)
     p.text(100,2832,'Fixations de snow : pas de déclenchement automatique comme au ski. Vérifier le montage, le leash selon notice et les consignes de prise en main.',30,'bold',CORAL,width=2180,leading=36,bottom=2905)
     p.remember('Poids + pointure + pratique : le bon trio pour choisir.', 'Une planche, une paire de boots et des fixations qui fonctionnent ensemble. Le repère menton–nez aide à visualiser ; le barème de poids du modèle décide.')
-    p.footer('Repères adultes indicatifs, hors planches de carving alpin et splitboards. Hors-piste : équipement et formation adaptés ; cf. future page Sécurité. Sources : Nitro, RIDE, Burton, Nidecker. Photos fabricants.')
+    p.footer('Repères adultes indicatifs, hors planches de carving alpin et splitboards. Hors-piste : équipement et formation adaptés ; voir sécurité avalanche pages 27–28. Sources : Nitro, RIDE, Burton, Nidecker. Photos fabricants.')
+    p.link((70,3230,2000,3318),27,"Sécurité avalanche")
     return p
 
 def examples_page():

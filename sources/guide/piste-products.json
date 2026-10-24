@@ -1,0 +1,168 @@
+[
+  {
+    "h": "Piste facile",
+    "name": "HEAD\nEasy Joy",
+    "img": "head-easy-joy",
+    "position": "Skieuse débutante, en phase d’apprentissage. Un ski qui met en confiance et facilite la progression.",
+    "maker": "Un ski indulgent, facile à contrôler, stable à faible vitesse et qui pardonne les petites erreurs.",
+    "words": [
+      "Facile",
+      "Rassurant",
+      "Tolérant",
+      "Maniable",
+      "Léger",
+      "Tourne facilement"
+    ],
+    "rows": [
+      [
+        "Programme",
+        "Piste"
+      ],
+      [
+        "Niveau",
+        "Débutant"
+      ],
+      [
+        "Patin",
+        "70 mm"
+      ],
+      [
+        "Rayon",
+        "13,3 m en 163 cm"
+      ],
+      [
+        "Profil",
+        "Entrée de virage facile"
+      ]
+    ],
+    "speech": "Un ski rassurant, facile à faire tourner, pour progresser sans se faire peur."
+  },
+  {
+    "h": "Piste polyvalent",
+    "name": "ROSSIGNOL\nForza 40° CA Xpress",
+    "img": "rossignol-forza-40-v767.jpg",
+    "photo_crop": [
+      739,
+      98,
+      1061,
+      1703
+    ],
+    "position": "Skieur intermédiaire, déjà à l’aise sur piste, qui veut progresser en virages coupés sans passer à un ski très exigeant.",
+    "maker": "Rossignol met en avant un carving accessible : noyau peuplier, renfort carbone, chants droits et rocker en spatule.",
+    "words": [
+      "Polyvalent",
+      "Accessible",
+      "Progressif",
+      "Accrocheur",
+      "Carving",
+      "Contrôlable"
+    ],
+    "rows": [
+      [
+        "Programme",
+        "Piste polyvalent"
+      ],
+      [
+        "Niveau",
+        "Intermédiaire"
+      ],
+      [
+        "Patin",
+        "75 mm"
+      ],
+      [
+        "Rayon",
+        "12 m en 164 cm"
+      ],
+      [
+        "Construction",
+        "Bois + renfort carbone"
+      ]
+    ],
+    "speech": "Un ski pour progresser en carving, avec un équilibre entre contrôle et réactivité.",
+    "source": "https://www.rossignol.com/fr-fr/skis-piste-homme-forza-40%C2%B0-ca-xpress-RAPPX05000.html"
+  },
+  {
+    "h": "Piste performance",
+    "name": "ROSSIGNOL\nForza 70° TI Konect",
+    "img": "rossignol-forza-70-v767.jpg",
+    "photo_crop": [
+      732,
+      99,
+      1068,
+      1702
+    ],
+    "position": "Skieur avancé à expert, qui pose des appuis francs et cherche un carving engagé : de l’angle, de l’accroche et de la précision.",
+    "maker": "Couche de titanal, noyau peuplier, chants droits et profil V-Profile : soutien, puissance et accroche pour un carving engagé.",
+    "words": [
+      "Puissant",
+      "Précis",
+      "Accrocheur",
+      "Tonique",
+      "Carving engagé",
+      "Exigeant"
+    ],
+    "rows": [
+      [
+        "Programme",
+        "Piste performance"
+      ],
+      [
+        "Niveau",
+        "Avancé à expert"
+      ],
+      [
+        "Patin",
+        "77 mm"
+      ],
+      [
+        "Rayon",
+        "14 m en 173 cm"
+      ],
+      [
+        "Construction",
+        "Bois + titanal"
+      ]
+    ],
+    "speech": "Un ski puissant pour carver avec de l’angle et de l’engagement ; il demande déjà une bonne technique.",
+    "source": "https://www.rossignol.com/fr-fr/rossignol-ski-homme-forza-70-ti-konect-RAOPR02000.html"
+  },
+  {
+    "h": "Spécialités piste",
+    "name": "ROSSIGNOL\nHero ST",
+    "img": "rossignol-hero-st",
+    "position": "Skieur technique, à l’aise sur les virages courts, qui recherche un ski très réactif et précis.",
+    "maker": "Un ski réactif pour des virages courts et dynamiques, avec une forte accroche et beaucoup de précision.",
+    "words": [
+      "Nerveux",
+      "Réactif",
+      "Précis",
+      "Virages courts",
+      "Forte accroche",
+      "Exigeant"
+    ],
+    "rows": [
+      [
+        "Programme",
+        "Spécialité piste"
+      ],
+      [
+        "Niveau",
+        "Expert"
+      ],
+      [
+        "Patin",
+        "68 mm"
+      ],
+      [
+        "Rayon",
+        "11 à 14 m selon taille"
+      ],
+      [
+        "Style",
+        "Virages courts / slalom"
+      ]
+    ],
+    "speech": "Un ski nerveux et précis, taillé pour enchaîner les virages courts avec beaucoup de répondant."
+  }
+]

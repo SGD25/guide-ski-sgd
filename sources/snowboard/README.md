@@ -37,3 +37,5 @@ Consultées le 22 octobre 2026 :
 ## Images
 
 `photos.json` conserve les URL exactes des fichiers fabricants et leurs pages d’origine. Les produits sont de vrais visuels, sans génération, recoloration ou déformation. Seules les marges vides sont recadrées ; les photos conservent leurs proportions et leur transparence éventuelle. Les planches ne sont pas présentées à une échelle physique commune. La scène de pratique Nitro est recadrée pour son bandeau. Les encarts et les schémas de cambre sont natifs et reproductibles dans `render.py`.
+
+V07.67 : Le renvoi sécurité avalanche de la page 21 pointe vers 27–28 et devient cliquable. Les autres contenus et illustrations sont conservés.

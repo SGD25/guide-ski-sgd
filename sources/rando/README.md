@@ -34,3 +34,5 @@ Les poids individuels ne sont pas reproduits dans les fiches : les libellés Ros
 ## Images
 
 `photos.json` conserve les URL exactes des trois visuels produits et de la scène de montée Elan. Ce sont les images originales des fabricants, non générées. Pour les skis : recadrage des marges vides et redimensionnement proportionnel uniquement, aucun allongement, écrasement, recoloriage ou détourage synthétique. Les photos ne constituent pas une comparaison à échelle physique commune. La scène de montée est recadrée pour le bandeau de la page 17.
+
+V07.67 : Le renvoi sécurité avalanche de la page 17 pointe vers 27–28 et devient cliquable. Les autres contenus et illustrations sont conservés.

@@ -25,3 +25,5 @@ Le Hero Pro Multi-Event sert d’exemple d’initiation aux portes, pas de ski d
 V07.58 : réorganisation de la grille ESF en trois colonnes de haut en bas : Piou-Piou / Ourson / Flocon en bleu ; 1ère / 2e / 3e étoile en vert ; bronze / argent / or en orange. Seule l’image de la page 15 change.
 
 V07.59 : chaque série ESF est réunie dans un seul grand cadre de sa couleur, avec des séparateurs internes. Le reste de la page 15 et les quinze autres pages sont conservés.
+
+V07.67 : Le renvoi sécurité de la page 15 pointe vers 25–26 et devient cliquable. Les autres contenus et illustrations sont conservés.

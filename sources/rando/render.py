@@ -94,7 +94,8 @@ def intro_page():
         p.text(x+25, 2716, price, 66, 'serif', INK, width=674)
     p.text(79, 2833, 'Pack complet = skis + fixations + peaux + chaussures. Ordres de grandeur SGD, selon les modèles et le stock ; hors bâtons et équipement de sécurité.', 33, width=2240, leading=40, bottom=2920)
     p.remember('On conseille un ensemble cohérent, adapté à la sortie et au budget.', 'Location → parc. Vente → occasion ou neuf, budget, puis priorité montée ou descente. Vérifier chaussures à inserts compatibles, fixations adaptées et peaux ajustées ; faire contrôler le montage et les réglages en atelier.')
-    p.footer('En terrain avalancheux : DVA, pelle, sonde et formation. Cf. page « Sécurité » — à venir. Photo : Elan. Peaux : Colltex / Rossignol. Budgets : repères SGD, hors accessoires et matériel de secours.')
+    p.footer('En terrain avalancheux : DVA, pelle, sonde et formation. Sécurité avalanche : voir pages 27–28. Photo : Elan. Peaux : Colltex / Rossignol. Budgets : repères SGD, hors accessoires et matériel de secours.')
+    p.link((70,3230,2000,3318),27,"Sécurité avalanche")
     return p
 
 
