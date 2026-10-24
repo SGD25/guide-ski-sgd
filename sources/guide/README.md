@@ -34,3 +34,7 @@ V07.62 : page 19 actualisée seule, `python sources/nordic/render.py --page 19` 
 V07.63 : `python sources/snowboard/render.py` ajoute les pages 21–22, puis `python sources/guide/build_site.py` relie les vingt-deux pages. Les vingt images approuvées restent identiques ; le générateur nordique conserve les pages suivantes.
 
 V07.64 : `python sources/boots/render.py` ajoute les pages 23–24, puis `python sources/guide/build_site.py` relie les vingt-quatre pages. Les vingt-deux images précédentes restent inchangées. Voir `sources/boots/README.md` pour les sources et les limites des repères de flex / chaussant.
+
+## Révision actuelle V07.68
+
+Point d’entrée : `python sources/finalisation-v768/render.py`, puis `python sources/guide/build_site.py`. Ce rendu conserve les pages approuvées et met à jour les rappels sur toutes les pages. Journal : `../finalisation-v768/README.md`.

@@ -5,7 +5,7 @@ from PIL import Image,ImageOps
 ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).parent
 sys.path.insert(0,str(ROOT/'sources/guide'))
 import render as common
-from render import Page,INK,BODY,TEAL,CORAL,BLUE,WHITE,LINE,DARK
+from render import Page,INK,BODY,TEAL,CORAL,BLUE,WHITE,LINE,DARK,arrow
 common.OUT=ROOT/'assets/guide-v767';common.OUT.mkdir(exist_ok=True)
 MANIFEST=ROOT/'sources/freeride-freestyle/manifest.json'
 
@@ -37,22 +37,35 @@ def alpine():
     anatomy=[('Coque + collier','L’enveloppe rigide tient le pied ; le collier entoure la jambe et accompagne la flexion.'),('Chausson','Il apporte confort et isolation. Sa mousse se tasse avec l’usage : du jeu peut apparaître.'),('Fermetures + strap','Crochets ou BOA règlent le maintien. Serrer plus fort ne corrige pas une mauvaise taille.'),('Semelle','C’est l’interface avec la fixation : type de semelle, longueur extérieure et usure comptent.')]
     for i,(title,body) in enumerate(anatomy):
         y=550+i*96;p.text(800,y,title,33,'bold',BLUE);p.text(800,y+43,body,33,width=1460,leading=39,bottom=y+88)
-    p.rect((70,990,2330,1390),WHITE,LINE,24,3)
-    p.text(100,1011,'Le flex = la résistance à la flexion vers l’avant.',49,'serif',INK,width=2200)
-    p.text(100,1080,'Plus le chiffre monte, plus la chaussure résiste. Chercher un appui progressif que le skieur peut réellement fléchir.',34,width=2190,leading=40,bottom=1124)
-    for i,(number,label,color,soft) in enumerate([('60–90','Souple / découverte',BLUE,'#ECF3F9'),('90–110','Intermédiaire / polyvalent',TEAL,'#EDF5F6'),('110–130+','Rigide / appuis puissants',CORAL,'#FCF0E9')]):
-        x=95+i*750;p.rect((x,1145,x+710,1250),soft,None,17)
-        p.text(x+23,1160,number,53,'serif',color)
-        p.text(x+308,1165,label,29,'bold',INK,width=375,leading=34,bottom=1248)
-    p.text(100,1270,'Repères adultes larges, à adapter au gabarit, au niveau et à la mobilité. Le flex n’est pas normé ; le froid peut durcir la sensation.',30,width=2200,leading=35,bottom=1308)
-    p.text(100,1320,'Trop rigide : flexion difficile, fatigue, appuis en arrière.',31,'bold',BLUE,width=1050,leading=36,bottom=1384)
-    p.text(1250,1320,'Trop souple : manque de soutien quand les appuis augmentent.',31,'bold',CORAL,width=1040,leading=36,bottom=1384)
-    p.rect((70,1420,2330,1730),'#EDF5F6',None,22)
-    p.text(100,1442,'La bonne longueur',44,'serif',INK)
-    p.text(100,1510,'Mesurer les deux pieds debout : longueur et largeur. Mondopoint = longueur du pied en cm. Exemple : 26,5 cm → base d’essai 26.5. La pointure de ville ne suffit pas.',34,width=1055,leading=40,bottom=1720)
-    p.text(1250,1442,'Le bon volume',44,'serif',INK)
-    p.text(1250,1510,'Last = largeur de chaussant à l’avant-pied, à une pointure de référence. Repères : LV ≈ 98 mm, MV ≈ 100, HV ≈ 102 et +. Vérifier aussi cou-de-pied et talon. Pied large ≠ pied plus long !',34,width=1040,leading=40,bottom=1720)
-    p.text(100,1685,'Thermoformage du chausson ou semelle interne adaptée : des ajustements à valider avec l’atelier, sans surtailler la coque.',28,width=2200,leading=33,bottom=1720)
+    p.rect((70,990,2330,1660),'#EDF5F6',TEAL,25,5)
+    p.text(100,1017,'La largeur au métatarse : le premier réflexe.',57,'serif',INK,width=2180)
+    p.text(100,1102,'Mesurer les deux pieds debout, à l’endroit le plus large de l’avant-pied (métatarses). Le « last » indique la largeur du chaussant, en mm, à une pointure de référence.',36,width=1610,leading=43,bottom=1235)
+    # Native schematic: forefoot width at the metatarsal heads, not foot length.
+    fx,fy=1980,1085
+    contour=[(45,0),(78,-15),(115,-13),(151,1),(172,28),(179,61),(172,94),(152,126),(139,161),(143,187),(131,211),(108,224),(80,223),(59,209),(52,186),(60,157),(58,128),(38,94),(26,61),(26,32)]
+    p.d.polygon([(fx+x*.6,fy+y*.65) for x,y in contour],fill=WHITE,outline=TEAL,width=3)
+    arrow(p,fx+15,fy+42,fx+109,fy+42,CORAL,3,True)
+    p.text(fx+62,fy+153,'Métatarses',27,'bold',TEAL,center=True)
+    cards=[('LV','Low Volume','≈ 98 mm','Pied plutôt fin',BLUE,'#ECF3F9'),('MV','Medium Volume','≈ 100 mm','Pied de largeur moyenne',TEAL,'#EDF5F6'),('HV','High Volume','≈ 102 mm et +','Pied plutôt large',CORAL,'#FCF0E9')]
+    for i,(tag,name,last,client,color,soft) in enumerate(cards):
+        x=100+i*750;p.accent=color
+        p.rect((x,1280,x+710,1500),WHITE,color,19,3)
+        p.text(x+23,1301,tag,60,'serif',color)
+        p.text(x+145,1310,name,29,'bold',INK)
+        p.text(x+23,1373,last,53,'bold',color,width=660)
+        p.text(x+23,1450,client,32,width=660)
+    p.accent=TEAL
+    p.text(100,1521,'Repères usuels, pas des normes : comparer à la même pointure de référence. Selon la gamme, on trouve aussi du 96, 104 mm… Vérifier le tableau fabricant.',30,width=2190,leading=35,bottom=1592)
+    p.rect((91,1600,2309,1647),DARK,None,12)
+    p.text(115,1610,'Pied large ≠ pied long : changer de volume, pas prendre une pointure de trop. Contrôler aussi cou-de-pied et talon.',30,'bold',WHITE,width=2160,bottom=1647)
+
+    p.rect((70,1690,2330,1955),WHITE,LINE,22,3)
+    p.text(100,1710,'Le flex : un soutien que le skieur peut utiliser.',46,'serif',INK,width=2200)
+    for i,(number,label,color) in enumerate([('60–90','Souple / découverte',BLUE),('90–110','Intermédiaire / polyvalent',TEAL),('110–130+','Rigide / appuis puissants',CORAL)]):
+        x=100+i*750;p.text(x,1780,number,48,'serif',color)
+        p.text(x+265,1785,label,29,'bold',INK,width=420,leading=33,bottom=1852)
+    p.text(100,1860,'Plus le chiffre monte, plus la chaussure résiste vers l’avant. Trop rigide : fatigue, flexion difficile. Trop souple : manque de soutien.',31,width=2190,leading=36,bottom=1934)
+    p.text(100,1910,'Repères adultes : adapter au gabarit, au niveau et à la mobilité. Flex non normé ; sensation plus ferme au froid.',28,width=2200,bottom=1950)
     for x,title,color,soft,items in [
       (70,'Trop petite / trop serrée',CORAL,'#FCF0E9',[
        'Orteils comprimés ou recroquevillés, pression persistante même en flexion.',
@@ -62,23 +75,22 @@ def alpine():
        'Talon qui se soulève, pied qui glisse : appuis retardés et perte de précision.',
        'Frottements / ampoules ; les orteils peuvent buter à l’avant quand le pied glisse.',
        'Serrer à fond écrase le pied sans rattraper une coque trop longue ou trop volumineuse.'])]:
-        p.accent=color;p.rect((x,1760,x+1110,2180),soft,color,22,3)
-        p.text(x+29,1783,title,48,'serif',INK,width=1050)
-        end=p.bullets(x+30,1860,items,1045,34,16)
-        assert end<2170,(title,end)
-    p.accent=TEAL;p.rect((70,2210,2330,2640),WHITE,TEAL,24,3)
-    p.text(100,2232,'Un essayage en quatre temps.',49,'serif',INK)
-    steps=[(100,2300,'Chausser proprement.','Une chaussette fine, sans pli. Caler le talon ; serrer progressivement, sans écraser.'),(1250,2300,'Tester debout, puis fléchir.','Debout, les orteils peuvent effleurer l’avant ; en flexion, ils reculent. Jamais écrasés.'),(100,2430,'Vérifier le maintien.','Le talon reste tenu en flexion ; orteils mobiles, sans douleur ni engourdissement.'),(1250,2430,'Prendre le temps.','Essayer plusieurs minutes. Si point dur : autre modèle / volume ou avis de l’atelier.')]
-    for i,(x,y,title,body) in enumerate(steps):step(p,x,y,i+1,title,body,1040,y+125)
-    p.rect((90,2570,2310,2625),DARK,None,13)
-    p.text(113,2582,'À dire au client : « Je cherche à bien vous maintenir, sans vous écraser le pied. »',31,'bold',WHITE,width=2170,leading=36,bottom=2620)
+        p.accent=color;p.rect((x,1985,x+1110,2330),soft,color,22,3)
+        p.text(x+29,2004,title,47,'serif',INK,width=1050)
+        end=p.bullets(x+30,2073,items,1045,31,4)
+        assert end<2322,(title,end)
+    p.accent=TEAL;p.rect((70,2360,2330,2640),WHITE,TEAL,24,3)
+    p.text(100,2377,'Longueur et essayage : valider le maintien.',44,'serif',INK)
+    p.text(100,2442,'Mondopoint = longueur du pied en cm : 26,5 cm → base d’essai 26.5. La pointure de ville ne suffit pas.',31,width=2190,bottom=2485)
+    p.text(100,2495,'Chaussette fine ; talon calé. Debout, les orteils peuvent effleurer l’avant ; en flexion, ils reculent. Talon tenu, orteils mobiles : jamais écrasés, jamais de pied qui flotte.',32,width=2190,leading=37,bottom=2575)
+    p.text(100,2574,'Essayer plusieurs minutes. Point dur : autre forme / volume ou atelier. Thermoformage et semelle peuvent affiner le confort, sans corriger une coque trop grande.',30,width=2190,leading=35,bottom=2637)
     p.accent=BLUE
     p.rect((70,2670,2330,2915),'#ECF3F9',None,22)
     lower=[('Semelle et fixation','Alpin : ISO 5355. GripWalk : ISO 23223, avec fixation compatible. GripWalk facilite la marche ; ce n’est pas une fonction randonnée.'),('BSL : le chiffre en mm','Longueur extérieure gravée sur la coque, différente du Mondopoint. Même pointure ≠ même BSL : faire vérifier le réglage des fixations.'),('En vente et en location','Contrôler coque, fermetures, chausson et usure des semelles. Sécher sans chaleur forte. Réglages / contrôles : voir pages 25–26.')]
     for i,(title,body) in enumerate(lower):
         x=100+i*750;p.text(x,2690,title,35,'bold',INK,width=690)
         p.text(x,2745,body,30,width=690,leading=35,bottom=2907)
-    p.remember('Ajustée, jamais douloureuse ; maintenue, jamais flottante.','La bonne chaussure bloque le talon sans écraser les orteils. Vérifier longueur, largeur et volume ; choisir ensuite un flex que le skieur peut réellement utiliser.')
+    p.remember('Le bon volume : un pied tenu, sans compression.','Longueur en Mondopoint + largeur au métatarse + cou-de-pied et talon. Essayer le bon LV / MV / HV avant de choisir le flex. Ne jamais surtailler pour loger un pied large.')
     p.footer('Flex et largeurs : repères, pas prescriptions universelles. Le last varie avec la pointure et le modèle ; LV / MV / HV ne sont pas des niveaux. Sources : Rossignol, Salomon, Atomic, Tyrolia. Photo : Rossignol.')
     p.link((70,3230,2000,3318),25,"Sécurité et réglage des fixations")
     return p

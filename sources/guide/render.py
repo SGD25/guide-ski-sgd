@@ -103,7 +103,8 @@ class Page:
         return y
     def remember(self,headline,body):
         self.accent=TEAL;self.soft=PALE
-        self.rect((570,2945,2330,3205),'#F3F6F6',None,30)
+        self.rect((576,2956,2330,3216),'#D9E3E5',None,30)
+        self.rect((570,2945,2330,3205),DARK,CORAL,30,4)
         self.rect((72,3001,532,3135),'#D9E3E5',None,65)
         self.rect((70,2985,530,3119),CORAL,None,65)
         self.d.ellipse((111,3017,160,3063),outline=WHITE,width=4)
@@ -111,8 +112,8 @@ class Page:
         self.line((126,3083,147,3083),WHITE,4)
         for x,y,x2,y2 in [(135,2999,135,3008),(94,3020,103,3025),(169,3022,177,3017)]:self.line((x,y,x2,y2),WHITE,3)
         self.text(183,3023,'À retenir',47,'bold',WHITE)
-        end=self.text(610,2970,headline,44,'serif',INK,width=1660)
-        self.text(610,end+12,body.replace('\n',' '),37,width=1660,leading=45,bottom=3190)
+        end=self.text(610,2970,headline,44,'serif',WHITE,width=1660)
+        self.text(610,end+12,body.replace('\n',' '),37,fill=WHITE,width=1660,leading=45,bottom=3190)
     def footer(self,note=''):
         if note:self.text(76,3237,note,26,width=1890,bottom=3313)
         self.line((70,3330,2010,3330),P['reperes'],3)
@@ -248,7 +249,7 @@ def anatomy():
     for j in range(555):
         a=round(255*max(0,(j-300)/255));vd.line((0,j,970,j),fill=(250,252,253,a))
     p.im.paste(veil,(1430,445),veil);p.d=ImageDraw.Draw(p.im)
-    blocks=[(70,485,950,1260,'1','Spatule',[('Déjaugeage','Sa forme relevée aide le ski à rester en surface en neige souple.'),('Obstacles','Elle facilite le passage des bosses et des irrégularités.'),('Virages','Sa largeur et sa souplesse participent à l’entrée en courbe.')]),(1430,1130,2330,2300,'2','Patin',[('Sous le pied','C’est la largeur du ski au niveau de la chaussure.'),('Étroit','Le passage d’une carre à l’autre est plus rapide et précis.'),('Large','Il apporte de la portance en neige souple, mais demande plus d’effort pour basculer.')]),(70,1890,950,2865,'3','Talon',[('Sortie de virage','Il guide la fin de courbe et participe à la relance.'),('Stabilité','Il contribue à l’équilibre, notamment quand la vitesse augmente.'),('Selon la pratique','Plutôt plat pour la précision sur piste ; plus relevé pour faciliter le pivot et le ski en marche arrière.')])]
+    blocks=[(70,485,950,1260,'1','Spatule',[('Déjaugeage','Sa forme relevée aide le ski à rester en surface en neige souple.'),('Obstacles','Elle facilite le passage des bosses et des irrégularités.'),('Virages','Sa largeur et sa souplesse participent à l’entrée en courbe.')]),(1430,1130,2330,2300,'2','Patin',[('Sous le pied','C’est la largeur du ski au niveau de la chaussure.'),('Étroit','Le passage d’une carre à l’autre est plus rapide et précis.'),('Large','Il apporte de la portance en neige souple, mais demande plus d’effort pour basculer sur piste, en neige damée.')]),(70,1890,950,2865,'3','Talon',[('Sortie de virage','Il guide la fin de courbe et participe à la relance.'),('Stabilité','Il contribue à l’équilibre, notamment quand la vitesse augmente.'),('Selon la pratique','Plutôt plat pour la précision sur piste ; plus relevé pour faciliter le pivot et le ski en marche arrière.')])]
     for x,y,x2,y2,n,title,items in blocks:
         p.set_accent(int(n)-1);p.rect((x,y,x2,y2));p.number(x+32,y+28,n)
         p.accent=zones[int(n)-1][3]
@@ -532,7 +533,7 @@ def products():
 
 def allmountain():
     p=Page(11);p.header('Les skis all-mountain.','De la priorité piste au ski mixte : un compromis entre accroche et portance.','02  /  LES FAMILLES')
-    rows=[('80/20','Priorité piste','80–85 mm','allmountain-8020','Surtout sur piste, avec quelques sorties en neige souple.','Sur piste : facile à conduire, rapide d’une carre à l’autre.','Skieur cherchant un peu plus de polyvalence qu’avec un ski de piste.',['Très accessible','Bonne maniabilité sur piste','Un peu plus de portance'],'Bords de piste et neige souple.','Une base très piste, avec davantage d’aisance quand la neige devient souple.'),('70/30','Plus de polyvalence','85–95 mm','allmountain-7030','Principalement sur piste, avec plus d’aisance en neige souple.','Un meilleur équilibre piste / hors-piste, avec un caractère passe-partout.','Skieur qui veut varier les terrains avec une seule paire.',['Très polyvalent','Équilibre accroche / portance','Adapté à un usage loisir sportif'],'Plus confortable hors des pistes damées.','Le compromis pour garder de l’accroche sur piste et varier davantage les terrains.'),('50/50','Piste & hors-piste','95–105 mm','allmountain-5050','Un programme mixte pour alterner piste et neige non damée.','Plus de portance en neige profonde ; moins vif et plus physique sur neige dure.','Skieur qui alterne réellement piste et hors-piste.',['Bonne portance','Reste utilisable sur piste','Plus exigeant sur neige dure'],'Meilleur soutien dans la neige souple.','Plus de portance et de pivot en neige souple, avec un compromis à accepter sur piste dure.')]
+    rows=[('80/20','Priorité piste','80–85 mm','allmountain-8020-v768.jpg','Surtout sur piste, avec quelques sorties en neige souple.','Sur piste : facile à conduire, rapide d’une carre à l’autre.','Skieur cherchant un peu plus de polyvalence qu’avec un ski de piste.',['Très accessible','Bonne maniabilité sur piste','Un peu plus de portance'],'Bords de piste et neige souple.','Une base très piste, avec davantage d’aisance quand la neige devient souple.'),('70/30','Plus de polyvalence','85–95 mm','allmountain-7030-v768.jpg','Principalement sur piste, avec plus d’aisance en neige souple.','Un meilleur équilibre piste / hors-piste, avec un caractère passe-partout.','Skieur qui veut varier les terrains avec une seule paire.',['Très polyvalent','Équilibre accroche / portance','Adapté à un usage loisir sportif'],'Plus confortable hors des pistes damées.','Le compromis pour garder de l’accroche sur piste et varier davantage les terrains.'),('50/50','Piste & hors-piste','95–105 mm','allmountain-5050-v768.jpg','Un programme mixte pour alterner piste et neige non damée.','Plus de portance en neige profonde ; moins vif et plus physique sur neige dure.','Skieur qui alterne réellement piste et hors-piste.',['Bonne portance','Reste utilisable sur piste','Plus exigeant sur neige dure'],'Meilleur soutien dans la neige souple.','Plus de portance et de pivot en neige souple, avec un compromis à accepter sur piste dure.')]
     for i,(ratio,h,waist,img,intro,behavior,client,pros,off,speech) in enumerate(rows):
         p.set_accent(i);x=70+768*i;cw=724;p.rect((x,432,x+cw,2900))
         p.rect((x+2,434,x+cw-2,642),PALE,None,22)

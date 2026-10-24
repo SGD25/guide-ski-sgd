@@ -1,0 +1,22 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "type": "photorealistic-natural",
+  "prompts": [
+    [
+      "allmountain-8020-v768",
+      "Use case: photorealistic-natural. Asset type: wide landscape photograph for a ski seller training guide. Create a realistic professional ski resort action photo, horizontal panorama ratio about 2.3:1. One adult skier in a dark teal ski jacket and helmet, full body and BOTH COMPLETE skis visible, making a controlled moderate turn right at the edge of a groomed blue resort piste with a little soft snow along the edge. The groomed piste occupies most of the background, with recognisable corduroy, a piste marker, distant small other skiers and a chairlift. Show the clear boundary of groomed and ungroomed snow. Beginner sellers should instantly see 'mainly piste, occasionally the edge'. Subject and skis entirely in the central horizontal 65 percent, generous space above helmet and beneath skis. Natural daylight, credible equipment, clean editorial photography, tasteful colors. No text, no numbers, no logos, no watermark. No airborne skier, no deep powder cloud, no collage."
+    ],
+    [
+      "allmountain-7030-v768",
+      "Use case: photorealistic-natural. Asset type: wide landscape photo for ski retailer training. Create a realistic ski resort photograph horizontal panoramic composition about 2.3:1. On a gently rolling snowy hillside, two distinct groomed ski runs traverse the slope, one in the upper background and one in the lower foreground, separated by a broad band of UNGROOMED soft snow. One adult all-mountain skier wearing a rust orange jacket, helmet and small backpack makes a fluent turn in the ungroomed snow BETWEEN those two runs, visibly outside the groomed runs. The upper and lower runs have smooth corduroy, poles and a few tiny distant other skiers; the central ungroomed band has soft irregular snow and a few tracks. Show the entire main skier, both skis from tip to tail, feet not buried by a giant spray. Wide side-on view with main skier in the middle of the image, generous space all around, every essential detail within central horizontal 65 percent. Natural professional action photography. Clear terrain boundaries. No impossible steep terrain, no jumping, no text or logos, no collage."
+    ],
+    [
+      "allmountain-5050-v768",
+      "Use case: photorealistic-natural. Asset type: wide landscape photograph for ski retailer training. Realistic editorial ski photo in open ungroomed off-piste terrain on a snowy mountainside with a few spaced conifers and gently rolling powder. One adult competent all-mountain skier wearing a muted purple jacket, dark helmet and compact ski backpack is in a controlled dynamic turn in soft fresh snow, lower legs in modest powder, both skis and their tips understandable, full body visible with generous framing. Clearly off piste: natural irregular snow, no groomed corduroy, no lift or groomed run in frame. This illustrates an all-mountain 50/50 program, not extreme freeride: moderate terrain, modest spray, no cliff, no giant cloud hiding skier. Horizontal panorama about 2.3:1. Subject in center with all body and ski extremities in central 65 percent. Beautiful natural winter daylight, physically believable anatomy and equipment. No text, watermark, logos or collage."
+    ],
+    [
+      "slalom-specialiste-v768",
+      "Use case: photorealistic-natural. Asset type: professional slalom ski action photograph for training catalogue. Wide landscape 4:3 photograph, slightly elevated side-front camera. One expert adult racer wearing a blue racing suit, helmet and goggles, racing a slalom on a clearly groomed ski piste, strongly angulated in a tight carved turn beside a RED flexible slalom gate. FULL BODY including helmet, torso, both legs and BOTH COMPLETE skis tips to tails visible. Show an entire nearby gate pole from its anchor in the snow to its top, plus one distant blue gate as context. Snow spray modest and behind, edges and skis remain visible. Keep all main skier, complete skis, and the nearby red pole well INSIDE central 75 percent of image with generous visible snow margin around all extremities. Skiing fast but grounded, not jumping. Natural crisp sunlight, realistic sports photography, anatomically plausible. No close up headshot, no chopped poles, no cut limbs or skis, no mountains dominating, no text/logos/watermark."
+    ]
+  ]
+}

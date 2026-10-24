@@ -24,6 +24,17 @@ def heading(p, y, title, color=TEAL, size=49):
     p.text(106, y, title, size, 'serif', INK, width=2200)
 
 
+def detail(p,name,box):
+    """Small genuine component photo, contained without deforming the product."""
+    im=Image.open(ROOT/'sources/finalisation-v768/media'/name).convert('RGBA')
+    if name=='pomoca-tour-explore.png':im=im.crop((290,170,790,700))
+    mask=im.getchannel('A') if im.getchannel('A').getextrema()[0]==0 else im.convert('L').point(lambda v:255 if v<225 else 0)
+    bb=mask.getbbox()
+    if bb:im=im.crop((max(0,bb[0]-8),max(0,bb[1]-8),min(im.width,bb[2]+8),min(im.height,bb[3]+8)))
+    im=ImageOps.contain(im,(box[2]-box[0],box[3]-box[1]),Image.Resampling.LANCZOS)
+    p.im.paste(im,((box[0]+box[2]-im.width)//2,(box[1]+box[3]-im.height)//2),im)
+
+
 def intro_page():
     p = Page(17)
     p.header('Les skis de randonnée.', 'Monter par ses propres moyens, puis redescendre à skis : raisonner sur le pack complet.', '02  /  LES FAMILLES')
@@ -38,20 +49,33 @@ def intro_page():
     p.text(1560, 831, 'Temps : repère SGD schématique, variable selon la sortie.', 28, 'sans', WHITE, width=735, leading=32, bottom=885)
 
     steps = [
-        ('01 / Monter avec les peaux', 'Les peaux sous les semelles glissent vers l’avant et limitent le recul. Talons libres et chaussures en mode marche.'),
-        ('02 / Les fixations à inserts', 'Les pointes de la butée avant entrent dans les logements métalliques des chaussures. Les cales soutiennent le talon selon la pente.'),
-        ('03 / Passer en descente', 'Retirer les peaux, passer fixations et chaussures en mode ski : le talon est retenu. Toujours suivre la notice du modèle.')
+        ('01 / Monter avec les peaux', 'Sous le ski, elles glissent vers l’avant et limitent le recul. Talon libre, chaussures en mode marche.'),
+        ('02 / Les fixations à inserts', 'Les pointes (pins) de la butée entrent dans les inserts des chaussures. Les cales soutiennent le talon en montée.'),
+        ('03 / Passer en descente', 'Retirer les peaux ; passer chaussures et fixations en mode ski : talon retenu. Suivre la notice du modèle.')
     ]
     for i, (title, body) in enumerate(steps):
         x = 70+i*768
         p.set_accent(i)
         p.rect((x, 925, x+724, 1238), WHITE, p.accent, 20, 3)
         p.text(x+24, 948, title, 35, 'bold', p.accent, width=676, leading=41)
-        p.text(x+24, 1015, body, 35, width=676, leading=42, bottom=1228)
+        p.text(x+24, 1015, body, 33, width=464, leading=39, bottom=1228)
+        if i<2:
+            detail(p,['pomoca-tour-explore.png','dynafit-speed-turn.png'][i],(x+501,1010,x+704,1198))
+        else:
+            im=Image.open(ROOT/'sources/boots/media/maestrale-3.png').convert('RGBA')
+            im=im.crop(im.getchannel('A').getbbox())
+            im=ImageOps.contain(im,(190,181),Image.Resampling.LANCZOS)
+            p.im.paste(im,(x+505+(190-im.width)//2,1012),im)
+        p.text(x+603,1200,['Peau d’ascension','Butée + talonnière','Ski / marche'][i],21,'bold',p.accent,center=True)
 
     p.rect((70, 1270, 2330, 1500), '#FCF0E9', None, 22)
     p.text(98, 1290, 'Le gain de poids se paie parfois en amorti.', 47, 'serif', INK, width=2200)
     p.text(98, 1362, 'Noyaux légers, profils affinés et renforts ciblés réduisent la masse : moins d’effort à la montée. Mais un ski très léger peut davantage vibrer sur neige glacée ou trafolée (déjà tracée et irrégulière), et demander plus de précision à la descente.', 36, width=2200, leading=43, bottom=1495)
+    # Discreet native feather icon next to the weight heading.
+    p.d.polygon([(2200,1336),(2204,1307),(2224,1287),(2262,1278),(2254,1312),(2231,1335)],fill='#C7DDE1',outline=TEAL,width=3)
+    p.line((2190,1344,2248,1290),TEAL,3)
+    p.line((2213,1323,2210,1303),TEAL,2)
+    p.line((2229,1309,2229,1290),TEAL,2)
 
     p.rect((70, 1530, 2330, 1940), '#EDF5F6', None, 22)
     heading(p, 1550, 'Les peaux, en trente secondes')
@@ -94,7 +118,7 @@ def intro_page():
         p.text(x+25, 2716, price, 66, 'serif', INK, width=674)
     p.text(79, 2833, 'Pack complet = skis + fixations + peaux + chaussures. Ordres de grandeur SGD, selon les modèles et le stock ; hors bâtons et équipement de sécurité.', 33, width=2240, leading=40, bottom=2920)
     p.remember('On conseille un ensemble cohérent, adapté à la sortie et au budget.', 'Location → parc. Vente → occasion ou neuf, budget, puis priorité montée ou descente. Vérifier chaussures à inserts compatibles, fixations adaptées et peaux ajustées ; faire contrôler le montage et les réglages en atelier.')
-    p.footer('En terrain avalancheux : DVA, pelle, sonde et formation. Sécurité avalanche : voir pages 27–28. Photo : Elan. Peaux : Colltex / Rossignol. Budgets : repères SGD, hors accessoires et matériel de secours.')
+    p.footer('En terrain avalancheux : DVA, pelle, sonde et formation. Voir pages 27–28. Photos : Elan, POMOCA (peau illustrative 65/35), Dynafit, SCARPA. Le mix 70/30 reste le repère SGD. Budgets : hors accessoires et matériel de secours.')
     p.link((70,3230,2000,3318),27,"Sécurité avalanche")
     return p
 

@@ -4,6 +4,7 @@ const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p
 const html=read('index.html'),config=JSON.parse(read('sources/guide/catalog.json'));
 const manifest=JSON.parse(read('sources/freeride-freestyle/manifest.json'));
 const baseline=JSON.parse(read('sources/finalisation/baseline-v766.json'));
+const previous=JSON.parse(read('sources/finalisation-v768/baseline-v767.json'));
 const context=vm.createContext({window:{}}),local=src=>path.join(root,src.split('?')[0]);
 const scripts=[...html.matchAll(/<script src="([^"]+)"/g)].map(m=>m[1]);
 const actual=scripts.filter(s=>s.startsWith('./pages/')).map(s=>s.split('?')[0]);
@@ -24,7 +25,11 @@ assert.deepEqual([...new Set(contents)].sort((a,b)=>a-b),Array.from({length:26},
 assert.match(pages[18].title,/chaussures alpines/i);assert.match(pages[19].title,/chaussures.*randonn/i);
 assert.match(pages[20].title,/snowboard/i);assert.match(pages[21].title,/Nitro/);
 assert.match(pages[22].title,/fond/i);assert.match(pages[23].title,/classique.*skating/i);
-for(const n of [6,7,11,12,13,14,16,18,22,25,26,27,28])assert.deepEqual(manifest[n-1],baseline.records[n-1],`Approved page ${n} must be preserved`);
+assert.deepEqual(manifest.slice(0,2),previous.records.slice(0,2),'Approved opening pages remain unchanged');
+for(let n=1;n<=28;n++){
+ assert.deepEqual(manifest[n-1].links,previous.records[n-1].links,`Internal links must be preserved on page ${n}`);
+ assert.deepEqual(manifest[n-1].overlays,previous.records[n-1].overlays,`External links must be preserved on page ${n}`);
+}
 for(const n of [25,26,27,28]){
  assert.equal(pages[n-1].chapter,'03 · Sécuriser');
  for(const overlay of baseline.records[n-1].overlays||[])assert(pages[n-1].html.includes(overlay),`Security link lost on page ${n}`);

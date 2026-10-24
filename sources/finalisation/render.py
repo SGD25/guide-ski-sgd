@@ -77,7 +77,7 @@ def anatomy():
     p=base.anatomy();p.d.rectangle((1430,2310,2360,2910),fill=base.P['fond'])
     p.rect((1430,2330,2330,2560),WHITE,BLUE,21,3)
     p.text(1460,2352,'Lire les lignes de cotes',43,'serif',INK,width=840)
-    p.text(1460,2423,'118 – 95 – 108 mm',51,'bold',BLUE)
+    p.text(1460,2423,'118 – 88 – 108 mm',51,'bold',BLUE)
     p.text(1460,2500,'Exemple : largeurs spatule – patin – talon.',33,width=840)
     p.text(1468,2600,'REPÈRES AU PATIN',30,'bold',TEAL)
     p.text(1468,2660,'65–80 mm : piste\n80–95 mm : all-mountain\n95–136 mm : freeride',35,width=810,leading=52)
@@ -116,7 +116,7 @@ def dimensions():
         person=Image.open(MEDIA/'skieur-illustration-v752.png').convert('RGBA');person=person.crop(person.getchannel('A').getbbox());person=ImageOps.contain(person,(435,650),Image.Resampling.LANCZOS)
         p.im.paste(person,(x+65,ground-person.height),person)
         ski=Image.open(MEDIA/name).convert('RGBA');ski=ski.crop(ski.getchannel('A').getbbox());ski=ImageOps.contain(ski,(100,sh),Image.Resampling.LANCZOS)
-        axis=x+457;p.im.paste(ski,(axis-ski.width//2,ground-ski.height),ski)
+        axis=x+410;p.im.paste(ski,(axis-ski.width//2,ground-ski.height),ski)
         p.line((x+120,ground,x+600,ground),LINE,3)
         p.line((x+160,top,x+668,top),LINE,3);p.line((axis+45,ground-ski.height,x+672,ground-ski.height),p.accent,3)
         arrow(p,x+650,top,x+650,ground-ski.height,p.accent,4,True)
@@ -144,7 +144,7 @@ PISTE=[
  dict(title='Piste facile',photo='debutante-piste-v752.png',specs=[('Patin','≈ 70–75 mm'),('Longueur','≈ −20 à −15 cm'),('Rayon','Court, selon le modèle')],behavior='Le ski tourne facilement à vitesse modérée et pardonne les petites erreurs d’appui.',client='Débutant, skieur qui appréhende ou qui cherche surtout une conduite facile.',points='Tolérance, faible effort et maniabilité. Le but : apprendre et prendre confiance.',question='Vous enchaînez déjà les virages, ou vous cherchez surtout à vous rassurer ?',speech='Un ski facile à faire tourner, pour progresser sans vous fatiguer.'),
  dict(title='Piste polyvalent',photo='allmountain-bord-piste-v753.png',specs=[('Patin','≈ 75–85 mm'),('Longueur','≈ −10 cm'),('Rayon','Court à moyen, variable')],behavior='Un équilibre entre facilité, tenue de courbe et stabilité pour varier les virages sur piste.',client='Skieur loisir déjà à l’aise, qui veut une paire pour skier toute la journée.',points='Plus de soutien qu’un ski facile, sans viser la puissance d’un ski performance.',question='Vous voulez varier les virages sur piste, sans trop vous fatiguer ?',speech='Un compromis pour varier les virages sur piste, avec du maintien et de la facilité.'),
  dict(title='Piste performance',photo='piste-performance-v753.png',specs=[('Patin','Souvent ≈ 70–80 mm'),('Longueur','≈ −10 à −5 cm'),('Rayon','Selon les courbes visées')],behavior='Plus d’accroche, de réponse et de soutien quand les appuis et la vitesse augmentent.',client='Bon skieur, sportif, qui maîtrise ses appuis et cherche à carver avec précision.',points='Construction plus tonique : elle demande de l’engagement et peut fatiguer davantage.',question='Vous skiez déjà sur la carre et recherchez plus de tenue dans les virages ?',speech='Plus de précision et de répondant, à condition d’avoir les appuis pour l’exploiter.'),
- dict(title='Spécialités piste',photo='piste-specialiste.jpg',specs=[('Slalom','Court, souvent < 170 cm'),('Patin SL','≈ 65–68 mm'),('Géant','Plus long, souvent à la taille')],behavior='Slalom : virages courts et très vifs. Géant : courbes plus longues, stabilité et vitesse.',client='Skieur technique à expert, avec un objectif précis de virages ou d’entraînement.',points='Choisir SL ou GS selon les courbes. Un ski spécialisé n’est pas forcément un ski de course FIS.',question='Vous cherchez des virages très courts, ou plutôt de grandes courbes engagées ?',speech='On choisit la spécialité selon vos courbes : vif en slalom, plus posé en géant.')]
+ dict(title='Spécialités piste',photo='slalom-specialiste-v768.jpg',specs=[('Slalom','Court, souvent < 170 cm'),('Patin SL','≈ 65–68 mm'),('Géant','Plus long, souvent à la taille')],behavior='Slalom : virages courts et très vifs. Géant : courbes plus longues, stabilité et vitesse.',client='Skieur technique à expert, avec un objectif précis de virages ou d’entraînement.',points='Choisir SL ou GS selon les courbes. Un ski spécialisé n’est pas forcément un ski de course FIS.',question='Vous cherchez des virages très courts, ou plutôt de grandes courbes engagées ?',speech='On choisit la spécialité selon vos courbes : vif en slalom, plus posé en géant.')]
 
 def piste():
     p=Page(9);p.header('Les skis de piste.','Quatre approches : comportement, profil client et questions pour bien orienter.','02  /  LES FAMILLES')

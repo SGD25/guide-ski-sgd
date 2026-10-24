@@ -56,7 +56,10 @@ def advice_page():
         if row:
             p.line((x + 24, y - 10, x + 700, y - 10), color, 2)
         p.text(x + 24, y + 13, title, 38, 'bold', color)
-        p.text(x + 24, y + 76, body, 32, width=676, leading=37, bottom=y + 153)
+        p.text(x + 24, y + 67, body, 31, width=526, leading=33, bottom=y + 167)
+        badge=Image.open(ROOT/'sources/finalisation-v768/media'/f'esf-{i+1}.png').convert('RGBA')
+        badge=ImageOps.contain(badge,(128,140),Image.Resampling.LANCZOS)
+        p.im.paste(badge,(x+630-badge.width//2,y+85-badge.height//2),badge)
     p.rect((70, 1162, 2330, 1305), DARK, None, 20)
     p.text(96, 1184, 'FLÈCHE ≠ ÉTOILE', 32, 'bold', WHITE)
     p.text(540, 1182, 'Flèche : test chronométré en géant. Chamois : test en slalom. « Flèche d’argent » indique un résultat au chrono, différent de l’Étoile d’argent.', 35, 'sans', WHITE, width=1745, leading=42, bottom=1295)
@@ -95,7 +98,7 @@ def advice_page():
     p.text(96, 2783, 'RÉGLAGE DE SÉCURITÉ', 29, 'bold', WHITE)
     p.text(560, 2782, 'Réglage et contrôle indispensables en atelier, à réévaluer quand l’enfant grandit ou change de chaussures. Voir les pages 25–26 pour la sécurité des fixations.', 35, 'sans', WHITE, width=1725, leading=42, bottom=2892)
     p.remember('Le bon ski, c’est celui que l’enfant maîtrise aujourd’hui.', 'Niveau acquis + taille + poids + pratique réelle. La médaille oriente la discussion ; elle ne choisit ni la longueur ni la fixation à elle seule. Pour un petit, la facilité et la confiance passent avant la marge de croissance.')
-    p.footer('Synthèse pédagogique : ESF. Longueurs : repères SGD à adapter, distincts des tableaux fabricants. Fixations : recommandations Rossignol / LOOK.')
+    p.footer('Niveaux et insignes : ESF (esf.net). Longueurs : repères SGD à adapter, distincts des tableaux fabricants. Fixations : recommandations Rossignol / LOOK.')
     p.link((540,2760,2310,2895),25,"Sécurité et réglage des fixations")
     return p
 
