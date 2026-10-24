@@ -1,7 +1,7 @@
 [
   {
     "page": 1,
-    "path": "assets/guide-v774/page-01.png",
+    "path": "assets/guide-v775/page-01.png",
     "links": [
       {
         "box": [
@@ -40,14 +40,14 @@
           2330,
           3150
         ],
-        "page": 29,
+        "page": 31,
         "label": "Sécuriser"
       }
     ]
   },
   {
     "page": 2,
-    "path": "assets/guide-v774/page-02.png",
+    "path": "assets/guide-v775/page-02.png",
     "links": [
       {
         "box": [
@@ -312,41 +312,61 @@
       {
         "box": [
           1250,
-          2108,
+          1843,
           2310,
-          2288
+          1943
         ],
         "page": 29,
+        "label": "Masques & lunettes : choisir"
+      },
+      {
+        "box": [
+          1250,
+          1943,
+          2310,
+          2043
+        ],
+        "page": 30,
+        "label": "Masques & lunettes : technologies"
+      },
+      {
+        "box": [
+          1250,
+          2308,
+          2310,
+          2438
+        ],
+        "page": 31,
         "label": "Fixations : comprendre le réglage"
       },
       {
         "box": [
           1250,
-          2288,
+          2438,
           2310,
-          2468
+          2568
         ],
-        "page": 30,
+        "page": 32,
         "label": "Fixations : contrôler avant de louer"
       },
       {
         "box": [
           1250,
-          2468,
+          2568,
           2310,
-          2648
+          2698
         ],
-        "page": 31,
+        "page": 33,
         "label": "Avalanche : s’équiper & contrôler"
       },
       {
         "box": [
           1250,
-          2648,
+          2698,
           2310,
           2828
         ],
-        "page": 32,
+        "page": 34,
         "label": "Avalanche : rechercher & secourir"
       }
     ]
@@ -464,7 +484,7 @@
   },
   {
     "page": 15,
-    "path": "assets/guide-v774/page-15.png",
+    "path": "assets/guide-v775/page-15.png",
     "links": [
       {
         "box": [
@@ -473,7 +493,7 @@
           2310,
           2895
         ],
-        "page": 29,
+        "page": 31,
         "label": "Sécurité et réglage des fixations"
       }
     ]
@@ -485,7 +505,7 @@
   },
   {
     "page": 17,
-    "path": "assets/guide-v774/page-17.png",
+    "path": "assets/guide-v775/page-17.png",
     "links": [
       {
         "box": [
@@ -494,7 +514,7 @@
           2000,
           3318
         ],
-        "page": 31,
+        "page": 33,
         "label": "Sécurité avalanche"
       }
     ]
@@ -506,39 +526,7 @@
   },
   {
     "page": 19,
-    "path": "assets/guide-v774/page-19.png",
-    "links": [
-      {
-        "box": [
-          70,
-          3230,
-          2000,
-          3318
-        ],
-        "page": 29,
-        "label": "Sécurité et réglage des fixations"
-      }
-    ]
-  },
-  {
-    "page": 20,
-    "path": "assets/guide-v774/page-20.png",
-    "links": [
-      {
-        "box": [
-          70,
-          3230,
-          2000,
-          3318
-        ],
-        "page": 29,
-        "label": "Sécurité et réglage des fixations"
-      }
-    ]
-  },
-  {
-    "page": 21,
-    "path": "assets/guide-v774/page-21.png",
+    "path": "assets/guide-v775/page-19.png",
     "links": [
       {
         "box": [
@@ -548,6 +536,38 @@
           3318
         ],
         "page": 31,
+        "label": "Sécurité et réglage des fixations"
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "path": "assets/guide-v775/page-20.png",
+    "links": [
+      {
+        "box": [
+          70,
+          3230,
+          2000,
+          3318
+        ],
+        "page": 31,
+        "label": "Sécurité et réglage des fixations"
+      }
+    ]
+  },
+  {
+    "page": 21,
+    "path": "assets/guide-v775/page-21.png",
+    "links": [
+      {
+        "box": [
+          70,
+          3230,
+          2000,
+          3318
+        ],
+        "page": 33,
         "label": "Sécurité avalanche"
       }
     ]
@@ -589,29 +609,39 @@
   },
   {
     "page": 29,
-    "path": "assets/guide-v774/page-29.png",
+    "path": "assets/guide-v775/page-29.png",
+    "links": []
+  },
+  {
+    "page": 30,
+    "path": "assets/guide-v775/page-30.png",
+    "links": []
+  },
+  {
+    "page": 31,
+    "path": "assets/guide-v775/page-31.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:70.4%;width:94%;height:6.6%\" href=\"https://isoski.lumiplan.pro/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Ouvrir ISOSKI pour vérifier les compatibilités et calculer le réglage initial des fixations\"></a>"
     ]
   },
   {
-    "page": 30,
-    "path": "assets/guide-v774/page-30.png",
+    "page": 32,
+    "path": "assets/guide-v775/page-32.png",
     "links": [],
     "overlays": []
   },
   {
-    "page": 31,
-    "path": "assets/guide-v774/page-31.png",
+    "page": 33,
+    "path": "assets/guide-v775/page-33.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:95%;width:94%;height:2.4%\" href=\"https://www.arva-equipment.com/fr/content/20-user-manuals-downloads\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Consulter les notices ARVA : portage, piles, contrôle de groupe, entretien et distances de sécurité\" title=\"Notices ARVA : portage et contrôles\"></a>"
     ]
   },
   {
-    "page": 32,
-    "path": "assets/guide-v774/page-32.png",
+    "page": 34,
+    "path": "assets/guide-v775/page-34.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:76.5%;width:94%;height:2.7%\" href=\"https://www.arva-equipment.com/img/cms/Notices/ARVA_REACTOR_NOTICE_%20LIVRET__compressed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Lire la notice ARVA REACTOR : installation, contrôle, déclenchement et entretien\" title=\"Notice REACTOR\"></a>",

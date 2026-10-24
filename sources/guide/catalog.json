@@ -1,6 +1,6 @@
 {
-  "version": "V07.74",
-  "cache": "20261024-74",
+  "version": "V07.75",
+  "cache": "20261024-75",
   "pages": [
     {
       "page": 1,
@@ -12,7 +12,7 @@
       "page": 2,
       "title": "Sommaire complet",
       "chapter": "Ouverture",
-      "description": "Sommaire cliquable des 32 pages : matériel 3–7, familles 8–18, chaussures de ski 19–20, snowboard 21–22, fond 23–24, textile 25–26, randonnée pédestre 27–28, fixations 29–30 et avalanche 31–32."
+      "description": "Sommaire cliquable des 34 pages : matériel 3–7, familles 8–18, chaussures de ski 19–20, snowboard 21–22, fond 23–24, textile 25–26, randonnée pédestre 27–28, masques et lunettes 29–30, fixations 31–32 et avalanche 33–34."
     },
     {
       "page": 3,
@@ -90,7 +90,7 @@
       "page": 15,
       "title": "Les skis juniors",
       "chapter": "02 · Reconnaître & conseiller",
-      "description": "Repères ESF : Piou-Piou, Ourson, Flocon, étoiles, Flèche et Chamois. Juniors : pitchounes 60–70 cm, débutants taille moins 25 à moins 20 cm, débrouillards moins 15 cm, confirmés moins 10 cm, experts selon le programme. Repères indicatifs, poids et compatibilité des fixations, renvoi à la sécurité des fixations pages 29–30."
+      "description": "Repères ESF : Piou-Piou, Ourson, Flocon, étoiles, Flèche et Chamois. Juniors : pitchounes 60–70 cm, débutants taille moins 25 à moins 20 cm, débrouillards moins 15 cm, confirmés moins 10 cm, experts selon le programme. Repères indicatifs, poids et compatibilité des fixations, renvoi à la sécurité des fixations pages 31–32."
     },
     {
       "page": 16,
@@ -172,24 +172,36 @@
     },
     {
       "page": 29,
+      "title": "Masques et lunettes : choisir selon la météo",
+      "chapter": "02 · Reconnaître & conseiller",
+      "description": "Catégories 0 à 4, VLT, protection UV, mauvais temps, temps changeant et soleil. Questions client et choix du masque ou des lunettes."
+    },
+    {
+      "page": 30,
+      "title": "Masques et lunettes : technologies et essayage",
+      "chapter": "02 · Reconnaître & conseiller",
+      "description": "Photochromique, polarisé, contrastes, exemples AZR Kromic, Smith ChromaPop et Cairn Evolight. Double écran, ventilation, antibuée, traitements, OTG, essayage et entretien."
+    },
+    {
+      "page": 31,
       "title": "Fixations : comprendre le réglage",
       "chapter": "03 · Sécuriser",
       "description": "Sécurité des fixations alpines : maintien et déclenchement, données client, longueur de semelle BSL, application ISOSKI et normes ISO."
     },
     {
-      "page": 30,
+      "page": 32,
       "title": "Fixations : contrôler avant de louer",
       "chapter": "03 · Sécuriser",
       "description": "Les six étapes avant location : compatibilité, inspection, adaptation à la chaussure, réglage initial ISOSKI, contrôle instrumenté et traçabilité. En cas de doute, pas de départ."
     },
     {
-      "page": 31,
+      "page": 33,
       "title": "Avalanche : s’équiper et contrôler",
       "chapter": "03 · Sécuriser",
       "description": "DVA ou ARVA : fréquence 457 kHz et limites, trio DVA sonde pelle pour chacun, portage selon la notice, inspection et autotest, contrôle croisé recherche et émission de chaque membre, éloignement des interférences et démonstration au comptoir."
     },
     {
-      "page": 32,
+      "page": 34,
       "title": "Avalanche : rechercher et secourir",
       "chapter": "03 · Sécuriser",
       "description": "Sauvetage avalanche : protéger, organiser et alerter le 112 ; recherche du signal, recherche approximative puis fine, sondage perpendiculaire à la pente tous les 25 cm, pelletage en rampe depuis l’aval et premiers secours. Gestion des victimes multiples. Sac airbag ARVA REACTOR : limites, contrôle, portage et déclenchement manuel."
