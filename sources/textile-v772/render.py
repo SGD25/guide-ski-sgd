@@ -121,7 +121,7 @@ def main():
         records.append({'page':n,'path':str(dest.relative_to(ROOT)),'links':[]})
     records.sort(key=lambda r:r['page'])
     (ROOT/'sources/freeride-freestyle/manifest.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
-    cat=deepcopy(OLD['catalog']);cat.update(version='V07.72',cache='20261024-72')
+    cat=deepcopy(OLD['catalog']);cat.update(version='V07.72',cache='20261024-72a')
     for meta in cat['pages']:
         if meta['page']>=25:meta['page']+=2
         if meta['chapter'].startswith('02'):meta['chapter']='02 · Reconnaître & conseiller'
