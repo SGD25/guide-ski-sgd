@@ -102,28 +102,28 @@ class Page:
             y=self.text(x+25,y,s,size,width=width-25)+gap
         return y
     def remember(self,headline,body,box=(70,2945,2330,3205),compact=False):
-        """One editorial panel: integrated bookmark, label and reading area."""
+        """Approved option 1: coral tab physically joined to a light frame."""
         self.accent=TEAL;self.soft=PALE
-        x,y,x2,y2=box
-        self.rect(box,DARK,None,12 if compact else 26)
-        scale=.44 if compact else 1
-        rx=x+38*scale;rw=54*scale;rh=min((y2-y)*.64,90*scale)
-        self.d.polygon([(rx,y),(rx+rw,y),(rx+rw,y+rh),(rx+rw/2,y+rh-17*scale),(rx,y+rh)],fill=CORAL)
-        label_x=x+122*scale
-        label_y=y+21 if compact else y+49
-        self.text(label_x,label_y,'À RETENIR',15 if compact else 35,'bold',WHITE)
-        divider=x+370*scale
-        self.line((divider,y+20*scale,divider,y2-20*scale),'#527581',1 if compact else 2)
-        tx=x+412*scale
-        width=x2-tx-36*scale
+        x,y,x2,y2=box;w=x2-x
+        tab=Image.open(MEDIA/'a-retenir-onglet-v770.png').convert('RGBA')
+        th=30 if compact else 88
+        tw=round(th*tab.width/tab.height)
+        tab=tab.resize((tw,th),Image.Resampling.LANCZOS)
+        tx=round(x+w*(.035 if compact else .161))
+        fy=y+th//2
+        if not compact:self.rect((x+2,fy+3,x2+2,y2+3),'#E6EDF0',None,23)
+        self.rect((x,fy,x2,y2),WHITE,DARK,10 if compact else 23,1 if compact else 3)
+        self.im.paste(tab,(tx,y),tab)
         if compact:
-            title_size=19 if self.n==25 else 16 if self.n==26 else 18
-            start=y+10 if self.n==25 else y+8
-            end=self.text(tx,start,headline,title_size,'serif',WHITE,width=width,leading=23 if self.n==25 else 21,bottom=y2-3)
-            if body:self.text(tx,y+33 if self.n!=28 else y+30,body,17,'bold' if self.n==26 else 'sans',WHITE,width=width,leading=20,bottom=y2-1)
+            if self.n==25:
+                self.text(x+18,y+36,headline,16,'serif',INK,width=w-36,leading=18,bottom=y2-4)
+            else:
+                hx=tx+tw+18
+                self.text(hx,y+18,headline,15,'serif',INK,width=x2-hx-16,leading=17,bottom=y+36)
+                self.text(x+18,y+38 if self.n!=28 else y+36,body,14 if self.n==28 else 15,'bold' if self.n==26 else 'sans',BODY,width=w-36,leading=17,bottom=y2-1)
         else:
-            end=self.text(tx,y+30,headline,44,'serif',WHITE,width=width)
-            self.text(tx,end+12,body.replace('\n',' '),37,fill=WHITE,width=width,leading=45,bottom=y2-15)
+            end=self.text(x+96,y+102,headline,42,'serif',INK,width=w-192)
+            self.text(x+96,end+8,body.replace('\n',' '),36,fill=BODY,width=w-192,leading=43,bottom=y2-10)
     def footer(self,note=''):
         if note:self.text(76,3237,note,26,width=1890,bottom=3313)
         self.line((70,3330,2010,3330),P['reperes'],3)

@@ -2,9 +2,9 @@
 
 Guide de formation feuilletable : https://sgd25.github.io/guide-ski-sgd/
 
-V07.69 : les 28 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
+V07.70 : les 28 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
 
-Le point d’entrée actuel est `sources/finalisation-v769/render.py` ; le catalogue de navigation est `sources/guide/catalog.json`. Les sources historiques restent disponibles. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
+Le point d’entrée actuel est `sources/finalisation-v770/render.py` ; le catalogue de navigation est `sources/guide/catalog.json`. Les sources historiques restent disponibles. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
 
 Le lecteur permet le feuilletage, l’accès direct depuis les sommaires, la lecture agrandie et l’impression. Un second clic sur la page agrandie, avec la loupe moins, revient à la vue double. Les chapitres ont leurs repères de couleur et la page 8 ouvre les familles avec une grande scène de glisse. Le vrai logo SGD figure dans le lecteur et les pieds de page actualisés. Les pages 13 et 14 présentent le freeride, le freestyle et six modèles réels. La randonnée est présentée pages 17–18 ; le chapitre « Choisir » reste à créer.
 
@@ -27,3 +27,5 @@ V07.67 : finalisation du 24 octobre 2026. Couverture et sommaire des 28 pages ; 
 V07.68 : rappels À retenir à contraste renforcé sur toutes les pages, précisions patin / cotes / radius, skis rapprochés des avant-bras, nouvelles scènes slalom et all-mountain, vrais insignes ESF, détails randonnée et volume LV/MV/HV prioritaire pour les chaussures alpines. Journal, médias et sources : `sources/finalisation-v768/README.md`.
 
 V07.69 : encarts À retenir entièrement intégrés dans un bandeau unique avec ruban corail, libellé et texte. Ancien bouton ampoule et cadre séparé retirés. Contenus inchangés. Sources : `sources/finalisation-v769/`.
+
+V07.70 : application de la proposition n° 1 « L’onglet », sélectionnée dans le chat : véritable bouton corail de la maquette, ampoule blanche et cadre clair avec filet bleu ardoise. Sources : `sources/finalisation-v770/`.

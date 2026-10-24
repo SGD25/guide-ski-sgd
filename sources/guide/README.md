@@ -42,3 +42,7 @@ Point d’entrée : `python sources/finalisation-v768/render.py`, puis `python s
 ## Encarts V07.69
 
 Version actuelle : `python sources/finalisation-v769/render.py`, puis `python sources/guide/build_site.py`. Un bandeau intégré remplace le bouton séparé sur les pages 3–28.
+
+## Onglet validé V07.70
+
+Version actuelle : `python sources/finalisation-v770/render.py`, puis `python sources/guide/build_site.py`. Le bouton est issu de la proposition n° 1 sélectionnée dans le chat ; les textes restent composés nativement.
