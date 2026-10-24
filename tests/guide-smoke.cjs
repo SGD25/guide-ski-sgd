@@ -16,6 +16,7 @@ for(const [i,page] of pages.entries()){
  assert.equal(page.title,config.pages[i].title);assert.equal(page.chapter,config.pages[i].chapter);
  const imgs=[...page.html.matchAll(/<img src="([^"]+)"/g)];assert.equal(imgs.length,1,`Page ${i+1}: one complete image`);
  assert(fs.existsSync(local(imgs[0][1])),`Missing image on page ${i+1}`);
+ assert(fs.statSync(local(imgs[0][1])).size>1000,`Empty or truncated image on page ${i+1}`);
  assert(page.html.includes(`data-page="${i+1}"`));
  assert.equal(manifest[i].page,i+1);
  for(const m of page.html.matchAll(/data-jump="(\d+)"/g)){const n=Number(m[1]);assert(n>=0&&n<pages.length);}

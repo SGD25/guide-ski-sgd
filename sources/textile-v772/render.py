@@ -108,7 +108,7 @@ def main():
             for b in areas:ImageDraw.Draw(diff).rectangle(b,fill=0)
             assert diff.getbbox() is None,('Content changed outside furniture/reference',old)
             checks.append({'old_page':old,'new_page':n,'content_unchanged_outside':areas})
-        dest=OUT/f'page-{n:02}.jpg';p.im.save(dest,quality=94,subsampling=0,optimize=True)
+        dest=OUT/('page-27-fixed.jpg' if n==27 else f'page-{n:02}.jpg');p.im.save(dest,quality=94,subsampling=0,optimize=True)
         new=deepcopy(record);new.update(page=n,path=str(dest.relative_to(ROOT)),links=links);records.append(new)
         print('Page',n,'OK',flush=True)
     spread=Image.open(HERE/'approved-spread.png').convert('RGB')
@@ -117,11 +117,11 @@ def main():
         xy=((W-body.width)//2,125);p.im.paste(body,xy);p.d=ImageDraw.Draw(p.im)
         furniture(p,n)
         assert ImageChops.difference(body,p.im.crop((xy[0],xy[1],xy[0]+body.width,xy[1]+body.height))).getbbox() is None
-        dest=OUT/f'page-{n:02}.jpg';p.im.save(dest,quality=94,subsampling=0,optimize=True)
+        dest=OUT/('page-27-fixed.jpg' if n==27 else f'page-{n:02}.jpg');p.im.save(dest,quality=94,subsampling=0,optimize=True)
         records.append({'page':n,'path':str(dest.relative_to(ROOT)),'links':[]})
     records.sort(key=lambda r:r['page'])
     (ROOT/'sources/freeride-freestyle/manifest.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
-    cat=deepcopy(OLD['catalog']);cat.update(version='V07.72',cache='20261024-72a')
+    cat=deepcopy(OLD['catalog']);cat.update(version='V07.72',cache='20261024-72b')
     for meta in cat['pages']:
         if meta['page']>=25:meta['page']+=2
         if meta['chapter'].startswith('02'):meta['chapter']='02 · Reconnaître & conseiller'
