@@ -1,0 +1,338 @@
+[
+  {
+    "page": 5,
+    "font": 36,
+    "original_font": 36,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 9,
+    "font": 29,
+    "original_font": 29,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 9,
+    "font": 29,
+    "original_font": 29,
+    "tab_height": 30,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 9,
+    "font": 29,
+    "original_font": 29,
+    "tab_height": 30,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 9,
+    "font": 29,
+    "original_font": 29,
+    "tab_height": 30,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 10,
+    "font": 30,
+    "original_font": 30,
+    "tab_height": 36,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 10,
+    "font": 30,
+    "original_font": 30,
+    "tab_height": 36,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 10,
+    "font": 30,
+    "original_font": 30,
+    "tab_height": 36,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 10,
+    "font": 30,
+    "original_font": 30,
+    "tab_height": 36,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 11,
+    "font": 35,
+    "original_font": 35,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 11,
+    "font": 35,
+    "original_font": 35,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 11,
+    "font": 35,
+    "original_font": 35,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 12,
+    "font": 35,
+    "original_font": 35,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 12,
+    "font": 35,
+    "original_font": 35,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 12,
+    "font": 35,
+    "original_font": 35,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 13,
+    "font": 36,
+    "original_font": 36,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 13,
+    "font": 36,
+    "original_font": 36,
+    "tab_height": 52,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 14,
+    "font": 28,
+    "original_font": 28,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 14,
+    "font": 28,
+    "original_font": 28,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 14,
+    "font": 28,
+    "original_font": 28,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 14,
+    "font": 28,
+    "original_font": 28,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 14,
+    "font": 28,
+    "original_font": 28,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 14,
+    "font": 28,
+    "original_font": 28,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 15,
+    "font": 31,
+    "original_font": 34,
+    "tab_height": 28,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 16,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 16,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 16,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 16,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 16,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 18,
+    "font": 33,
+    "original_font": 33,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 18,
+    "font": 33,
+    "original_font": 33,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 18,
+    "font": 33,
+    "original_font": 33,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 20,
+    "font": 30,
+    "original_font": 30,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 22,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 22,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 22,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 22,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 39,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 23,
+    "font": 30,
+    "original_font": 30,
+    "tab_height": 32,
+    "kind": "serif",
+    "compact": true
+  },
+  {
+    "page": 24,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 35,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 24,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 35,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 24,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 35,
+    "kind": "serif",
+    "compact": false
+  },
+  {
+    "page": 24,
+    "font": 31,
+    "original_font": 31,
+    "tab_height": 35,
+    "kind": "serif",
+    "compact": false
+  }
+]

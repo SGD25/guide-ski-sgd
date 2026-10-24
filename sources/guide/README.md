@@ -46,3 +46,7 @@ Version actuelle : `python sources/finalisation-v769/render.py`, puis `python so
 ## Onglet validé V07.70
 
 Version actuelle : `python sources/finalisation-v770/render.py`, puis `python sources/guide/build_site.py`. Le bouton est issu de la proposition n° 1 sélectionnée dans le chat ; les textes restent composés nativement.
+
+## Encarts V07.71
+
+Version actuelle : `python sources/finalisation-v771/render.py`, puis `python sources/guide/build_site.py`. Composants : onglet bleu des phrases client et onglet corail des rappels sur fond orange très diffus.

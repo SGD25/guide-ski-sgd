@@ -112,7 +112,7 @@ class Page:
         tx=round(x+w*(.035 if compact else .161))
         fy=y+th//2
         if not compact:self.rect((x+2,fy+3,x2+2,y2+3),'#E6EDF0',None,23)
-        self.rect((x,fy,x2,y2),WHITE,DARK,10 if compact else 23,1 if compact else 3)
+        self.rect((x,fy,x2,y2),'#FCF0E9',DARK,10 if compact else 23,1 if compact else 3)
         self.im.paste(tab,(tx,y),tab)
         if compact:
             if self.n==25:
@@ -124,6 +124,47 @@ class Page:
         else:
             end=self.text(x+96,y+102,headline,42,'serif',INK,width=w-192)
             self.text(x+96,end+8,body.replace('\n',' '),36,fill=BODY,width=w-192,leading=43,bottom=y2-10)
+    def client(self,box,speech,size=34,heading=None):
+        """Approved blue dialogue tab, pale frame and the exact existing quote."""
+        x,y,x2,y2=box;w=x2-x;h=y2-y
+        tab=Image.open(MEDIA/'a-dire-client-onglet-v771.png').convert('RGBA')
+        compact=w>=1500 and h<=120
+        def wrap(s,font,width):
+            rows=['']
+            for word in s.split():
+                test=(rows[-1]+' '+word).strip()
+                if rows[-1] and self.d.textlength(test,font=font)>width:rows.append(word)
+                else:rows[-1]=test
+            return rows
+        chosen=None
+        for fs in range(size,23,-1):
+            for th in sorted(set([min(52,max(28,round(h*.26))),32,28]),reverse=True):
+                tw=round(th*tab.width/tab.height);tx=x+max(18,round(w*.04));fy=y+th//2
+                if compact:
+                    xx=tx+tw+22;yy=fy+3;width=x2-xx-20;available=y2-yy-2
+                    leading=round(fs*1.05)
+                    for kind in ['serif','bold']:
+                        lines=wrap(speech,ft(fs,kind),width)
+                        if len(lines)*leading<=available:
+                            chosen=(fs,th,tw,tx,fy,xx,yy,width,leading,kind,len(lines)*leading);break
+                else:
+                    xx=x+22;yy=y+th+8;width=w-44;available=y2-yy-8;leading=round(fs*1.16)
+                    for kind in ['serif','bold']:
+                        lines=wrap(speech,ft(fs,kind),width);height=len(lines)*leading
+                        if heading:height+=round((fs+4)*1.22)+9
+                        if height<=available:
+                            chosen=(fs,th,tw,tx,fy,xx,yy,width,leading,kind,height);break
+                if chosen:break
+            if chosen:break
+        assert chosen,('Client quote does not fit',self.n,box,speech)
+        fs,th,tw,tx,fy,xx,yy,width,leading,kind,height=chosen
+        self.rect((x,fy,x2,y2),'#F3F8FB',DARK,min(19,max(9,round(h*.10))),3)
+        badge=tab.resize((tw,th),Image.Resampling.LANCZOS)
+        self.im.paste(badge,(tx,y),badge)
+        yy+=max(0,((y2-5)-yy-height)//2)
+        if heading:yy=self.text(xx,yy,heading,fs+4,'serif',INK,width=width)+9
+        self.text(xx,yy,speech,fs,kind,INK,width=width,leading=leading,bottom=y2-1)
+        return {'font':fs,'original_font':size,'tab_height':th,'kind':kind,'compact':compact}
     def footer(self,note=''):
         if note:self.text(76,3237,note,26,width=1890,bottom=3313)
         self.line((70,3330,2010,3330),P['reperes'],3)

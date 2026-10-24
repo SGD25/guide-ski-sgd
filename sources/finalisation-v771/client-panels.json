@@ -1,0 +1,465 @@
+[
+  {
+    "page": 5,
+    "box": [
+      1606,
+      2430,
+      2330,
+      2865
+    ],
+    "size": 36,
+    "speech": "« Vous aimez enchaîner de petits virages ou prendre de grandes courbes ? »",
+    "heading": "Quel type de virages ?"
+  },
+  {
+    "page": 9,
+    "box": [
+      92,
+      1510,
+      1148,
+      1624
+    ],
+    "size": 29,
+    "speech": "« Un ski facile à faire tourner, pour progresser sans vous fatiguer. »"
+  },
+  {
+    "page": 9,
+    "box": [
+      1252,
+      1510,
+      2308,
+      1624
+    ],
+    "size": 29,
+    "speech": "« Un compromis pour varier les virages sur piste, avec du maintien et de la facilité. »"
+  },
+  {
+    "page": 9,
+    "box": [
+      92,
+      2760,
+      1148,
+      2874
+    ],
+    "size": 29,
+    "speech": "« Plus de précision et de répondant, à condition d’avoir les appuis pour l’exploiter. »"
+  },
+  {
+    "page": 9,
+    "box": [
+      1252,
+      2760,
+      2308,
+      2874
+    ],
+    "size": 29,
+    "speech": "« On choisit la spécialité selon vos courbes : vif en slalom, plus posé en géant. »"
+  },
+  {
+    "page": 10,
+    "box": [
+      90,
+      1485,
+      1150,
+      1624
+    ],
+    "size": 30,
+    "speech": "« Un ski rassurant, facile à faire tourner, pour progresser sans se faire peur. »"
+  },
+  {
+    "page": 10,
+    "box": [
+      1250,
+      1485,
+      2310,
+      1624
+    ],
+    "size": 30,
+    "speech": "« Un ski pour progresser en carving, avec un équilibre entre contrôle et réactivité. »"
+  },
+  {
+    "page": 10,
+    "box": [
+      90,
+      2735,
+      1150,
+      2874
+    ],
+    "size": 30,
+    "speech": "« Un ski puissant pour carver avec de l’angle et de l’engagement ; il demande déjà une bonne technique. »"
+  },
+  {
+    "page": 10,
+    "box": [
+      1250,
+      2735,
+      2310,
+      2874
+    ],
+    "size": 30,
+    "speech": "« Un ski nerveux et précis, taillé pour enchaîner les virages courts avec beaucoup de répondant. »"
+  },
+  {
+    "page": 11,
+    "box": [
+      94,
+      2628,
+      770,
+      2876
+    ],
+    "size": 35,
+    "speech": "« Une base très piste, avec davantage d’aisance quand la neige devient souple. »"
+  },
+  {
+    "page": 11,
+    "box": [
+      862,
+      2628,
+      1538,
+      2876
+    ],
+    "size": 35,
+    "speech": "« Le compromis pour garder de l’accroche sur piste et varier davantage les terrains. »"
+  },
+  {
+    "page": 11,
+    "box": [
+      1630,
+      2628,
+      2306,
+      2876
+    ],
+    "size": 35,
+    "speech": "« Plus de portance et de pivot en neige souple, avec un compromis à accepter sur piste dure. »"
+  },
+  {
+    "page": 12,
+    "box": [
+      94,
+      2630,
+      770,
+      2876
+    ],
+    "size": 35,
+    "speech": "« De l’accroche et du confort pour enchaîner les virages sur piste, avec de l’aisance en neige plus souple. »"
+  },
+  {
+    "page": 12,
+    "box": [
+      862,
+      2630,
+      1538,
+      2876
+    ],
+    "size": 35,
+    "speech": "« Léger et réactif : il accroche sur piste et reste agile pour varier les terrains et les types de neige. »"
+  },
+  {
+    "page": 12,
+    "box": [
+      1630,
+      2630,
+      2306,
+      2876
+    ],
+    "size": 35,
+    "speech": "« Il porte mieux en neige souple, pivote facilement et garde du soutien quand vous revenez sur la piste. »"
+  },
+  {
+    "page": 13,
+    "box": [
+      95,
+      2650,
+      1145,
+      2875
+    ],
+    "size": 36,
+    "speech": "« Ce ski porte davantage en neige profonde et pivote facilement. En échange, il est moins vif sur piste dure. »"
+  },
+  {
+    "page": 13,
+    "box": [
+      1255,
+      2660,
+      2305,
+      2885
+    ],
+    "size": 36,
+    "speech": "« On adapte la longueur à vos figures : plus court pour pivoter, plus long pour garder de la stabilité à vitesse élevée et à la réception. »"
+  },
+  {
+    "page": 14,
+    "box": [
+      90,
+      1484,
+      774,
+      1633
+    ],
+    "size": 28,
+    "speech": "« De la portance et de l’agilité pour varier les virages en neige profonde. »"
+  },
+  {
+    "page": 14,
+    "box": [
+      858,
+      1484,
+      1542,
+      1633
+    ],
+    "size": 28,
+    "speech": "« Un ski joueur, qui pivote facilement et porte bien dans la poudreuse. »"
+  },
+  {
+    "page": 14,
+    "box": [
+      1626,
+      1484,
+      2310,
+      1633
+    ],
+    "size": 28,
+    "speech": "« Du soutien et de l’amorti pour un skieur qui aime engager en hors-piste. »"
+  },
+  {
+    "page": 14,
+    "box": [
+      90,
+      2734,
+      774,
+      2883
+    ],
+    "size": 28,
+    "speech": "« Un twin-tip joueur et maniable pour découvrir les figures et progresser sur piste. »"
+  },
+  {
+    "page": 14,
+    "box": [
+      858,
+      2734,
+      1542,
+      2883
+    ],
+    "size": 28,
+    "speech": "« Du rebond et de la précision pour un skieur qui veut un park plus sportif. »"
+  },
+  {
+    "page": 14,
+    "box": [
+      1626,
+      2734,
+      2310,
+      2883
+    ],
+    "size": 28,
+    "speech": "« Une base souple et joueuse pour les figures et les appuis sur les spatules. »"
+  },
+  {
+    "page": 15,
+    "box": [
+      70,
+      2340,
+      2330,
+      2392
+    ],
+    "size": 34,
+    "speech": "Aux parents : « On choisit pour sa taille d’aujourd’hui, sans prendre trop grand pour l’an prochain. »"
+  },
+  {
+    "page": 16,
+    "box": [
+      310,
+      826,
+      2306,
+      903
+    ],
+    "size": 31,
+    "speech": "« Pour ses premiers pas, on cherche un ski facile à déplacer et à tourner, à sa taille d’aujourd’hui. »"
+  },
+  {
+    "page": 16,
+    "box": [
+      310,
+      1319,
+      2306,
+      1396
+    ],
+    "size": 31,
+    "speech": "« Ce modèle aide à tourner et à freiner sans forcer : il doit d’abord lui permettre de prendre confiance. »"
+  },
+  {
+    "page": 16,
+    "box": [
+      310,
+      1812,
+      2306,
+      1889
+    ],
+    "size": 31,
+    "speech": "« Il peut progresser sur piste avec un ski léger et accessible ; le décor course n’en fait pas un ski exigeant. »"
+  },
+  {
+    "page": 16,
+    "box": [
+      310,
+      2305,
+      2306,
+      2382
+    ],
+    "size": 31,
+    "speech": "« S’il veut commencer les portes, ce modèle ajoute du rebond tout en gardant un flex adapté aux jeunes skieurs. »"
+  },
+  {
+    "page": 16,
+    "box": [
+      310,
+      2798,
+      2306,
+      2875
+    ],
+    "size": 31,
+    "speech": "« Pour le géant, on adapte ce ski de course à son gabarit, avec les recommandations de son entraîneur. »"
+  },
+  {
+    "page": 18,
+    "box": [
+      310,
+      1595,
+      2306,
+      1698
+    ],
+    "size": 33,
+    "speech": "« Si vous voulez surtout enchaîner du dénivelé, ce patin modéré évite d’emporter une largeur inutile à chaque pas. »"
+  },
+  {
+    "page": 18,
+    "box": [
+      310,
+      2185,
+      2306,
+      2288
+    ],
+    "size": 33,
+    "speech": "« On gagne en portance pour la neige souple, tout en restant sur un vrai ski de randonnée à construction légère. »"
+  },
+  {
+    "page": 18,
+    "box": [
+      310,
+      2775,
+      2306,
+      2878
+    ],
+    "size": 33,
+    "speech": "« Vous acceptez davantage de ski à emmener en montée pour gagner en portance et profiter de la descente en neige profonde. »"
+  },
+  {
+    "page": 20,
+    "box": [
+      90,
+      2830,
+      2310,
+      2898
+    ],
+    "size": 30,
+    "speech": "« On valide le confort en marchant, le maintien en ski et la compatibilité de tout le pack. »"
+  },
+  {
+    "page": 22,
+    "box": [
+      92,
+      1485,
+      1158,
+      1634
+    ],
+    "size": 31,
+    "speech": "« Vous voulez prendre confiance et garder une planche pour progresser ? Vérifions d’abord votre poids et vos boots. »"
+  },
+  {
+    "page": 22,
+    "box": [
+      1242,
+      1485,
+      2308,
+      1634
+    ],
+    "size": 31,
+    "speech": "« Vous cherchez une planche polyvalente et réactive ? Elle demande déjà des appuis maîtrisés pour bien l’exploiter. »"
+  },
+  {
+    "page": 22,
+    "box": [
+      92,
+      2735,
+      1158,
+      2884
+    ],
+    "size": 31,
+    "speech": "« Vous privilégiez la fraîche et les grandes courbes ? Son shape aide à flotter, tout en gardant du répondant sur piste. »"
+  },
+  {
+    "page": 22,
+    "box": [
+      1242,
+      2735,
+      2308,
+      2884
+    ],
+    "size": 31,
+    "speech": "« Vous faites du park et roulez en switch ? Le twin aide dans les deux sens ; on garde du soutien pour les réceptions. »"
+  },
+  {
+    "page": 23,
+    "box": [
+      90,
+      2850,
+      2310,
+      2905
+    ],
+    "size": 30,
+    "speech": "« Chez nous, uniquement du NNN. Vérifions la compatibilité de vos chaussures. »"
+  },
+  {
+    "page": 24,
+    "box": [
+      105,
+      1465,
+      1135,
+      1600
+    ],
+    "size": 31,
+    "speech": "« Les écailles donnent l’accroche sans choisir de fart de retenue : on privilégie la simplicité. »"
+  },
+  {
+    "page": 24,
+    "box": [
+      1255,
+      1465,
+      2285,
+      1600
+    ],
+    "size": 31,
+    "speech": "« La peau reste sous le pied pendant la sortie : elle aide à accrocher, puis à retrouver la glisse. »"
+  },
+  {
+    "page": 24,
+    "box": [
+      105,
+      2735,
+      1135,
+      2870
+    ],
+    "size": 31,
+    "speech": "« Ce modèle plus court aide à placer les skis et à prendre confiance dans les appuis de skating. »"
+  },
+  {
+    "page": 24,
+    "box": [
+      1255,
+      2735,
+      2285,
+      2870
+    ],
+    "size": 31,
+    "speech": "« Pour des sorties sportives, on cherche une glisse régulière et un ski facile à guider. »"
+  }
+]
