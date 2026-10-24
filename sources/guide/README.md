@@ -38,3 +38,7 @@ V07.64 : `python sources/boots/render.py` ajoute les pages 23–24, puis `python
 ## Révision actuelle V07.68
 
 Point d’entrée : `python sources/finalisation-v768/render.py`, puis `python sources/guide/build_site.py`. Ce rendu conserve les pages approuvées et met à jour les rappels sur toutes les pages. Journal : `../finalisation-v768/README.md`.
+
+## Encarts V07.69
+
+Version actuelle : `python sources/finalisation-v769/render.py`, puis `python sources/guide/build_site.py`. Un bandeau intégré remplace le bouton séparé sur les pages 3–28.

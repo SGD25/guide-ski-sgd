@@ -101,19 +101,29 @@ class Page:
             self.d.ellipse((x,y+12,x+9,y+21),fill=self.accent)
             y=self.text(x+25,y,s,size,width=width-25)+gap
         return y
-    def remember(self,headline,body):
+    def remember(self,headline,body,box=(70,2945,2330,3205),compact=False):
+        """One editorial panel: integrated bookmark, label and reading area."""
         self.accent=TEAL;self.soft=PALE
-        self.rect((576,2956,2330,3216),'#D9E3E5',None,30)
-        self.rect((570,2945,2330,3205),DARK,CORAL,30,4)
-        self.rect((72,3001,532,3135),'#D9E3E5',None,65)
-        self.rect((70,2985,530,3119),CORAL,None,65)
-        self.d.ellipse((111,3017,160,3063),outline=WHITE,width=4)
-        self.line((120,3055,124,3074,148,3074,152,3055),WHITE,4)
-        self.line((126,3083,147,3083),WHITE,4)
-        for x,y,x2,y2 in [(135,2999,135,3008),(94,3020,103,3025),(169,3022,177,3017)]:self.line((x,y,x2,y2),WHITE,3)
-        self.text(183,3023,'À retenir',47,'bold',WHITE)
-        end=self.text(610,2970,headline,44,'serif',WHITE,width=1660)
-        self.text(610,end+12,body.replace('\n',' '),37,fill=WHITE,width=1660,leading=45,bottom=3190)
+        x,y,x2,y2=box
+        self.rect(box,DARK,None,12 if compact else 26)
+        scale=.44 if compact else 1
+        rx=x+38*scale;rw=54*scale;rh=min((y2-y)*.64,90*scale)
+        self.d.polygon([(rx,y),(rx+rw,y),(rx+rw,y+rh),(rx+rw/2,y+rh-17*scale),(rx,y+rh)],fill=CORAL)
+        label_x=x+122*scale
+        label_y=y+21 if compact else y+49
+        self.text(label_x,label_y,'À RETENIR',15 if compact else 35,'bold',WHITE)
+        divider=x+370*scale
+        self.line((divider,y+20*scale,divider,y2-20*scale),'#527581',1 if compact else 2)
+        tx=x+412*scale
+        width=x2-tx-36*scale
+        if compact:
+            title_size=19 if self.n==25 else 16 if self.n==26 else 18
+            start=y+10 if self.n==25 else y+8
+            end=self.text(tx,start,headline,title_size,'serif',WHITE,width=width,leading=23 if self.n==25 else 21,bottom=y2-3)
+            if body:self.text(tx,y+33 if self.n!=28 else y+30,body,17,'bold' if self.n==26 else 'sans',WHITE,width=width,leading=20,bottom=y2-1)
+        else:
+            end=self.text(tx,y+30,headline,44,'serif',WHITE,width=width)
+            self.text(tx,end+12,body.replace('\n',' '),37,fill=WHITE,width=width,leading=45,bottom=y2-15)
     def footer(self,note=''):
         if note:self.text(76,3237,note,26,width=1890,bottom=3313)
         self.line((70,3330,2010,3330),P['reperes'],3)
