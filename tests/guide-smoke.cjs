@@ -22,5 +22,5 @@ for(let old=1;old<=34;old++){
 for(const n of [31,32]){assert.deepEqual(manifest[n-1],previous.records[n-1]);assert.deepEqual(config.pages[n-1],previous.catalog.pages[n-1]);}
 for(let n=33;n<=40;n++)assert.equal(pages[n-1].chapter,'03 · Sécuriser');
 assert.match(pages[32].title,/NX12/);assert.match(pages[36].title,/PLUM/);assert.match(pages[38].title,/Avalanche/);
-assert.match(html,/V07.76/);assert.match(html,/01–02 \/ 40/);
+assert.match(html,/V07.77/);assert.match(html,/01–02 \/ 40/);
 console.log('OK: 40 pages, complete clickable contents, original 31–32 preserved, six additions, avalanche links and external links preserved.');
