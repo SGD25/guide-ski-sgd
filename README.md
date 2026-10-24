@@ -2,9 +2,9 @@
 
 Guide de formation feuilletable : https://sgd25.github.io/guide-ski-sgd/
 
-V07.73 : les 30 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
+V07.74 : les 32 pages partagent la charte bleu ardoise, turquoise et blanc validée sur la page 12. Chaque page est une image complète ; les nouvelles pages sont rendues en 2400 × 3394 pixels. Les contenus validés sont conservés ; les titres, les repères colorés et les encarts de mémorisation sont harmonisés.
 
-Le complément actuel est `sources/textile-mm-v773/apply.py` (la base reste `sources/textile-v772/render.py`) ; le catalogue de navigation est `sources/guide/catalog.json`. Les sources historiques restent disponibles. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
+Le point d’entrée actuel est `sources/hiking-v774/apply.py` ; les sources des versions précédentes restent conservées ; le catalogue de navigation est `sources/guide/catalog.json`. Les sources historiques restent disponibles. Les photos de skis sont placées sans déformation. Les anciennes images restent disponibles dans le dépôt et son historique.
 
 Le lecteur permet le feuilletage, l’accès direct depuis les sommaires, la lecture agrandie et l’impression. Un second clic sur la page agrandie, avec la loupe moins, revient à la vue double. Les chapitres ont leurs repères de couleur et la page 8 ouvre les familles avec une grande scène de glisse. Le vrai logo SGD figure dans le lecteur et les pieds de page actualisés. Les pages 13 et 14 présentent le freeride, le freestyle et six modèles réels. La randonnée est présentée pages 17–18 ; le chapitre « Choisir » reste à créer.
 
@@ -35,3 +35,5 @@ V07.71 : onglet bleu « À dire au client » choisi dans le chat, appliqué aux 
 V07.72 : double page textile validée dans le chat, intégrée pages 25–26 à la fin du chapitre « Reconnaître & conseiller ». Sécuriser décalé aux pages 27–30 ; sommaire, couverture et renvois actualisés. En-têtes et pieds de page des pages intérieures harmonisés, contenu illustré et textes validés préservés. Original de la double page et contrôle des zones modifiées : `sources/textile-v772/`.
 
 V07.73 : page 26 complétée et validée dans le chat : colonne d’eau / Schmerber, 10 000 / 15 000 / 20 000 mm, équivalences et repères de conseil indicatifs. Image approuvée publiée à l’identique ; 29 autres images conservées. Vérification du décodage et de la taille des 30 fichiers avant publication.
+
+V07.74 : deux pages de randonnée pédestre approuvées dans le chat, copiées à l’identique en pages 27–28. Sécuriser décalé aux pages 29–32. Sommaire, renvoi de couverture, liens et numéros de renvoi mis à jour. Séparation claire des chaussures de ski de randonnée et de randonnée pédestre dans le sommaire. Contrôle des pixels hors zones de numérotation et vérification des 32 images avant publication.

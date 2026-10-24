@@ -1,6 +1,6 @@
 {
-  "version": "V07.73",
-  "cache": "20261024-73",
+  "version": "V07.74",
+  "cache": "20261024-74",
   "pages": [
     {
       "page": 1,
@@ -12,7 +12,7 @@
       "page": 2,
       "title": "Sommaire complet",
       "chapter": "Ouverture",
-      "description": "Sommaire cliquable des 30 pages : matériel 3–7, familles et modèles 8–18, chaussures 19–20, snowboard 21–22, fond 23–24, textile 25–26, fixations 27–28 et avalanche 29–30."
+      "description": "Sommaire cliquable des 32 pages : matériel 3–7, familles 8–18, chaussures de ski 19–20, snowboard 21–22, fond 23–24, textile 25–26, randonnée pédestre 27–28, fixations 29–30 et avalanche 31–32."
     },
     {
       "page": 3,
@@ -90,7 +90,7 @@
       "page": 15,
       "title": "Les skis juniors",
       "chapter": "02 · Reconnaître & conseiller",
-      "description": "Repères ESF : Piou-Piou, Ourson, Flocon, étoiles, Flèche et Chamois. Juniors : pitchounes 60–70 cm, débutants taille moins 25 à moins 20 cm, débrouillards moins 15 cm, confirmés moins 10 cm, experts selon le programme. Repères indicatifs, poids et compatibilité des fixations, renvoi à la sécurité des fixations pages 27–28."
+      "description": "Repères ESF : Piou-Piou, Ourson, Flocon, étoiles, Flèche et Chamois. Juniors : pitchounes 60–70 cm, débutants taille moins 25 à moins 20 cm, débrouillards moins 15 cm, confirmés moins 10 cm, experts selon le programme. Repères indicatifs, poids et compatibilité des fixations, renvoi à la sécurité des fixations pages 29–30."
     },
     {
       "page": 16,
@@ -118,7 +118,7 @@
     },
     {
       "page": 20,
-      "title": "Les chaussures de randonnée",
+      "title": "Les chaussures de ski de randonnée",
       "chapter": "02 · Reconnaître & conseiller",
       "description": "Chaussures de randonnée : modes marche et ski, allègement et soutien en descente, essayage dans les deux modes, semelles alpines, GripWalk et touring, inserts tech et compatibilités. Contrôles avant départ. Photos réelles SCARPA."
     },
@@ -160,24 +160,36 @@
     },
     {
       "page": 27,
+      "title": "Chaussures de randonnée pédestre",
+      "chapter": "02 · Reconnaître & conseiller",
+      "description": "Construction d’une chaussure de randonnée : tige, collier, pare-pierre, contrefort, semelles, cuir pleine fleur, nubuck, croûte, mesh, EVA et PU, cambrion, Vibram, crampons et membrane GORE-TEX."
+    },
+    {
+      "page": 28,
+      "title": "Randonnée pédestre : choisir et faire essayer",
+      "chapter": "02 · Reconnaître & conseiller",
+      "description": "Questions client, tiges basses, mid et hautes, flexion et torsion, rigidité, terrain, charge et durée. Essayage des deux pieds, chaussettes, laçage, maintien du talon, test en descente et entretien."
+    },
+    {
+      "page": 29,
       "title": "Fixations : comprendre le réglage",
       "chapter": "03 · Sécuriser",
       "description": "Sécurité des fixations alpines : maintien et déclenchement, données client, longueur de semelle BSL, application ISOSKI et normes ISO."
     },
     {
-      "page": 28,
+      "page": 30,
       "title": "Fixations : contrôler avant de louer",
       "chapter": "03 · Sécuriser",
       "description": "Les six étapes avant location : compatibilité, inspection, adaptation à la chaussure, réglage initial ISOSKI, contrôle instrumenté et traçabilité. En cas de doute, pas de départ."
     },
     {
-      "page": 29,
+      "page": 31,
       "title": "Avalanche : s’équiper et contrôler",
       "chapter": "03 · Sécuriser",
       "description": "DVA ou ARVA : fréquence 457 kHz et limites, trio DVA sonde pelle pour chacun, portage selon la notice, inspection et autotest, contrôle croisé recherche et émission de chaque membre, éloignement des interférences et démonstration au comptoir."
     },
     {
-      "page": 30,
+      "page": 32,
       "title": "Avalanche : rechercher et secourir",
       "chapter": "03 · Sécuriser",
       "description": "Sauvetage avalanche : protéger, organiser et alerter le 112 ; recherche du signal, recherche approximative puis fine, sondage perpendiculaire à la pente tous les 25 cm, pelletage en rampe depuis l’aval et premiers secours. Gestion des victimes multiples. Sac airbag ARVA REACTOR : limites, contrôle, portage et déclenchement manuel."

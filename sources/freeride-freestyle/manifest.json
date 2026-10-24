@@ -1,7 +1,7 @@
 [
   {
     "page": 1,
-    "path": "assets/guide-v772/page-01.jpg",
+    "path": "assets/guide-v774/page-01.png",
     "links": [
       {
         "box": [
@@ -40,14 +40,14 @@
           2330,
           3150
         ],
-        "page": 27,
+        "page": 29,
         "label": "Sécuriser"
       }
     ]
   },
   {
     "page": 2,
-    "path": "assets/guide-v772/page-02.jpg",
+    "path": "assets/guide-v774/page-02.png",
     "links": [
       {
         "box": [
@@ -194,7 +194,7 @@
           1250,
           643,
           2310,
-          762
+          743
         ],
         "page": 17,
         "label": "Skis de randonnée"
@@ -202,9 +202,9 @@
       {
         "box": [
           1250,
-          762,
+          743,
           2310,
-          881
+          843
         ],
         "page": 18,
         "label": "Exemples rando"
@@ -212,9 +212,9 @@
       {
         "box": [
           1250,
-          881,
+          843,
           2310,
-          1000
+          943
         ],
         "page": 19,
         "label": "Chaussures alpines"
@@ -222,19 +222,19 @@
       {
         "box": [
           1250,
-          1000,
+          943,
           2310,
-          1119
+          1043
         ],
         "page": 20,
-        "label": "Chaussures de randonnée"
+        "label": "Chaussures de ski de rando"
       },
       {
         "box": [
           1250,
-          1119,
+          1043,
           2310,
-          1238
+          1143
         ],
         "page": 21,
         "label": "Choisir son snowboard"
@@ -242,9 +242,9 @@
       {
         "box": [
           1250,
-          1238,
+          1143,
           2310,
-          1357
+          1243
         ],
         "page": 22,
         "label": "Exemples Nitro"
@@ -252,9 +252,9 @@
       {
         "box": [
           1250,
-          1357,
+          1243,
           2310,
-          1476
+          1343
         ],
         "page": 23,
         "label": "Ski de fond : classique & skating"
@@ -262,9 +262,9 @@
       {
         "box": [
           1250,
-          1476,
+          1343,
           2310,
-          1595
+          1443
         ],
         "page": 24,
         "label": "Exemples de ski de fond"
@@ -272,9 +272,9 @@
       {
         "box": [
           1250,
-          1595,
+          1443,
           2310,
-          1714
+          1543
         ],
         "page": 25,
         "label": "Textile : le système 3 couches"
@@ -282,12 +282,32 @@
       {
         "box": [
           1250,
-          1714,
+          1543,
           2310,
-          1833
+          1643
         ],
         "page": 26,
         "label": "Textile : membranes & respirabilité"
+      },
+      {
+        "box": [
+          1250,
+          1643,
+          2310,
+          1743
+        ],
+        "page": 27,
+        "label": "Chaussures de randonnée pédestre"
+      },
+      {
+        "box": [
+          1250,
+          1743,
+          2310,
+          1843
+        ],
+        "page": 28,
+        "label": "Randonnée : choisir et essayer"
       },
       {
         "box": [
@@ -296,7 +316,7 @@
           2310,
           2288
         ],
-        "page": 27,
+        "page": 29,
         "label": "Fixations : comprendre le réglage"
       },
       {
@@ -306,7 +326,7 @@
           2310,
           2468
         ],
-        "page": 28,
+        "page": 30,
         "label": "Fixations : contrôler avant de louer"
       },
       {
@@ -316,7 +336,7 @@
           2310,
           2648
         ],
-        "page": 29,
+        "page": 31,
         "label": "Avalanche : s’équiper & contrôler"
       },
       {
@@ -326,7 +346,7 @@
           2310,
           2828
         ],
-        "page": 30,
+        "page": 32,
         "label": "Avalanche : rechercher & secourir"
       }
     ]
@@ -444,7 +464,7 @@
   },
   {
     "page": 15,
-    "path": "assets/guide-v772/page-15.jpg",
+    "path": "assets/guide-v774/page-15.png",
     "links": [
       {
         "box": [
@@ -453,7 +473,7 @@
           2310,
           2895
         ],
-        "page": 27,
+        "page": 29,
         "label": "Sécurité et réglage des fixations"
       }
     ]
@@ -465,7 +485,7 @@
   },
   {
     "page": 17,
-    "path": "assets/guide-v772/page-17.jpg",
+    "path": "assets/guide-v774/page-17.png",
     "links": [
       {
         "box": [
@@ -474,7 +494,7 @@
           2000,
           3318
         ],
-        "page": 29,
+        "page": 31,
         "label": "Sécurité avalanche"
       }
     ]
@@ -486,39 +506,7 @@
   },
   {
     "page": 19,
-    "path": "assets/guide-v772/page-19.jpg",
-    "links": [
-      {
-        "box": [
-          70,
-          3230,
-          2000,
-          3318
-        ],
-        "page": 27,
-        "label": "Sécurité et réglage des fixations"
-      }
-    ]
-  },
-  {
-    "page": 20,
-    "path": "assets/guide-v772/page-20.jpg",
-    "links": [
-      {
-        "box": [
-          70,
-          3230,
-          2000,
-          3318
-        ],
-        "page": 27,
-        "label": "Sécurité et réglage des fixations"
-      }
-    ]
-  },
-  {
-    "page": 21,
-    "path": "assets/guide-v772/page-21.jpg",
+    "path": "assets/guide-v774/page-19.png",
     "links": [
       {
         "box": [
@@ -528,6 +516,38 @@
           3318
         ],
         "page": 29,
+        "label": "Sécurité et réglage des fixations"
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "path": "assets/guide-v774/page-20.png",
+    "links": [
+      {
+        "box": [
+          70,
+          3230,
+          2000,
+          3318
+        ],
+        "page": 29,
+        "label": "Sécurité et réglage des fixations"
+      }
+    ]
+  },
+  {
+    "page": 21,
+    "path": "assets/guide-v774/page-21.png",
+    "links": [
+      {
+        "box": [
+          70,
+          3230,
+          2000,
+          3318
+        ],
+        "page": 31,
         "label": "Sécurité avalanche"
       }
     ]
@@ -559,29 +579,39 @@
   },
   {
     "page": 27,
-    "path": "assets/guide-v772/page-27-fixed.jpg",
+    "path": "assets/guide-v774/page-27.png",
+    "links": []
+  },
+  {
+    "page": 28,
+    "path": "assets/guide-v774/page-28.png",
+    "links": []
+  },
+  {
+    "page": 29,
+    "path": "assets/guide-v774/page-29.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:70.4%;width:94%;height:6.6%\" href=\"https://isoski.lumiplan.pro/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Ouvrir ISOSKI pour vérifier les compatibilités et calculer le réglage initial des fixations\"></a>"
     ]
   },
   {
-    "page": 28,
-    "path": "assets/guide-v772/page-28.jpg",
+    "page": 30,
+    "path": "assets/guide-v774/page-30.png",
     "links": [],
     "overlays": []
   },
   {
-    "page": 29,
-    "path": "assets/guide-v772/page-29.jpg",
+    "page": 31,
+    "path": "assets/guide-v774/page-31.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:95%;width:94%;height:2.4%\" href=\"https://www.arva-equipment.com/fr/content/20-user-manuals-downloads\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Consulter les notices ARVA : portage, piles, contrôle de groupe, entretien et distances de sécurité\" title=\"Notices ARVA : portage et contrôles\"></a>"
     ]
   },
   {
-    "page": 30,
-    "path": "assets/guide-v772/page-30.jpg",
+    "page": 32,
+    "path": "assets/guide-v774/page-32.png",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:76.5%;width:94%;height:2.7%\" href=\"https://www.arva-equipment.com/img/cms/Notices/ARVA_REACTOR_NOTICE_%20LIVRET__compressed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Lire la notice ARVA REACTOR : installation, contrôle, déclenchement et entretien\" title=\"Notice REACTOR\"></a>",
