@@ -66,3 +66,16 @@ renforce le pli ; le mode page unique et l’impression restent plats.
 Les 46 images et leurs proportions sont conservées. `premium-book.css` et
 `book-effects.js` isolent cet habillage du contenu. Navigation, zoom, flèches en
 bordure et largeur de bannière suivent le livre. Voir `sources/premium-v790/README.md`.
+
+
+### V07.91 — Perspective commune et typographie intégrée
+
+La silhouette du livre est désormais légèrement plus étroite en haut qu’en bas.
+La même projection s’applique aux pages, au papier et à la couverture ; les
+flèches suivent les bords inclinés. Le bas de la couverture est plus fin, sans
+empilement de lignes brillantes. Le mode page unique et l’impression restent plats.
+
+Inter est intégrée au site sous licence OFL pour stabiliser la typographie de
+la bannière. Le sous-titre est agrandi et plus large que le titre ; la zone
+anthracite occupe davantage de place et retrouve son séparateur vertical.
+Les 46 images A4 restent inchangées. Détails : `sources/premium-v791/README.md`.

@@ -5,7 +5,7 @@
   const book=el('book'),left=el('left-page'),right=el('right-page'),leaf=el('flip-sheet');
   const prev=el('previous'),next=el('next'),toc=el('toc-overlay'),grid=el('toc-grid'),reading=el('reading-button');
   // Align chrome with the rendered book in double, wide and single-page modes.
-  const frame=book.parentElement,edgeControls=prev.parentElement;
+  const frame=book.closest('.book-frame'),edgeControls=prev.parentElement;
   let chromeFrame=0,chromeSizeKey='',reservedBannerExtra=0;
   function alignReaderChrome(){
     chromeFrame=0;
@@ -21,19 +21,28 @@
     // largest measured banner height in this layout to prevent breakpoint oscillation.
     reservedBannerExtra=Math.max(reservedBannerExtra,banner.height-80,0);
     document.body.style.setProperty('--banner-extra',reservedBannerExtra+'px');
-    document.body.style.setProperty('--actions-left',(actions.left-banner.left)+'px');
-    document.body.style.setProperty('--banner-cut',Math.max(12,Math.min(mobile?40:56,actions.left-brand.right-8))+'px');
+    const actionsX=actions.left-banner.left,brandEnd=brand.right-banner.left;
+    const darkLeft=Math.min(actionsX-12,Math.max(brandEnd+8,Math.min(banner.width*(mobile?.44:.56),actionsX-36)));
+    document.body.style.setProperty('--banner-dark-left',darkLeft+'px');
+    document.body.style.setProperty('--banner-cut',Math.max(0,Math.min(mobile?32:64,actionsX-darkLeft-8))+'px');
     const cover=window.SGD_BOOK_EFFECTS?.layout(r.width,r.height,singleView,mobile)||(mobile?11:19),half=mobile?15:20;
     document.body.style.setProperty('--book-cover',cover+'px');
-    document.body.style.setProperty('--book-previous-x',(r.left-cover-half)+'px');
-    document.body.style.setProperty('--book-next-x',(r.right+cover-half)+'px');
     const top=Math.max(0,r.top),bottom=Math.min(innerHeight,r.bottom);
-    document.body.style.setProperty('--book-controls-y',((top+bottom)/2)+'px');
+    const controlsY=(top+bottom)/2;
+    // Follow the tapered cover at the buttons' actual vertical position.
+    const progress=Math.max(0,Math.min(1,(controlsY-r.top)/r.height));
+    const taper=singleView?0:.04,localScale=1-taper+taper*progress;
+    const edge=(r.width/2+cover)*localScale;
+    document.body.style.setProperty('--book-previous-x',(r.left+r.width/2-edge-half)+'px');
+    document.body.style.setProperty('--book-next-x',(r.left+r.width/2+edge-half)+'px');
+    document.body.style.setProperty('--book-controls-y',controlsY+'px');
     edgeControls.dataset.offscreen=String(bottom<=top);
   }
   function queueReaderChrome(){if(!chromeFrame)chromeFrame=requestAnimationFrame(alignReaderChrome);}
   const chromeObserver=new ResizeObserver(queueReaderChrome);
   chromeObserver.observe(frame);chromeObserver.observe(document.querySelector('.appbar'));
+  chromeObserver.observe(document.querySelector('.brand'));chromeObserver.observe(document.querySelector('.appbar-actions'));
+  document.fonts.ready.then(queueReaderChrome);
   addEventListener('resize',queueReaderChrome);addEventListener('scroll',queueReaderChrome,{passive:true});
   queueReaderChrome();
   let current=0,busy=false;

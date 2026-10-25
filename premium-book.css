@@ -1,45 +1,66 @@
-/* V07.90 — stronger masthead, curved leaves and a fanned paper block.
-   Reader-only decoration: source pages, page ratio and print stay untouched. */
+/* V07.91 — one perspective for the book; a consistent, locally bundled masthead. */
+@font-face {
+  font-family:'SGD Inter';
+  src:url('./assets/fonts-v791/inter-latin-variable.woff') format('woff');
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+}
 .appbar {
   width:min(calc(var(--reader-width,840px) + 2 * var(--book-cover,28px)),calc(100% - 28px));
   padding:7px 24px;
   gap:20px;
 }
-.appbar::before { left:calc(var(--actions-left,66%) - var(--banner-cut,56px)); clip-path:polygon(calc(var(--banner-cut,56px) * .78) 0,100% 0,100% 100%,0 100%); }
+.appbar::before {
+  left:var(--banner-dark-left,56%);
+  clip-path:polygon(var(--banner-cut,64px) 0,100% 0,100% 100%,0 100%);
+  background:linear-gradient(112deg,#343d42,#20282d);
+}
 .brand { gap:22px; min-width:0; flex-shrink:0; }
 .brand-name {
-  font-family:'Arial Black',Arial,sans-serif;
-  font-size:36px;
+  font-family:'SGD Inter',Arial,sans-serif;
+  font-size:42px;
   font-weight:900;
-  line-height:1.03;
-  letter-spacing:-.035em;
-  color:#0d202d;
+  font-optical-sizing:auto;
+  line-height:1.02;
+  letter-spacing:-.025em;
+  word-spacing:.045em;
+  color:#092131;
   padding-left:22px;
   white-space:nowrap;
-  -webkit-text-stroke:.35px currentColor;
+  -webkit-text-stroke:0;
 }
 .brand-name small {
-  font:400 14px/1.25 Arial,sans-serif;
-  letter-spacing:.075em;
-  margin-top:8px;
-  -webkit-text-stroke:0;
-  color:#23323e;
+  font:400 20px/1.22 'SGD Inter',Arial,sans-serif;
+  letter-spacing:.07em;
+  word-spacing:normal;
+  margin-top:7px;
+  color:#233341;
 }
-.appbar-actions { display:grid; grid-template-columns:repeat(3,max-content); max-width:none; flex-shrink:0; gap:9px; }
-.appbar .label-version { grid-column:1 / -1; font-size:11px; text-align:left; letter-spacing:.1em; }
-.bar-button { padding:11px 12px; font-size:12px; font-weight:500; border-color:#d4dadd; border-radius:7px; }
+.appbar-actions {
+  display:grid;
+  grid-template-columns:repeat(3,max-content);
+  max-width:none;
+  flex-shrink:0;
+  gap:9px;
+  border-left:1px solid #ffffff70;
+  padding-left:22px;
+}
+.appbar .label-version { grid-column:1 / -1; font:400 12px/1.2 'SGD Inter',Arial,sans-serif; text-align:left; letter-spacing:.08em; }
+.bar-button { font-family:'SGD Inter',Arial,sans-serif; padding:11px 12px; font-size:12px; font-weight:500; border-color:#d4dadd; border-radius:7px; }
 .bar-button svg { width:20px; height:20px; flex-shrink:0; }
-.workstage { padding-left:60px; padding-right:60px; padding-top:25px; }
-.book-frame { --leaf-lift:clamp(4px,.6vw,7px); margin-bottom:23px; }
+.workstage { padding-left:66px; padding-right:66px; padding-top:25px; }
+.book-frame { perspective:none; margin-bottom:20px; }
 .book-frame::before,.book-frame::after { display:none; }
+.book-object { position:relative; isolation:isolate; transform-origin:50% 0; }
 .book-shell {
   position:absolute;
   z-index:-1;
   overflow:visible;
   pointer-events:none;
-  filter:drop-shadow(0 2px 1px #26333a50) drop-shadow(0 14px 13px #26333a38);
+  filter:drop-shadow(0 2px 1px #26333a40) drop-shadow(0 18px 17px #26333a3d);
 }
-.book { background:transparent; box-shadow:none; }
+.book { background:transparent; box-shadow:none; perspective:2400px; }
 .sheet { background:#fff; }
 .sheet-left {
   transform-origin:100% 50%;
@@ -52,56 +73,59 @@
   border-radius:15px 2px 1px 9px /5px 2px 1px 4px;
 }
 .sheet-left::after {
-  background:linear-gradient(90deg,#23313906,transparent 4%,transparent 79%,#23313903 88%,#2331390b 94%,#23313920 98.2%,#18242e40 100%);
+  background:linear-gradient(90deg,#23313903,transparent 5%,transparent 80%,#26343b03 87%,#26343b09 93%,#26343b1c 97.5%,#17273035);
 }
 .sheet-right::after {
-  background:linear-gradient(90deg,#18242e40,#23313920 1.8%,#2331390b 6%,#23313903 12%,transparent 21%,transparent 96%,#23313906);
+  background:linear-gradient(90deg,#17273035,#26343b1c 2.5%,#26343b09 7%,#26343b03 13%,transparent 20%,transparent 95%,#23313903);
 }
 .book::after {
-  top:-1px; bottom:-2px; width:9px;
-  background:linear-gradient(90deg,transparent,#24313c2e 38%,#17232b50 49%,#ffffff40 62%,transparent);
+  top:-1px; bottom:-1px; width:7px;
+  background:linear-gradient(90deg,transparent,#24313c20 38%,#17232b36 49%,#ffffff30 62%,transparent);
 }
 .reading-mode .sheet-left { transform:none; border-radius:2px; }
 .reading-mode .sheet-left::after { background:none; }
-.reading-mode .book-shell { filter:drop-shadow(0 2px 1px #26333a40) drop-shadow(0 10px 10px #26333a30); }
+.reading-mode .book-shell { filter:drop-shadow(0 2px 1px #26333a30) drop-shadow(0 12px 12px #26333a30); }
 @media (min-width:781px) {
   body:not(.reading-mode):not(.wide-spread) .book-frame,
   body:not(.reading-mode):not(.wide-spread) .controls,
   body:not(.reading-mode):not(.wide-spread) .progress-track {
-    max-width:min(1760px,calc((100svh - 184px - var(--banner-extra,0px))*1.414));
+    max-width:min(1760px,calc((100svh - 181px - var(--banner-extra,0px))*1.414));
   }
 }
 @container (min-width:1500px) {
-  .brand-name { font-size:44px; }
-  .brand-name small { font-size:17px; }
+  .brand-name { font-size:49px; }
+  .brand-name small { font-size:23px; }
   .bar-button { padding:12px 17px; font-size:14px; }
-  .appbar .label-version { font-size:13px; }
+  .appbar .label-version { font-size:14px; }
 }
 @container (max-width:1150px) {
   .brand { gap:18px; }
-  .brand-name { font-size:30px; padding-left:18px; }
-  .brand-name small { font-size:11px; }
+  .brand-name { font-size:34px; padding-left:18px; }
+  .brand-name small { font-size:16px; }
   .bar-button { padding:10px; font-size:11px; gap:5px; }
   .bar-button svg { width:18px; height:18px; }
-  .appbar-actions { gap:7px; }
+  .appbar-actions { gap:7px; padding-left:16px; }
 }
-@container (max-width:900px) {
-  .brand { gap:15px; }
-  .brand-name { font-size:26px; padding-left:15px; }
-  .brand-name small { font-size:10px; letter-spacing:.04em; }
+@container (max-width:950px) {
+  .brand { gap:14px; }
+  .brand-name { font-size:28px; padding-left:14px; }
+  .brand-name small { font-size:13.5px; letter-spacing:.04em; }
   .bar-button { padding:9px 8px; font-size:10px; }
   .bar-button svg { width:16px; height:16px; }
-  .appbar-actions { gap:5px; }
+  .appbar-actions { gap:5px; padding-left:12px; }
   .appbar .label-version { font-size:9px; }
 }
-@container (max-width:740px) {
+@container (max-width:760px) {
   .brand { gap:12px; }
-  .brand-name { font-size:18px; padding-left:12px; }
-  .brand-name small { font-size:7.5px; }
+  .brand-name { font-size:22px; padding-left:12px; }
+  .brand-name small { font-size:10.5px; }
   .bar-button { padding:8px 7px; font-size:10px; }
   .bar-button svg { width:14px; height:14px; }
+  .appbar-actions { padding-left:8px; }
 }
 @container (max-width:660px) {
+  .brand-name { font-size:20px; }
+  .brand-name small { font-size:9.5px; }
   .bar-button svg { display:none; }
 }
 @container (max-width:560px) {
@@ -109,19 +133,18 @@
 }
 @media (max-width:780px) {
   .appbar { width:min(calc(var(--reader-width,calc(100vw - 52px)) + 22px),calc(100% - 16px)); padding:7px 12px; gap:12px; }
-  .appbar-actions { grid-template-columns:repeat(2,max-content); max-width:39%; flex-shrink:1; }
+  .appbar-actions { grid-template-columns:repeat(2,max-content); max-width:39%; flex-shrink:1; border:0; padding:0; }
   .workstage { padding:21px 26px 14px; }
   .sheet-left { transform:none; border-radius:2px; }
   .sheet-left::after { background:none; }
-  .book-frame { margin-bottom:22px; }
+  .book-frame { margin-bottom:20px; }
 }
 @media (max-width:440px) {
-  .appbar-actions { max-width:52%; }
-  .appbar-actions { grid-template-columns:max-content; }
+  .appbar-actions { max-width:52%; grid-template-columns:max-content; }
   .bar-button { padding:8px; font-size:10px; }
   .bar-button svg { display:block; width:16px; height:16px; }
 }
 @media print {
   .book-shell { display:none; }
-  .sheet-left,.sheet-right { transform:none; border-radius:0; }
+  .book-object,.sheet-left,.sheet-right { transform:none!important; border-radius:0; }
 }
