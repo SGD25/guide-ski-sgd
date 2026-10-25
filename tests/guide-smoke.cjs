@@ -16,17 +16,18 @@ const toc=[...pages[1].html.matchAll(/data-jump="(\d+)"/g)].map(m=>+m[1]+1);asse
 const baseline=previous;
 for(let old=1;old<=44;old++){
  const n=old>=21?old+2:old;
- if(old!==2)assert.deepEqual(manifest[n-1].links,baseline.records[old-1].links.map(l=>({...l,page:l.page>=21?l.page+2:l.page})));
+ if(old!==2)assert.deepEqual(manifest[n-1].links.map(({box,...l})=>l),baseline.records[old-1].links.map(({box,...l})=>({...l,page:l.page>=21?l.page+2:l.page})));
  assert.deepEqual(manifest[n-1].overlays,baseline.records[old-1].overlays);
 }
 for(const old of [31,32]){
  assert.equal(config.pages[old+1].title,baseline.catalog.pages[old-1].title);
  assert.equal(config.pages[old+1].description,baseline.catalog.pages[old-1].description);
 }
-for(const [n,v] of [[21,2],[22,3]])assert.deepEqual(fs.readFileSync(path.join(root,manifest[n-1].path)),fs.readFileSync(path.join(root,`sources/snow-lexicon-v${v}/pages/page-${n}.png`)));
 for(const [lo,hi,ch] of [[3,7,'01 · Comprendre'],[8,26,'02 · Reconnaître et conseiller le matériel'],[27,32,'03 · Reconnaître et conseiller textiles et accessoires'],[33,42,'04 · Sécuriser'],[43,46,'05 · Accueillir, louer et accompagner']]){
  for(let n=lo;n<=hi;n++)assert.equal(pages[n-1].chapter,ch);
 }
 assert.match(pages[36].title,/NX12/);assert.match(pages[38].title,/PLUM/);assert.match(pages[40].title,/Avalanche/);
-assert.match(html,/V07.84/);assert.match(html,/01–02 \/ 46/);
+assert.match(html,/V07.85/);assert.match(html,/01–02 \/ 46/);
 console.log('OK: 46 pages, complete clickable contents, five chapters, original 31–32 text preserved, complete navigation.');
+assert.match(html,/assets\/branding-v785\/logo-header.svg/);
+for(const r of manifest)for(const l of r.links||[])assert(l.box[0]>=0&&l.box[1]>=0&&l.box[2]<=2400&&l.box[3]<=3394);

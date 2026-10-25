@@ -1,44 +1,44 @@
 [
   {
     "page": 1,
-    "path": "assets/guide-v783/page-01.png",
+    "path": "assets/guide-v785/page-01.webp",
     "links": [
       {
         "box": [
-          70,
-          2785,
-          605,
-          3150
+          92.56133590237637,
+          2743.9402697495184,
+          616.5658317276815,
+          3101.4386640976236
         ],
         "page": 3,
         "label": "Comprendre"
       },
       {
         "box": [
-          645,
-          2785,
-          1180,
-          3150
+          655.7437379576107,
+          2743.9402697495184,
+          1179.7482337829158,
+          3101.4386640976236
         ],
         "page": 8,
         "label": "Reconnaître"
       },
       {
         "box": [
-          1220,
-          2785,
-          1755,
-          3150
+          1218.9261400128453,
+          2743.9402697495184,
+          1742.9306358381502,
+          3101.4386640976236
         ],
         "page": 9,
         "label": "Conseiller"
       },
       {
         "box": [
-          1795,
-          2785,
-          2330,
-          3150
+          1782.1085420680797,
+          2743.9402697495184,
+          2306.113037893385,
+          3101.4386640976236
         ],
         "page": 33,
         "label": "Sécuriser"
@@ -47,444 +47,444 @@
   },
   {
     "page": 2,
-    "path": "assets/guide-v783/page-02.png",
+    "path": "assets/guide-v785/page-02.webp",
     "links": [
       {
         "box": [
-          90,
-          603,
-          1165,
-          696
+          145.4607721046077,
+          591.9333748443337,
+          1166.2422166874221,
+          680.2428393524284
         ],
         "page": 3,
         "label": "Anatomie & lignes de cotes"
       },
       {
         "box": [
-          90,
-          697,
-          1165,
-          790
+          145.4607721046077,
+          681.192403486924,
+          1166.2422166874221,
+          769.5018679950186
         ],
         "page": 4,
         "label": "Largeur & longueur"
       },
       {
         "box": [
-          90,
-          791,
-          1165,
-          884
+          145.4607721046077,
+          770.4514321295144,
+          1166.2422166874221,
+          858.760896637609
         ],
         "page": 5,
         "label": "Rayon de courbure"
       },
       {
         "box": [
-          90,
-          885,
-          1165,
-          978
+          145.4607721046077,
+          859.7104607721046,
+          1166.2422166874221,
+          948.0199252801992
         ],
         "page": 6,
         "label": "Cambres & rockers"
       },
       {
         "box": [
-          90,
-          979,
-          1165,
-          1072
+          145.4607721046077,
+          948.9694894146949,
+          1166.2422166874221,
+          1037.2789539227897
         ],
         "page": 7,
         "label": "Construction & noyaux"
       },
       {
         "box": [
-          90,
-          1313,
-          1165,
-          1409
+          145.4607721046077,
+          1266.123910336239,
+          1166.2422166874221,
+          1357.2820672478208
         ],
         "page": 8,
         "label": "Les familles de skis"
       },
       {
         "box": [
-          90,
-          1410,
-          1165,
-          1506
+          145.4607721046077,
+          1358.2316313823164,
+          1166.2422166874221,
+          1449.389788293898
         ],
         "page": 9,
         "label": "Skis de piste"
       },
       {
         "box": [
-          90,
-          1507,
-          1165,
-          1603
+          145.4607721046077,
+          1450.3393524283936,
+          1166.2422166874221,
+          1541.497509339975
         ],
         "page": 10,
         "label": "Exemples piste"
       },
       {
         "box": [
-          90,
-          1604,
-          1165,
-          1700
+          145.4607721046077,
+          1542.4470734744707,
+          1166.2422166874221,
+          1633.6052303860524
         ],
         "page": 11,
         "label": "Skis all-mountain"
       },
       {
         "box": [
-          90,
-          1701,
-          1165,
-          1797
+          145.4607721046077,
+          1634.554794520548,
+          1166.2422166874221,
+          1725.7129514321296
         ],
         "page": 12,
         "label": "Exemples all-mountain"
       },
       {
         "box": [
-          90,
-          1798,
-          1165,
-          1894
+          145.4607721046077,
+          1726.6625155666252,
+          1166.2422166874221,
+          1817.8206724782067
         ],
         "page": 13,
         "label": "Freeride & freestyle"
       },
       {
         "box": [
-          90,
-          1895,
-          1165,
-          1991
+          145.4607721046077,
+          1818.7702366127023,
+          1166.2422166874221,
+          1909.928393524284
         ],
         "page": 14,
         "label": "Exemples freeride & freestyle"
       },
       {
         "box": [
-          90,
-          1992,
-          1165,
-          2088
+          145.4607721046077,
+          1910.8779576587797,
+          1166.2422166874221,
+          2002.0361145703612
         ],
         "page": 15,
         "label": "Skis juniors"
       },
       {
         "box": [
-          90,
-          2089,
-          1165,
-          2185
+          145.4607721046077,
+          2002.9856787048568,
+          1166.2422166874221,
+          2094.143835616438
         ],
         "page": 16,
         "label": "Exemples juniors"
       },
       {
         "box": [
-          90,
-          2186,
-          1165,
-          2282
+          145.4607721046077,
+          2095.0933997509337,
+          1166.2422166874221,
+          2186.2515566625157
         ],
         "page": 17,
         "label": "Skis de randonnée"
       },
       {
         "box": [
-          90,
-          2283,
-          1165,
-          2379
+          145.4607721046077,
+          2187.2011207970113,
+          1166.2422166874221,
+          2278.359277708593
         ],
         "page": 18,
         "label": "Exemples de skis de randonnée"
       },
       {
         "box": [
-          90,
-          2380,
-          1165,
-          2476
+          145.4607721046077,
+          2279.3088418430884,
+          1166.2422166874221,
+          2370.46699875467
         ],
         "page": 19,
         "label": "Chaussures alpines"
       },
       {
         "box": [
-          90,
-          2477,
-          1165,
-          2573
+          145.4607721046077,
+          2371.4165628891656,
+          1166.2422166874221,
+          2462.574719800747
         ],
         "page": 20,
         "label": "Chaussures de ski de randonnée"
       },
       {
         "box": [
-          90,
-          2574,
-          1165,
-          2670
+          145.4607721046077,
+          2463.5242839352427,
+          1166.2422166874221,
+          2554.6824408468246
         ],
         "page": 21,
         "label": "Snowboard : les mots de la planche"
       },
       {
         "box": [
-          90,
-          2671,
-          1165,
-          2767
+          145.4607721046077,
+          2555.6320049813203,
+          1166.2422166874221,
+          2646.790161892902
         ],
         "page": 22,
         "label": "Snowboard : placer le rider"
       },
       {
         "box": [
-          90,
-          2768,
-          1165,
-          2864
+          145.4607721046077,
+          2647.7397260273974,
+          1166.2422166874221,
+          2738.897882938979
         ],
         "page": 23,
         "label": "Choisir son snowboard"
       },
       {
         "box": [
-          90,
-          2865,
-          1165,
-          2961
+          145.4607721046077,
+          2739.8474470734745,
+          1166.2422166874221,
+          2831.005603985056
         ],
         "page": 24,
         "label": "Quatre exemples Nitro"
       },
       {
         "box": [
-          90,
-          2962,
-          1165,
-          3058
+          145.4607721046077,
+          2831.9551681195517,
+          1166.2422166874221,
+          2923.113325031133
         ],
         "page": 25,
         "label": "Ski de fond : les pratiques"
       },
       {
         "box": [
-          90,
-          3059,
-          1165,
-          3155
+          145.4607721046077,
+          2924.062889165629,
+          1166.2422166874221,
+          3015.2210460772103
         ],
         "page": 26,
         "label": "Exemples classique & skating"
       },
       {
         "box": [
-          1235,
-          603,
-          2310,
-          696
+          1232.711706102117,
+          591.9333748443337,
+          2253.4931506849316,
+          680.2428393524284
         ],
         "page": 27,
         "label": "Textile : les trois couches"
       },
       {
         "box": [
-          1235,
-          697,
-          2310,
-          790
+          1232.711706102117,
+          681.192403486924,
+          2253.4931506849316,
+          769.5018679950186
         ],
         "page": 28,
         "label": "Textile : membranes & indices"
       },
       {
         "box": [
-          1235,
-          791,
-          2310,
-          884
+          1232.711706102117,
+          770.4514321295144,
+          2253.4931506849316,
+          858.760896637609
         ],
         "page": 29,
         "label": "Chaussures de randonnée pédestre"
       },
       {
         "box": [
-          1235,
-          885,
-          2310,
-          978
+          1232.711706102117,
+          859.7104607721046,
+          2253.4931506849316,
+          948.0199252801992
         ],
         "page": 30,
         "label": "Randonnée : choisir et essayer"
       },
       {
         "box": [
-          1235,
-          979,
-          2310,
-          1072
+          1232.711706102117,
+          948.9694894146949,
+          2253.4931506849316,
+          1037.2789539227897
         ],
         "page": 31,
         "label": "Masques & lunettes : météo"
       },
       {
         "box": [
-          1235,
-          1073,
-          2310,
-          1166
+          1232.711706102117,
+          1038.2285180572853,
+          2253.4931506849316,
+          1126.53798256538
         ],
         "page": 32,
         "label": "Masques & lunettes : technologies"
       },
       {
         "box": [
-          1235,
-          1423,
-          2310,
-          1518
+          1232.711706102117,
+          1370.5759651307596,
+          2253.4931506849316,
+          1460.7845579078455
         ],
         "page": 33,
         "label": "Fixations : comprendre le réglage"
       },
       {
         "box": [
-          1235,
-          1519,
-          2310,
-          1614
+          1232.711706102117,
+          1461.7341220423411,
+          2253.4931506849316,
+          1551.9427148194272
         ],
         "page": 34,
         "label": "Fixations : contrôler avant de louer"
       },
       {
         "box": [
-          1235,
-          1615,
-          2310,
-          1710
+          1232.711706102117,
+          1552.8922789539229,
+          2253.4931506849316,
+          1643.1008717310087
         ],
         "page": 35,
         "label": "Fixations : le déclenchement latéral"
       },
       {
         "box": [
-          1235,
-          1711,
-          2310,
-          1806
+          1232.711706102117,
+          1644.0504358655044,
+          2253.4931506849316,
+          1734.2590286425902
         ],
         "page": 36,
         "label": "Fixations : le déclenchement frontal"
       },
       {
         "box": [
-          1235,
-          1807,
-          2310,
-          1902
+          1232.711706102117,
+          1735.2085927770859,
+          2253.4931506849316,
+          1825.417185554172
         ],
         "page": 37,
         "label": "LOOK NX12 : anatomie et graduations"
       },
       {
         "box": [
-          1235,
-          1903,
-          2310,
-          1998
+          1232.711706102117,
+          1826.3667496886676,
+          2253.4931506849316,
+          1916.5753424657535
         ],
         "page": 38,
         "label": "NX12 : régler et contrôler"
       },
       {
         "box": [
-          1235,
-          1999,
-          2310,
-          2094
+          1232.711706102117,
+          1917.524906600249,
+          2253.4931506849316,
+          2007.733499377335
         ],
         "page": 39,
         "label": "PLUM Guide 12 : les pièces"
       },
       {
         "box": [
-          1235,
-          2095,
-          2310,
-          2190
+          1232.711706102117,
+          2008.6830635118306,
+          2253.4931506849316,
+          2098.8916562889167
         ],
         "page": 40,
         "label": "PLUM Guide 12 : montée et descente"
       },
       {
         "box": [
-          1235,
-          2191,
-          2310,
-          2286
+          1232.711706102117,
+          2099.8412204234123,
+          2253.4931506849316,
+          2190.049813200498
         ],
         "page": 41,
         "label": "Avalanche : s’équiper et contrôler"
       },
       {
         "box": [
-          1235,
-          2287,
-          2310,
-          2382
+          1232.711706102117,
+          2190.999377334994,
+          2253.4931506849316,
+          2281.2079701120797
         ],
         "page": 42,
         "label": "Avalanche : rechercher et secourir"
       },
       {
         "box": [
-          1235,
-          2653,
-          2310,
-          2780
+          1232.711706102117,
+          2538.5398505603985,
+          2253.4931506849316,
+          2659.134495641345
         ],
         "page": 43,
         "label": "Location : accueillir et équiper"
       },
       {
         "box": [
-          1235,
-          2781,
-          2310,
-          2908
+          1232.711706102117,
+          2660.0840597758406,
+          2253.4931506849316,
+          2780.678704856787
         ],
         "page": 44,
         "label": "Location : bien réceptionner au retour"
       },
       {
         "box": [
-          1235,
-          2909,
-          2310,
-          3036
+          1232.711706102117,
+          2781.6282689912828,
+          2253.4931506849316,
+          2902.2229140722293
         ],
         "page": 45,
         "label": "Au comptoir : les bonnes questions"
       },
       {
         "box": [
-          1235,
-          3037,
-          2310,
-          3164
+          1232.711706102117,
+          2903.172478206725,
+          2253.4931506849316,
+          3023.7671232876714
         ],
         "page": 46,
         "label": "Un doute : vérifier et transmettre"
@@ -493,79 +493,79 @@
   },
   {
     "page": 3,
-    "path": "assets/guide-v781/page-03.png",
+    "path": "assets/guide-v785/page-03.webp",
     "links": []
   },
   {
     "page": 4,
-    "path": "assets/guide-v772/page-04.jpg",
+    "path": "assets/guide-v785/page-04.webp",
     "links": []
   },
   {
     "page": 5,
-    "path": "assets/guide-v772/page-05.jpg",
+    "path": "assets/guide-v785/page-05.webp",
     "links": []
   },
   {
     "page": 6,
-    "path": "assets/guide-v772/page-06.jpg",
+    "path": "assets/guide-v785/page-06.webp",
     "links": []
   },
   {
     "page": 7,
-    "path": "assets/guide-v772/page-07.jpg",
+    "path": "assets/guide-v785/page-07.webp",
     "links": []
   },
   {
     "page": 8,
-    "path": "assets/guide-v781/page-08.png",
+    "path": "assets/guide-v785/page-08.webp",
     "links": [
       {
         "box": [
-          70,
-          1500,
-          1170,
-          2045
+          126.46948941469489,
+          1443.6924034869241,
+          1170.9900373599005,
+          1961.2048567870486
         ],
         "page": 9,
         "label": "Les skis de piste"
       },
       {
         "box": [
-          1230,
-          1500,
-          2330,
-          2045
+          1227.9638854296388,
+          1443.6924034869241,
+          2272.4844333748442,
+          1961.2048567870486
         ],
         "page": 11,
         "label": "Les skis all-mountain"
       },
       {
         "box": [
-          70,
-          2240,
-          794,
-          2870
+          126.46948941469489,
+          2146.3698630136987,
+          813.9539227895392,
+          2744.5952677459527
         ],
         "page": 13,
         "label": "Freeride"
       },
       {
         "box": [
-          838,
-          2240,
-          1562,
-          2870
+          855.7347447073474,
+          2146.3698630136987,
+          1543.2191780821918,
+          2744.5952677459527
         ],
         "page": 13,
         "label": "Freestyle"
       },
       {
         "box": [
-          1606,
-          2240,
-          2330,
-          2870
+          1585.0,
+          2146.3698630136987,
+          2272.4844333748442,
+          2744.5952677459527
         ],
         "page": 17,
         "label": "Randonnée"
@@ -574,44 +574,44 @@
   },
   {
     "page": 9,
-    "path": "assets/guide-v781/page-09.png",
+    "path": "assets/guide-v785/page-09.webp",
     "links": []
   },
   {
     "page": 10,
-    "path": "assets/guide-v781/page-10.png",
+    "path": "assets/guide-v785/page-10.webp",
     "links": []
   },
   {
     "page": 11,
-    "path": "assets/guide-v781/page-11.png",
+    "path": "assets/guide-v785/page-11.webp",
     "links": []
   },
   {
     "page": 12,
-    "path": "assets/guide-v781/page-12.png",
+    "path": "assets/guide-v785/page-12.webp",
     "links": []
   },
   {
     "page": 13,
-    "path": "assets/guide-v781/page-13.png",
+    "path": "assets/guide-v785/page-13.webp",
     "links": []
   },
   {
     "page": 14,
-    "path": "assets/guide-v781/page-14.png",
+    "path": "assets/guide-v785/page-14.webp",
     "links": []
   },
   {
     "page": 15,
-    "path": "assets/guide-v781/page-15.png",
+    "path": "assets/guide-v785/page-15.webp",
     "links": [
       {
         "box": [
-          540,
-          2760,
-          2310,
-          2895
+          572.7646326276464,
+          2640.1432129514324,
+          2253.4931506849316,
+          2768.334371108344
         ],
         "page": 33,
         "label": "Sécurité et réglage des fixations"
@@ -620,19 +620,19 @@
   },
   {
     "page": 16,
-    "path": "assets/guide-v781/page-16.png",
+    "path": "assets/guide-v785/page-16.webp",
     "links": []
   },
   {
     "page": 17,
-    "path": "assets/guide-v783/page-17.png",
+    "path": "assets/guide-v785/page-17.webp",
     "links": [
       {
         "box": [
-          70,
-          3230,
-          2000,
-          3318
+          126.46948941469489,
+          3086.4383561643835,
+          1959.1282689912828,
+          3170.0
         ],
         "page": 41,
         "label": "Sécurité avalanche"
@@ -641,19 +641,19 @@
   },
   {
     "page": 18,
-    "path": "assets/guide-v781/page-18.png",
+    "path": "assets/guide-v785/page-18.webp",
     "links": []
   },
   {
     "page": 19,
-    "path": "assets/guide-v781/page-19.png",
+    "path": "assets/guide-v785/page-19.webp",
     "links": [
       {
         "box": [
-          70,
-          3230,
-          2000,
-          3318
+          126.46948941469489,
+          3086.4383561643835,
+          1959.1282689912828,
+          3170.0
         ],
         "page": 33,
         "label": "Sécurité et réglage des fixations"
@@ -662,14 +662,14 @@
   },
   {
     "page": 20,
-    "path": "assets/guide-v781/page-20.png",
+    "path": "assets/guide-v785/page-20.webp",
     "links": [
       {
         "box": [
-          70,
-          3230,
-          2000,
-          3318
+          126.46948941469489,
+          3086.4383561643835,
+          1959.1282689912828,
+          3170.0
         ],
         "page": 33,
         "label": "Sécurité et réglage des fixations"
@@ -678,24 +678,24 @@
   },
   {
     "page": 21,
-    "path": "assets/guide-v783/page-21.png",
+    "path": "assets/guide-v785/page-21.webp",
     "links": []
   },
   {
     "page": 22,
-    "path": "assets/guide-v783/page-22.png",
+    "path": "assets/guide-v785/page-22.webp",
     "links": []
   },
   {
     "page": 23,
-    "path": "assets/guide-v783/page-23.png",
+    "path": "assets/guide-v785/page-23.webp",
     "links": [
       {
         "box": [
-          70,
-          3230,
-          2000,
-          3318
+          126.46948941469489,
+          3086.4383561643835,
+          1959.1282689912828,
+          3170.0
         ],
         "page": 41,
         "label": "Sécurité avalanche"
@@ -704,52 +704,52 @@
   },
   {
     "page": 24,
-    "path": "assets/guide-v783/page-24.png",
+    "path": "assets/guide-v785/page-24.webp",
     "links": []
   },
   {
     "page": 25,
-    "path": "assets/guide-v783/page-25.png",
+    "path": "assets/guide-v785/page-25.webp",
     "links": []
   },
   {
     "page": 26,
-    "path": "assets/guide-v783/page-26.png",
+    "path": "assets/guide-v785/page-26.webp",
     "links": []
   },
   {
     "page": 27,
-    "path": "assets/guide-v783/page-27.png",
+    "path": "assets/guide-v785/page-27.webp",
     "links": []
   },
   {
     "page": 28,
-    "path": "assets/guide-v783/page-28.png",
+    "path": "assets/guide-v785/page-28.webp",
     "links": []
   },
   {
     "page": 29,
-    "path": "assets/guide-v783/page-29.png",
+    "path": "assets/guide-v785/page-29.webp",
     "links": []
   },
   {
     "page": 30,
-    "path": "assets/guide-v783/page-30.png",
+    "path": "assets/guide-v785/page-30.webp",
     "links": []
   },
   {
     "page": 31,
-    "path": "assets/guide-v783/page-31.png",
+    "path": "assets/guide-v785/page-31.webp",
     "links": []
   },
   {
     "page": 32,
-    "path": "assets/guide-v783/page-32.png",
+    "path": "assets/guide-v785/page-32.webp",
     "links": []
   },
   {
     "page": 33,
-    "path": "assets/guide-v783/page-33.png",
+    "path": "assets/guide-v785/page-33.webp",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:70.4%;width:94%;height:6.6%\" href=\"https://isoski.lumiplan.pro/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Ouvrir ISOSKI pour vérifier les compatibilités et calculer le réglage initial des fixations\"></a>"
@@ -757,43 +757,43 @@
   },
   {
     "page": 34,
-    "path": "assets/guide-v783/page-34.png",
+    "path": "assets/guide-v785/page-34.webp",
     "links": [],
     "overlays": []
   },
   {
     "page": 35,
-    "path": "assets/guide-v783/page-35.png",
+    "path": "assets/guide-v785/page-35.webp",
     "links": []
   },
   {
     "page": 36,
-    "path": "assets/guide-v783/page-36.png",
+    "path": "assets/guide-v785/page-36.webp",
     "links": []
   },
   {
     "page": 37,
-    "path": "assets/guide-v783/page-37.png",
+    "path": "assets/guide-v785/page-37.webp",
     "links": []
   },
   {
     "page": 38,
-    "path": "assets/guide-v783/page-38.png",
+    "path": "assets/guide-v785/page-38.webp",
     "links": []
   },
   {
     "page": 39,
-    "path": "assets/guide-v783/page-39.png",
+    "path": "assets/guide-v785/page-39.webp",
     "links": []
   },
   {
     "page": 40,
-    "path": "assets/guide-v783/page-40.png",
+    "path": "assets/guide-v785/page-40.webp",
     "links": []
   },
   {
     "page": 41,
-    "path": "assets/guide-v783/page-41.png",
+    "path": "assets/guide-v785/page-41.webp",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:95%;width:94%;height:2.4%\" href=\"https://www.arva-equipment.com/fr/content/20-user-manuals-downloads\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Consulter les notices ARVA : portage, piles, contrôle de groupe, entretien et distances de sécurité\" title=\"Notices ARVA : portage et contrôles\"></a>"
@@ -801,7 +801,7 @@
   },
   {
     "page": 42,
-    "path": "assets/guide-v783/page-42.png",
+    "path": "assets/guide-v785/page-42.webp",
     "links": [],
     "overlays": [
       "<a class=\"poster-link\" style=\"left:3%;top:76.5%;width:94%;height:2.7%\" href=\"https://www.arva-equipment.com/img/cms/Notices/ARVA_REACTOR_NOTICE_%20LIVRET__compressed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Lire la notice ARVA REACTOR : installation, contrôle, déclenchement et entretien\" title=\"Notice REACTOR\"></a>",
@@ -810,22 +810,22 @@
   },
   {
     "page": 43,
-    "path": "assets/guide-v783/page-43.png",
+    "path": "assets/guide-v785/page-43.webp",
     "links": []
   },
   {
     "page": 44,
-    "path": "assets/guide-v783/page-44.png",
+    "path": "assets/guide-v785/page-44.webp",
     "links": []
   },
   {
     "page": 45,
-    "path": "assets/guide-v783/page-45.png",
+    "path": "assets/guide-v785/page-45.webp",
     "links": []
   },
   {
     "page": 46,
-    "path": "assets/guide-v783/page-46.png",
+    "path": "assets/guide-v785/page-46.webp",
     "links": []
   }
 ]

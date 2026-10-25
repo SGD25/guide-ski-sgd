@@ -18,3 +18,6 @@
 
 /* The safety chapter remains distinct in the reader ribbon. */
 .chapter-three{background:#297a78}.chapter-four{background:#75638f}.chapter-five{background:#297a78}
+
+/* V07.85: identité approuvée, logo SVG original avec ses dégradés. */
+.appbar{background:#fff}.brand-logo{width:155px;height:auto;object-fit:contain;mix-blend-mode:normal}.brand{gap:24px}.brand-name{font-family:Arial,sans-serif;font-size:17px;font-weight:400;letter-spacing:.02em}.brand-name small{font-family:Arial,sans-serif;margin-top:9px;font-size:10px;font-weight:400;letter-spacing:.015em;color:#606369}@media(max-width:780px){.brand-logo{width:106px;height:auto}.brand{gap:10px}.brand-name{font-size:11px}.brand-name small{font-size:7px;margin-top:5px}.appbar{gap:8px}}@media(max-width:440px){.brand-name{display:none}.appbar{padding:9px 12px}}
