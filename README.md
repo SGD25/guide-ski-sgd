@@ -124,3 +124,12 @@ page garde le zoom individuel, avec retour au petit livre à deux pages. Le bout
 du bas est supprimé. Les deux agrandissements deviennent des modes distincts.
 Voir `sources/navigation-v796/README.md`. La nouvelle couverture est une proposition
 séparée, sans changement de la page 1 publiée à ce stade.
+
+
+### V07.97 — Nouvelle couverture, cinq chapitres
+
+La couverture approuvée reprend les couleurs des pages intérieures et présente
+les cinq chapitres, tous cliquables. Aucun grand logo supplémentaire dans le
+corps de la page. L’en-tête et le pied de page communs sont conservés, ainsi que
+les commandes Élargir / Rétrécir le livre et le zoom individuel. Voir
+`sources/cover-v797/README.md`.

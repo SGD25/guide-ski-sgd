@@ -1,0 +1,52 @@
+[
+  {
+    "page": 3,
+    "label": "Comprendre",
+    "box": [
+      196.814,
+      2497.729,
+      2207.736,
+      2634.217
+    ]
+  },
+  {
+    "page": 8,
+    "label": "Reconnaître et conseiller le matériel",
+    "box": [
+      196.814,
+      2636.492,
+      2207.736,
+      2770.705
+    ]
+  },
+  {
+    "page": 27,
+    "label": "Textiles et accessoires",
+    "box": [
+      196.814,
+      2772.98,
+      2207.736,
+      2907.193
+    ]
+  },
+  {
+    "page": 33,
+    "label": "Sécuriser",
+    "box": [
+      196.814,
+      2909.468,
+      2207.736,
+      3039.131
+    ]
+  },
+  {
+    "page": 43,
+    "label": "Accueillir, louer et accompagner",
+    "box": [
+      196.814,
+      3041.406,
+      2207.736,
+      3200.642
+    ]
+  }
+]

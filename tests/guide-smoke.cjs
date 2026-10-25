@@ -13,10 +13,11 @@ for(let i=0;i<46;i++){
  for(const m of p.html.matchAll(/data-jump="(\d+)"/g))assert(+m[1]>=0&&+m[1]<46);
 }
 const toc=[...pages[1].html.matchAll(/data-jump="(\d+)"/g)].map(m=>+m[1]+1);assert.deepEqual([...new Set(toc)].sort((a,b)=>a-b),Array.from({length:44},(_,i)=>i+3));
+assert.deepEqual(manifest[0].links.map(l=>l.page),[3,8,27,33,43]);
 const baseline=previous;
 for(let old=1;old<=44;old++){
  const n=old>=21?old+2:old;
- if(old!==2)assert.deepEqual(manifest[n-1].links.map(({box,...l})=>l),baseline.records[old-1].links.map(({box,...l})=>({...l,page:l.page>=21?l.page+2:l.page})));
+ if(old!==1&&old!==2)assert.deepEqual(manifest[n-1].links.map(({box,...l})=>l),baseline.records[old-1].links.map(({box,...l})=>({...l,page:l.page>=21?l.page+2:l.page})));
  assert.deepEqual(manifest[n-1].overlays,baseline.records[old-1].overlays);
 }
 for(const old of [31,32]){
@@ -27,7 +28,7 @@ for(const [lo,hi,ch] of [[3,7,'01 · Comprendre'],[8,26,'02 · Reconnaître et c
  for(let n=lo;n<=hi;n++)assert.equal(pages[n-1].chapter,ch);
 }
 assert.match(pages[36].title,/NX12/);assert.match(pages[38].title,/PLUM/);assert.match(pages[40].title,/Avalanche/);
-assert.match(html,/V07.96/);assert.match(html,/01–02 \/ 46/);
+assert.match(html,/V07.97/);assert.match(html,/01–02 \/ 46/);
 console.log('OK: 46 pages, complete clickable contents, five chapters, original 31–32 text preserved, complete navigation.');
 assert.match(html,/assets\/branding-v789\/logo-header.svg/);
 for(const r of manifest)for(const l of r.links||[])assert(l.box[0]>=0&&l.box[1]>=0&&l.box[2]<=2400&&l.box[3]<=3394);

@@ -1,0 +1,22 @@
+{
+  "approved_source": "exec-73a46bc6-4668-44c7-adfb-724212ebf0aa.png",
+  "source_sha256": "4e7ebe70186c2f5e6558a186e08a91655bd2c1c1d913938587fb9a3d08c7d7f9",
+  "source_dimensions": [
+    1054,
+    1492
+  ],
+  "output": "assets/cover-v797/page-01.webp",
+  "output_dimensions": [
+    2400,
+    3394
+  ],
+  "output_sha256": "d94f6612326b58930ec126bb05515401e1636bcc42b0e6df434314e3c58e9134",
+  "conversion": "Sharp contain resize on white, WebP lossless, no redesign",
+  "chapter_pages": [
+    3,
+    8,
+    27,
+    33,
+    43
+  ]
+}
