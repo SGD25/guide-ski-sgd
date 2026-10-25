@@ -41,3 +41,7 @@ V07.74 : deux pages de randonnée pédestre approuvées dans le chat, copiées �
 V07.75 : masques et lunettes validés intégrés à l’identique en pages 29–30. Sécuriser décalé en pages 31–34 ; sommaire et renvois actualisés. Exemples AZR, Smith et Cairn.
 
 V07.85 : pages 31–32 historiques conservées. Six nouvelles pages fixations LOOK NX12 / PLUM ajoutées en 33–38 ; avalanche décalée en 39–40. Pagination, sommaire et renvois actualisés.
+
+
+## V07.86 — Présentation premium
+Bannière blanche et anthracite, effet livre CSS, S seul dans les en-têtes et pieds réduits. Couleurs et contenus V07.85 conservés. Navigation, zoom, sommaire, impression et mobile vérifiés dans Chromium.

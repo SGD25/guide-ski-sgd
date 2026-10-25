@@ -3,8 +3,8 @@ const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p
 const config=JSON.parse(read('sources/guide/catalog.json')),manifest=JSON.parse(read('sources/freeride-freestyle/manifest.json')),previous=JSON.parse(read('sources/snow-publish-v783/baseline-v782.json'));
 const tracked=new Set(cp.execFileSync('git',['ls-tree','-r','--name-only','HEAD'],{cwd:root,encoding:'utf8'}).trim().split('\n'));
 const html=read('index.html'),ctx=vm.createContext({window:{}}),scripts=[...html.matchAll(/<script src="([^"]+)"/g)].map(m=>m[1].split('?')[0]);
-assert.deepEqual(scripts.filter(s=>s.startsWith('./pages/')),['./pages/00-init.js',...Array.from({length:46},(_,i)=>`./pages/${String(i+1).padStart(2,'0')}.js`)]);
-for(const s of scripts){assert(fs.existsSync(path.join(root,s)));if(s.startsWith('./pages/'))vm.runInContext(read(s),ctx)}
+assert.deepEqual(scripts.filter(s=>/^\.\/pages\/\d/.test(s)),['./pages/00-init.js',...Array.from({length:46},(_,i)=>`./pages/${String(i+1).padStart(2,'0')}.js`)]);
+for(const s of scripts){assert(fs.existsSync(path.join(root,s)));if(/^\.\/pages\/\d/.test(s))vm.runInContext(read(s),ctx)}
 const pages=ctx.window.SGD_PAGES;assert.equal(pages.length,46);assert.equal(manifest.length,46);assert.equal(config.pages.length,46);
 for(let i=0;i<46;i++){
  const p=pages[i],r=manifest[i];assert.equal(r.page,i+1);assert.equal(p.title,config.pages[i].title);assert.equal(p.chapter,config.pages[i].chapter);
@@ -27,7 +27,11 @@ for(const [lo,hi,ch] of [[3,7,'01 · Comprendre'],[8,26,'02 · Reconnaître et c
  for(let n=lo;n<=hi;n++)assert.equal(pages[n-1].chapter,ch);
 }
 assert.match(pages[36].title,/NX12/);assert.match(pages[38].title,/PLUM/);assert.match(pages[40].title,/Avalanche/);
-assert.match(html,/V07.85/);assert.match(html,/01–02 \/ 46/);
+assert.match(html,/V07.86/);assert.match(html,/01–02 \/ 46/);
 console.log('OK: 46 pages, complete clickable contents, five chapters, original 31–32 text preserved, complete navigation.');
 assert.match(html,/assets\/branding-v785\/logo-header.svg/);
 for(const r of manifest)for(const l of r.links||[])assert(l.box[0]>=0&&l.box[1]>=0&&l.box[2]<=2400&&l.box[3]<=3394);
+
+vm.runInContext(read("pages/branding.js"),ctx);
+for(const p of pages){assert.match(p.html,/page-brand-header/);assert.match(p.html,/page-brand-footer/)}
+console.log("OK: approved header/footer overlays on all 46 pages.");
