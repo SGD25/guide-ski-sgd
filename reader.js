@@ -11,6 +11,7 @@
     chromeFrame=0;
     const r=frame.getBoundingClientRect(),mobile=matchMedia('(max-width:780px)').matches;
     document.body.style.setProperty('--reader-width',r.width+'px');
+    document.body.style.setProperty('--banner-extra',Math.max(0,document.querySelector('.appbar').getBoundingClientRect().height-80)+'px');
     const cover=mobile?11:19,half=mobile?15:20;
     document.body.style.setProperty('--book-previous-x',(r.left-cover-half)+'px');
     document.body.style.setProperty('--book-next-x',(r.right+cover-half)+'px');

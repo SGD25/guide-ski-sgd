@@ -51,3 +51,6 @@ Lignes répétées supprimées, couverture grise sur tout le pourtour et bouton 
 
 ## V07.88 — Cadre de lecture cohérent
 Bannière à la largeur du livre et flèches accolées à la couverture, synchronisées lors du redimensionnement, du zoom et du défilement. Tests sur six tailles d’écran.
+
+## V07.89 — Nouveau logo de bannière
+SVG fourni avec les activités agrandies, affichage du logo augmenté et adapté à la largeur de la bannière. Mise en page vérifiée sur six formats.

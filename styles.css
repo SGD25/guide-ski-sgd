@@ -74,3 +74,12 @@ body{background:radial-gradient(ellipse at 50% 10%,#f6f6f3 0%,#e4e7e8 55%,#d6dcd
 @media(max-width:780px){.appbar{width:min(calc(var(--reader-width,calc(100vw - 52px)) + 22px),calc(100% - 16px));padding-left:12px;padding-right:12px}.appbar:before{left:59%}.edge-arrow{width:30px;height:51px;font-size:30px}.appbar-actions{max-width:39%}.brand-logo{width:92px}}
 @media(max-width:440px){.appbar:before{left:43%}.appbar-actions{max-width:53%}}
 .appbar .label-version{text-align:right}
+
+/* V07.89 — supplied logo with larger activity names, displayed more prominently. */
+.appbar{padding-top:4px;padding-bottom:4px}
+.appbar .brand-logo{width:200px;flex-shrink:0}
+@container(max-width:1000px){.appbar .brand-logo{width:176px}.brand-name{font-size:19px}}
+@container(max-width:760px){.appbar .brand-logo{width:144px}.brand-name{font-size:15px}.brand-name small{font-size:7px}}
+@media(max-width:780px){.appbar .brand-logo{width:144px}}
+@media(max-width:440px){.appbar .brand-logo{width:132px}.appbar-actions{max-width:52%}}
+@media(min-width:781px){body:not(.reading-mode):not(.wide-spread) .book-frame,body:not(.reading-mode):not(.wide-spread) .controls,body:not(.reading-mode):not(.wide-spread) .progress-track{max-width:min(1760px,calc((100svh - 174px - var(--banner-extra,0px))*1.414))}}
