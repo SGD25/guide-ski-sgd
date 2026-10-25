@@ -97,3 +97,12 @@ Le trait de séparation est horizontal, sous l’en-tête de chaque page, align�
 sur celui du pied de page. La pagination du pied de page reste inchangée.
 La proposition « ÉDITION 2026–2027 » dans `sources/premium-v793/` est un aperçu
 séparé à valider, sans modification du pied de page dans le guide publié.
+
+
+### V07.94 — En-têtes et pieds de page validés
+
+Le filet de couleur du chapitre passe sous l’en-tête, à 130 unités au lieu de
+118 : il laisse plus d’air sous le S. Le trait au bord supérieur disparaît.
+Le pied de page affiche désormais ÉDITION / 2026–2027 ; le numéro est conservé
+uniquement en haut. Habillage partagé par les 46 pages et l’impression.
+La proposition d’un orange plus vif reste séparée du guide publié.

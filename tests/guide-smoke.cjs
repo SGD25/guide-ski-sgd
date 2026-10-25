@@ -27,7 +27,7 @@ for(const [lo,hi,ch] of [[3,7,'01 · Comprendre'],[8,26,'02 · Reconnaître et c
  for(let n=lo;n<=hi;n++)assert.equal(pages[n-1].chapter,ch);
 }
 assert.match(pages[36].title,/NX12/);assert.match(pages[38].title,/PLUM/);assert.match(pages[40].title,/Avalanche/);
-assert.match(html,/V07.93/);assert.match(html,/01–02 \/ 46/);
+assert.match(html,/V07.94/);assert.match(html,/01–02 \/ 46/);
 console.log('OK: 46 pages, complete clickable contents, five chapters, original 31–32 text preserved, complete navigation.');
 assert.match(html,/assets\/branding-v789\/logo-header.svg/);
 for(const r of manifest)for(const l of r.links||[])assert(l.box[0]>=0&&l.box[1]>=0&&l.box[2]<=2400&&l.box[3]<=3394);
