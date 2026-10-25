@@ -9,7 +9,12 @@ f=HERE/'baseline-v782.json'
 if not f.exists():f.write_text(json.dumps({'records':json.loads((ROOT/'sources/freeride-freestyle/manifest.json').read_text()),'catalog':json.loads((ROOT/'sources/guide/catalog.json').read_text())},ensure_ascii=False,indent=2))
 base=json.loads(f.read_text());records=copy.deepcopy(base['records']);cat=copy.deepcopy(base['catalog']);audit=[]
 def save(im,path):
- im.save(path,format='PNG');Image.open(path).load()
+ stream=io.BytesIO();im.save(stream,format='PNG');data=stream.getvalue()
+ with open(path,'wb',buffering=0) as f:
+  v=memoryview(data)
+  while v:v=v[f.write(v):]
+  os.fsync(f.fileno())
+ Image.open(path).load()
 def shift(n):return n+2 if n>=21 else n
 for r in records:
  old=r['page'];n=shift(old);r['page']=n
