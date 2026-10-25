@@ -48,3 +48,6 @@ Bannière blanche et anthracite, effet livre CSS, S seul dans les en-têtes et p
 
 ## V07.87 — Lecture plus grande
 Lignes répétées supprimées, couverture grise sur tout le pourtour et bouton Élargir le livre pour lire deux pages à la largeur disponible. Contrôles navigateur sur quatre tailles d’écran.
+
+## V07.88 — Cadre de lecture cohérent
+Bannière à la largeur du livre et flèches accolées à la couverture, synchronisées lors du redimensionnement, du zoom et du défilement. Tests sur six tailles d’écran.

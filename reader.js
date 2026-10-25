@@ -4,6 +4,25 @@
   const pages=window.SGD_PAGES||[],el=id=>document.getElementById(id);
   const book=el('book'),left=el('left-page'),right=el('right-page'),leaf=el('flip-sheet');
   const prev=el('previous'),next=el('next'),toc=el('toc-overlay'),grid=el('toc-grid'),reading=el('reading-button');
+  // Align chrome with the rendered book in double, wide and single-page modes.
+  const frame=book.parentElement,edgeControls=prev.parentElement;
+  let chromeFrame=0;
+  function alignReaderChrome(){
+    chromeFrame=0;
+    const r=frame.getBoundingClientRect(),mobile=matchMedia('(max-width:780px)').matches;
+    document.body.style.setProperty('--reader-width',r.width+'px');
+    const cover=mobile?11:19,half=mobile?15:20;
+    document.body.style.setProperty('--book-previous-x',(r.left-cover-half)+'px');
+    document.body.style.setProperty('--book-next-x',(r.right+cover-half)+'px');
+    const top=Math.max(0,r.top),bottom=Math.min(innerHeight,r.bottom);
+    document.body.style.setProperty('--book-controls-y',((top+bottom)/2)+'px');
+    edgeControls.dataset.offscreen=String(bottom<=top);
+  }
+  function queueReaderChrome(){if(!chromeFrame)chromeFrame=requestAnimationFrame(alignReaderChrome);}
+  const chromeObserver=new ResizeObserver(queueReaderChrome);
+  chromeObserver.observe(frame);chromeObserver.observe(document.querySelector('.appbar'));
+  addEventListener('resize',queueReaderChrome);addEventListener('scroll',queueReaderChrome,{passive:true});
+  queueReaderChrome();
   let current=0,busy=false;
   const single=()=>matchMedia('(max-width:780px)').matches||document.body.classList.contains('reading-mode');
   const step=()=>single()?1:2,snap=n=>single()?n:Math.floor(n/2)*2;
