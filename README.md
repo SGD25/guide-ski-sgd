@@ -79,3 +79,12 @@ Inter est intégrée au site sous licence OFL pour stabiliser la typographie de
 la bannière. Le sous-titre est agrandi et plus large que le titre ; la zone
 anthracite occupe davantage de place et retrouve son séparateur vertical.
 Les 46 images A4 restent inchangées. Détails : `sources/premium-v791/README.md`.
+
+
+### V07.92 — Retour en haut et séparateur de chapitre
+
+En lecture agrandie ou mobile, un changement de page repositionne la vue au
+début de la nouvelle page, avec 16 px de marge. Cela vaut pour les flèches, le
+clavier, le sommaire et les liens directs. Un redimensionnement ou un rendu de
+la même page conserve la position de lecture. Un trait vertical gris fin sépare
+le symbole S du chapitre sur les 46 pages, y compris à l’impression.

@@ -45,12 +45,13 @@
   document.fonts.ready.then(queueReaderChrome);
   addEventListener('resize',queueReaderChrome);addEventListener('scroll',queueReaderChrome,{passive:true});
   queueReaderChrome();
-  let current=0,busy=false;
+  let current=0,busy=false,hasRendered=false;
   const single=()=>matchMedia('(max-width:780px)').matches||document.body.classList.contains('reading-mode');
   const step=()=>single()?1:2,snap=n=>single()?n:Math.floor(n/2)*2;
   const markup=p=>p?'<div class="sheet-pad">'+p.html+'</div>':'';
   function apply(node,p){node.innerHTML=markup(p);node.setAttribute('aria-label',p?p.title:'Page vierge');}
   function renderAt(n){
+    const previousPage=current;
     current=Math.max(0,Math.min(pages.length-1,snap(n)));
     apply(left,pages[current]);apply(right,pages[current+1]);
     const last=Math.min(pages.length,current+step());
@@ -60,6 +61,15 @@
     el('chapter-band').replaceChildren(...chapters.map(c=>{const s=document.createElement('span');s.className=c.startsWith('01')?'chapter-one':c.startsWith('02')?'chapter-two':c.startsWith('03')?'chapter-three':c.startsWith('04')?'chapter-four':c.startsWith('05')?'chapter-five':'chapter-opening';s.textContent=c==='Ouverture'?'LE GUIDE DU SKI · OUVERTURE':'CHAPITRE '+c.toUpperCase();return s;}));
     prev.disabled=current===0;next.disabled=current+step()>=pages.length;el('progress').style.width=last/pages.length*100+'%';
     document.title=pages[current].title+' — SPORT GOOD DEAL';history.replaceState(null,'','#page='+(current+1));
+    // A new page in zoom/mobile reading starts at its heading. Resizing or
+    // rerendering the same page must not interrupt the reader's scroll position.
+    if(hasRendered&&current!==previousPage&&single()){
+      requestAnimationFrame(()=>{
+        scrollTo({top:Math.max(0,scrollY+frame.getBoundingClientRect().top-16),behavior:'instant'});
+        queueReaderChrome();
+      });
+    }
+    hasRendered=true;
   }
   function go(dir){
     const target=current+dir*step();if(busy||target<0||target>=pages.length)return;
