@@ -1,0 +1,808 @@
+{
+  "source": "assets/guide-v785",
+  "accent": "#F04D2E",
+  "unchanged": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    41,
+    42
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "path": "assets/palette-v795/page-01.webp",
+      "pixels": 49599,
+      "components": 9,
+      "bytes": 18718,
+      "protected_photos": [
+        [
+          0,
+          1000,
+          2400,
+          2800
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "path": "assets/palette-v795/page-02.webp",
+      "pixels": 55279,
+      "components": 63,
+      "bytes": 22092,
+      "protected_photos": []
+    },
+    {
+      "page": 3,
+      "path": "assets/palette-v795/page-03.webp",
+      "pixels": 54585,
+      "components": 63,
+      "bytes": 29384,
+      "protected_photos": [
+        [
+          1430,
+          400,
+          2400,
+          1050
+        ],
+        [
+          1060,
+          400,
+          1390,
+          2800
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "path": "assets/palette-v795/page-04.webp",
+      "pixels": 52618,
+      "components": 28,
+      "bytes": 28320,
+      "protected_photos": [
+        [
+          80,
+          730,
+          450,
+          1210
+        ],
+        [
+          850,
+          730,
+          1220,
+          1210
+        ],
+        [
+          1620,
+          730,
+          1980,
+          1210
+        ],
+        [
+          85,
+          1950,
+          670,
+          2695
+        ],
+        [
+          850,
+          1950,
+          1440,
+          2695
+        ],
+        [
+          1620,
+          1950,
+          2210,
+          2695
+        ]
+      ]
+    },
+    {
+      "page": 5,
+      "path": "assets/palette-v795/page-05.webp",
+      "pixels": 241695,
+      "components": 33,
+      "bytes": 33074,
+      "protected_photos": []
+    },
+    {
+      "page": 6,
+      "path": "assets/palette-v795/page-06.webp",
+      "pixels": 56730,
+      "components": 78,
+      "bytes": 31684,
+      "protected_photos": []
+    },
+    {
+      "page": 7,
+      "path": "assets/palette-v795/page-07.webp",
+      "pixels": 46825,
+      "components": 18,
+      "bytes": 23308,
+      "protected_photos": [
+        [
+          75,
+          690,
+          2330,
+          1620
+        ]
+      ]
+    },
+    {
+      "page": 8,
+      "path": "assets/palette-v795/page-08.webp",
+      "pixels": 41119,
+      "components": 14,
+      "bytes": 14866,
+      "protected_photos": [
+        [
+          0,
+          120,
+          2400,
+          1390
+        ]
+      ]
+    },
+    {
+      "page": 9,
+      "path": "assets/palette-v795/page-09.webp",
+      "pixels": 64571,
+      "components": 59,
+      "bytes": 29412,
+      "protected_photos": [
+        [
+          80,
+          500,
+          490,
+          1100
+        ],
+        [
+          1200,
+          500,
+          1630,
+          1100
+        ],
+        [
+          80,
+          1690,
+          490,
+          2270
+        ],
+        [
+          1200,
+          1690,
+          1630,
+          2270
+        ]
+      ]
+    },
+    {
+      "page": 10,
+      "path": "assets/palette-v795/page-10.webp",
+      "pixels": 57272,
+      "components": 72,
+      "bytes": 35176,
+      "protected_photos": [
+        [
+          85,
+          470,
+          460,
+          1500
+        ],
+        [
+          1210,
+          470,
+          1600,
+          1500
+        ],
+        [
+          85,
+          1730,
+          460,
+          2760
+        ],
+        [
+          1210,
+          1730,
+          1600,
+          2760
+        ]
+      ]
+    },
+    {
+      "page": 11,
+      "path": "assets/palette-v795/page-11.webp",
+      "pixels": 73585,
+      "components": 63,
+      "bytes": 43906,
+      "protected_photos": [
+        [
+          80,
+          700,
+          2320,
+          1180
+        ]
+      ]
+    },
+    {
+      "page": 12,
+      "path": "assets/palette-v795/page-12.webp",
+      "pixels": 67950,
+      "components": 110,
+      "bytes": 41040,
+      "protected_photos": [
+        [
+          75,
+          590,
+          390,
+          1530
+        ],
+        [
+          845,
+          590,
+          1160,
+          1530
+        ],
+        [
+          1610,
+          590,
+          1930,
+          1530
+        ],
+        [
+          80,
+          1720,
+          400,
+          2730
+        ],
+        [
+          1205,
+          1720,
+          1530,
+          2730
+        ]
+      ]
+    },
+    {
+      "page": 13,
+      "path": "assets/palette-v795/page-13.webp",
+      "pixels": 42515,
+      "components": 11,
+      "bytes": 21276,
+      "protected_photos": [
+        [
+          75,
+          620,
+          2320,
+          1190
+        ]
+      ]
+    },
+    {
+      "page": 14,
+      "path": "assets/palette-v795/page-14.webp",
+      "pixels": 101009,
+      "components": 199,
+      "bytes": 55860,
+      "protected_photos": [
+        [
+          85,
+          470,
+          470,
+          1500
+        ],
+        [
+          1210,
+          470,
+          1600,
+          1500
+        ],
+        [
+          85,
+          1710,
+          470,
+          2730
+        ],
+        [
+          1210,
+          1710,
+          1600,
+          2730
+        ]
+      ]
+    },
+    {
+      "page": 15,
+      "path": "assets/palette-v795/page-15.webp",
+      "pixels": 67371,
+      "components": 52,
+      "bytes": 31136,
+      "protected_photos": [
+        [
+          1930,
+          600,
+          2300,
+          1050
+        ]
+      ]
+    },
+    {
+      "page": 16,
+      "path": "assets/palette-v795/page-16.webp",
+      "pixels": 59541,
+      "components": 109,
+      "bytes": 29412,
+      "protected_photos": [
+        [
+          90,
+          485,
+          470,
+          1470
+        ],
+        [
+          1210,
+          485,
+          1600,
+          1470
+        ],
+        [
+          90,
+          1720,
+          470,
+          2730
+        ],
+        [
+          1210,
+          1720,
+          1600,
+          2730
+        ]
+      ]
+    },
+    {
+      "page": 17,
+      "path": "assets/palette-v795/page-17.webp",
+      "pixels": 87561,
+      "components": 81,
+      "bytes": 39346,
+      "protected_photos": [
+        [
+          70,
+          410,
+          1450,
+          930
+        ],
+        [
+          145,
+          960,
+          910,
+          1350
+        ]
+      ]
+    },
+    {
+      "page": 18,
+      "path": "assets/palette-v795/page-18.webp",
+      "pixels": 92634,
+      "components": 136,
+      "bytes": 43596,
+      "protected_photos": [
+        [
+          85,
+          960,
+          425,
+          1290
+        ],
+        [
+          85,
+          1350,
+          425,
+          1780
+        ],
+        [
+          85,
+          1830,
+          425,
+          2240
+        ],
+        [
+          85,
+          2360,
+          425,
+          2790
+        ]
+      ]
+    },
+    {
+      "page": 19,
+      "path": "assets/palette-v795/page-19.webp",
+      "pixels": 64806,
+      "components": 37,
+      "bytes": 26186,
+      "protected_photos": [
+        [
+          100,
+          460,
+          830,
+          980
+        ]
+      ]
+    },
+    {
+      "page": 20,
+      "path": "assets/palette-v795/page-20.webp",
+      "pixels": 79412,
+      "components": 130,
+      "bytes": 37712,
+      "protected_photos": [
+        [
+          90,
+          440,
+          880,
+          1060
+        ]
+      ]
+    },
+    {
+      "page": 21,
+      "path": "assets/palette-v795/page-21.webp",
+      "pixels": 1047411,
+      "components": 38,
+      "bytes": 78360,
+      "protected_photos": [
+        [
+          383,
+          712,
+          2016,
+          1003
+        ],
+        [
+          155,
+          1760,
+          241,
+          2061
+        ],
+        [
+          877,
+          1760,
+          963,
+          2061
+        ],
+        [
+          1598,
+          1760,
+          1684,
+          2061
+        ]
+      ]
+    },
+    {
+      "page": 22,
+      "path": "assets/palette-v795/page-22.webp",
+      "pixels": 521074,
+      "components": 87,
+      "bytes": 49620,
+      "protected_photos": [
+        [
+          164,
+          1890,
+          782,
+          2303
+        ]
+      ]
+    },
+    {
+      "page": 23,
+      "path": "assets/palette-v795/page-23.webp",
+      "pixels": 66930,
+      "components": 110,
+      "bytes": 41672,
+      "protected_photos": [
+        [
+          1280,
+          400,
+          2320,
+          830
+        ],
+        [
+          95,
+          2160,
+          920,
+          2870
+        ]
+      ]
+    },
+    {
+      "page": 24,
+      "path": "assets/palette-v795/page-24.webp",
+      "pixels": 60466,
+      "components": 69,
+      "bytes": 27950,
+      "protected_photos": [
+        [
+          80,
+          460,
+          470,
+          1470
+        ],
+        [
+          1205,
+          460,
+          1600,
+          1470
+        ],
+        [
+          80,
+          1730,
+          470,
+          2750
+        ],
+        [
+          1205,
+          1730,
+          1600,
+          2750
+        ]
+      ]
+    },
+    {
+      "page": 25,
+      "path": "assets/palette-v795/page-25.webp",
+      "pixels": 39812,
+      "components": 8,
+      "bytes": 19324,
+      "protected_photos": [
+        [
+          80,
+          600,
+          2320,
+          1260
+        ]
+      ]
+    },
+    {
+      "page": 26,
+      "path": "assets/palette-v795/page-26.webp",
+      "pixels": 61044,
+      "components": 21,
+      "bytes": 32078,
+      "protected_photos": [
+        [
+          90,
+          790,
+          610,
+          1250
+        ],
+        [
+          1205,
+          790,
+          1725,
+          1250
+        ],
+        [
+          90,
+          1650,
+          610,
+          2110
+        ],
+        [
+          1205,
+          1650,
+          1725,
+          2110
+        ],
+        [
+          90,
+          2470,
+          610,
+          2830
+        ],
+        [
+          1205,
+          2470,
+          1725,
+          2830
+        ]
+      ]
+    },
+    {
+      "page": 33,
+      "path": "assets/palette-v795/page-33.webp",
+      "pixels": 56706,
+      "components": 48,
+      "bytes": 44320,
+      "protected_photos": []
+    },
+    {
+      "page": 34,
+      "path": "assets/palette-v795/page-34.webp",
+      "pixels": 62530,
+      "components": 30,
+      "bytes": 41118,
+      "protected_photos": []
+    },
+    {
+      "page": 35,
+      "path": "assets/palette-v795/page-35.webp",
+      "pixels": 386934,
+      "components": 12,
+      "bytes": 20860,
+      "protected_photos": [
+        [
+          150,
+          580,
+          1490,
+          1370
+        ],
+        [
+          120,
+          1940,
+          750,
+          2810
+        ]
+      ]
+    },
+    {
+      "page": 36,
+      "path": "assets/palette-v795/page-36.webp",
+      "pixels": 430413,
+      "components": 12,
+      "bytes": 28836,
+      "protected_photos": [
+        [
+          100,
+          590,
+          1600,
+          1340
+        ]
+      ]
+    },
+    {
+      "page": 37,
+      "path": "assets/palette-v795/page-37.webp",
+      "pixels": 430928,
+      "components": 15,
+      "bytes": 28560,
+      "protected_photos": [
+        [
+          80,
+          560,
+          1700,
+          1300
+        ],
+        [
+          80,
+          1800,
+          1800,
+          2550
+        ]
+      ]
+    },
+    {
+      "page": 38,
+      "path": "assets/palette-v795/page-38.webp",
+      "pixels": 847495,
+      "components": 119,
+      "bytes": 60066,
+      "protected_photos": [
+        [
+          105,
+          1020,
+          800,
+          1690
+        ],
+        [
+          1260,
+          1020,
+          1780,
+          1690
+        ]
+      ]
+    },
+    {
+      "page": 39,
+      "path": "assets/palette-v795/page-39.webp",
+      "pixels": 419006,
+      "components": 8,
+      "bytes": 26874,
+      "protected_photos": [
+        [
+          90,
+          530,
+          1770,
+          1450
+        ],
+        [
+          95,
+          1920,
+          1700,
+          2730
+        ]
+      ]
+    },
+    {
+      "page": 40,
+      "path": "assets/palette-v795/page-40.webp",
+      "pixels": 892933,
+      "components": 14,
+      "bytes": 51858,
+      "protected_photos": [
+        [
+          80,
+          550,
+          2300,
+          1200
+        ],
+        [
+          90,
+          1800,
+          1050,
+          2310
+        ],
+        [
+          1210,
+          1800,
+          2220,
+          2310
+        ]
+      ]
+    },
+    {
+      "page": 43,
+      "path": "assets/palette-v795/page-43.webp",
+      "pixels": 905665,
+      "components": 28,
+      "bytes": 55560,
+      "protected_photos": [
+        [
+          75,
+          545,
+          1430,
+          985
+        ]
+      ]
+    },
+    {
+      "page": 44,
+      "path": "assets/palette-v795/page-44.webp",
+      "pixels": 732102,
+      "components": 33,
+      "bytes": 61022,
+      "protected_photos": [
+        [
+          75,
+          545,
+          1430,
+          985
+        ]
+      ]
+    },
+    {
+      "page": 45,
+      "path": "assets/palette-v795/page-45.webp",
+      "pixels": 1325695,
+      "components": 209,
+      "bytes": 85074,
+      "protected_photos": []
+    },
+    {
+      "page": 46,
+      "path": "assets/palette-v795/page-46.webp",
+      "pixels": 444181,
+      "components": 22,
+      "bytes": 34242,
+      "protected_photos": [
+        [
+          75,
+          990,
+          2330,
+          1680
+        ]
+      ]
+    }
+  ]
+}

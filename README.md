@@ -106,3 +106,12 @@ Le filet de couleur du chapitre passe sous l’en-tête, à 130 unités au lieu 
 Le pied de page affiche désormais ÉDITION / 2026–2027 ; le numéro est conservé
 uniquement en haut. Habillage partagé par les 46 pages et l’impression.
 La proposition d’un orange plus vif reste séparée du guide publié.
+
+
+### V07.95 — Orange vif validé
+
+L’accent corail devient orange vermillon `#F04D2E` dans les titres, les repères
+et les encarts. Des surimpressions transparentes sans perte conservent les images
+HD originales, les textes et leur position. Les photos sont exclues du traitement ;
+les doubles pages illustrées déjà en orange vif sont préservées. Le chapitre 02
+reprend cette couleur dans son en-tête. Détails : `sources/palette-v795/README.md`.
