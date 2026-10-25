@@ -45,3 +45,6 @@ V07.85 : pages 31–32 historiques conservées. Six nouvelles pages fixations LO
 
 ## V07.86 — Présentation premium
 Bannière blanche et anthracite, effet livre CSS, S seul dans les en-têtes et pieds réduits. Couleurs et contenus V07.85 conservés. Navigation, zoom, sommaire, impression et mobile vérifiés dans Chromium.
+
+## V07.87 — Lecture plus grande
+Lignes répétées supprimées, couverture grise sur tout le pourtour et bouton Élargir le livre pour lire deux pages à la largeur disponible. Contrôles navigateur sur quatre tailles d’écran.

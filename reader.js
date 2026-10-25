@@ -27,6 +27,15 @@
     book.classList.add(dir>0?'is-forward':'is-backward');setTimeout(()=>renderAt(target),325);
     setTimeout(()=>{book.classList.remove('is-forward','is-backward');leaf.innerHTML='';busy=false;},660);
   }
+  const spreadSize=document.createElement('button');
+  spreadSize.type='button';spreadSize.className='spread-size-button';
+  spreadSize.textContent='Élargir le livre';spreadSize.setAttribute('aria-pressed','false');
+  el('page-count').after(spreadSize);
+  spreadSize.addEventListener('click',()=>{
+    const wide=document.body.classList.toggle('wide-spread');
+    spreadSize.textContent=wide?'Voir le livre entier':'Élargir le livre';
+    spreadSize.setAttribute('aria-pressed',String(wide));
+  });
   function closeToc(){toc.classList.remove('open');el('toc-button').setAttribute('aria-expanded','false');el('toc-button').focus();}
   prev.addEventListener('click',()=>go(-1));next.addEventListener('click',()=>go(1));
   el('toc-button').addEventListener('click',()=>{toc.classList.add('open');el('toc-button').setAttribute('aria-expanded','true');el('toc-close').focus();});
