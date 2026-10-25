@@ -38,6 +38,8 @@ records.sort(key=lambda r:r['page']);cat['pages'].sort(key=lambda m:m['page']);c
 notes={17:'En terrain avalancheux : DVA, pelle, sonde et formation. Voir pages 41–42. Photos : Elan, POMOCA (peau illustrative 65/35), Dynafit, SCARPA. Le mix 70/30 reste le repère SGD. Budgets : hors accessoires et matériel de secours.',23:'Repères adultes indicatifs, hors planches de carving alpin et splitboards. Hors-piste : équipement et formation adaptés ; voir sécurité avalanche pages 41–42. Sources : Nitro, RIDE, Burton, Nidecker. Photos fabricants.'}
 for n,note in notes.items():
  r=records[n-1];p=Page(n);p.im=Image.open(ROOT/r['path']).convert('RGB');p.d=ImageDraw.Draw(p.im);p.d.rectangle((70,3230,2000,3318),fill=BG);p.text(76,3237,note,26,width=1890,bottom=3313);dest=OUT/f'page-{n:02}.png';save(p.im,dest);r['path']=str(dest.relative_to(ROOT))
+# Shift the cover's printed safety-page reference as well as its link.
+p=Page(1);p.im=Image.open(ROOT/base['records'][0]['path']).convert('RGB');p.d=ImageDraw.Draw(p.im);p.d.rectangle((1815,2808,2020,2850),fill=WHITE);p.text(1821,2815,'PAGE 33  →',29,'bold',PURPLE);save(p.im,OUT/'page-01.png');records[0]['path']='assets/guide-v783/page-01.png'
 # Preserve the familiar five-block contents layout.
 p=Page(2);p.header('','46 pages pour comprendre, conseiller, sécuriser et accompagner.')
 labels={shift(l['page']):l['label'] for l in base['records'][1]['links']};labels.update({21:'Snowboard : les mots de la planche',22:'Snowboard : placer le rider'})
