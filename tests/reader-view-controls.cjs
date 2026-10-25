@@ -1,0 +1,28 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+ const browser=await chromium.launch({executablePath:process.env.CHROMIUM_EXECUTABLE_PATH,args:['--no-sandbox','--disable-gpu'],headless:true});
+ const page=await browser.newPage({viewport:{width:1366,height:768}});
+ await page.goto('http://127.0.0.1:8765/#page=3');await page.evaluate(()=>document.fonts.ready);
+ const button=page.locator('#book-size-button');
+ const state=()=>page.evaluate(()=>({single:document.body.classList.contains('reading-mode'),wide:document.body.classList.contains('wide-spread')}));
+ const width=()=>page.locator('.book-frame').evaluate(e=>e.getBoundingClientRect().width);
+ assert.equal(await page.locator('.controls button').count(),0,'No duplicate control below the book');
+ assert.equal(await button.innerText(),'Élargir le livre');const compact=await width();
+ await button.click();await page.waitForTimeout(180);
+ assert.deepEqual(await state(),{single:false,wide:true});assert((await width())>compact+100);
+ assert.equal(await button.innerText(),'Rétrécir le livre');assert.equal(await button.getAttribute('aria-pressed'),'true');
+ await page.locator('#right-page .sgd-poster>img').click();await page.waitForTimeout(180);
+ assert(page.url().endsWith('page=4'));assert.deepEqual(await state(),{single:true,wide:false});
+ assert.equal(await page.locator('#left-page img').evaluate(e=>getComputedStyle(e).cursor),'zoom-out');
+ await page.locator('#left-page .sgd-poster>img').click();await page.waitForTimeout(180);
+ assert.deepEqual(await state(),{single:false,wide:false});assert(Math.abs(await width()-compact)<2);
+ assert(page.url().endsWith('page=3'));assert.equal(await button.innerText(),'Élargir le livre');
+ await page.locator('#left-page .sgd-poster>img').click();await button.click();await page.waitForTimeout(180);
+ assert.deepEqual(await state(),{single:false,wide:true});
+ await button.focus();await page.keyboard.press('Space');await page.waitForTimeout(180);
+ assert.deepEqual(await state(),{single:false,wide:false});assert.equal(await button.innerText(),'Élargir le livre');
+ assert.equal(await page.locator('#left-page img').evaluate(e=>getComputedStyle(e).cursor),'zoom-in');
+ await page.setViewportSize({width:390,height:844});assert(!await button.isVisible());
+ await browser.close();console.log('PASS: banner wide/compact; page +/-; minus always returns compact; right-page selection; keyboard; mobile');
+})().catch(e=>{console.error(e);process.exit(1)});

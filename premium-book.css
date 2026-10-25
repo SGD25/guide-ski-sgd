@@ -115,7 +115,7 @@
   .appbar-actions { gap:5px; padding-left:12px; }
   .appbar .label-version { font-size:9px; }
 }
-@container (max-width:760px) {
+@container (max-width:800px) {
   .brand { gap:12px; }
   .brand-name { font-size:22px; padding-left:12px; }
   .brand-name small { font-size:10.5px; }

@@ -115,3 +115,12 @@ et les encarts. Des surimpressions transparentes sans perte conservent les image
 HD originales, les textes et leur position. Les photos sont exclues du traitement ;
 les doubles pages illustrées déjà en orange vif sont préservées. Le chapitre 02
 reprend cette couleur dans son en-tête. Détails : `sources/palette-v795/README.md`.
+
+
+### V07.96 — Élargir le livre depuis la bannière
+
+La bannière propose « Élargir le livre / Rétrécir le livre ». Le clic +/− sur une
+page garde le zoom individuel, avec retour au petit livre à deux pages. Le bouton
+du bas est supprimé. Les deux agrandissements deviennent des modes distincts.
+Voir `sources/navigation-v796/README.md`. La nouvelle couverture est une proposition
+séparée, sans changement de la page 1 publiée à ce stade.

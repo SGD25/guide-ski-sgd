@@ -28,7 +28,7 @@ const assert=require('node:assert/strict');
   await page.waitForTimeout(250);g=await geometry();
   assert(Math.abs((g.tr.x-g.tl.x)-(g.br.x-g.bl.x))<1,'Single page has no perspective');
   assert(page.url().endsWith('page=4'),'Image zoom selects clicked right page');
-  await page.locator('#reading-button').click();
+  await page.locator('#left-page .sgd-poster>img').click();
   await page.locator('#previous').click();await page.waitForTimeout(750);
   assert(page.url().endsWith('page=1'));
   const target=page.locator('#right-page .poster-link[data-jump="20"]').first();
