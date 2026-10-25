@@ -26,5 +26,5 @@ for(const [lo,hi,ch] of [[3,7,'01 · Comprendre'],[8,24,'02 · Reconnaître et c
  for(let n=lo;n<=hi;n++)assert.equal(pages[n-1].chapter,ch);
 }
 assert.match(pages[34].title,/NX12/);assert.match(pages[36].title,/PLUM/);assert.match(pages[38].title,/Avalanche/);
-assert.match(html,/V07.81/);assert.match(html,/01–02 \/ 44/);
+assert.match(html,/V07.82/);assert.match(html,/01–02 \/ 44/);
 console.log('OK: 44 pages, complete clickable contents, five chapters, original 31–32 text preserved, complete navigation.');

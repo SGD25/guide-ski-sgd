@@ -47,7 +47,7 @@
   },
   {
     "page": 2,
-    "path": "assets/guide-v781/page-02.png",
+    "path": "assets/guide-v782/page-02.png",
     "links": [
       {
         "box": [
@@ -447,7 +447,7 @@
           2908
         ],
         "page": 42,
-        "label": "Location : départ et retour"
+        "label": "Location : bien réceptionner au retour"
       },
       {
         "box": [
@@ -780,12 +780,12 @@
   },
   {
     "page": 41,
-    "path": "assets/guide-v781/page-41.png",
+    "path": "assets/guide-v782/page-41.png",
     "links": []
   },
   {
     "page": 42,
-    "path": "assets/guide-v781/page-42.png",
+    "path": "assets/guide-v782/page-42.png",
     "links": []
   },
   {

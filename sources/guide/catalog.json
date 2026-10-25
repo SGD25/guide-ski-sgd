@@ -1,6 +1,6 @@
 {
-  "version": "V07.81",
-  "cache": "20261024-81",
+  "version": "V07.82",
+  "cache": "20261025-82",
   "pages": [
     {
       "page": 1,
@@ -246,13 +246,13 @@
       "page": 41,
       "title": "Location : accueillir et équiper",
       "chapter": "05 · Accueillir, louer et accompagner",
-      "description": "Comprendre le programme, recueillir les données, faire essayer les chaussures et choisir un ensemble cohérent."
+      "description": "Accueillir, cerner le profil et le programme, faire essayer les chaussures, choisir le matériel, régler avec ISOSKI puis enregistrer les mesures et réglages dans Gingkoia."
     },
     {
       "page": 42,
-      "title": "Location : départ et retour",
+      "title": "Location : bien réceptionner au retour",
       "chapter": "05 · Accueillir, louer et accompagner",
-      "description": "Préparer le départ, montrer les manipulations, recueillir le retour client et orienter le matériel."
+      "description": "Écouter le client, proposer l’achat avec déduction de la location ; contrôler et sécher les skis, transmettre à l’atelier, vérifier les chaussures et les bâtons puis les orienter."
     },
     {
       "page": 43,
