@@ -61,9 +61,9 @@
     el('chapter-band').replaceChildren(...chapters.map(c=>{const s=document.createElement('span');s.className=c.startsWith('01')?'chapter-one':c.startsWith('02')?'chapter-two':c.startsWith('03')?'chapter-three':c.startsWith('04')?'chapter-four':c.startsWith('05')?'chapter-five':'chapter-opening';s.textContent=c==='Ouverture'?'LE GUIDE DU SKI · OUVERTURE':'CHAPITRE '+c.toUpperCase();return s;}));
     prev.disabled=current===0;next.disabled=current+step()>=pages.length;el('progress').style.width=last/pages.length*100+'%';
     document.title=pages[current].title+' — SPORT GOOD DEAL';history.replaceState(null,'','#page='+(current+1));
-    // A new page in zoom/mobile reading starts at its heading. Resizing or
+    // Every new page/spread starts at its heading, including the wide book. Resizing or
     // rerendering the same page must not interrupt the reader's scroll position.
-    if(hasRendered&&current!==previousPage&&single()){
+    if(hasRendered&&current!==previousPage){
       requestAnimationFrame(()=>{
         scrollTo({top:Math.max(0,scrollY+frame.getBoundingClientRect().top-16),behavior:'instant'});
         queueReaderChrome();

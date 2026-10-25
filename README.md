@@ -88,3 +88,12 @@ début de la nouvelle page, avec 16 px de marge. Cela vaut pour les flèches, le
 clavier, le sommaire et les liens directs. Un redimensionnement ou un rendu de
 la même page conserve la position de lecture. Un trait vertical gris fin sépare
 le symbole S du chapitre sur les 46 pages, y compris à l’impression.
+
+
+### V07.93 — Livre agrandi et filet sous l’en-tête
+
+Le retour automatique au début fonctionne aussi en double page agrandie.
+Le trait de séparation est horizontal, sous l’en-tête de chaque page, aligné
+sur celui du pied de page. La pagination du pied de page reste inchangée.
+La proposition « ÉDITION 2026–2027 » dans `sources/premium-v793/` est un aperçu
+séparé à valider, sans modification du pied de page dans le guide publié.
