@@ -54,3 +54,15 @@ Bannière à la largeur du livre et flèches accolées à la couverture, synchro
 
 ## V07.89 — Nouveau logo de bannière
 SVG fourni avec les activités agrandies, affichage du logo augmenté et adapté à la largeur de la bannière. Mise en page vérifiée sur six formats.
+
+
+### V07.90 — Livre ouvert et bannière renforcée
+
+Titre et sous-titre plus présents, boutons agrandis avec pictogrammes. La couverture
+est masquée en haut ; les tranches de papier sont dessinées en SVG, avec feuilles
+décalées, contours courbes et ombres. Une très légère inclinaison des deux faces
+renforce le pli ; le mode page unique et l’impression restent plats.
+
+Les 46 images et leurs proportions sont conservées. `premium-book.css` et
+`book-effects.js` isolent cet habillage du contenu. Navigation, zoom, flèches en
+bordure et largeur de bannière suivent le livre. Voir `sources/premium-v790/README.md`.

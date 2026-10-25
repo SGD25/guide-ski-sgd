@@ -6,13 +6,25 @@
   const prev=el('previous'),next=el('next'),toc=el('toc-overlay'),grid=el('toc-grid'),reading=el('reading-button');
   // Align chrome with the rendered book in double, wide and single-page modes.
   const frame=book.parentElement,edgeControls=prev.parentElement;
-  let chromeFrame=0;
+  let chromeFrame=0,chromeSizeKey='',reservedBannerExtra=0;
   function alignReaderChrome(){
     chromeFrame=0;
     const r=frame.getBoundingClientRect(),mobile=matchMedia('(max-width:780px)').matches;
+    const singleView=mobile||document.body.classList.contains('reading-mode');
+    const sizeKey=[innerWidth,innerHeight,singleView,document.body.classList.contains('wide-spread')].join(':');
+    if(sizeKey!==chromeSizeKey){chromeSizeKey=sizeKey;reservedBannerExtra=0;}
     document.body.style.setProperty('--reader-width',r.width+'px');
-    document.body.style.setProperty('--banner-extra',Math.max(0,document.querySelector('.appbar').getBoundingClientRect().height-80)+'px');
-    const cover=mobile?11:19,half=mobile?15:20;
+    const banner=document.querySelector('.appbar').getBoundingClientRect();
+    const actions=document.querySelector('.appbar-actions').getBoundingClientRect();
+    const brand=document.querySelector('.brand').getBoundingClientRect();
+    // The banner follows book width and the book fits below the banner. Reserve the
+    // largest measured banner height in this layout to prevent breakpoint oscillation.
+    reservedBannerExtra=Math.max(reservedBannerExtra,banner.height-80,0);
+    document.body.style.setProperty('--banner-extra',reservedBannerExtra+'px');
+    document.body.style.setProperty('--actions-left',(actions.left-banner.left)+'px');
+    document.body.style.setProperty('--banner-cut',Math.max(12,Math.min(mobile?40:56,actions.left-brand.right-8))+'px');
+    const cover=window.SGD_BOOK_EFFECTS?.layout(r.width,r.height,singleView,mobile)||(mobile?11:19),half=mobile?15:20;
+    document.body.style.setProperty('--book-cover',cover+'px');
     document.body.style.setProperty('--book-previous-x',(r.left-cover-half)+'px');
     document.body.style.setProperty('--book-next-x',(r.right+cover-half)+'px');
     const top=Math.max(0,r.top),bottom=Math.min(innerHeight,r.bottom);
